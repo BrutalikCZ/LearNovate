@@ -26,16 +26,17 @@ function initSidebar() {
     ddTrigger.classList.toggle('open', state.catDropOpen);
   });
 
-  // Category filter checkboxes
-  ddPanel.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
-    cb.addEventListener('change', () => {
+  // Category filter checkboxes (delegated to panel)
+  ddPanel.addEventListener('change', (e) => {
+    if (e.target.matches('input[type="checkbox"]')) {
+      const cb = e.target;
       const cat     = cb.dataset.cat;
       const visible = cb.checked;
       state.categories[cat] = visible;
       document.querySelector(`.category-section[data-section="${cat}"]`)?.classList.toggle('hidden', !visible);
       document.getElementById(`catHeader-${cat}`)?.classList.toggle('hidden', !visible);
       document.getElementById(`catItems-${cat}`)?.classList.toggle('hidden', !visible);
-    });
+    }
   });
 
   // Search
