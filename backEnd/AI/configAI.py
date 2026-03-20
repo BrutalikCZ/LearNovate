@@ -1,0 +1,20 @@
+import os
+import json
+from pathlib import Path
+from dotenv import load_dotenv
+from openai import OpenAI
+
+# Načtení .env z kořene projektu (../../.env relativně k tomuto souboru)
+env_path = Path(__file__).resolve().parent.parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
+
+def get_client() -> OpenAI:
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY není nastaven v .env souboru")
+    return OpenAI(api_key=api_key)
+
+def load_system_prompt() -> dict:
+    prompt_path = Path(__file__).resolve().parent / "prompts" / "whoYouAre.json"
+    with open(prompt_path, "r", encoding="utf-8") as f:
+        return json.load(f)
