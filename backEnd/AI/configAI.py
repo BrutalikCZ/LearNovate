@@ -19,3 +19,8 @@ def load_system_prompt() -> dict:
     prompt_path = Path(__file__).resolve().parent / "prompts" / "whoYouAre.json"
     with open(prompt_path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+def load_scenario(scenario_name: str) -> dict:
+    scenario_path = Path(__file__).resolve().parent / "prompts" / "scenarios" / f"{scenario_name}.json"
+    with open(scenario_path, "r", encoding="utf-8") as f:
+        return json.load(f)
