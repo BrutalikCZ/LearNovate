@@ -4,8 +4,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Načtení .env z kořene projektu (../../.env relativně k tomuto souboru)
 env_path = Path(__file__).resolve().parent.parent.parent / ".env"
+print(f"Hledám .env na: {env_path}")
+print(f"Soubor existuje: {env_path.exists()}")
 load_dotenv(dotenv_path=env_path)
 
 def get_client() -> OpenAI:
