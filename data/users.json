@@ -14,5 +14,21 @@
     "passwordHash": "$2a$10$VCFTj4ngTUrtvj3R4tG.Desj.AExio/ARwMUO20bncsNMPVfT/TV2",
     "body": 0,
     "createdAt": "2026-03-20T18:59:44.391Z"
+  },
+  {
+    "id": "mmzdw0s9j9ylfgs4dti",
+    "email": "dad.dada@idk.com",
+    "username": "Tomik",
+    "passwordHash": "$2a$10$EDK9mT1.5zmbXQ55f8HQXejkjUfvYQHA4Hwzx.EgBBOswqBXHlHBS",
+    "body": 0,
+    "createdAt": "2026-03-20T21:01:06.681Z"
+  },
+  {
+    "id": "mmzdx635jlayjrw9pw",
+    "email": "tomik.tomik@tomik.com",
+    "username": "Tomik00",
+    "passwordHash": "$2a$10$5SCokrQ1n1psMgYFtyTfFeXIE1oMx9IevT8M35TMtQGZB7xRt2CCa",
+    "body": 0,
+    "createdAt": "2026-03-20T21:02:00.209Z"
   }
 ]
