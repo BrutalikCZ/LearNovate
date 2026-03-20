@@ -1,1 +1,0 @@
-Ahoj, toto je obsah souboru test.txt.

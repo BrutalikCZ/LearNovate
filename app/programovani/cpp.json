@@ -1,0 +1,46 @@
+{
+  "name": "C++ Základy",
+  "description": "Základy C++, objektově orientované programování, pointery, šablony a STL knihovna.",
+  "icon": "code",
+  "label": "C++",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Úvod do C++"
+    },
+    {
+      "type": "text",
+      "text": "C++ je výkonný, kompilovaný programovací jazyk, který kombinuje nízkoúrovňové systémové programování s vysokoúrovňovými abstrakcemi. Je široce používán v herním vývoji, operačních systémech, embedded systémech a vysokovýkonných aplikacích."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Základní syntaxe"
+    },
+    {
+      "type": "text",
+      "text": "Každý C++ program začíná funkcí main(). Proměnné musí být deklarovány s konkrétním typem (int, float, double, char, bool). C++ používá středníky na konci příkazů a složené závorky pro bloky kódu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pointery a Reference"
+    },
+    {
+      "type": "text",
+      "text": "Pointery jsou proměnné, které uchovávají adresu jiné proměnné v paměti. Operátor & vrací adresu proměnné, zatímco operátor * dereferencuje pointer. Reference jsou aliasy pro existující proměnné a nelze je přesměrovat po inicializaci."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Objektově orientované programování"
+    },
+    {
+      "type": "text",
+      "text": "C++ podporuje třídy a objekty, dědičnost, polymorfismus, zapouzdření a abstrakci. Třídy definují vlastnosti (atributy) a chování (metody) objektů. Konstruktory a destruktory řídí životní cyklus objektů."
+    }
+  ]
+}

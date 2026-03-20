@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+
+  # ── Node.js: frontend + auth + subjects API ──────────────────
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: learnovate-node
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      JWT_SECRET: ${JWT_SECRET:-learnovate-change-me}
+      AI_URL: http://python-ai:5000
+    volumes:
+      # Persist users.json across restarts
+      - ./data:/app/data
+    depends_on:
+      - python-ai
+    restart: unless-stopped
+
+  # ── Python: AI instructor API ─────────────────────────────────
+  python-ai:
+    build:
+      context: ./backEnd
+      dockerfile: Dockerfile
+    container_name: learnovate-python-ai
+    expose:
+      - "5000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    restart: unless-stopped
