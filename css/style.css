@@ -1414,3 +1414,77 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .subject-detail-chat { display: none; }
   .subject-detail-main { padding: 20px 16px; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Milestone dot — zelená varianta */
+.scenario-step-dot.milestone {
+  background: var(--color-success, #22c55e);
+  box-shadow: 0 0 6px var(--color-success, #22c55e);
+}
+
+/* Milestone banner */
+.scenario-milestone-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--color-success, #22c55e)15;
+  border: 1px solid var(--color-success, #22c55e)40;
+  border-radius: 8px;
+  color: var(--color-success, #22c55e);
+  font-weight: 600;
+  font-size: 14px;
+  margin: 8px 0;
+  transition: opacity 0.4s ease;
+}
+
+.scenario-milestone-banner.fade-out {
+  opacity: 0;
+}
+
+
+.scenario-step-dot.milestone {
+  background: var(--color-success, #22c55e);
+  box-shadow: 0 0 6px var(--color-success, #22c55e);
+}
+
+.scenario-milestone-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 8px;
+  color: var(--color-success, #22c55e);
+  font-weight: 600;
+  font-size: 14px;
+  margin: 8px 0;
+  transition: opacity 0.4s ease;
+}
+
+.scenario-milestone-banner.fade-out {
+  opacity: 0;
+}

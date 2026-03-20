@@ -219,8 +219,8 @@ function initRouter() {
 
 // ── Scenario View ───────────────────────────────────────────
 function startScenario(subject) {
-  const MAX_STEPS = 5;
-  let currentStep = 0;
+  let MAX_MILESTONES = 5;
+  let milestonesCompleted = 0;
   let conversationHistory = [];
   let isLoading = false;
 
@@ -231,7 +231,7 @@ function startScenario(subject) {
   main.style.gap = '0';
   main.style.flexDirection = 'column';
 
-  const stepDots = Array.from({ length: MAX_STEPS }, (_, i) =>
+  const stepDots = Array.from({ length: MAX_MILESTONES }, (_, i) =>
     `<div class="scenario-step-dot" id="stepDot-${i}"></div>`
   ).join('');
 
@@ -247,9 +247,9 @@ function startScenario(subject) {
           <span class="scenario-subject-name">${subject.name}</span>
         </div>
         <div class="scenario-steps">
-          <span class="scenario-steps-label">KROKY</span>
+          <span class="scenario-steps-label">MILESTONES</span>
           <div class="scenario-steps-bar">${stepDots}</div>
-          <span class="scenario-steps-count" id="scenarioStepsCount">0 / ${MAX_STEPS}</span>
+          <span class="scenario-steps-count" id="scenarioStepsCount">0 / ${MAX_MILESTONES}</span>
         </div>
       </div>
       <div class="scenario-body">
@@ -266,7 +266,7 @@ function startScenario(subject) {
               <i data-lucide="arrow-up"></i>
             </button>
           </div>
-          <div class="scenario-input-hint">Napiš svou akci a stiskni Enter — máš ${MAX_STEPS} pokusů.</div>
+          <div class="scenario-input-hint">Popiš svou akci — splň všechny milestones.</div>
         </div>
       </div>
     </div>
@@ -274,26 +274,26 @@ function startScenario(subject) {
 
   lucide.createIcons({ nodes: main.querySelectorAll('[data-lucide]') });
 
-  const messagesEl  = document.getElementById('scenarioMessages');
-  const inputEl     = document.getElementById('scenarioInput');
-  const sendBtn     = document.getElementById('scenarioSendBtn');
-  const stepsCount  = document.getElementById('scenarioStepsCount');
+  const messagesEl = document.getElementById('scenarioMessages');
+  const inputEl    = document.getElementById('scenarioInput');
+  const sendBtn    = document.getElementById('scenarioSendBtn');
+  const stepsCount = document.getElementById('scenarioStepsCount');
 
   document.getElementById('scenarioBackBtn').addEventListener('click', () => {
     navigateToSubject(subject.categoryId, subject);
   });
 
-  function updateStepDots() {
-    for (let i = 0; i < MAX_STEPS; i++) {
+  function updateMilestoneDots() {
+    for (let i = 0; i < MAX_MILESTONES; i++) {
       const dot = document.getElementById(`stepDot-${i}`);
-      if (dot) dot.classList.toggle('active', i < currentStep);
+      if (dot) dot.classList.toggle('milestone', i < milestonesCompleted);
     }
-    stepsCount.textContent = `${currentStep} / ${MAX_STEPS}`;
+    stepsCount.textContent = `${milestonesCompleted} / ${MAX_MILESTONES}`;
   }
 
   function setInputEnabled(enabled) {
-    inputEl.disabled  = !enabled;
-    sendBtn.disabled  = !enabled;
+    inputEl.disabled = !enabled;
+    sendBtn.disabled = !enabled;
     if (enabled) inputEl.focus();
   }
 
@@ -330,12 +330,27 @@ function startScenario(subject) {
     if (t) t.remove();
   }
 
+  function showMilestoneBanner() {
+    const banner = document.createElement('div');
+    banner.className = 'scenario-milestone-banner';
+    banner.innerHTML = `
+      <i data-lucide="check-circle"></i>
+      <span>Milestone ${milestonesCompleted}/${MAX_MILESTONES} splněn!</span>
+    `;
+    messagesEl.appendChild(banner);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    lucide.createIcons({ nodes: banner.querySelectorAll('[data-lucide]') });
+
+    setTimeout(() => banner.classList.add('fade-out'), 2500);
+    setTimeout(() => banner.remove(), 3000);
+  }
+
   function showEndBanner() {
     const banner = document.createElement('div');
     banner.className = 'scenario-end-banner';
     banner.innerHTML = `
       <i data-lucide="flag"></i>
-      <span>Scénář dokončen</span>
+      <span>Scénář dokončen — ${milestonesCompleted}/${MAX_MILESTONES} milestones</span>
       <div class="scenario-end-btns">
         <button class="scenario-retry-btn" id="scenarioRetryBtn">
           <i data-lucide="rotate-ccw"></i>
@@ -361,13 +376,11 @@ function startScenario(subject) {
   });
 
   async function sendStep() {
-    if (isLoading || currentStep >= MAX_STEPS) return;
+    if (isLoading) return;
     const text = inputEl.value.trim();
     if (!text) return;
 
     isLoading = true;
-    currentStep++;
-    updateStepDots();
     setInputEnabled(false);
     addMessage('user', text);
     inputEl.value = '';
@@ -376,14 +389,14 @@ function startScenario(subject) {
 
     const token = localStorage.getItem('token');
     try {
-      const res  = await fetch('/api/ai/scenario/step', {
+      const res = await fetch('/api/ai/scenario/step', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          messages:     conversationHistory,
-          user_message: text,
-          step:         currentStep,
-          max_steps:    MAX_STEPS,
+          messages:             conversationHistory,
+          user_message:         text,
+          milestones_completed: milestonesCompleted,
+          max_milestones:       MAX_MILESTONES,
         }),
       });
       const data = await res.json();
@@ -393,7 +406,14 @@ function startScenario(subject) {
       conversationHistory.push({ role: 'assistant', content: data.answer });
       addMessage('ai', data.answer);
 
-      if (data.is_complete || currentStep >= MAX_STEPS) {
+      if (data.milestone_complete) {
+        milestonesCompleted++;
+        updateMilestoneDots();
+        showMilestoneBanner();
+      }
+
+      if (data.is_complete) {
+        setInputEnabled(false);
         showEndBanner();
       } else {
         setInputEnabled(true);
@@ -401,8 +421,6 @@ function startScenario(subject) {
     } catch {
       hideTyping();
       addMessage('ai', 'Chyba připojení k AI. Zkuste to znovu.');
-      currentStep--;
-      updateStepDots();
       setInputEnabled(true);
     }
     isLoading = false;
@@ -413,11 +431,11 @@ function startScenario(subject) {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendStep(); }
   });
 
-  // Auto-start — AI napíše úvod scénáře
+  // Auto-start
   async function autoStart() {
     const token = localStorage.getItem('token');
     try {
-      const res  = await fetch('/api/ai/scenario/start', {
+      const res = await fetch('/api/ai/scenario/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
@@ -431,23 +449,33 @@ function startScenario(subject) {
       if (initMsg) initMsg.remove();
 
       if (data.answer) {
+        // Dynamický počet milestones z backendu
+        if (data.max_milestones && data.max_milestones !== MAX_MILESTONES) {
+          MAX_MILESTONES = data.max_milestones;
+          rebuildStepDots();
+        }
         conversationHistory = data.messages || [];
         addMessage('ai', data.answer);
         setInputEnabled(true);
       } else {
-        const reason = data.error || `HTTP ${res.status}`;
-        addMessage('ai', `Chyba při spuštění scénáře: ${reason}`);
-        console.error('[scenario/start]', data);
+        addMessage('ai', `Chyba při spuštění scénáře: ${data.error || 'neznámá'}`);
       }
     } catch (err) {
       const initMsg = document.getElementById('scenarioInitMsg');
       if (initMsg) initMsg.remove();
       addMessage('ai', `Chyba připojení k AI: ${err.message}`);
-      console.error('[scenario/start fetch]', err);
     }
   }
 
   autoStart();
+}
+function rebuildStepDots() {
+  const bar = document.querySelector('.scenario-steps-bar');
+  if (!bar) return;
+  bar.innerHTML = Array.from({ length: MAX_MILESTONES }, (_, i) =>
+    `<div class="scenario-step-dot" id="stepDot-${i}"></div>`
+  ).join('');
+  stepsCount.textContent = `0 / ${MAX_MILESTONES}`;
 }
 
 export { navigateToSubject, navigateHome, toggleViewMode, initRouter };
