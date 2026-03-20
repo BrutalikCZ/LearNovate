@@ -1,11 +1,19 @@
 from AI.configAI import get_client, load_system_prompt, load_scenario
 
+
+def check_completion(answer: str) -> tuple[str, bool]:
+    """Zkontroluje zda AI označila úkol jako splněný."""
+    if "[TASK_COMPLETE]" in answer:
+        clean_answer = answer.replace("[TASK_COMPLETE]", "").strip()
+        return clean_answer, True
+    return answer, False
+
+
 def main():
     client = get_client()
     system_prompt = load_system_prompt()
     scenario = load_scenario("car_battery")
 
-    # Sestavení messages – system prompt + kontext scénáře
     messages = [
         system_prompt,
         {
@@ -25,9 +33,8 @@ def main():
     print("  (pro ukončení napiš 'exit')")
     print()
 
-    # První zpráva od AI – zahájení scénáře
+    # První zpráva od AI
     print("AI přemýšlí...\n")
-    messages.append({"role": "user", "content": "Zahaj scénář."})
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=messages,
@@ -40,7 +47,7 @@ def main():
     print(f"AI: {answer}")
     print("-" * 50)
 
-    # Hlavní smyčka konverzace
+    # Hlavní smyčka
     while True:
         print("\nTvůj tah (2x Enter pro odeslání):")
         lines = []
@@ -62,7 +69,6 @@ def main():
             print("Nebyl zadán žádný dotaz.")
             continue
 
-        # Přidání do historie a volání API
         messages.append({"role": "user", "content": user_input})
 
         print("\nAI přemýšlí...\n")
@@ -76,9 +82,18 @@ def main():
         answer = response.choices[0].message.content
         messages.append({"role": "assistant", "content": answer})
 
+        # Kontrola dokončení
+        answer, completed = check_completion(answer)
+
         print("-" * 50)
         print(f"AI: {answer}")
         print("-" * 50)
+
+        if completed:
+            print("\n" + "=" * 50)
+            print("  ÚKOL SPLNĚN!")
+            print("=" * 50)
+            break
 
 
 if __name__ == "__main__":
