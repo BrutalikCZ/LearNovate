@@ -12,6 +12,7 @@ async function loadSubjects() {
     state.subjectsData = await res.json();
     renderSidebar();
     renderMainContent();
+    renderCategoryDropdown();
   } catch (err) {
     console.error('Error loading subjects:', err);
     // On error, keep static content as fallback
@@ -192,4 +193,28 @@ function initSortButtons() {
   });
 }
 
-export { loadSubjects, renderMainContent, renderSidebar, closeAllSortPanels };
+// ── Render Category Dropdown ────────────────────────────────
+function renderCategoryDropdown() {
+  const panel = document.getElementById('ddPanel');
+  if (!panel) return;
+  panel.innerHTML = '';
+
+  state.subjectsData.forEach(category => {
+    const catId = category.id;
+    const catDisplayName = CATEGORY_NAMES[catId] || catId.toUpperCase();
+    
+    if (state.categories[catId] === undefined) {
+      state.categories[catId] = true;
+    }
+
+    const label = document.createElement('label');
+    label.className = 'dd-option';
+    label.innerHTML = `
+      <input type="checkbox" ${state.categories[catId] ? 'checked' : ''} data-cat="${catId}"> ${catDisplayName}
+    `;
+
+    panel.appendChild(label);
+  });
+}
+
+export { loadSubjects, renderMainContent, renderSidebar, closeAllSortPanels, renderCategoryDropdown };

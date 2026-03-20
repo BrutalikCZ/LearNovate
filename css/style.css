@@ -206,6 +206,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   color: var(--text);
 }
 .top-navbar .brand svg { width: 14px; height: 14px; color: #66c0f4; }
+.top-navbar .brand .brand-logo { width: 18px; height: 18px; }
 .top-navbar .brand-name {
   font-size: 13px;
   font-weight: 500;
