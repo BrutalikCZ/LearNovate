@@ -1,7 +1,7 @@
 {
   "name": "Výpadek energie v marsovské kolonii",
   "description": "Řešení kritického selhání energetického systému v uzavřené kolonii.",
-  "icon": "battery-off",
+  "icon": "battery-warning",
   "label": "MARS",
   "colorFrom": "#0f172a",
   "colorTo": "#f59e0b",

@@ -1,7 +1,7 @@
 {
   "name": "Zamčené klíče v autě",
   "description": "Jak bezpečně získat přístup do zamčeného auta bez jeho poškození.",
-  "icon": "car",
+  "icon": "key-square",
   "label": "Zamčené auto",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

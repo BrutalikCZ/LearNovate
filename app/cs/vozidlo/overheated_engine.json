@@ -1,7 +1,7 @@
 {
   "name": "Přehřátý motor",
   "description": "Jak správně reagovat na přehřátí motoru a zabránit jeho poškození.",
-  "icon": "car",
+  "icon": "thermometer",
   "label": "Přehřátí",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

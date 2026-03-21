@@ -1,7 +1,7 @@
 {
   "name": "Locked keys in the car",
   "description": "How to safely access a locked car without damaging it.",
-  "icon": "car",
+  "icon": "key-square",
   "label": "Locked car",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

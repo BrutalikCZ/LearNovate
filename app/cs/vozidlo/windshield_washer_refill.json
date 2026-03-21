@@ -1,7 +1,7 @@
 {
   "name": "Doplnění kapaliny do ostřikovačů",
   "description": "Jak správně doplnit kapalinu do ostřikovačů a zajistit čistý výhled z vozidla.",
-  "icon": "car",
+  "icon": "bubbles",
   "label": "Ostřikovače",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

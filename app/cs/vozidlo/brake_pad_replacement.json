@@ -1,7 +1,7 @@
 {
   "name": "Výměna brzdových destiček",
   "description": "Jakým způsobem vyměnit brzdové destičky.",
-  "icon": "car",
+  "icon": "wrench",
   "label": "Brzdové destičky",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

@@ -1,7 +1,7 @@
 {
   "name": "Headlight bulb replacement",
   "description": "How to properly replace a headlight bulb and ensure safe vehicle lighting.",
-  "icon": "car",
+  "icon": "lightbulb",
   "label": "Headlights",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

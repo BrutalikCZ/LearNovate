@@ -1,7 +1,7 @@
 {
   "name": "Replacement of brake pads",
   "description": "How to replace brake pads.",
-  "icon": "car",
+  "icon": "wrench",
   "label": "Brake pads",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",

@@ -1,7 +1,7 @@
 {
   "name": "Startování auta přes kabely",
   "description": "Jak správně nastartovat auto pomocí startovacích kabelů.",
-  "icon": "car",
+  "icon": "battery-low",
   "label": "Startování",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
