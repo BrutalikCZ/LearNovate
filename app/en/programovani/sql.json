@@ -1,0 +1,46 @@
+{
+  "name": "SQL and Databases",
+  "description": "Relational database basics, SQL queries (SELECT, JOIN, GROUP BY), indexes and transactions.",
+  "icon": "database",
+  "label": "SQL",
+  "colorFrom": "#9f1239",
+  "colorTo": "#f43f5e",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Introduction to SQL"
+    },
+    {
+      "type": "text",
+      "text": "SQL (Structured Query Language) is the standard language for managing and manipulating relational databases. It is used to create, read, update, and delete data (CRUD operations)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Basic Queries"
+    },
+    {
+      "type": "text",
+      "text": "The SELECT statement retrieves data from tables. The WHERE clause filters rows, ORDER BY sorts results, and LIMIT restricts the number of returned records. Aggregate functions COUNT, SUM, AVG, MIN, and MAX enable data summarization."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "JOIN Operations"
+    },
+    {
+      "type": "text",
+      "text": "JOIN combines data from multiple tables based on a relationship between columns. INNER JOIN returns only matching records, LEFT JOIN includes all records from the left table, RIGHT JOIN from the right. FULL OUTER JOIN combines both sides."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Indexes and Performance"
+    },
+    {
+      "type": "text",
+      "text": "Indexes speed up table lookups by creating a data structure that allows rapid row access. A primary key automatically creates a unique index. However, too many indexes can slow down INSERT and UPDATE operations."
+    }
+  ]
+}
