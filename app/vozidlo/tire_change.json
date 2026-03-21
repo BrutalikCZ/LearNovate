@@ -1,0 +1,70 @@
+{
+  "name": "Výměna pneumatiky",
+  "description": "Jak bezpečně vyměnit prasklou pneumatiku za rezervní kolo na silnici nebo odpočívadle.",
+  "icon": "car",
+  "label": "Pneumatika",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Výměna pneumatiky",
+    "setting": "Jedeš po dálnici, když náhle pocítíš silné vibrace a vozidlo začne táhnout na jednu stranu. Zastavíš na odpočívadle a zjistíš, že jedna z pneumatik je prasklá, takže je nutné ji vyměnit. V kufru máš rezervní kolo, hever a klíč na kola.",
+    "objective": "Uživatel musí správně vyměnit prasklou pneumatiku za rezervní kolo.",
+    "milestones": [
+      {
+        "name": "Bezpečné zajištění vozidla (výstražná světla, ruční brzda, výstražný trojúhelník)", 
+        "points": 100
+      },
+      {
+        "name": "Příprava nářadí a rezervního kola", 
+        "points": 50
+      },
+      {
+        "name": "Výměna kola (zvednutí vozidla, demontáž a montáž kola)", 
+        "points": 150
+      },
+      {
+        "name": "Dokončení (dotažení šroubů, spuštění vozidla, kontrola stability)", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Nejprve bezpečně zastav na krajnici nebo odpočívadle, zapni výstražná světla a zajisti vozidlo ruční brzdou. Umísti výstražný trojúhelník tak, aby byl dostatečně viditelný pro ostatní řidiče. Poté vyjmi z kufru rezervní kolo, hever a klíč na kola. Umísti hever na pevný bod karoserie u poškozeného kola a postupně zvedej vozidlo, dokud se pneumatika nedotýká země jen minimálně. Uvolni šrouby kola, sundej prasklou pneumatiku a nasaď rezervní kolo tak, aby správně dosedlo na náboj. Nasaď a ručně utáhni šrouby, poté spusť vozidlo zpět na zem a finálně dotáhni šrouby do kříže pro rovnoměrné utažení. Nakonec zkontroluj stabilitu kola a ulož veškeré nářadí."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bezpečnost při výměně kola"
+    },
+    {
+      "type": "text",
+      "text": "Zastavení mimo provoz a správné zabezpečení vozidla je klíčové pro minimalizaci rizika nehody při výměně pneumatiky."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Příprava vybavení"
+    },
+    {
+      "type": "text",
+      "text": "Rezervní kolo, hever a klíč na kola musí být připraveny před zahájením samotné výměny."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Postup výměny"
+    },
+    {
+      "type": "text",
+      "text": "Vozidlo se nejprve zvedne, kolo se demontuje a následně se nasadí rezervní kolo se správným usazením na náboj."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Dokončení práce"
+    },
+    {
+      "type": "text",
+      "text": "Po spuštění vozidla je nutné dotáhnout šrouby a zkontrolovat stabilitu kola před pokračováním v jízdě."
+    }
+  ]
+}

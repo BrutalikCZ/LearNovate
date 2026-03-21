@@ -1,0 +1,98 @@
+{
+  "name": "Podezření na cévní mozkovou příhodu",
+  "description": "Jak rozpoznat mrtvici a zajistit rychlou pomoc pomocí metody FAST.",
+  "icon": "brain",
+  "label": "PP",
+  "colorFrom": "#1e1b4b",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Náhlá slabost na ulici",
+    "setting": "Stojíš na zastávce. Starší muž vedle tebe náhle upustí tašku, jeho obličej poklesne na jednu stranu a mluví nesrozumitelně. Zdá se zmatený a nedokáže zvednout pravou ruku.",
+    "objective": "Uživatel musí rozpoznat příznaky mrtvice a okamžitě aktivovat záchranný systém.",
+    "milestones": [
+      {
+        "name": "Rozpoznání příznaků (pokles obličeje, slabost, řeč)",
+        "points": 150
+      },
+      {
+        "name": "Okamžité volání 155",
+        "points": 150
+      },
+      {
+        "name": "Zajištění klidové polohy a sledování stavu",
+        "points": 100
+      },
+      {
+        "name": "Zákaz jídla a pití",
+        "points": 50
+      }
+    ],
+    "tutorial": "Při podezření na mrtvici je rozhodující čas. Použij FAST test (Face, Arms, Speech, Time). Okamžitě volej 155. Postiženého ulož do polosedu nebo stabilní polohy, sleduj vědomí a nedávej nic jíst ani pít."
+  },
+  "content": [
+  {
+      "type": "heading",
+      "level": 2,
+      "text": "Čas je mozek: Proč záleží na každé minutě"
+  },
+  {
+      "type": "text",
+      "text": "Cévní mozková příhoda (mrtvice) vzniká buď ucpáním tepny v mozku sraženinou, nebo jejím prasknutím a krvácením. V obou případech začínají mozkové buňky odumírat extrémně rychle – každou minutu jich zaniknou miliony. Čím dříve se postižený dostane do specializovaného iktového centra, tím vyšší je šance na návrat do běžného života bez trvalého ochrnutí nebo ztráty řeči."
+  },
+  {
+      "type": "heading",
+      "level": 2,
+      "text": "Test FAST – klíč k rychlé diagnostice"
+  },
+  {
+      "type": "text",
+      "text": "Pokud máš podezření na mrtvici, okamžitě proveď tyto tři testy. Pokud je i jen JEDEN z nich pozitivní, na nic nečekej a jednej."
+  },
+  {
+      "type": "text",
+      "text": "1. **FACE (Obličej):** Požádej dotyčného, aby se usmál nebo vycenil zuby. Sleduj, zda je úsměv symetrický. Pokud jeden koutek úst visí dolů nebo je tvář nehybná, je to varovné znamení."
+  },
+  {
+      "type": "text",
+      "text": "2. **ARMS (Paže):** Požádej ho, aby předpažil obě ruce dlaněmi dolů a zavřel oči. Pokud jedna ruka začne klesat, 'ujíždět' do strany nebo ji dotyčný vůbec nezvedne, jde o svalovou slabost typickou pro mrtvici."
+  },
+  {
+      "type": "text",
+      "text": "3. **SPEECH (Řeč):** Zeptej se na jednoduchou otázku (např. 'Jak se jmenujete?') nebo ho požádej, aby zopakoval jednoduchou větu. Varovným signálem je komolení slov, nesrozumitelné 'huhňání', mluvení 'z cesty' nebo úplná neschopnost promluvit, i když dotyčný rozumí."
+  },
+  {
+      "type": "text",
+      "text": "4. **TIME (Čas):** Pokud vidíš kterýkoliv z těchto příznaků, okamžitě volej 155. Zapiš si přesný čas, kdy příznaky začaly – tato informace je pro lékaře naprosto zásadní pro výběr léčby."
+  },
+  {
+      "type": "heading",
+      "level": 2,
+      "text": "První pomoc do příjezdu záchranky"
+  },
+  {
+      "type": "text",
+      "text": "Postiženého udržuj v naprostém klidu. Pokud je při vědomí, ulož ho do pohodlné polohy s mírně podloženou hlavou (polosed). Pokud začne zvracet nebo upadne do bezvědomí, ale dýchá, otoč ho do stabilizované polohy na bok, aby nedošlo k udušení zvratky. Neustále s ním mluv a uklidňuj ho, i když neodpovídá – může tě slyšet a panika mu jen přitíží."
+  },
+  {
+      "type": "heading",
+      "level": 3,
+      "text": "Kritické zákazy (Co nikdy nedělat)"
+  },
+  {
+      "type": "text",
+      "text": "1. **Nedávej pít ani jíst:** Mrtvice často postihuje polykací svaly. Voda nebo jídlo by mohly skončit v plicích a způsobit udušení nebo těžký zápal plic."
+  },
+  {
+      "type": "text",
+      "text": "2. **Nedávej žádné léky:** Nikdy nepodávej aspirin ani léky na tlak. Pokud jde o krvácivou mrtvici, aspirin by situaci dramaticky zhoršil, protože snižuje srážlivost krve."
+  },
+  {
+      "type": "text",
+      "text": "3. **Nenechávej ho 'vyspat':** Lidé si často myslí, že je to jen únava. Pokud dotyčný usne, ztratíte drahocenný čas a jeho stav se může v tichosti zhoršit do nevratného stádia."
+  },
+  {
+      "type": "text",
+      "text": "4. **Nejezděte autem do nemocnice sami:** Záchranka má vybavení na zahájení péče už v sanitce a ví, do které nemocnice (iktového centra) pacienta vézt. Ne každá nemocnice má vybavení na léčbu mrtvice."
+  }
+  ]
+}

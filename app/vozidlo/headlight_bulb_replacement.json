@@ -1,0 +1,70 @@
+{
+  "name": "Výměna žárovky světlometu",
+  "description": "Jak správně vyměnit žárovku světlometu a zajistit bezpečné osvětlení vozidla.",
+  "icon": "car",
+  "label": "Světlomety",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Výměna žárovky světlometu",
+    "setting": "Během noční jízdy si všimneš, že jedno z předních světel nesvítí. Zastavíš na bezpečném místě a rozhodneš se žárovku vyměnit, aby byla jízda opět bezpečná.",
+    "objective": "Uživatel musí správně vyměnit žárovku.",
+    "milestones": [
+      {
+        "name": "Vypnutí světel a přístup ke světlometu", 
+        "points": 100
+      },
+      {
+        "name": "Vyjmutí staré žárovky", 
+        "points": 100
+      },
+      {
+        "name": "Instalace nové žárovky bez dotyku skla", 
+        "points": 150
+      },
+      {
+        "name": "Test funkčnosti světla", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Před výměnou vždy vypni světla a ideálně i motor. Otevři kryt světlometu a opatrně vyjmi starou žárovku. Novou žárovku nedrž za skleněnou část, aby nedošlo k jejímu poškození nebo zkrácení životnosti. Po instalaci vše pečlivě uzavři a světlo otestuj."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Význam funkčních světlometů"
+    },
+    {
+      "type": "text",
+      "text": "Světlomety zajišťují viditelnost vozidla a bezpečnost při jízdě za tmy nebo špatných podmínek. Nefunkční světlo výrazně zvyšuje riziko nehody."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Typy žárovek"
+    },
+    {
+      "type": "text",
+      "text": "V automobilech se používají různé typy žárovek, například halogenové, xenonové nebo LED. Při výměně je nutné použít správný typ doporučený výrobcem."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Správná manipulace"
+    },
+    {
+      "type": "text",
+      "text": "Při manipulaci se žárovkou se nedotýkej skleněné části holou rukou. Mastnota může způsobit přehřátí a zkrácení životnosti žárovky."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kontrola po výměně"
+    },
+    {
+      "type": "text",
+      "text": "Po výměně vždy zkontroluj funkčnost světla a správné usazení krytu. Ujisti se, že světlo svítí správným směrem a není oslabené."
+    }
+  ]
+}

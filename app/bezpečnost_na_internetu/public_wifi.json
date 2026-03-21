@@ -1,0 +1,79 @@
+{
+  "name": "Útok na veřejné Wi-Fi",
+  "description": "Jak se chránit při používání nezabezpečené veřejné Wi-Fi sítě.",
+  "icon": "wifi-off",
+  "label": "NET",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Káva v kavárně a veřejná síť",
+    "setting": "Sedíš v kavárně a připojíš se na veřejnou Wi-Fi bez hesla. Otevíráš e-mail a internetové bankovnictví. Krátce poté se začne připojení chovat nestabilně a zařízení hlásí neznámé přihlášení.",
+    "objective": "Uživatel musí rozpoznat riziko veřejné sítě a zabránit úniku dat.",
+    "milestones": [
+      {
+        "name": "Rozpoznání rizika nezabezpečené Wi-Fi",
+        "points": 150
+      },
+      {
+        "name": "Odpojení od veřejné sítě",
+        "points": 150
+      },
+      {
+        "name": "Zabezpečení účtů (změna hesla)",
+        "points": 200
+      },
+      {
+        "name": "Kontrola neobvyklé aktivity",
+        "points": 100
+      }
+    ],
+    "tutorial": "Veřejné Wi-Fi může být zneužito k odposlechu komunikace. Nikdy na ní nepřistupuj k citlivým službám bez VPN. Pokud dojde k podezření, okamžitě změň hesla."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Útok Man-in-the-Middle (MitM)"
+  },
+  {
+    "type": "text",
+    "text": "Největším rizikem veřejných sítí je útok 'muže uprostřed'. Útočník se vloží mezi tvé zařízení a Wi-Fi router. Všechna data, která odesíláš (hesla, e-maily, zprávy), protékají nejdříve přes jeho počítač. Pokud webová stránka nepoužívá silné šifrování (HTTPS), útočník vidí tvé přihlašovací údaje v čistém textu, jako bys mu je napsal na lístek."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Evil Twin: Falešný dvojník"
+  },
+  {
+    "type": "text",
+    "text": "Útočníci často vytvářejí sítě s důvěryhodnými názvy, jako je 'Kavarna_Host' nebo 'Free_Airport_WiFi'. Tvůj telefon se k nim rád připojí automaticky. Ve skutečnosti se ale nepřipojuješ k internetu kavárny, ale přímo k hotspotu útočníka. Ten pak může sledovat tvou aktivitu nebo tě přesměrovat na falešné verze tvé banky či sociálních sítí."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Zlatá pravidla bezpečné Wi-Fi"
+  },
+  {
+    "type": "text",
+    "text": "- **VPN je nutnost:** Virtual Private Network vytvoří šifrovaný tunel. I když útočník data zachytí, uvidí jen nesmyslnou směs znaků.\n- **Vypněte automatické připojování:** Tvůj telefon by se neměl sám od sebe hlásit do známých sítí. Útočník může emulovat síť, kterou tvůj mobil zná z domova.\n- **Zapomeňte na bankovnictví:** Nikdy se nepřihlašuj do banky, k e-mailu nebo k e-shopu s uloženou kartou na veřejné síti. Pokud musíš, použij mobilní data (4G/5G), která jsou mnohem bezpečnější.\n- **Sdílení souborů:** V nastavení systému vypněte sdílení souborů a tiskáren, aby se k tvému disku nemohl nikdo v síti snadno 'probourat'."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Sledování certifikátů"
+  },
+  {
+    "type": "text",
+    "text": "Pokud se ti v prohlížeči objeví varování o neplatném certifikátu (např. 'Vaše připojení není soukromé'), okamžitě web zavři. Často to znamená, že se někdo pokouší o SSL stripping – metodu, která nutí tvůj prohlížeč komunikovat nezabezpečeně, aby útočník mohl číst tvá data."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Co dělat po útoku?"
+  },
+  {
+    "type": "text",
+    "text": "Pokud máš podezření, že tě někdo 'hacknul' na Wi-Fi:\n1. Okamžitě Wi-Fi vypni a přepni na mobilní data.\n2. Změň si hesla ke všem službám, které jsi měl během připojení otevřené.\n3. V nastavení účtů (Google, Facebook) se podívej na 'Aktivní relace' a odhlas všechna podezřelá zařízení.\n4. Zkontroluj si nastavení DNS v zařízení, zda tě útočník nepřesměroval na své servery."
+  }
+]
+}

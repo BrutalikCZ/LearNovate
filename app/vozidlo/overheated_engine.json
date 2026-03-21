@@ -1,0 +1,70 @@
+{
+  "name": "Přehřátý motor",
+  "description": "Jak správně reagovat na přehřátí motoru a zabránit jeho poškození.",
+  "icon": "car",
+  "label": "Přehřátí",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Přehřátý motor",
+    "setting": "Jedeš dlouhý kopec v horkém letním dni a po několika minutách si všimneš, že teplota motoru rychle stoupá do červeného pole. Zpod kapoty začne vycházet lehký kouř a vozidlo ztrácí výkon, takže musíš okamžitě reagovat, aby nedošlo k vážnému poškození.",
+    "objective": "Uživatel musí správně zareagovat na přehřátí motoru a zabránit jeho poškození.",
+    "milestones": [
+      {
+        "name": "Bezpečné zastavení vozidla", 
+        "points": 100
+      },
+      {
+        "name": "Vypnutí motoru a zajištění chlazení", 
+        "points": 150
+      },
+      {
+        "name": "Kontrola chladicí kapaliny po vychladnutí", 
+        "points": 150
+      },
+      {
+        "name": "Vyhodnocení stavu a rozhodnutí o dalším postupu", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Jakmile teplota motoru začne nebezpečně stoupat, okamžitě zastav na bezpečném místě a vypni motor. Nech vozidlo stát a motor přirozeně vychladnout, nikdy neotvírej chladič za horka kvůli riziku opaření. Po dostatečném ochlazení zkontroluj hladinu chladicí kapaliny a hledej případné úniky. Pokud je kapaliny málo, může být nutné ji doplnit, ale vždy až po úplném vychladnutí motoru."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Jak funguje chlazení motoru"
+    },
+    {
+      "type": "text",
+      "text": "Chladicí systém motoru udržuje optimální provozní teplotu. Pokud selže nebo je přetížen, může dojít k rychlému přehřátí motoru."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Příčiny přehřátí"
+    },
+    {
+      "type": "text",
+      "text": "Mezi nejčastější příčiny patří nízká hladina chladicí kapaliny, nefunkční ventilátor chladiče nebo dlouhá jízda v extrémních teplotách."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Správná reakce"
+    },
+    {
+      "type": "text",
+      "text": "Je nutné okamžitě zastavit vozidlo a vypnout motor. Pokračování v jízdě může způsobit vážné a nevratné poškození motoru."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bezpečnostní opatření"
+    },
+    {
+      "type": "text",
+      "text": "Nikdy neotevírej víčko chladiče za horka. Hrozí únik horké páry a vážné popáleniny. Vždy vyčkej na úplné vychladnutí systému."
+    }
+  ]
+}

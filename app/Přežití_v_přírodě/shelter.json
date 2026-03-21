@@ -1,0 +1,88 @@
+{
+  "name": "Stavba přístřešku",
+  "description": "Konstrukce jednoduchého obydlí typu 'A' pro ochranu před deštěm a větrem.",
+  "icon": "tent",
+  "label": "Přístřeší",
+  "colorFrom": "#16a34a",
+  "colorTo": "#14532d",
+  "scenario": {
+    "title": "Noc v lese",
+    "setting": "Ztratil jsi se v lese a začíná pršet. Musíš si postavit suché místo na spaní dříve, než se úplně setmí.",
+    "objective": "Postavit stabilní a izolovaný přístřešek.",
+    "milestones": [
+      {
+        "name": "Výběr bezpečného místa (pozor na suché větve nad hlavou)", 
+        "points": 50
+      },
+      {
+        "name": "Stavba nosné konstrukce z větví", 
+        "points": 100
+      },
+      {
+        "name": "Pokrytí střechy (jehličí, kůra, listí v hustých vrstvách)", 
+        "points": 150
+      },
+      {
+        "name": "Vytvoření izolace podlahy", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Najdi pevný strom nebo rozsochu. Opři o ni hlavní trám. Na něj naskládej žebra z větví. Klíčem k nepromokavosti je vrstvení – začni odspodu nahoru, aby voda stékala jako po taškách na střeše. Nezapomeň na tlustou vrstvu suchého listí pod sebe, země odvádí teplo nejrychleji."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Priorita přežití: Proč stavět jako první?"
+  },
+  {
+    "type": "text",
+    "text": "V survivalu platí 'pravidlo tří': bez přístřeší a tepla v extrémních podmínkách (déšť, mráz, vítr) můžete zemřít už po 3 hodinách. Přístřešek není jen ochrana před deštěm, ale především nástroj pro udržení tělesného mikroklimatu. Jakmile se namočíte a začne foukat vítr, nastává hypotermie bleskově. Stavbu proto zahajte včas, ideálně 2–3 hodiny před západem slunce."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Výběr místa (Pravidlo 'Widowmakers')"
+  },
+  {
+    "type": "text",
+    "text": "Než začnete stavět, podívejte se nad sebe. Hledejte tzv. 'widowmakers' (tvůrce vdov) – suché, nalomené větve visící v korunách stromů, které by mohl vítr shodit na váš přístřešek. Vyhněte se také: \n1. **Dnu údolí a korytům:** Zde se drží největší chlad a hrozí blesková povodeň při dešti.\n2. **Vršku hřebenů:** Jste vystaveni větru a bleskům.\n3. **Mraveništím a stezkám zvěře:** Nechcete mít v noci nezvané hosty."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Konstrukce typu 'A' (Lean-to)"
+  },
+  {
+    "type": "text",
+    "text": "Základem je silná a pevná 'hřebenová tyč' (trám), kterou jeden konec opřete o rozsochu stromu nebo pevný pařez ve výšce pasu. Druhý konec leží na zemi. \n- **Žebra:** O hřebenovou tyč opřete pod úhlem 45–60 stupňů hustou řadu menších větví. \n- **Mřížka:** Přes tato žebra vodorovně propleťte tenčí větvičky. Vznikne síť, která udrží izolační materiál a zabrání jeho propadávání dovnitř."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Tajemství nepromokavosti: Vrstvení zdola nahoru"
+  },
+  {
+    "type": "text",
+    "text": "Jako krytinu použijte chvojí (jehličí), listí nebo kůru. Klíčová je technika 'pokládání tašek': začněte vrstvit materiál od země a postupujte směrem k hřebeni tak, aby horní vrstva vždy překrývala tu spodní. Tím zajistíte, že voda bude stékat po povrchu a neproteče dovnitř. Vrstva materiálu musí být silná minimálně 30–50 cm (na délku předloktí), aby skutečně nepromokla."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Izolace od země (Matrace)"
+  },
+  {
+    "type": "text",
+    "text": "Země odvádí teplo z těla až 25x rychleji než vzduch. Spát na holé zemi v dešti je rozsudek k podchlazení. Vytvořte si 'postel' z tlusté vrstvy suchého materiálu (jehličí, tráva, suché listí). Tato vrstva by měla mít po slehnutí tloušťku aspoň 20 cm. Pokud máte k dispozici klády, vytvořte z nich rám, který vyplníte izolací, abyste zůstali nad vlhkostí."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Orientace proti větru"
+  },
+  {
+    "type": "text",
+    "text": "Zadní stěna přístřešku musí směřovat proti převládajícímu větru. Pokud fouká z boku, přístřešek funguje jako větrný tunel a teplo uvnitř neudržíte. Vchod by měl směřovat k ohništi (bezpečně vzdálenému cca 1,5–2 metry), které bude teplo odrážet dovnitř."
+  }
+]
+}

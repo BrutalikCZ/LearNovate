@@ -1,0 +1,70 @@
+{
+  "name": "Nabíjení autobaterie",
+  "description": "Jak správně nabít autobaterii a obnovit její funkčnost.",
+  "icon": "car",
+  "label": "Autobaterie",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Nabíjení autobaterie",
+    "setting": "Auto dlouho stálo a baterie je vybitá. Máš k dispozici nabíječku.",
+    "objective": "Uživatel musí správně nabít autobaterii.",
+    "milestones": [
+      {
+        "name": "Odpojení baterie od vozidla", 
+        "points": 100
+      },
+      {
+        "name": "Připojení nabíječky správným způsobem", 
+        "points": 150
+      },
+      {
+        "name": "Nastavení a spuštění nabíjení", 
+        "points": 100
+      },
+      {
+        "name": "Odpojení nabíječky a opětovná instalace baterie", 
+        "points": 150
+      }
+    ],
+    "tutorial": "Nejprve odpoj baterii (mínus pól jako první). Připoj nabíječku správně podle polarity. Nastav vhodný režim nabíjení. Po dokončení nabíjení nejprve vypni nabíječku a poté ji odpoj. Baterii znovu připoj v opačném pořadí."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Co je autobaterie"
+    },
+    {
+      "type": "text",
+      "text": "Autobaterie slouží jako zdroj elektrické energie pro startování motoru a napájení elektroniky vozidla. Při delším stání se může samovolně vybít."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kdy je potřeba nabíjet"
+    },
+    {
+      "type": "text",
+      "text": "Typickými příznaky vybité baterie jsou slabé startování nebo úplná nemožnost nastartovat. Také může docházet ke zhasínání kontrolek nebo slabému osvětlení."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bezpečný postup nabíjení"
+    },
+    {
+      "type": "text",
+      "text": "Před nabíjením vždy odpoj baterii od vozidla. Připojuj nabíječku správně podle polarity a ujisti se, že je zařízení vypnuté. Nabíjej v dobře větraném prostoru."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Po dokončení nabíjení"
+    },
+    {
+      "type": "text",
+      "text": "Po nabití baterii nejprve odpoj od nabíječky a poté ji znovu připoj do vozidla. Zkontroluj funkčnost startování a ujisti se, že jsou kontakty pevně dotažené."
+    }
+  ]
+}

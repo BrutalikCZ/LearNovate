@@ -1,0 +1,88 @@
+{
+  "name": "Ošetření zlomeniny na lyžařském výcviku",
+  "description": "Jak postupovat při podezření na zlomeninu končetiny v horských podmínkách.",
+  "icon": "snowflake",
+  "label": "PP",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#38bdf8",
+  "scenario": {
+    "title": "Lyžařský výcvik – pád na svahu",
+    "setting": "Jsi na lyžařském kurzu na horách. Kamarád při sjezdu najede na ledovou plotnu, ztratí rovnováhu a tvrdě dopadne na nohu. Slyšíš křupnutí, noha je nepřirozeně natočená a kamarád křičí bolestí. Instruktor je daleko dole na svahu.",
+    "objective": "Uživatel musí zajistit bezpečí, znehybnit poraněnou končetinu a přivolat pomoc.",
+    "milestones": [
+      {
+        "name": "Zajištění bezpečí na svahu (zastavení dalších sjezdařů)",
+        "points": 50
+      },
+      {
+        "name": "Vyhodnocení stavu a volání pomoci",
+        "points": 100
+      },
+      {
+        "name": "Imobilizace končetiny v nalezené poloze",
+        "points": 200
+      },
+      {
+        "name": "Prevence podchlazení (izolace a tepelný komfort)",
+        "points": 100
+      }
+    ],
+    "tutorial": "Při podezření na zlomeninu je klíčové s končetinou nehýbat. Zajisti místo nehody a zavolej pomoc. Končetinu nijak nenarovnávej. Zafixuj ji v poloze, ve které ji najdeš, pomocí lyží, hůlek nebo oblečení. Zabraň prochladnutí postiženého a čekej na záchrannou službu."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Zlomenina na svahu: Více než jen bolest"
+  },
+  {
+    "type": "text",
+    "text": "Pády v rychlosti na sjezdovce často končí zlomeninami dlouhých kostí. Nebezpečí nespočívá jen v poškození kosti samotné, ale i v riziku vnitřního krvácení, poškození nervů a cév. V horském prostředí se k tomu přidává extrémně rychlý nástup šoku a podchlazení kvůli kontaktu se sněhem a ledem."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Zajištění místa nehody (Priorita č. 1)"
+  },
+  {
+    "type": "text",
+    "text": "Předtím, než se dotkneš kamaráda, musíš zajistit vaši bezpečnost. Sjezdovka je nebezpečné místo. Zapíchni lyže do sněhu do kříže (vytvoř písmeno X) minimálně 10–15 metrů nad místem nehody, aby tě přijíždějící lyžaři viděli včas a stihli zareagovat. Pokud máš někoho dalšího po ruce, pošli ho nahoru, aby ostatní varoval máváním."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Rozpoznání zlomeniny a první kroky"
+  },
+  {
+    "type": "text",
+    "text": "Zlomeninu poznáš podle nepřirozeného úhlu končetiny, drásavého zvuku při pohybu (krepitace), masivního otoku nebo modřiny. Pokud kost vyčnívá ven z kůže, jde o otevřenou zlomeninu – tu nikdy nezatlačuj zpět! Překryj ji pouze sterilním čtvercem nebo čistou tkaninou, abys zabránil infekci."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Zlaté pravidlo: Fixace v nalezené poloze"
+  },
+  {
+    "type": "text",
+    "text": "S končetinou nikdy nemanipuluj a nesnaž se ji narovnávat! Tím bys mohl přeříznout tepnu nebo poškodit nervy úlomky kosti. Končetinu zafixuj přesně tak, jak jsi ji našel. Pokud nemáš dlahu, použij improvizované prostředky: lyžařské hůlky, druhou (zdravou) nohu jako dlahu, nebo batohy. Fixace musí vždy znehybnit dva sousední klouby (např. při zlomenině bérce musí být fixované koleno i kotník)."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Prevence šoku a podchlazení"
+  },
+  {
+    "type": "text",
+    "text": "Bolest a strach vedou k rozvoji šoku. Postižený může být bledý, opocený a mít zrychlený tep. Klíčem je tepelný komfort: \n1. **Izolace od země:** Podlož kamaráda karimatkou, bundami nebo batohy. Sníh z něj vytáhne teplo během pár minut.\n2. **Zahřátí:** Přikryj ho termofólií nebo dalšími vrstvami oblečení.\n3. **Psychika:** Neustále na něj mluv, uklidňuj ho a nenechávej ho samotného."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Volání Horské služby"
+  },
+  {
+    "type": "text",
+    "text": "V horách volej prioritně Horskou službu (přes aplikaci Záchranka nebo číslo 1210). Uveď přesnou polohu (číslo sjezdovky, barvu, orientační bod), popiš typ zranění a barvu oblečení postiženého, aby vás záchranáři na skútru nebo ve vrtulníku nepřehlédli. Do příjezdu profíků neustále kontroluj barvu a teplotu prstů na poraněné končetině – pokud zmodrají, fixace je příliš těsná."
+  }
+]
+}

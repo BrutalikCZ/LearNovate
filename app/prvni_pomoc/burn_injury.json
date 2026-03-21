@@ -1,0 +1,88 @@
+{
+  "name": "Ošetření popáleniny",
+  "description": "Základní postup první pomoci při tepelných popáleninách různého stupně.",
+  "icon": "flame",
+  "label": "PP",
+  "colorFrom": "#7c2d12",
+  "colorTo": "#f97316",
+  "scenario": {
+    "title": "Popálenina v kuchyni",
+    "setting": "Při vaření se ti vylije vroucí olej na předloktí. Bolest je okamžitá, kůže rudne a začínají se tvořit puchýře. V kuchyni je voda a základní lékárnička.",
+    "objective": "Uživatel musí rychle zchladit popáleninu, zabránit dalšímu poškození a správně ji ošetřit.",
+    "milestones": [
+      {
+        "name": "Zajištění bezpečí a odstranění zdroje tepla",
+        "points": 50
+      },
+      {
+        "name": "Okamžité chlazení postižené oblasti",
+        "points": 150
+      },
+      {
+        "name": "Odstranění šperků a oděvu v okolí rány",
+        "points": 100
+      },
+      {
+        "name": "Sterilní krytí popáleniny",
+        "points": 150
+      }
+    ],
+    "tutorial": "U popálenin je klíčové co nejrychleji zastavit působení tepla. Postižené místo ihned chlaď proudem studené vody po dobu alespoň 10–20 minut. Sundej prstýnky, hodinky a volný oděv v okolí, ale neodstraňuj látku přilepenou na kůži. Po ochlazení přilož sterilní krytí nebo čistou látku. Nepoužívej mastné krémy ani led přímo na kůži. Při rozsáhlých popáleninách vyhledej lékařskou pomoc."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Popáleniny: Boj s tepelnou setrvačností"
+  },
+  {
+    "type": "text",
+    "text": "Největší záludností popálenin je, že poškození tkáně pokračuje i poté, co odstraníš zdroj tepla (horký olej, páru, plamen). Tkáně jsou 'uvařené' a teplo v nich nashromážděné se šíří dál do hloubky. Jediný způsob, jak tento proces zastavit, je včasné a dostatečně dlouhé chlazení. Správná první pomoc v prvních sekundách rozhoduje o tom, zda se rána zahojí za týden, nebo bude vyžadovat transplantaci kůže."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Stupně popálenin – co vidíš v zrcadle?"
+  },
+  {
+    "type": "text",
+    "text": "1. **I. stupeň (Zčervenání):** Kůže je rudá, pálí a pne (typicky spálení od slunce). Hojí se rychle bez následků.\n2. **II. stupeň (Puchýře):** Dochází k poškození hlubších vrstev kůže. Tvoří se puchýře naplněné čirou tekutinou. Je to extrémně bolestivé, protože nervová zakončení jsou odhalená, ale stále funkční.\n3. **III. stupeň (Zuhelnatění):** Kůže je bílá, šedá nebo černá (zuhelnatělá). Paradoxně tolik nebolí, protože nervy jsou zničené. Vyžaduje vždy nemocniční léčbu."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Klíč k úspěchu: Chlazení, ne mrazení!"
+  },
+  {
+    "type": "text",
+    "text": "Chlaď okamžitě proudem vlažné nebo studené pitné vody (ideálně kolem 8–15 °C). Zapomeň na led! Ledování způsobuje stažení cév (vazokonstrikci), což paradoxně zhoršuje prokrvení a poškození tkáně může ještě prohloubit. Chlaď tak dlouho, dokud to přináší úlevu – obvykle 10 až 20 minut. Chlaď jen popálené místo, abys nezpůsobil celkové podchlazení postiženého."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Co s oblečením a šperky?"
+  },
+  {
+    "type": "text",
+    "text": "Okamžitě sundej prstýnky, hodinky a náramky. Popálená tkáň začne velmi rychle otékat a šperky by mohly zaškrtit krevní oběh v prstech. Pokud je oblečení volné, sundej ho. **POZOR:** Pokud je látka k ráně přiškvařená (přiškvařený silon nebo tričko), nikdy ji nestrhávej silou! Vystřihni oblečení kolem a přiškvařený kousek nechej na místě, aby ho odstranil až lékař v aseptickém prostředí."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Babské rady: Největší nepřítel hojení"
+  },
+  {
+    "type": "text",
+    "text": "Na čerstvou popáleninu **nepatří**: máslo, olej, mouka, vajíčka, zubní pasta ani zásypy. Tyto látky v ráně 'uzavřou' teplo, zvyšují riziko infekce a lékař je pak musí z rány bolestivě drhnout. Stejně tak **nepropichuj puchýře**! Tekutina uvnitř je sterilní a kůže nad ní slouží jako nejlepší přirozené krytí před bakteriemi."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Kdy volat 155 nebo jet na pohotovost?"
+  },
+  {
+    "type": "text",
+    "text": "- Pokud je popálenina III. stupně.\n- Pokud jsou popáleniny v obličeji, na krku, dlaních, ploskách nohou nebo genitáliích.\n- U dětí, pokud rozsah přesahuje velikost jejich dlaně.\n- U dospělých, pokud rozsah přesahuje 5 % povrchu těla (zhruba 5 dlaní).\n- Při podezření na popálení dýchacích cest (vdechování horkých par nebo kouře)."
+  }
+]
+}

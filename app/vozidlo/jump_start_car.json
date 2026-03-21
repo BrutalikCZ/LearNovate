@@ -1,0 +1,70 @@
+{
+  "name": "Startování auta přes kabely",
+  "description": "Jak správně nastartovat auto pomocí startovacích kabelů.",
+  "icon": "car",
+  "label": "Startování",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Nastartování auta přes kabely",
+    "setting": "Auto ti nejde nastartovat kvůli vybité baterii. Zastaví u tebe jiný řidič a nabízí pomoc se startovacími kabely, takže máš šanci problém rychle vyřešit.",
+    "objective": "Uživatel musí správně nastartovat auto pomocí kabelů.",
+    "milestones": [
+      {
+        "name": "Správné zapojení kabelů", 
+        "points": 100
+      },
+      {
+        "name": "Nastartování pomocného vozidla", 
+        "points": 100
+      },
+      {
+        "name": "Nastartování vybitého vozidla", 
+        "points": 150
+      },
+      {
+        "name": "Bezpečné odpojení kabelů", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Nejprve připoj červený kabel na kladné póly obou baterií. Poté připoj černý kabel na záporný pól pomocného vozidla a druhý konec na kostru vybitého auta. Nastartuj pomocné auto a poté se pokus nastartovat vybité vozidlo. Kabely odpojuj v opačném pořadí a dávej pozor na jiskření a zkrat."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Proč auto nenastartuje"
+    },
+    {
+      "type": "text",
+      "text": "Nejčastější příčinou je vybitá autobaterie, například po dlouhém stání nebo zapnutých světlech. Motor se neprotočí nebo jen slabě cvaká."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Startovací kabely"
+    },
+    {
+      "type": "text",
+      "text": "Startovací kabely slouží k přenosu energie z funkční baterie do vybité. Je důležité použít kvalitní kabely s dostatečným průřezem."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Správné zapojení"
+    },
+    {
+      "type": "text",
+      "text": "Dodržení správného pořadí zapojení je klíčové pro bezpečnost. Nesprávné připojení může způsobit poškození elektroniky nebo jiskření."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Po nastartování"
+    },
+    {
+      "type": "text",
+      "text": "Po úspěšném nastartování nech motor běžet, aby se baterie dobila. Doporučuje se projet se delší trasu nebo baterii později plně dobít."
+    }
+  ]
+}

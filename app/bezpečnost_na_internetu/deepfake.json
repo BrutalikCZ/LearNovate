@@ -1,0 +1,88 @@
+{
+  "name": "Deepfake podvod v online komunikaci",
+  "description": "Rozpoznání podvodu pomocí falešného hlasu nebo videa generovaného AI.",
+  "icon": "video",
+  "label": "NET",
+  "colorFrom": "#1e1b4b",
+  "colorTo": "#f97316",
+  "scenario": {
+    "title": "Telefonát od „kolegy“ s naléhavou žádostí",
+    "setting": "Přichází ti videohovor od kolegy z práce. Vypadá a zní přesně jako on, ale žádá tě o okamžitý převod peněz na neznámý účet kvůli údajné krizové situaci. Komunikace je tlaková a bez času na ověření.",
+    "objective": "Uživatel musí rozpoznat deepfake podvod a ověřit identitu druhé strany.",
+    "milestones": [
+      {
+        "name": "Zpochybnění autenticity hovoru",
+        "points": 150
+      },
+      {
+        "name": "Odmítnutí okamžité akce pod tlakem",
+        "points": 150
+      },
+      {
+        "name": "Ověření identity jiným kanálem",
+        "points": 200
+      },
+      {
+        "name": "Nahlášení pokusu o podvod",
+        "points": 100
+      }
+    ],
+    "tutorial": "Deepfake podvody využívají realistický obraz a hlas k manipulaci. Nikdy neprováděj finanční operace jen na základě hovoru. Vždy ověř identitu přes jiný nezávislý kanál."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Technologie v rukou podvodníků"
+  },
+  {
+    "type": "text",
+    "text": "Deepfake využívá pokročilé algoritmy umělé inteligence (generativní sítě) k tomu, aby na obličej útočníka v reálném čase namapovaly rysy někoho jiného. Podobně funguje i klonování hlasu – stačí pár minut nahrávky z veřejného videa na sociálních sítích a AI dokáže vytvořit dokonalou kopii hlasu včetně přízvuku a intonace. Výsledkem je videohovor, který vypadá jako váš šéf, kolega nebo rodinný příslušník žádající o naléhavou pomoc."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Varovné signály ve videu a zvuku"
+  },
+  {
+    "type": "text",
+    "text": "I když je technologie pokročilá, stále má své trhliny. Sledujte drobné artefakty:\n- Nepřirozené mrkání: Deepfake modely mají často problém s realistickým pohybem očních víček.\n- Okraje obličeje: Hledejte rozostření nebo 'cukání' tam, kde se tvář dotýká vlasů nebo uší.\n- Synchronizace rtů: Všimněte si, zda pohyb úst přesně odpovídá vyslovovaným slabikám.\n- Robotický tón: Hlas může mít občas kovový nádech nebo nepřirozené pauzy mezi slovy, které neodpovídají emocím v obličeji."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Psychologický nátlak: Čas je nepřítel"
+  },
+  {
+    "type": "text",
+    "text": "Klíčovým prvkem deepfake podvodu je časová tíseň. Útočník ví, že čím déle se na video budete dívat nebo o situaci přemýšlet, tím větší je šance, že chybu odhalíte. Proto vytváří krizové scénáře: 'Zablokovali nám firemní účet', 'Měl jsem nehodu a potřebuji peníze na odtah'. Tento tlak má za cíl donutit vás k akci dříve, než stihnete zapojit kritické myšlení."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Metoda Out-of-Band ověření"
+  },
+  {
+    "type": "text",
+    "text": "Pokud po vás někdo přes video nebo hlasovou zprávu chce peníze nebo citlivá data, okamžitě hovor ukončete. Použijte jiný, nezávislý kanál k ověření identity – zavolejte dotyčnému na jeho skutečné telefonní číslo, napište mu přes jinou aplikaci nebo se spojte s někým jiným z jeho okolí. Nikdy nepoužívejte kontaktní údaje, které vám poskytl 'kolega' během podezřelého hovoru."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Kontrolní otázka a heslo"
+  },
+  {
+    "type": "text",
+    "text": "V rodinném nebo úzkém pracovním kruhu je dobré mít 'bezpečnostní slovo' nebo kontrolní otázku, na kterou zná odpověď jen skutečná osoba a která se nedá vygooglit. Pokud máte pochybnosti, zeptejte se na něco velmi specifického z vaší společné minulosti. AI útočník, i když vypadá jako váš bratr, nebude vědět, co jste měli k obědu před třemi lety na dovolené v Chorvatsku."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Nahlášení a ochrana dat"
+  },
+  {
+    "type": "text",
+    "text": "Pokud se stanete terčem deepfake útoku, nahlaste to policii a IT oddělení vaší firmy. Je důležité incident zdokumentovat (např. nahrávkou obrazovky). Zároveň zvažte, kolik vašich biometrických dat (videa s čistým hlasem a obličejem) je veřejně dostupných na internetu. Čím méně kvalitního materiálu útočník má, tím těžší je vytvořit věrohodný klon vaší identity."
+  }
+]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Prachová bouře během EVA",
+  "description": "Přežití při venkovní aktivitě (EVA) během náhlé marsovské prachové bouře.",
+  "icon": "wind",
+  "label": "MARS",
+  "colorFrom": "#b91c1c",
+  "colorTo": "#1e3a8a",
+  "scenario": {
+    "title": "Zastihnutí bouří při výstupu",
+    "setting": "Během venkovní mise (EVA) na povrchu Marsu se náhle zvedne silná prachová bouře. Viditelnost klesá na minimum, komunikace se základnou je nestabilní a orientační systémy selhávají. Skafandr hlásí zvýšenou zátěž filtrů.",
+    "objective": "Uživatel musí bezpečně ukončit EVA, zachovat orientaci a vrátit se do habitaty.",
+    "milestones": [
+      {
+        "name": "Okamžité ukončení EVA protokolu",
+        "points": 150
+      },
+      {
+        "name": "Aktivace nouzové navigace k habitatě",
+        "points": 200
+      },
+      {
+        "name": "Kontrola kyslíkových a filtračních systémů",
+        "points": 150
+      },
+      {
+        "name": "Bezpečný návrat do přechodové komory",
+        "points": 200
+      }
+    ],
+    "tutorial": "Při prachové bouři na Marsu je klíčové minimalizovat expozici. Okamžitě ukonči EVA a přepni na nouzovou navigaci. Sleduj zásoby kyslíku a stav filtrů, protože prach může rychle snížit jejich účinnost. Pohybuj se pomalu a kontrolovaně zpět k habitatě."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Fyzika marsovské bouře: Statická elektřina a prach"
+  },
+  {
+    "type": "text",
+    "text": "Marsovský prach je extrémně jemný (velikost částic v řádech mikrometrů) a má ostré hrany, protože na Marsu nefunguje vodní eroze, která by je obrousila. Třením částic v bouři vzniká silná statická elektřina. Ta způsobuje, že se prach doslova přilepí na tvůj skafandr, senzory a hledí helmy. Největším rizikem není síla větru, ale totální ztráta viditelnosti a postupné zanášení pohyblivých částí skafandru a filtrů podpory života."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Nouzová navigace: Slepý návrat"
+  },
+  {
+    "type": "text",
+    "text": "Při nulové viditelnosti se nespoléhej na zrak. Pokud jsi mimo vizuální kontakt s habitatou, aktivuj navigační systém 'Dead Reckoning' (výpočet polohy z pohybu) nebo sleduj digitální trasu v HUD displeji, kterou tvůj skafandr zaznamenal při cestě ven. Pokud selže GPS (což se v bouři stává kvůli ionizaci atmosféry), využij inerciální měřicí jednotku (IMU) ve skafandru. Pokud jsi v dosahu habitaty, můžeš se orientovat podle rádiového majáku nebo vodicích lan, pokud byla nainstalována."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Management skafandru a filtrace"
+  },
+  {
+    "type": "text",
+    "text": "Prach v bouři drasticky zvyšuje opotřebení filtrů systému PLSS (Portable Life Support System). Sleduj varovné kontrolky: pokud se zvýší odpor při dýchání, filtry jsou zanesené. V takovém případě omez fyzickou námahu na minimum, abys snížil spotřebu vzduchu a průtok přes filtry. Statický náboj může také rušit krátkovlnnou komunikaci; přepni na záložní frekvenci nebo se spolehni na automatické nouzové protokoly vysílané v digitálních paketech."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Protokol 'Lock and Wait'"
+  },
+  {
+    "type": "text",
+    "text": "Pokud jsi příliš daleko od základny a bouře dosáhne extrémní intenzity, zvaž protokol 'Lock and Wait'. Najdi závětří (skalní útvar nebo rover), ukotvi se k zemi a přejdi do úsporného režimu. Pohyb v totální tmě zvyšuje riziko pádu, protržení skafandru o skálu nebo zabloudění. Sleduj zásoby energie pro ohřev – v bouři teplota klesá a tvůj skafandr musí kompenzovat tepelné ztráty."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Dekontaminace v přechodové komoře"
+  },
+  {
+    "type": "text",
+    "text": "Návratem do komory nebezpečí nekončí. Marsovský prach obsahuje toxické perchloráty. Po uzavření vnějších dveří musí proběhnout intenzivní cyklus čištění (vzduchové sprchy a elektromagnetické odprašování). Nikdy si nesundávej helmu, dokud senzory nepotvrdí, že koncentrace prachu v komoře klesla na bezpečnou úroveň. Prach v plicích je na Marsu rozsudek smrti."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Psychologie bílé tmy"
+  },
+  {
+    "type": "text",
+    "text": "Ztráta orientace a izolace v bouři vyvolávají paniku. Rychlé dýchání však jen dříve zahltí filtry a zamlží hledí. Soustřeď se na zvuk svého dechu a hlášení palubního počítače. Jsi trénovaný profesionál; bouře je jen další technická překážka, kterou musíš metodicky vyřešit."
+  }
+]
+}

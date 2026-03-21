@@ -1,0 +1,88 @@
+{
+  "name": "Sociální inženýrství na sociálních sítích",
+  "description": "Jak rozpoznat manipulaci a pokus o získání citlivých údajů přes sociální sítě.",
+  "icon": "users",
+  "label": "NET",
+  "colorFrom": "#064e3b",
+  "colorTo": "#0ea5e9",
+  "scenario": {
+    "title": "Neznámý kontakt na sociální síti",
+    "setting": "Na sociální síti ti píše neznámý účet, který se vydává za podporu platformy. Tvrdí, že tvůj účet byl kompromitován a požaduje ověření přes odkaz. Zprávy jsou naléhavé a obsahují výhrůžky zablokováním účtu.",
+    "objective": "Uživatel musí rozpoznat sociální inženýrství a chránit své údaje.",
+    "milestones": [
+      {
+        "name": "Identifikace manipulativní komunikace",
+        "points": 150
+      },
+      {
+        "name": "Ignorování a blokace podezřelého kontaktu",
+        "points": 150
+      },
+      {
+        "name": "Ověření stavu účtu oficiální cestou",
+        "points": 150
+      },
+      {
+        "name": "Zabezpečení účtu (2FA, změna hesla)",
+        "points": 100
+      }
+    ],
+    "tutorial": "Sociální inženýrství využívá tlak a strach k získání dat. Oficiální podpora nikdy nepožaduje hesla přes zprávy. Vždy ověřuj informace přímo v aplikaci."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Psychologie útoku: Proč to funguje?"
+  },
+  {
+    "type": "text",
+    "text": "Sociální inženýrství nestojí na technických chybách, ale na využití lidských emocí. Útočníci nejčastěji cílí na strach (váš účet bude smazán), naléhavost (máte na to 10 minut), zvědavost (podívejte se na tuto fotku) nebo autoritu (píše vám podpora platformy). Cílem je vyvolat paniku, která vypne vaše kritické myšlení a donutí vás jednat impulzivně."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Varovné signály (Red Flags)"
+  },
+  {
+    "type": "text",
+    "text": "Naučte se rozpoznat typické znaky podvodu:\n- **Nátlak a emoce:** Zpráva vyžaduje okamžitou akci pod pohrůžkou sankce.\n- **Podezřelý odesílatel:** Účet má podivné jméno, chybí mu historie nebo má v názvu překlepy (např. 'Support_Metta' místo 'Meta').\n- **Externí odkazy:** Odkaz vede na stránku, která vypadá jako oficiální, ale má jinou URL adresu (např. 'security-verify-login.com').\n- **Gramatika a tón:** I když se AI překlady zlepšují, zprávy často působí nepřirozeně nebo kombinují různé jazyky."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Mechanismus Phishingu"
+  },
+  {
+    "type": "text",
+    "text": "Nejčastější formou je phishing. Útočník vám pošle odkaz na falešný přihlašovací formulář. Jakmile tam zadáte své jméno a heslo, útočník je okamžitě získá. Pokud máte zapnuté dvoufázové ověření (2FA), může se vás pokusit donutit, abyste mu poslali i ten SMS kód. Pamatujte: Žádná oficiální podpora po vás NIKDY nebude chtít heslo nebo 2FA kód přes chat."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Ověření 'Out-of-Band'"
+  },
+  {
+    "type": "text",
+    "text": "Pokud dostanete podezřelou zprávu, nikdy nekomunikujte přes kanál, který vás kontaktoval. Jděte přímo do oficiální aplikace nebo na webovou stránku služby zadáním adresy do prohlížeče. Tam v sekci 'Zabezpečení' nebo 'Zprávy od podpory' uvidíte, zda je požadavek skutečný. Většina platforem má historii komunikace s uživatelem přímo v nastavení účtu."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Zabezpečení: Pevnost v síti"
+  },
+  {
+    "type": "text",
+    "text": "I když naletíte, útočník může narazit na zeď, pokud máte správné zabezpečení:\n- **2FA (Dvoufázové ověření):** Používejte raději aplikaci (Google Authenticator, Authy) než SMS, které lze zachytit.\n- **Unikátní hesla:** Používejte správce hesel. Pokud útočník získá heslo k jedné síti, nedostane se do vašeho e-mailu nebo banky.\n- **Nastavení soukromí:** Omezte množství informací, které o sobě veřejně sdílíte. Útočníci tyto detaily (jména mazlíčků, rodná města) využívají k personalizaci útoků nebo k hádání bezpečnostních otázek."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Co dělat po kliknutí?"
+  },
+  {
+    "type": "text",
+    "text": "Pokud jste už na odkaz klikli a zadali údaje, jednejte okamžitě: \n1. Změňte si heslo u kompromitované služby i všude jinde, kde používáte stejné.\n2. Odhlaste všechna aktivní zařízení v nastavení účtu.\n3. Zkontrolujte, zda útočník nezměnil váš kontaktní e-mail nebo telefonní číslo.\n4. Nahlaste podvodný účet platformě, aby nemohl cílit na další oběti."
+  }
+]
+}

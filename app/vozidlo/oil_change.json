@@ -1,0 +1,66 @@
+{
+  "name": "Výměna motorového oleje",
+  "description": "Jak správně zkontrolovat hladinu motorového oleje a doplnit jej do správné úrovně.",
+  "icon": "car",
+  "label": "Motorový olej",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Výměna motorového oleje",
+    "setting": "Jsi v garáži a chystáš se nastartovat auto na delší cestu. Před otočením klíčku si ale uvědomíš, že jsi už delší dobu nekontroloval stav motorového oleje, což může zásadně ovlivnit chod motoru.",
+    "objective": "Uživatel musí správně změřit hladinu oleje, dolít olej a následně znovu zkontrolovat hladinu.",
+    "milestones": [
+      {
+        "name": "Změření hladiny oleje (měrka – vytažení, otření, opětovné vložení a odečet)", 
+        "points": 50
+      },
+      {
+        "name": "Dolití motorového oleje (správné otevření víčka, použití trychtýře, postupné dolévání)", 
+        "points": 150
+      },
+      {
+        "name": "Opětovná kontrola hladiny oleje po dolití", 
+        "points": 50
+      }
+    ],
+    "tutorial": "Nejprve zaparkuj auto na rovném povrchu a vypni motor. Nech jej alespoň 10–15 minut stát, aby olej stekl zpět do vany. Otevři kapotu a najdi měrku oleje. Vytáhni ji, otři do sucha, zasuň zpět a znovu vytáhni pro přesné změření. Pokud je hladina pod minimem, otevři víčko plnicího otvoru a použij trychtýř. Olej dolévej po malých dávkách a mezi jednotlivými kroky vždy počkej, až steče dolů. Průběžně kontroluj hladinu, dokud není mezi minimem a maximem. Nikdy nepřekračuj maximum. Po dokončení pevně uzavři víčko a znovu zasuň měrku."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Funkce motorového oleje"
+    },
+    {
+      "type": "text",
+      "text": "Motorový olej maže pohyblivé části motoru, snižuje tření a zabraňuje přehřívání. Zároveň pomáhá odvádět nečistoty a chrání motor před opotřebením."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kontrola hladiny"
+    },
+    {
+      "type": "text",
+      "text": "Správné měření vyžaduje rovný povrch a studený nebo odstavený motor. Měrka musí být vždy vytažena, otřena a znovu vložena pro přesný výsledek."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Doplnění oleje"
+    },
+    {
+      "type": "text",
+      "text": "Olej se dolévá postupně po malých dávkách, aby nedošlo k přeplnění. Použití trychtýře minimalizuje riziko rozlití v motorovém prostoru."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rizika nesprávné hladiny"
+    },
+    {
+      "type": "text",
+      "text": "Nízká hladina oleje může způsobit vážné poškození motoru, zatímco příliš vysoká hladina může vést k nadměrnému tlaku a poškození těsnění nebo katalyzátoru."
+    }
+  ]
+}

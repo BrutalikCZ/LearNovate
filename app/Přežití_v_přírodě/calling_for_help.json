@@ -1,0 +1,84 @@
+{
+  "name": "Volání o pomoc",
+  "description": "Vizuální a zvuková signalizace pro záchranné týmy a letadla.",
+  "icon": "megaphone",
+  "label": "Záchrana",
+  "colorFrom": "#ec4899",
+  "colorTo": "#9d174d",
+  "scenario": {
+    "title": "Lokalizace záchranáři",
+    "setting": "Slyšíš helikoptéru, ale jsi v hustém porostu. Musíš se zviditelnit dříve, než odletí pryč.",
+    "objective": "Vytvořit viditelný signál a upoutat pozornost.",
+    "milestones": [
+      {
+        "name": "Příprava signálního ohně se hustým dýmem", 
+        "points": 150
+      },
+      {
+        "name": "Vytvoření symbolu SOS nebo X na volném prostranství", 
+        "points": 100
+      },
+      {
+        "name": "Použití zrcátka nebo lesklého předmětu k signalizaci", 
+        "points": 150
+      }
+    ],
+    "tutorial": "Pro denní signalizaci ohněm přidejte na oheň čerstvé jehličí nebo trávu pro hustý bílý dým. Na sněhu nebo písku vytvořte velký symbol SOS z kamenů či větví. Mezinárodní nouzový signál je trojice čehokoliv (tři výstřely, tři hvizdy na píšťalku, tři ohně v řadě)."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Pravidlo tří: Univerzální jazyk nouze"
+  },
+  {
+    "type": "text",
+    "text": "V divočině je číslo 3 mezinárodním symbolem pro nouzi. Tři ohně v řadě (nebo do trojúhelníku), tři písknutí na píšťalku, tři výstřely nebo tři záblesky zrcátkem. Pokud uslyšíte odpověď ve formě dvou signálů, znamená to, že vás záchranáři slyšeli a lokalizovali. Mezi jednotlivými sériemi signálů dělejte pravidelné pauzy, abyste šetřili energii a mohli poslouchat odpověď."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Signální ohně: Bílá vs. černá"
+  },
+  {
+    "type": "text",
+    "text": "Oheň je v noci skvělý, ale ve dne je klíčem dým. Barva dýmu musí kontrastovat s okolím:\n1. Bílý dým: Vytvoříte ho přidáním čerstvého jehličí, mokrého listí nebo trávy na rozpálený oheň. Je skvěle vidět proti tmavému lesu.\n2. Černý dým: Pokud máte k dispozici gumu, plasty nebo olej, vytvoříte hustý černý dým. Ten je nejlépe vidět na sněhu nebo světlém písku.\nPřipravte si tři hromady paliva v dostatečné vzdálenosti od sebe, ale mějte je nachystané k okamžitému zapálení, jakmile uslyšíte letadlo."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Heliograf: Síla odraženého světla"
+  },
+  {
+    "type": "text",
+    "text": "Signalizační zrcátko (nebo jakýkoli lesklý předmět, jako je nůž, víčko od ešusu či CD) je nejúčinnější denní nástroj. Záblesk může být vidět na desítky kilometrů. \nJak mířit: Natáhněte ruku před sebe a vytvořte prsty 'V' kolem cíle (letadla). Zrcátkem házejte odlesk přes své prsty přímo na cíl. Nepřestávejte signalizovat, dokud si nejste jisti, že vás pilot vidí. Pozor: nikdy nesviťte pilotovi do očí příliš dlouho během přistávacího manévru!"
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Pozemní symboly pro letectvo"
+  },
+  {
+    "type": "text",
+    "text": "Pokud nemáte oheň, vytvořte na volném prostranství velké symboly z kamenů, větví nebo vydupaného sněhu. Musí být co největší (aspoň 6 metrů na délku) a vytvářet stín, aby byly vidět z výšky.\n- V: Potřebuji pomoc (Require assistance).\n- X: Potřebuji lékařskou pomoc (Require medical assistance).\n- SOS: Mezinárodní volání o pomoc.\n- Šipka: Směr, kterým jsem se vydal."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Body language pro vrtulník"
+  },
+  {
+    "type": "text",
+    "text": "Když se k vám vrtulník přiblíží, komunikujte celým tělem:\n- ANO (Potřebuji pomoc): Zvedněte obě ruce nad hlavu do tvaru písmene 'Y' (Yes).\n- NE (Nepotřebuji pomoc): Jednu ruku nechte dole, druhou zvedněte šikmo nahoru, abyste tvořili písmeno 'N' (No).\nNikdy nemávejte jen jednou rukou (může to vypadat jako pozdrav). Stůjte na viditelném místě, ale připravte se na silný proud vzduchu od rotoru, který může rozfoukat vaše věci nebo ohniště."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Zvuková signalizace"
+  },
+  {
+    "type": "text",
+    "text": "Váš hlas se v lese rychle vytratí a unaví. Píšťalka je slyšet mnohem dál a vyžaduje minimum energie. Pokud ji nemáte, bouchejte kamenem o kámen nebo do dutého stromu. Zvuk kovu o kov nebo pravidelné rytmické rány do tvrdého dřeva zní v přírodě nepatřičně a okamžitě upoutají pozornost pátračů."
+  }
+]
+}

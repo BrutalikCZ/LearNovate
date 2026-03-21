@@ -1,0 +1,84 @@
+{
+  "name": "Únik z bažiny",
+  "description": "Jak se vyprostit z hlubokého bahna nebo rašeliniště bez cizí pomoci.",
+  "icon": "droplet",
+  "label": "Terén",
+  "colorFrom": "#65a30d",
+  "colorTo": "#1a2e05",
+  "scenario": {
+    "title": "Smrtící sevření",
+    "setting": "Při sběru hub v odlehlé části Šumavy jsi špatně šlápl a propadl se do skrytého rašeliniště. Slizké, studené bahno ti sahá už po pás a každým pohybem se propadáš hlouběji, zatímco tělesná teplota klesá. Jsi sám, mobil nemá signál a les kolem tebe tiše sleduje tvůj boj o život.",
+    "objective": "Uživatel se musí vyprostit, aniž by se utopil nebo vysílil.",
+    "milestones": [
+      {
+        "name": "Zastavení paniky a rozložení váhy těla (lehnutí si na záda)", 
+        "points": 200
+      },
+      {
+        "name": "Pomalé, plynulé pohyby nohou k uvolnění vakuového efektu", 
+        "points": 150
+      },
+      {
+        "name": "Přitažení se k pevnému bodu (větev, trs trávy) nebo odplazení", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Hlavně nepanikař a nedělej prudké pohyby – to tě jen vtáhne hlouběji. Okamžitě se snaž rozložit svou váhu na co největší plochu: pomalu se zakloň a lehni si na záda, jako bys ležel na vodě. Pomalu uvolňuj nohy jednu po druhé plynulými pohyby. Jakmile máš nohy na povrchu, 'odplaz' se (nebo odkul) po zádech na pevnější zem. Pokud máš batoh, použij ho jako plovák pod záda, nebo ho odhoď, pokud tě táhne dolů."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Fyzika bažiny: Proč vás boj zabíjí"
+  },
+  {
+    "type": "text",
+    "text": "Bažina, rašeliniště nebo tekutý písek jsou tzv. nenewtonské kapaliny. Čím větší silou se snažíte nohu vytáhnout, tím více hmota kolem vás tuhne a zvyšuje své tření. Vzniká vakuový efekt, který při prudkém škubnutí dokáže vyvinout sílu potřebnou k vytržení stehenní kosti z kyčle. Člověk má sice nižší hustotu než bažina (takže by měl teoreticky plavat), ale panika a vertikální poloha způsobují, že se zaboříte až po pás, kde vás tlak hmoty uvězní."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Strategie rozložení váhy"
+  },
+  {
+    "type": "text",
+    "text": "Klíčem k přežití je zvětšení plochy, kterou na bažinu působíte. Představte si to jako chůzi na sněžnicích vs. v botách. Jakmile se začnete propadat, okamžitě se zbavte těžkého batohu (pokud neobsahuje něco, co plave) a rozpažte. Pomalu se zakloňte dozadu, jako byste si lehali do vany. Cílem je dostat trup do vodorovné polohy. Čím větší část těla 'leží' na povrchu, tím méně se zbytek boří a tím více se snižuje tlak na vaše nohy."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Vysvobození nohou – technika 'viklání'"
+  },
+  {
+    "type": "text",
+    "text": "Jakmile ležíte na zádech, začněte pomalu pohybovat jednou nohou. Nedělejte to silou nahoru, ale krouživými pohyby do stran. Tím vytvoříte kolem nohy prostor, kam může zatéct voda. Voda funguje jako mazivo, které zruší vakuové sání. Buďte trpěliví – uvolnění jedné nohy může trvat i několik minut plynulého 'viklání'. Jakmile je jedna noha volná, pokrčte ji a opřete ji o povrch (nebo o hůl, pokud ji máte), a pokračujte s druhou."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Plazení k bezpečí"
+  },
+  {
+    "type": "text",
+    "text": "Jakmile máte obě nohy venku, stále se nepokoušejte vstát! Zůstaňte v leže a pomalými pohyby (podobnými znaku v plavání) se posouvejte směrem k pevné zemi nebo nejbližšímu trsu trávy či větvi. Pokud máte hůl nebo dlouhý klacek, položte ho před sebe (nebo pod sebe) kolmo k tělu, aby vám pomohl udržet se na hladině jako improvizovaný plovák."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Podchlazení a vyčerpání"
+  },
+  {
+    "type": "text",
+    "text": "Voda v rašeliništích bývá i v létě velmi studená. Bahno navíc těsně obepíná tělo a odvádí teplo mnohem efektivněji než vzduch. Pokud se nevyprostíte během prvních 15–30 minut, vaše svaly začnou tuhnout a ztratíte sílu potřebnou k manipulaci s nohama. Pokud se vám podaří dostat ven, okamžitě se převlékněte do suchého nebo se udržujte v pohybu, abyste obnovili tělesnou teplotu. Šok z uvěznění v kombinaci s chladem může vést ke kolapsu i po úspěšném vyproštění."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Prevence v neznámém terénu"
+  },
+  {
+    "type": "text",
+    "text": "V oblastech s výskytem bažin (Šumava, slatě, lužní lesy) nikdy nechoďte sami mimo vyznačené stezky. Vždy s sebou mějte pevnou hůl, kterou testujte půdu před sebou. Pokud uvidíte podezřele zelený, mechem pokrytý povrch, který vypadá jako pevný koberec, může jít o 'houpavý břeh' nad hlubokou vodou nebo bahnem. Vyhýbejte se místům s vysokým výskytem rákosí a suchopýru v místech, kde půda pod nohama 'pruží'."
+  }
+]
+}

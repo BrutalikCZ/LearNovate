@@ -1,0 +1,22 @@
+{
+  "scenario": {
+    "title": "name",
+    "setting": "place and situation",
+    "objective": "what the user needs to achieve",
+    "milestones": [
+      {
+        "name": "first step", 
+        "points": 50
+      },
+      {
+        "name": "second step", 
+        "points": 50
+      },
+      {
+        "name": "third step", 
+        "points": 50
+      }
+    ],
+    "tutorial": "waht the user needs to know"
+  }
+}

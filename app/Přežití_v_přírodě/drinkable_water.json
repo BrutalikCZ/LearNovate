@@ -1,0 +1,84 @@
+{
+  "name": "Získání pitné vody",
+  "description": "Metody improvizované filtrace a dezinfekce vody v divočině.",
+  "icon": "droplet",
+  "label": "Voda",
+  "colorFrom": "#3b82f6",
+  "colorTo": "#1d4ed8",
+  "scenario": {
+    "title": "Záchrana před dehydratací",
+    "setting": "Jsi druhý den bez vody. Našel jsi stojatou tůň, ale voda vypadá kalně a nebezpečně. Musíš ji upravit, jinak riskněš infekci.",
+    "objective": "Uživatel musí vyrobit filtr a vodu zbavit patogenů.",
+    "milestones": [
+      {
+        "name": "Sestavení vrstveného filtru (písek, uhlí, štěrk)", 
+        "points": 150
+      },
+      {
+        "name": "Mechanická filtrace nečistot", 
+        "points": 50
+      },
+      {
+        "name": "Převaření vody (minimálně 1 minuta varu)", 
+        "points": 200
+      }
+    ],
+    "tutorial": "Pokud nemáte tablety na čištění, použijte mechanický filtr (např. PET láhev s vrstvami látky, drceného dřevěného uhlí z ohniště a písku). To odstraní kaly. K likvidaci bakterií a virů je však nezbytný var. Voda musí vřít aspoň minutu, ve vysokých nadmořských výškách i déle."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Priorita č. 1: Proč nestačí jen filtrace?"
+  },
+  {
+    "type": "text",
+    "text": "Mechanický filtr (písek, látka) vás zbaví bahna, listí a viditelných nečistot. Voda sice vypadá čistě, ale stále v ní mohou být miliony bakterií, virů a parazitů (jako je Giardia nebo Cryptosporidium). Tyto mikroorganismy způsobují těžké střevní potíže, které vedou k bleskové ztrátě tekutin. Filtrace je jen první krok – dezinfekce je ten životně důležitý druhý."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Stavba improvizovaného filtru"
+  },
+  {
+    "type": "text",
+    "text": "Pokud máte PET láhev, odřízněte dno a do hrdla nacpěte kus čisté látky nebo mech. Láhev naplňte vrstvami v tomto pořadí (od hrdla nahoru):\n1. Jemný písek (zachytí drobné částice).\n2. Drcené dřevěné uhlí z ohniště (absorbuje toxiny a pachy – nejdůležitější vrstva!).\n3. Jemný štěrk nebo hrubší písek.\n4. Větší kamínky.\nVodu nechte pomalu protékat. První litr vyfiltrované vody vylijte, protože bude plný prachu z uhlí."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Dezinfekce varem: Jediná jistota"
+  },
+  {
+    "type": "text",
+    "text": "Var je nejstarší a nejspolehlivější metoda. Většinu patogenů zabijete už při 70 stupních, ale pro stoprocentní jistotu nechte vodu vřít (klokotat) minimálně 1 minutu. Pokud jste vysoko v horách, kde voda vře při nižší teplotě, prodlužte var na 3 minuty. Převařená voda chutná 'mdle', protože ztratila kyslík – stačí ji přelévat z nádoby do nádoby, aby se provzdušnila, a chuť se vrátí."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Metoda SODIS: Dezinfekce sluncem"
+  },
+  {
+    "type": "text",
+    "text": "Pokud nemáte oheň, můžete použít metodu SODIS (Solar Water Disinfection). Čirou PET láhev naplňte vyfiltrovanou vodou a položte ji na 6 hodin na přímé slunce (na tmavý podklad, který hřeje). UV záření a teplo zničí většinu bakterií a virů. Pozor: metoda funguje jen v čirých lahvích a za jasného počasí. Voda nesmí být kalná, jinak UV paprsky neproniknou dovnitř."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Přírodní indikátory čistoty"
+  },
+  {
+    "type": "text",
+    "text": "Vždy hledejte tekoucí vodu. Stojatá tůň je líheň bakterií. Pokud najdete pramen vyvěrající přímo ze skály, je to nejbezpečnější zdroj. Přítomnost raků v potoce značí čistou vodu, ale neznamená to, že je pitná bez úpravy – raci snesou leccos, co lidský žaludek ne. Vyhněte se vodě v blízkosti pastvin (výkaly dobytka) nebo průmyslových objektů, kde hrozí chemická kontaminace, kterou var neodstraní."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Získávání vody z rosy a rostlin"
+  },
+  {
+    "type": "text",
+    "text": "Brzy ráno můžete sbírat rosu z trávy pomocí kusu látky, kterou uvážete kolem kotníků a projdete se loukou. Látku pak vyždímáte. Je to čistá destilovaná voda. Další možností je 'transpirační vak' – igelitový sáček uvážete kolem listnaté větve stromu. Slunce způsobí, že listy budou vypouštět vlhkost, která zkondenzuje na stěnách sáčku. Za den tak můžete získat i několik decilitrů pitné vody."
+  }
+]
+}

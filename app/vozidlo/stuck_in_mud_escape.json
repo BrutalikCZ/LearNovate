@@ -1,0 +1,79 @@
+{
+  "name": "Uvíznutí v bahně",
+  "description": "Jak bezpečně vyprostit vozidlo, které uvízlo v bahně nebo měkkém terénu.",
+  "icon": "car",
+  "label": "Vyproštění",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Uvíznutí v bahně",
+    "setting": "Vyrazil jsi na výlet mimo silnici a po vydatném dešti jsi sjel na rozbahněnou cestu. Kola se začala protáčet a vozidlo se postupně zabořilo tak, že se nemůžeš pohnout ani vpřed ani vzad, přičemž okolní terén je měkký a kluzký.",
+    "objective": "Uživatel musí dostat auto bezpečně ven z bahna bez poškození vozidla.",
+    "milestones": [
+      {
+        "name": "Zastavení zbytečného protáčení kol", 
+        "points": 100
+      },
+      {
+        "name": "Zlepšení trakce pod koly", 
+        "points": 150
+      },
+      {
+        "name": "Správná technika plynulého rozjezdu", 
+        "points": 150
+      },
+      {
+        "name": "Úspěšné vyjetí z bahna", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Pokud se kola protáčejí, okamžitě přestaň zvyšovat plyn, protože tím jen prohlubuješ zaboření. Nejprve zkus odstranit přebytečné bahno z okolí kol a podložit je dostupným materiálem, například větvemi, kameny nebo koberečky, aby se zlepšila trakce. Poté vypni nebo uprav asistenci trakce, pokud to situace umožňuje, a pokus se o plynulý rozjezd bez prudkého přidání plynu. Vhodná je také technika jemného houpání vozidla mezi předním a zadním pohybem, která může pomoci uvolnit kola z bahna. Jakmile se vozidlo začne hýbat, udržuj stabilní, mírný pohyb, dokud nevyjedeš na pevnější povrch."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Proč auto uvízne v bahně"
+    },
+    {
+      "type": "text",
+      "text": "Měkký a nasáklý povrch snižuje přilnavost pneumatik. Kola se začnou protáčet a vozidlo se postupně zabořuje hlouběji."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Nejčastější chyba"
+    },
+    {
+      "type": "text",
+      "text": "Neustálé přidávání plynu při prokluzu kol vede k dalšímu zabořování a zhoršení situace."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Zvýšení trakce"
+    },
+    {
+      "type": "text",
+      "text": "Pomoci mohou podložky pod kola, odstranění bahna z okolí pneumatik nebo snížení tlaku v pneumatikách v nouzové situaci."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Technika vyjetí"
+    },
+    {
+      "type": "text",
+      "text": "Plynulý rozjezd bez prudkých pohybů a jemné houpání vozidla vpřed a vzad může pomoci obnovit pohyb."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prevence"
+    },
+    {
+      "type": "text",
+      "text": "Při jízdě mimo silnici je důležité sledovat terén a vyhýbat se místům s hlubokým bahnem nebo stojatou vodou."
+    }
+  ]
+}

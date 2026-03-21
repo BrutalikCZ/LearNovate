@@ -1,0 +1,88 @@
+{
+  "name": "Nouzové přistání na Marsu",
+  "description": "První hodiny po přistání kapsle a stabilizace posádky v neznámém prostředí.",
+  "icon": "rocket",
+  "label": "MARS",
+  "colorFrom": "#7f1d1d",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Selhání přistávací sekvence",
+    "setting": "Kolonie právě přistála na Marsu. Přistávací modul tvrdě dosedl mimo plánovanou zónu. Jeden z členů posádky je otřesený, uvnitř kabiny klesá tlak a systémy hlásí nestabilní kyslík. Venku je nehostinná červená krajina a prachová bouře v dálce.",
+    "objective": "Uživatel musí stabilizovat posádku, obnovit základní životní funkce modulu a zajistit bezpečné prostředí.",
+    "milestones": [
+      {
+        "name": "Kontrola integrity kabiny a úniků",
+        "points": 150
+      },
+      {
+        "name": "Stabilizace kyslíkového systému",
+        "points": 200
+      },
+      {
+        "name": "Zajištění zdravotního stavu posádky",
+        "points": 100
+      },
+      {
+        "name": "Aktivace nouzového signálu základně",
+        "points": 150
+      }
+    ],
+    "tutorial": "Po tvrdém přistání je klíčové nejprve ověřit, zda modul udržuje tlak. Pokud ne, okamžitě uzavři poškozené sekce a přesměruj kyslík z rezerv. Poté zkontroluj zdravotní stav posádky a aktivuj nouzový kontakt se základnou. Bez stabilního tlaku a kyslíku není možné pokračovat v operacích venku."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Prvních 60 sekund: Boj s dekompresí"
+  },
+  {
+    "type": "text",
+    "text": "Po tvrdém dopadu je největším nepřítelem narušení strukturální integrity (trhliny v trupu). Atmosféra Marsu má téměř nulový tlak, takže i malá prasklina vysaje dýchatelný vzduch během minut. Pokud slyšíte pískavý zvuk, okamžitě aktivujte nouzové utěsnění nebo použijte rychletuhnoucí epoxidové pěny. Pokud je únik v jiné sekci, hermeticky uzavřete průlezy a obětujte poškozený prostor, abyste zachránili zbytek posádky v centrálním modulu."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Stabilizace atmosféry a parciální tlak"
+  },
+  {
+    "type": "text",
+    "text": "Při poškození primárních nádrží může dojít k poklesu parciálního tlaku kyslíku. Systém podpory života (ECLSS) se musí přepnout na nouzové zásobníky umístěné v sedadlech nebo skafandrech. Sledujte hladinu dusíku a kyslíku – příliš vysoká koncentrace O2 zvyšuje riziko požáru v poničené elektroinstalaci, zatímco příliš nízká vede k hypoxii. Pokud automatika selže, musíte ventilaci regulovat manuálně pomocí obtokových ventilů."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Triage pod nízkou gravitací"
+  },
+  {
+    "type": "text",
+    "text": "Gravitace na Marsu (38 % zemské) mění způsob, jakým tělo reaguje na trauma. Vnitřní krvácení nebo otřes mozku se po měsících v mikrogravitaci projevují agresivněji. Prioritou je fixace krční páteře a kontrola vědomí. Ujistěte se, že nikdo netrpí barotraumatem plic v důsledku náhlé změny tlaku. Pokud je někdo v šoku, udržujte ho v teple – tepelná izolace modulu může být poškozena a marsovský chlad proniká skrz stěny bleskově."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Nouzová komunikace a triangulace"
+  },
+  {
+    "type": "text",
+    "text": "Pokud jste přistáli mimo zónu, hlavní anténa je pravděpodobně poškozená nebo špatně orientovaná. Aktivujte všesměrový nouzový maják (ELT), který vysílá signál na frekvenci orbitálních satelitů. Musíte manuálně zadat poslední známé souřadnice z inerciální navigace, aby záchranný tým věděl, v jakém sektoru vás má hledat. Prachová bouře na obzoru může blokovat signál, takže každá sekunda vysílání před jejím příchodem je kritická."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Management energie: Čas vs. teplo"
+  },
+  {
+    "type": "text",
+    "text": "Baterie modulu po nárazu mohou vykazovat zkrat. Vypněte vše kromě podpory života a vysílačky. Teplota venku klesá k -60 °C a bez funkčních ohřívačů se systémy modulu brzy 'zmrazí'. Využijte pasivní tepelnou ochranu a seskupte se v nejmenším možném prostoru, abyste využili i tělesné teplo k udržení funkčnosti kritické elektroniky."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Příprava na 'Eva' (Výstup)"
+  },
+  {
+    "type": "text",
+    "text": "Dokud není modul stabilní a tlak vyrovnaný, nikdo nesmí otevřít vnější přechodovou komoru. Prach zvenčí je toxický a abrazivní. Výstup proveďte až po kompletní diagnostice skafandrů a jen v případě, že je modul neopravitelný nebo hrozí exploze palivových článků. Mars neodpouští chyby v úsudku pod tlakem."
+  }
+]
+}

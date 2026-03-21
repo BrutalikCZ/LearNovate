@@ -1,0 +1,65 @@
+{
+  "name": "Ošetření řezné rány",
+  "description": "Jak správně zastavit krvácení, ošetřit a obvázat řeznou ránu v terénu i doma.",
+  "icon": "heart-pulse",
+  "label": "PP",
+  "colorFrom": "#7f1d1d",
+  "colorTo": "#ef4444",
+    "scenario": {
+    "title": "Ošetření řezné rány v terénu",
+    "setting": "Jdeš na túru s kamarádem. Zastavíte se u potoka odpočinout. Kamarád sáhne do batohu, ruka mu sklouzne po rozbitém skle od lahve. Hluboký řez na dlani okamžitě začne silně krvácet. Kamarád bledne, drží ruku nad hlavou a říká: 'Co teď?' V batohu máš lékárničku.",
+    "objective": "Uživatel musí správně ošetřit řeznou ránu — chránit sebe, zastavit krvácení, ošetřit ránu a rozhodnout, zda je nutná lékařská pomoc.",
+    "milestones": [
+      {
+        "name": "Ochrana zachránce (nasazení rukavic z lékárničky)",
+        "points": 50
+      },
+      {
+        "name": "Zastavení krvácení (přímý tlak na ránu sterilním krytím)",
+        "points": 150
+      },
+      {
+        "name": "Vyčištění a ošetření rány (vyplach, dezinfekce, kontrola cizích těles)",
+        "points": 50
+      },
+      {
+        "name": "Správné krytí a fixace (sterilní obvaz, pevné ovázání)",
+        "points": 150
+      },
+      {
+        "name": "Rozhodnutí o další péči (zhodnocení závažnosti, zajištění transportu k lékaři)",
+        "points": 100
+      }
+    ],
+    "tutorial": "Ošetření řezné rány v terénu je kritické pro prevenci infekce a zajištění správného hojení. Nejprve je důležité chránit sebe, abyste se vyhnuli kontaktu s krví. Použijte rukavice z lékárničky, pokud jsou k dispozici. Poté zastavte krvácení přímým tlakem na ránu pomocí sterilního krytí nebo čisté látky. Pokud je krvácení silné, můžete použít tlakový obvaz nebo improvizovat s oblečením, ale nikdy nepoužívejte příliš mnoho síly, abyste nezpůsobili další poškození. Po zastavení krvácení je důležité ránu vyčistit. Pokud máte přístup k čisté vodě, jemně ji vypláchněte, abyste odstranili nečistoty a cizí tělesa. Poté použijte dezinfekční prostředek z lékárničky, pokud je k dispozici, a naneste ho na ránu. Nakonec ránu zakryjte sterilním obvazem a pevně ji ovázujte, aby se minimalizovalo riziko infekce. Pokud je rána hluboká, silně krvácí nebo obsahuje cizí tělesa, je důležité co nejdříve vyhledat lékařskou pomoc."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Řezná rána — základy ošetření"
+    },
+    {
+      "type": "text",
+      "text": "Řezná rána je poranění způsobené ostrým předmětem. Správné ošetření zahrnuje zastavení krvácení, dezinfekci a krytí rány. Při silném krvácení je prioritou přiložení tlakového obvazu a přivolání záchranné služby."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Postup ošetření"
+    },
+    {
+      "type": "text",
+      "text": "1. Chraň sebe — před dotykem s cizí krví nasaď rukavice. 2. Zastav krvácení — přilož čistý materiál a tlač přímo na ránu 5–10 minut. Nerušit stlačení průběžnou kontrolou. 3. Vyčisti ránu — oplachuj čistou vodou 5–10 minut, odstraň viditelné nečistoty. 4. Dezinfikuj — přilož dezinfekční přípravek na okolí rány, ne do rány samotné. 5. Přikryj — sterilním krytím nebo náplastí. Při hlubší ráně vyhledej lékaře."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kdy volat záchranku"
+    },
+    {
+      "type": "text",
+      "text": "Volej 155 pokud: krvácení nejde zastavit do 10 minut, rána je hlubší než 1 cm nebo má roztřepené okraje, poraněný je dítě nebo senior, rána je na obličeji, rukou nebo kloubu, nebo vznikla kontaktem s rezavým kovem (riziko tetanu)."
+    }
+  ]
+}

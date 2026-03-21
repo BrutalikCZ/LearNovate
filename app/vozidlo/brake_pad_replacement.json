@@ -1,10 +1,34 @@
 {
-  "name": "C++ Základy",
-  "description": "Základy C++, objektově orientované programování, pointery, šablony a STL knihovna.",
-  "icon": "code",
-  "label": "C++",
+  "name": "Výměna brzdových destiček",
+  "description": "Jakým způsobem vyměnit brzdové destičky.",
+  "icon": "car",
+  "label": "Brzdové destičky",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Výměna brzdových destiček",
+    "setting": "Při brzdění slyšíš nepříjemné pískání. Zjistíš, že brzdové destičky jsou opotřebované.",
+    "objective": "Uživatel musí správně vyměnit brzdové destičky.",
+    "milestones": [
+      {
+        "name": "Zajištění vozidla a sundání kola", 
+        "points": 100
+      },
+      {
+        "name": "Demontáž třmenu a vyjmutí starých destiček", 
+        "points": 150
+      },
+      {
+        "name": "Instalace nových destiček", 
+        "points": 150
+      },
+      {
+        "name": "Montáž kola a test brzd", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Auto musí být bezpečně zajištěné a zvednuté. Po sundání kola demontuj brzdový třmen. Staré destičky vyjmi a zkontroluj stav kotouče. Nové destičky nasaď správně a zatlač pístek. Po složení několikrát sešlápni brzdu, aby si systém sedl."
+  },
   "content": [
     {
       "type": "heading",

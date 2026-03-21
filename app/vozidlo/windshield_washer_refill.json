@@ -1,0 +1,70 @@
+{
+  "name": "Doplnění kapaliny do ostřikovačů",
+  "description": "Jak správně doplnit kapalinu do ostřikovačů a zajistit čistý výhled z vozidla.",
+  "icon": "car",
+  "label": "Ostřikovače",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Doplnění kapaliny do ostřikovačů",
+    "setting": "Při jízdě ti došla kapalina do ostřikovačů a čelní sklo je silně znečištěné, což omezuje viditelnost a zhoršuje bezpečnost jízdy.",
+    "objective": "Uživatel musí správně doplnit kapalinu do ostřikovačů a obnovit jejich funkčnost.",
+    "milestones": [
+      {
+        "name": "Otevření kapoty a nalezení nádržky ostřikovačů",
+        "points": 100
+      },
+      {
+        "name": "Výběr správné kapaliny podle podmínek",
+        "points": 100
+      },
+      {
+        "name": "Doplnění kapaliny do správné úrovně",
+        "points": 100
+      },
+      {
+        "name": "Ověření funkčnosti ostřikovačů",
+        "points": 100
+      }
+    ],
+    "tutorial": "Najdi páčku pro otevření kapoty a bezpečně ji zajisti v otevřené poloze. Vyhledej nádržku ostřikovačů, která bývá označena symbolem čelního skla s kapkami. Zkontroluj, zda používáš správnou kapalinu podle ročního období, tedy letní nebo zimní směs. Kapalinu nalévej pomalu, aby nedošlo k přelití nebo úniku mimo nádržku. Po doplnění zavři víčko, zajisti kapotu a otestuj funkčnost ostřikovačů na čelním skle."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Význam kapaliny do ostřikovačů"
+    },
+    {
+      "type": "text",
+      "text": "Kapalina do ostřikovačů zajišťuje čistý výhled z čelního skla a je klíčová pro bezpečnou jízdu v dešti, zimě i při znečištění vozovky."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Výběr správné směsi"
+    },
+    {
+      "type": "text",
+      "text": "Letní směs je určena pro odstranění hmyzu a prachu, zimní směs odolává nízkým teplotám a zabraňuje zamrzání."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Postup doplnění"
+    },
+    {
+      "type": "text",
+      "text": "Kapalinu je nutné nalévat opatrně do označené nádržky, aby nedošlo k přelití nebo znečištění motorového prostoru."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kontrola funkce"
+    },
+    {
+      "type": "text",
+      "text": "Po doplnění je vhodné aktivovat ostřikovače a ověřit, že kapalina správně proudí na čelní sklo."
+    }
+  ]
+}

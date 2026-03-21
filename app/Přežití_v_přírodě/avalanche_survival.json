@@ -1,0 +1,88 @@
+{
+  "name": "Přežití v lavině",
+  "description": "Klíčové postupy při stržení lavinou a následná svépomoc.",
+  "icon": "snowflake",
+  "label": "Zimní přežití",
+  "colorFrom": "#cbd5e1",
+  "colorTo": "#475569",
+  "scenario": {
+    "title": "Bílý teror",
+    "setting": "Lyžuješ ve volném terénu v Krkonoších, když se najednou ozve dunivý zvuk a svah nad tebou se dává do pohybu. Obrovská masa sněhu tě strhává a ty ztrácíš kontrolu, obklopen jen bílou tmou a drtivým tlakem. Tvůj život teď závisí na vteřinových rozhodnutích pod metry sněhu.",
+    "objective": "Uživatel musí provést kroky k maximalizaci šance na dýchání a následné vyproštění.",
+    "milestones": [
+      {
+        "name": "Plavací pohyby pro udržení se na povrchu a zbavení se batohu", 
+        "points": 100
+      },
+      {
+        "name": "Vytvoření vzduchové kapsy před obličejem před zastavením", 
+        "points": 200
+      },
+      {
+        "name": "Zklidnění dýchání a šetření kyslíku (neustálý křik nepomůže)", 
+        "points": 150
+      },
+      {
+        "name": "Pokus o určení směru 'nahoru' (pomocí slin) a pomalé hrabání", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Pokud tě lavina strhne, snaž se 'plavat' na povrchu. Zbav se lyží a hůlek, fungují jako kotvy. Těsně před zastavením sněhu si dej ruce před obličej a vytvoř si dýchací prostor – vzduchovou kapsu. Jakmile se sníh zastaví, ztuhne jako beton. Zachovej klid, zbytečné panikaření a křik spotřebují kyslík během několika minut. Pokud můžeš pohnout rukou, plivni, abys zjistil, kam tečou sliny – to ti ukáže směr gravitace a kde je 'nahoru', abys věděl, kam hrabat."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Fyzika laviny: Od kapaliny k betonu"
+  },
+  {
+    "type": "text",
+    "text": "Během pohybu se lavina chová jako kapalina, ale v okamžiku zastavení dojde k procesu zvanému 'settling'. Třením vzniklé teplo se okamžitě vytratí a sníh kolem vás ztuhne jako beton. Pokud jste si nestihli vytvořit vzduchovou kapsu, nebudete moci ani pohnout prstem, natož se vyhrabat. Tlak sněhu navíc může bránit i plnému rozpětí hrudníku při dýchání, což vede k rychlému vyčerpání a dušení."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Boj o povrch: Plavej!"
+  },
+  {
+    "type": "text",
+    "text": "Jakmile vás lavina strhne, bojujte. Dělejte rukama i nohama pohyby jako při plavání (znak nebo kraul), abyste se udrželi co nejblíže povrchu. Pokud máte lavinový batoh s airbagem, okamžitě ho aktivujte – zvětší váš objem a díky fyzikálnímu jevu 'inverzní segregace' vás vytlačí nahoru mezi větší částice sněhu. Zbavte se lyží (pokud nemáte bezpečnostní vázání, co samo vypne), protože působí jako kotvy a stahují vás do hloubky."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Vzduchová kapsa: Vaše plíce pod sněhem"
+  },
+  {
+    "type": "text",
+    "text": "Vteřinu předtím, než se lavina zastaví, musíte udělat klíčový pohyb: dejte si ruce před obličej (lokty k sobě, dlaně před pusu). Tím si vytvoříte prostor – vzduchovou kapsu. I malý prostor o velikosti pěsti vám může zajistit kyslík na desítky minut navíc. Před úplným zastavením se také zhluboka nadechněte, abyste si 'roztáhli' hrudní koš a sníh kolem vás nezatuhl v momentě výdechu, kdy je hrudník nejmenší."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Dezorientace a test gravitace"
+  },
+  {
+    "type": "text",
+    "text": "Pod sněhem je totální tma a váš orientační smysl je nulový. Často nevíte, kde je nahoře a kde dole. Pokud máte volnou ruku, vyhrabejte malý prostor a plivněte. Sledujte (nebo pociťte), kam slina teče. Gravitace ji potáhne dolů – vy musíte hrabat přesně opačným směrem. Pokud jsou vaše ruce uvězněné, nekřičte. Sníh zvuk pohlcuje směrem ven, ale vy uslyšíte kroky záchranářů nad sebou velmi jasně. Šetřete kyslík a křičte, jen když jsou přímo nad vámi."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Ledová maska"
+  },
+  {
+    "type": "text",
+    "text": "Při dýchání v malé kapse se kolem vašeho obličeje začne srážet vlhkost z dechu a vytvoří se neprodyšná ledová krusta (ledová maska). Ta postupně znemožní průchod kyslíku ze sněhu k vám. Pokud je to možné, snažte se tuto vrstvičku před obličejem rukou narušovat. Klidné a mělké dýchání je zásadní pro oddálení tohoto efektu."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Kamarádská pomoc: Rozhoduje prvních 15 minut"
+  },
+  {
+    "type": "text",
+    "text": "Statistiky jsou neúprosné: po 15 minutách pod sněhem šance na přežití prudce klesá pod 30 %. Profesionální záchrana většinou nestihne dorazit včas. Vaše přežití závisí na vašich parťácích, kteří musí okamžitě přepnout své pípače na 'SEARCH' (hledání), lokalizovat signál, pomocí sondy přesně určit hloubku a polohu těla a začít efektivně hrabat 'v klínu' pod úhlem, aby vás nezasypali ještě víc."
+  }
+]
+}

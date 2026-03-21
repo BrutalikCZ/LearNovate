@@ -1,0 +1,79 @@
+{
+  "name": "Phishingový e-mail a krádež účtu",
+  "description": "Jak rozpoznat a řešit phishingový útok zaměřený na přihlašovací údaje.",
+  "icon": "mail-warning",
+  "label": "NET",
+  "colorFrom": "#1e1b4b",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Podezřelý e-mail z banky",
+    "setting": "Otevřeš e-mail, který vypadá jako zpráva z tvé banky. Tvrdí, že tvůj účet bude zablokován, pokud se okamžitě nepřihlásíš přes přiložený odkaz. Stránka vypadá téměř identicky jako originál, ale adresa je mírně odlišná.",
+    "objective": "Uživatel musí rozpoznat phishing, zabránit zadání údajů a zabezpečit účet.",
+    "milestones": [
+      {
+        "name": "Rozpoznání podezřelé zprávy",
+        "points": 150
+      },
+      {
+        "name": "Neotevření nebo opuštění škodlivého odkazu",
+        "points": 150
+      },
+      {
+        "name": "Ověření zdroje oficiální cestou",
+        "points": 100
+      },
+      {
+        "name": "Změna hesla a aktivace 2FA",
+        "points": 200
+      }
+    ],
+    "tutorial": "Phishing se snaží vyvolat tlak a strach. Nikdy neklikej na odkazy z neověřených e-mailů. Vždy kontroluj doménu a přihlašuj se pouze přes oficiální web. Při podezření změň heslo a aktivuj dvoufaktorové ověření."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Anatomie podvodu: Proč vypadá tak věrohodně?"
+  },
+  {
+    "type": "text",
+    "text": "Phishingový e-mail není jen náhodná zpráva. Je to pečlivě sestavená past, která kopíruje vizuální styl vaší banky včetně loga, barev a tónu komunikace. Útočník sází na psychologii strachu. Tvrdí, že váš účet byl napaden nebo že končí platnost vašeho přístupu. Tím vás nutí k rychlému jednání bez přemýšlení. Cílem je dostat vás na podvodnou stránku, která vypadá jako věrná kopie bankovnictví, ale slouží jen ke sběru hesel."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Detektivní práce: Jak odhalit past"
+  },
+  {
+    "type": "text",
+    "text": "Sledujte detaily, které útočník nedokáže dokonale zfalšovat. Skutečná adresa odesílatele se často liší od té zobrazené (stačí na ni kliknout a uvidíte pravdu). Odkazy v e-mailu mohou vypadat jako oficiální, ale když na nich podržíte kurzor myši bez kliknutí, v rohu prohlížeče uvidíte skutečný cíl cesty. Pokud doména končí podezřele nebo obsahuje překlepy, okamžitě e-mail smažte."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Pravidlo zlaté střední cesty"
+  },
+  {
+    "type": "text",
+    "text": "Pokud vám přijde varování z banky, nikdy nepoužívejte odkazy v e-mailu. Otevřete si nový panel prohlížeče, ručně vypište adresu své banky nebo použijte jejich oficiální mobilní aplikaci. Pokud tam žádné varování neuvidíte, byl e-mail podvrh. Banky po vás nikdy nebudou chtít citlivé údaje nebo hesla prostřednictvím přímého odkazu v e-mailu."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Dvoufaktorové ověření: Poslední linie obrany"
+  },
+  {
+    "type": "text",
+    "text": "I když se útočníkovi podaří získat vaše heslo, díky 2FA (dvoufaktorovému ověření) je mu k ničemu. Bez potvrzení v mobilní aplikaci nebo SMS kódu se do účtu nedostane. Pokud vám najednou přijde potvrzovací kód, o který jste nežádali, je to jasný signál, že někdo zná vaše heslo a právě se pokouší o průnik. V takovém případě okamžitě změňte heslo z bezpečného zařízení."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Nahlášení a prevence"
+  },
+  {
+    "type": "text",
+    "text": "Každý odhalený phishingový e-mail byste měli nahlásit své bance nebo IT oddělení. Pomůžete tak zablokovat škodlivé servery a ochráníte ostatní uživatele, kteří by mohli být méně pozorní. Vzdělávání v oblasti digitální bezpečnosti je nekončící proces, protože útočníci své metody neustále vylepšují pomocí umělé inteligence a sofistikovaných technik."
+  }
+]
+}

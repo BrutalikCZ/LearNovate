@@ -1,0 +1,88 @@
+{
+  "name": "Úraz elektrickým proudem na pracovišti",
+  "description": "Postup první pomoci při zásahu elektrickým proudem v domácím nebo pracovním prostředí.",
+  "icon": "zap",
+  "label": "PP",
+  "colorFrom": "#111827",
+  "colorTo": "#facc15",
+  "scenario": {
+    "title": "Porucha spotřebiče v dílně",
+    "setting": "Pracuješ v dílně. Kolega opravuje prodlužovačku, najednou vykřikne a zůstane přikovaný k zařízení. Vidíš jiskření a cítíš zápach spáleniny.",
+    "objective": "Uživatel musí bezpečně přerušit kontakt s elektrickým proudem a poskytnout první pomoc.",
+    "milestones": [
+      {
+        "name": "Vypnutí zdroje elektrického proudu",
+        "points": 150
+      },
+      {
+        "name": "Zajištění bezpečnosti zachránce",
+        "points": 100
+      },
+      {
+        "name": "Kontrola vědomí a dýchání",
+        "points": 100
+      },
+      {
+        "name": "Volání záchranné služby",
+        "points": 100
+      }
+    ],
+    "tutorial": "Nikdy se nedotýkej postiženého, dokud není vypnutý proud. Nejprve vypni hlavní jistič nebo odpoj zdroj. Pokud postižený nedýchá normálně, zahaj KPR a volej 155. Sleduj možné popáleniny vstupního a výstupního místa."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Úraz elektrickým proudem: Neviditelné nebezpečí"
+  },
+  {
+    "type": "text",
+    "text": "Průchod elektrického proudu tělem může způsobit okamžitou zástavu srdce, těžké popáleniny, ale i křeč svalů, která postiženému znemožní se vodiče pustit (tzv. efekt 'přikování'). I když postižený vypadá po zásahu v pořádku, může dojít k poškození vnitřních orgánů nebo k nebezpečné poruše srdečního rytmu s odstupem několika hodin."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Pravidlo č. 1: Nedotýkej se postiženého!"
+  },
+  {
+    "type": "text",
+    "text": "Pokud je postižený stále v kontaktu s vodičem, tvůj dotek by znamenal, že se proud uzavře i přes tvé tělo. \n1. **Vypni jističe:** Toto je nejbezpečnější cesta. \n2. **Vytáhni kabel ze zásuvky:** Pokud je to bezpečné. \n3. **Odsunutí vodiče:** Pouze v krajním případě a pouze u nízkého napětí (domácí zásuvky). Použij suchý, nevodivý předmět (dřevěná násada od koštěte, plastová tyč). Nikdy nepoužívej kovové nebo vlhké předměty!"
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Specifika u vysokého napětí"
+  },
+  {
+    "type": "text",
+    "text": "U drátů vysokého napětí (venkovní vedení, trakce vlaků) vzniká elektrický oblouk. Nepřibližuj se k postiženému na méně než 18 metrů, dokud energetici nepotvrdí vypnutí proudu. Krokem na zemi může vzniknout tzv. 'krokové napětí', které tě může zabít i bez přímého doteku drátu."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "První pomoc a resuscitace"
+  },
+  {
+    "type": "text",
+    "text": "Jakmile je proud vypnutý a místo je bezpečné: \n- **Kontrola dýchání:** Elektrický výboj často způsobí fibrilaci komor nebo zástavu dechu. Pokud postižený nedýchá normálně, okamžitě zahaj KPR (stlačování hrudníku).\n- **AED:** Pokud je v dosahu defibrilátor, okamžitě ho použij. Srdeční rytmus narušený elektrikou na výboj reaguje velmi dobře.\n- **Popáleniny:** Zásah proudem zanechává 'vstupní' a 'výstupní' ránu. Jsou to hluboké popáleniny, které mohou silně pálit nebo být naopak necitlivé kvůli zničení nervů. Chlaď je čistou vodou, ale prioritou je vždy oběh a dýchání."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Proč volat 155 i při 'lehkém' zásahu?"
+  },
+  {
+    "type": "text",
+    "text": "Každý, koho zasáhl elektrický proud ze zásuvky (230V a více), musí být vyšetřen lékařem a mít natočeno EKG. Elektrický šok může způsobit rozpad svalových vláken (rhabdomyolýzu), což může vést k selhání ledvin, nebo vyvolat arytmii, která se projeví až po několika hodinách spánku. Nepodceňuj to, i když se dotyčný cítí 'jen trochu otřesený'."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Pády z výšky"
+  },
+  {
+    "type": "text",
+    "text": "Zásah proudem často provází prudký svalový záškub, který postiženého odmrští, nebo pád z žebříku. Vždy proto počítej i s možným poraněním páteře nebo vnitřním krvácením z následného pádu."
+  }
+]
+}

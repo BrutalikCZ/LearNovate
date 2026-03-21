@@ -1,0 +1,92 @@
+{
+  "name": "Bezvědomí a KPR",
+  "description": "Jak postupovat při bezvědomí, zástavě dechu a provádět kardiopulmonální resuscitaci.",
+  "icon": "activity",
+  "label": "PP",
+  "colorFrom": "#0f172a",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Kolaps v parku",
+    "setting": "Při běhu v parku vidíš člověka ležícího na zemi. Nereaguje na oslovení ani zatřesení. Nedýchá normálně, jen lapavě chrčí. V okolí jsou další běžci.",
+    "objective": "Uživatel musí rozpoznat bezvědomí se zástavou dechu a zahájit resuscitaci.",
+    "milestones": [
+      {
+        "name": "Kontrola vědomí a dýchání",
+        "points": 100
+      },
+      {
+        "name": "Volání záchranné služby 155",
+        "points": 100
+      },
+      {
+        "name": "Zahájení stlačování hrudníku",
+        "points": 250
+      },
+      {
+        "name": "Použití AED pokud je dostupné",
+        "points": 150
+      }
+    ],
+    "tutorial": "Při bezvědomí nejprve zkontroluj reakci a dýchání. Pokud postižený nedýchá normálně, okamžitě volej 155. Zahaj nepřímou masáž srdce – stlačuj střed hrudníku frekvencí 100–120 stlačení za minutu do hloubky přibližně 5–6 cm. Pokračuj bez přerušení. Pokud je k dispozici AED, použij ho co nejdříve a řiď se hlasovými pokyny přístroje."
+  },
+    "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rozpoznání zástavy oběhu"
+    },
+    {
+      "type": "text",
+      "text": "Klíčem k přežití je rychlost. Pokud najdeš osobu v bezvědomí, musíš během 10 sekund zjistit, zda dýchá. Zakloň hlavu postiženého tahem za bradu nahoru, přilož své ucho k jeho ústům a dívej se na hrudník. Pokud necítíš proud vzduchu, neslyšíš dýchání nebo se hrudník nezvedá, situace je kritická. Pozor na tzv. lapavé dechy (gasping) – vypadají jako lapání po dechu u ryby na suchu. Toto NENÍ normální dýchání, ale známka začínající zástavy oběhu!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Aktivace záchranného řetězce"
+    },
+    {
+      "type": "text",
+      "text": "Pokud jsi sám, zapni si telefon na hlasitý odposlech a okamžitě vytáčej 155 (nebo aplikaci Záchranka). Pokud jsou kolem lidé, ukaž na konkrétní osobu a jasně jí přikaž: 'Vy v tom modrém tričku, volejte 155 a sežeňte AED!'. Operátor tísňové linky tě bude navádět krok po kroku (tzv. TANR – telefonicky asistovaná neodkladná resuscitace). Telefon nikdy nepokládej, dokud ti to operátor neřekne."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Technika stlačování hrudníku (KPR)"
+    },
+    {
+      "type": "text",
+      "text": "Postižený musí ležet na tvrdé podložce (ne na posteli nebo gauči). Klekni si vedle něj, hranu dlaně polož na střed hrudní kosti (mezi prsní bradavky). Druhou dlaň polož na první a propleť prsty. Paže měj propnuté v loktech a ramena kolmo nad hrudník postiženého. Využívej váhu svého těla, ne jen sílu paží."
+    },
+    {
+      "type": "text",
+      "text": "Hloubka stlačení musí být 5–6 cm (u dospělého), ale ne více než 6 cm. Frekvence je 100–120 stlačení za minutu – rytmus odpovídá hitu 'Stayin' Alive' od Bee Gees. Po každém stlačení hrudník úplně uvolni, aby se srdce mohlo znovu naplnit krví, ale neodlepuj dlaně od kůže."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Umělé dýchání – ano či ne?"
+    },
+    {
+      "type": "text",
+      "text": "Pokud nejsi proškolený zachránce nebo nemáš bariérovou pomůcku (roušku), prováděj POUZE stlačování hrudníku. Kontinuální masáž bez přerušování je pro přežití dospělého klíčová, protože v krvi je po zástavě ještě dostatek kyslíku na několik minut. U dětí nebo u tonoucích (utonulých) je však umělé dýchání (poměr 30:2) extrémně důležité, protože příčinou zástavy je u nich nedostatek kyslíku."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Automatizovaný externí defibrilátor (AED)"
+    },
+    {
+      "type": "text",
+      "text": "AED je inteligentní přístroj, který dokáže elektrickým výbojem 'restartovat' srdce. Jakmile dorazí, okamžitě ho zapni. Přístroj mluví česky a přesně ti řekne, co dělat. Nalep elektrody na holou hruď postiženého podle obrázků na obalech. Přestaň resuscitovat pouze ve chvíli, kdy přístroj provádí analýzu rytmu nebo když vydá pokyn k výboji ('Nedotýkejte se pacienta!'). Pokud výboj není doporučen, okamžitě pokračuj v masáži."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kdy přestat?"
+    },
+    {
+      "type": "text",
+      "text": "V resuscitaci pokračuj dokud: 1. Nepřevezme pacienta profesionální záchranná služba. 2. Postižený se nezačne jasně hýbat, mluvit nebo otevírat oči. 3. Nedojde k tvému úplnému fyzickému vyčerpání. Pokud je na místě víc lidí, střídejte se v masáži každé 2 minuty, aby byla zachována kvalita stlačování."
+    }
+  ]
+}

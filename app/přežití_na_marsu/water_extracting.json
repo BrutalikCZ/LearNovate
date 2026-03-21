@@ -1,0 +1,88 @@
+{
+  "name": "Získávání vody z marsovského ledu",
+  "description": "Extrakce a čištění vody z podpovrchového ledu pro kolonii.",
+  "icon": "droplets",
+  "label": "MARS",
+  "colorFrom": "#0ea5e9",
+  "colorTo": "#1e3a8a",
+  "scenario": {
+    "title": "Expedice k ledovému ložisku",
+    "setting": "Robotický průzkum objevil pod povrchem Marsu ložisko vodního ledu. Vysíláš tým v lehkých vozidlech k těžbě. Systémy hlásí nestabilní teplotu a riziko kontaminace prachem.",
+    "objective": "Uživatel musí bezpečně extrahovat vodu a zajistit její použitelnost pro kolonii.",
+    "milestones": [
+      {
+        "name": "Vyhledání a odhalení ledového ložiska",
+        "points": 150
+      },
+      {
+        "name": "Bezpečná extrakce ledu",
+        "points": 200
+      },
+      {
+        "name": "Filtrace a dekontaminace vody",
+        "points": 200
+      },
+      {
+        "name": "Transport do habitaty bez ztrát",
+        "points": 100
+      }
+    ],
+    "tutorial": "Voda na Marsu je často smíšená s prachem a chemickými nečistotami. Po extrakci ledu je nutná filtrace a úprava před použitím. Kritické je zabránit kontaminaci uzavřeného vodního cyklu kolonie."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Marsovský led: Víc než jen zmrzlá voda"
+  },
+  {
+    "type": "text",
+    "text": "Na Marsu se voda vyskytuje převážně ve formě podpovrchového ledu nebo v polárních čepicích. Tento led je však uvězněn v marsovském regolitu a je smíchán s pevným CO2 (suchým ledem) a toxickými solemi. Extrakce není jen o kopání, ale o řízené sublimaci a chemické separaci v prostředí s extrémně nízkým tlakem, kde se kapalná voda bez ochrany okamžitě mění v páru."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Extrakční technika: Rodinova sonda"
+  },
+  {
+    "type": "text",
+    "text": "Nejefektivnější metodou je použití tepelných sond (Rodinových studní). Do ložiska se vyvrtá úzký vrt, do kterého se vhání tepelná energie (odpadní teplo z nukleárního generátoru nebo mikrovlny). Led pod povrchem roztaje a vytvoří podzemní rezervoár kapalné vody. Ta je následně pumpována na povrch dříve, než stačí znovu zamrznout nebo sublimovat do řídké atmosféry."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Perchloráty: Neviditelný zabiják"
+  },
+  {
+    "type": "text",
+    "text": "Marsovský prach obsahuje vysoké koncentrace perchlorátů – solí, které jsou pro lidi toxické (ničí štítnou žlázu) a pro stroje korozivní. Voda získaná z ledu musí projít vícestupňovou iontovou výměnou a reverzní osmózou. Bez této dekontaminace by voda v uzavřeném cyklu habitatu během několika týdnů otrávila celou posádku a zničila hydroponické systémy."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Separace izotopů a deuterium"
+  },
+  {
+    "type": "text",
+    "text": "Voda na Marsu má odlišné izotopové složení než ta pozemská – obsahuje mnohem více deuteria (těžkého vodíku). Zatímco pro lidi to v malém množství není problém, pro vědecké experimenty a výrobu raketového paliva je přesná separace lehkého a těžkého vodíku klíčovým technologickým procesem, který určuje soběstačnost kolonie."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Transport a atmosférický únik"
+  },
+  {
+    "type": "text",
+    "text": "Kvůli nízkému tlaku (cca 0,6 % tlaku pozemského) nelze vodu přepravovat v otevřených nádržích. Transportní moduly musí být vyhřívané a tlakované. Jakákoliv netěsnost vede k okamžitému varu vody při nízkých teplotách a vzniku ledové mlhy, což může vést ke ztrátě drahocenného nákladu a poškození optiky vozidla."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Recyklace: Uzavřený kruh"
+  },
+  {
+    "type": "text",
+    "text": "Každý litr vody vytěžený z ledu musí být v kolonii recyklován s účinností nad 98 %. To zahrnuje čištění moči, sběr atmosférické vlhkosti z dechu posádky a filtraci odpadní vody z pěstebních modulů. Těžba ledu neslouží k plýtvání, ale k doplňování nevyhnutelných ztrát v systému a k výrobě kyslíku elektrolýzou."
+  }
+]
+}

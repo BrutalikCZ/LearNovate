@@ -1,0 +1,70 @@
+{
+  "name": "Zamčené klíče v autě",
+  "description": "Jak bezpečně získat přístup do zamčeného auta bez jeho poškození.",
+  "icon": "car",
+  "label": "Zamčené auto",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Zamčené klíče v autě",
+    "setting": "Zastavil jsi u opuštěné benzínky a vystoupil sis protáhnout nohy. Když se chceš vrátit, zjistíš, že klíče zůstaly zamčené uvnitř auta a telefon máš skoro vybitý, takže musíš situaci rychle vyřešit.",
+    "objective": "Uživatel musí bezpečně získat přístup do auta bez jeho poškození.",
+    "milestones": [
+      {
+        "name": "Zhodnocení situace a kontrola všech dveří", 
+        "points": 100
+      },
+      {
+        "name": "Použití dostupných nástrojů (např. klín, drát)", 
+        "points": 150
+      },
+      {
+        "name": "Otevření dveří bez poškození", 
+        "points": 150
+      },
+      {
+        "name": "Prevence opakování situace", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Nejprve zkontroluj všechny dveře, kufr a případně i okna, zda není některý přístupný. Pokud máš vhodné nástroje, můžeš opatrně vytvořit malou mezeru mezi dveřmi a rámem a pokusit se odemknout zámek. Postupuj velmi opatrně, aby nedošlo k poškození těsnění nebo laku. Pokud si nejsi jistý, je bezpečnější kontaktovat asistenční službu."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Jak k tomu dochází"
+    },
+    {
+      "type": "text",
+      "text": "Zamknutí klíčů v autě je častý problém, který se stává například při rychlém vystoupení nebo automatickém zamknutí vozidla."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "První kroky"
+    },
+    {
+      "type": "text",
+      "text": "Vždy nejprve zkontroluj všechny vstupy do vozidla. Některé dveře nebo kufr mohou zůstat odemčené."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Nouzové otevření"
+    },
+    {
+      "type": "text",
+      "text": "Použití nástrojů, jako je klín nebo drát, může pomoci otevřít dveře, ale je nutná opatrnost. Nesprávný postup může poškodit vozidlo."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prevence"
+    },
+    {
+      "type": "text",
+      "text": "Doporučuje se mít náhradní klíč na bezpečném místě nebo využívat moderní systémy bezklíčového odemykání."
+    }
+  ]
+}

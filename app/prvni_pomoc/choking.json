@@ -1,0 +1,97 @@
+{
+  "name": "Ošetření dušení cizím tělesem",
+  "description": "Jak rozpoznat a řešit zadušení u dospělého pomocí Heimlichova manévru a základní první pomoci.",
+  "icon": "wind",
+  "label": "PP",
+  "colorFrom": "#1f2937",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Dušení v restauraci",
+    "setting": "Sedíš s kolegou v restauraci. Během jídla se kamarád náhle začne dusit, nemůže kašlat ani mluvit a chytá se za krk. Obličej rychle rudne a panikaří. V okolí jsou další lidé, ale nikdo nereaguje.",
+    "objective": "Uživatel musí rozpoznat úplnou neprůchodnost dýchacích cest a provést správné kroky k jejich zprůchodnění.",
+    "milestones": [
+      {
+        "name": "Rozpoznání závažného dušení (nemluví, nekašle)",
+        "points": 100
+      },
+      {
+        "name": "Volání pomoci (155 nebo přivolání okolí)",
+        "points": 50
+      },
+      {
+        "name": "Heimlichův manévr (opakované stlačení břicha)",
+        "points": 200
+      },
+      {
+        "name": "Kontrola stavu a opakování zásahu dle potřeby",
+        "points": 100
+      }
+    ],
+    "tutorial": "Při úplném dušení je nutné jednat okamžitě. Pokud postižený nemůže mluvit, kašlat ani dýchat, jde o život ohrožující stav. Nejprve přivolej pomoc. Postav se za postiženého, obejmi ho kolem pasu a proveď prudké stlačení směrem dovnitř a nahoru (Heimlichův manévr). Opakuj, dokud nedojde k uvolnění dýchacích cest nebo ztrátě vědomí. Pokud osoba upadne do bezvědomí, zahaj resuscitaci a volej záchrannou službu."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Dušení: Když vteřiny znamenají život"
+  },
+  {
+    "type": "text",
+    "text": "Dušení cizím tělesem (nejčastěji soustem jídla) je kritický stav, kdy dochází k mechanickému uzávěru dýchacích cest. Klíčem k úspěchu je rychlé rozlišení mezi částečnou a úplnou neprůchodností. Pokud postižený sípe, ale dokáže mluvit nebo silně kašlat, dýchací cesty nejsou zcela uzavřeny. Pokud však jen bezhlesně lapá po dechu, rudne a drží se za krk (univerzální signál dušení), máš zhruba 60 až 90 sekund, než upadne do bezvědomí."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "První krok: Povzbuzování ke kašli"
+  },
+  {
+    "type": "text",
+    "text": "Pokud postižený kašle, nezasahuj fyzicky! Kašel je nejefektivnější mechanismus, jak těleso vypudit. Pouze ho povzbuzuj: 'Kašlete, víc!' a sleduj, zda se stav nehorší. Jakmile kašel ustane a postižený jen naprázdno otvírá ústa, přejdi k agresivnější pomoci."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Údery mezi lopatky (Gordonův manévr)"
+  },
+  {
+    "type": "text",
+    "text": "Postav se mírně na stranu a za postiženého. Jednou rukou mu podepři hrudník a nakloň ho výrazně dopředu, aby uvolněné těleso mohlo gravitací vypadnout ven a nesklouzlo hlouběji. Druhou rukou (dlaní) proveď až 5 prudkých úderů mezi lopatky. Po každém úderu zkontroluj, zda těleso nevyletělo. Pokud údery nezaberou, okamžitě přejdi k Heimlichovu manévru."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Heimlichův manévr: Technika a síla"
+  },
+  {
+    "type": "text",
+    "text": "Tento manévr využívá vzduch zbývající v plicích k 'vystřelení' tělesa ven jako zátka z lahve šampaňského. \n1. Postav se za postiženého a obejmi ho oběma rukama kolem nadbřišku (mezi pupkem a koncem hrudní kosti). \n2. Sevři jednu ruku v pěst, polož ji palcovou stranou na břicho postiženého a druhou rukou ji pevně uchop. \n3. Proveď prudký, silný stisk směrem dovnitř a nahoru (jako bys chtěl dotyčného nadzvednout). \n4. Opakuj až 5x za sebou. Střídej 5 úderů mezi lopatky a 5 Heimlichových manévrů, dokud překážka neuvolní cesty."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Kdy Heimlicha NEPROVÁDĚT?"
+  },
+  {
+    "type": "text",
+    "text": "Heimlichův manévr se zásadně neprovádí u kojenců (do 1 roku) a u těhotných žen v pokročilém stádiu nebo u extrémně obézních osob, kde nelze břicho obejmout. U těhotných a obézních nahraď stlačování břicha prudkým stlačováním hrudníku (v místě, kde se provádí masáž srdce při KPR)."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Kritický zlom: Bezvědomí"
+  },
+  {
+    "type": "text",
+    "text": "Pokud postižený ochábne a upadne do bezvědomí, přestaň s manévry. Opatrně ho polož na zem na záda, okamžitě volej 155 (pokud už se tak nestalo) a zahaj klasickou resuscitaci (KPR). Stlačování hrudníku při KPR může také pomoci těleso uvolnit. Před každým vdechem (pokud ho provádíš) se podívej do úst, zda těleso nevidíš a nemůžeš ho dvěma prsty vyjmout. Nikdy však nešmatrej v krku naslepo!"
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Následná péče"
+  },
+  {
+    "type": "text",
+    "text": "I když se podaří těleso odstranit a postižený vypadá v pořádku, musí být vyšetřen lékařem. Heimlichův manévr je velmi agresivní a může způsobit vnitřní zranění orgánů (např. natržení jater nebo žaludku), která nejsou na první pohled patrná."
+  }
+]
+}

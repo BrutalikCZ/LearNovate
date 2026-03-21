@@ -1,0 +1,88 @@
+{
+  "name": "Výpadek energie v marsovské kolonii",
+  "description": "Řešení kritického selhání energetického systému v uzavřené kolonii.",
+  "icon": "battery-off",
+  "label": "MARS",
+  "colorFrom": "#0f172a",
+  "colorTo": "#f59e0b",
+  "scenario": {
+    "title": "Noční blackout v habitatě",
+    "setting": "Kolonie na Marsu se nachází v nočním cyklu. Náhle dochází k úplnému výpadku energie. Vypínají se ohřívače, filtrace vzduchu i komunikace. Teplota rychle klesá a zásoby baterií jsou omezené.",
+    "objective": "Uživatel musí obnovit základní napájení a zabránit kolapsu životních systémů.",
+    "milestones": [
+      {
+        "name": "Přepnutí na nouzové bateriové zdroje",
+        "points": 200
+      },
+      {
+        "name": "Identifikace poruchy energetického systému",
+        "points": 150
+      },
+      {
+        "name": "Stabilizace teploty v habitatě",
+        "points": 150
+      },
+      {
+        "name": "Obnovení minimální filtrace vzduchu",
+        "points": 200
+      }
+    ],
+    "tutorial": "Při výpadku energie je prioritou udržet tlak, teplotu a dýchatelný vzduch. Okamžitě aktivuj záložní baterie a vypni neesenciální systémy. Poté lokalizuj závadu v hlavním rozvodu a izoluj poškozený okruh. Udržení minimální filtrace vzduchu je kritické pro přežití posádky."
+  },
+"content": [
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Priorita nula: Kritická sběrnice"
+  },
+  {
+    "type": "text",
+    "text": "Jakmile vypadne hlavní napájení (např. ze solárního pole nebo nukleárního reaktoru), automatika musí okamžitě přepnout na nouzové baterie. Ty však mají omezenou kapacitu. Musíte aktivovat tzv. 'Safe Mode', který odpojí vše kromě kritické sběrnice: podpory života (ECLSS), základních senzorů a nouzového osvětlení. Zapomeňte na vaření, vědecké přístroje nebo dobíjení roverů. Každý watt teď musí jít do filtrace CO2 a udržení tlaku."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Tepelná setrvačnost: Boj proti podchlazení"
+  },
+  {
+    "type": "text",
+    "text": "Habitat na Marsu je v podstatě obří termoska. Bez aktivního vyhřívání teplota klesá rychlostí cca 2–5 °C za hodinu v závislosti na izolaci. Aby se zabránilo zamrznutí vodovodního potrubí a elektroniky, musí posádka provést 'hermetizaci tepla'. Uzavřete všechny vnitřní průlezy mezi moduly a stáhněte se do nejmenšího, nejlépe izolovaného prostoru. Tělesné teplo posádky a zbývající energie baterií soustředěná do jednoho modulu může prodloužit čas na opravu o drahocenné hodiny."
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "Diagnostika: Prach, zkrat nebo reaktor?"
+  },
+  {
+    "type": "text",
+    "text": "Výpadek může mít tři hlavní příčiny:\n1. **Akumulace prachu:** Solární panely jsou pokryté vrstvou elektrostatického marsovského prachu, což snížilo dobíjení pod kritickou mez.\n2. **Kaskádový zkrat:** Poškození kabeláže (např. mikrometeoritem nebo vibracemi) vyřadilo hlavní měniče.\n3. **Selhání RTG/reaktoru:** Pokud je zdrojem nukleární generátor, může jít o poruchu chladicího okruhu.\nPrvním krokem je izolace poškozeného segmentu rozvodné sítě, aby se zabránilo vybití zbývajících baterií do zkratovaného okruhu."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Obnova filtrace vzduchu"
+  },
+  {
+    "type": "text",
+    "text": "Bez elektřiny se zastaví ventilátory. V bezvětří uvnitř modulu se kolem vašich úst začne hromadit 'bublina' vydechovaného CO2, což může vést k udušení i v místnosti plné kyslíku. Pokud není proud pro ventilaci, musí se posádka pohybovat, aby mechanicky vířila vzduch, nebo použít ruční pumpy (pokud jsou k dispozici). Obnova minimální cirkulace přes pohlcovače CO2 je důležitější než osvětlení."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Prachová bouře a fotovoltaika"
+  },
+  {
+    "type": "text",
+    "text": "Pokud je příčinou blackoutu globální prachová bouře, může trvat týdny. V takovém případě je nutné přejít na extrémní úsporný režim 'Hibernace'. Posádka omezí pohyb, sníží teplotu v habitatu na minimum (cca 10 °C) a bude doufat, že piezoelektrické vibrační čističe nebo vítr očistí panely dostatečně na to, aby baterie přežily do dalšího dne."
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "text": "Restart systému: Postupné zatěžování"
+  },
+  {
+    "type": "text",
+    "text": "Při obnově napájení nikdy nezapínejte vše najednou. Nárazový odběr (inrush current) by mohl čerstvě nahozený systém znovu shodit. Začněte ohřevem baterií (aby mohly přijímat plný proud), pak spusťte regeneraci atmosféry, tepelný management a až úplně nakonec komunikační pole pro hlášení stavu na Zemi."
+  }
+]
+}
