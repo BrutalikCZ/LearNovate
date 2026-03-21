@@ -98,6 +98,8 @@ function navigateToSubject(categoryId, subject) {
   const chatInput = document.getElementById('chatInput');
   const chatSendBtn = document.getElementById('chatSendBtn');
   const chatMessages = document.getElementById('chatMessages');
+  let chatHistory = [];
+  let chatConvId = '';
 
   function clearWelcome() {
     const welcome = chatMessages.querySelector('.chat-welcome');
@@ -109,15 +111,29 @@ function navigateToSubject(categoryId, subject) {
     chatInput.style.height = Math.min(chatInput.scrollHeight, 120) + 'px';
   });
 
-  function sendChatMessage() {
+  // Build subject context from content blocks
+  function getSubjectContext() {
+    let context = `Předmět: ${subject.name}\n`;
+    if (subject.description) context += `Popis: ${subject.description}\n`;
+    if (subject.content && Array.isArray(subject.content)) {
+      subject.content.forEach(block => {
+        if (block.text) context += block.text + '\n';
+      });
+    }
+    // Limit context length
+    return context.substring(0, 2000);
+  }
+
+  async function sendChatMessage() {
     const text = chatInput.value.trim();
     if (!text) return;
     clearWelcome();
 
+    // Add user message to UI
     const userMsg = document.createElement('div');
     userMsg.className = 'chat-msg user';
     userMsg.innerHTML = `
-      <span class="chat-msg-label">${t('you')}</span>
+      <span class="chat-msg-label">Ty</span>
       <div class="chat-msg-bubble">${text}</div>
     `;
     chatMessages.appendChild(userMsg);
@@ -125,16 +141,71 @@ function navigateToSubject(categoryId, subject) {
     chatInput.style.height = 'auto';
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
-    setTimeout(() => {
+    // Show typing indicator
+    const typingEl = document.createElement('div');
+    typingEl.className = 'chat-msg ai';
+    typingEl.id = 'chatTyping';
+    typingEl.innerHTML = `
+      <span class="chat-msg-label">LearNovate AI</span>
+      <div class="chat-msg-bubble">
+        <div class="scenario-typing"><span></span><span></span><span></span></div>
+      </div>
+    `;
+    chatMessages.appendChild(typingEl);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    const token = localStorage.getItem('token');
+    try {
+      const res = await fetch('/api/ai/ask', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          question: text,
+          subject: subject.name,
+          subject_context: getSubjectContext(),
+          messages: chatHistory,
+          conv_id: chatConvId,
+        }),
+      });
+      const data = await res.json();
+
+      // Remove typing indicator
+      const typing = document.getElementById('chatTyping');
+      if (typing) typing.remove();
+
+      // Save conv_id
+      if (data.conv_id) chatConvId = data.conv_id;
+
+      // Update history
+      chatHistory.push({ role: 'user', content: text });
+      chatHistory.push({ role: 'assistant', content: data.answer });
+
+      // Show AI response
       const aiMsg = document.createElement('div');
       aiMsg.className = 'chat-msg ai';
       aiMsg.innerHTML = `
         <span class="chat-msg-label">LearNovate AI</span>
-        <div class="chat-msg-bubble">${t('ai_unavailable', { name: subject.name })}</div>
+        <div class="chat-msg-bubble">${data.answer.replace(/\n/g, '<br>')}</div>
       `;
       chatMessages.appendChild(aiMsg);
       chatMessages.scrollTop = chatMessages.scrollHeight;
-    }, 600);
+
+    } catch (err) {
+      const typing = document.getElementById('chatTyping');
+      if (typing) typing.remove();
+
+      const errMsg = document.createElement('div');
+      errMsg.className = 'chat-msg ai';
+      errMsg.innerHTML = `
+        <span class="chat-msg-label">LearNovate AI</span>
+        <div class="chat-msg-bubble">Chyba připojení k AI. Zkus to znovu.</div>
+      `;
+      chatMessages.appendChild(errMsg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
   }
 
   chatSendBtn.addEventListener('click', sendChatMessage);
@@ -383,10 +454,10 @@ function startScenario(subject) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          messages:             conversationHistory,
-          user_message:         text,
-          scenario_id:          subject.scenarioId || '',    // ← TOTO PŘIDAT
-          conv_id:              convId,
+          messages: conversationHistory,
+          user_message: text,
+          scenario_id: subject.scenarioId || '',    // ← TOTO PŘIDAT
+          conv_id: convId,
           milestones_completed: milestonesCompleted,
           max_milestones: MAX_MILESTONES,
           milestone_points: milestonePoints,             // ← TOTO PŘIDAT

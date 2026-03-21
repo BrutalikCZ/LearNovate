@@ -91,29 +91,63 @@ def ask():
     data = request.get_json(silent=True) or {}
     question = data.get('question', '').strip()
     subject  = data.get('subject', '')
+    subject_context = data.get('subject_context', '')
+    history  = data.get('messages', [])
 
     if not question:
         return jsonify({'error': 'Missing "question" parameter.'}), 400
 
     user_id = get_user_id_from_token(request)
+    conv_id = data.get('conv_id', '').strip()
 
     # MONITOR: check input
     input_safe, input_reason = check_input(question)
     if not input_safe:
         if user_id:
-            conv_id = start_conversation(user_id, 'ask', {'subject': subject, 'blocked': True})
+            if not conv_id:
+                conv_id = start_conversation(user_id, 'ask', {'subject': subject, 'blocked': True})
             log_message(user_id, conv_id, 'user', question, {'blocked': True, 'reason': input_reason})
-            end_conversation(user_id, conv_id)
-        return jsonify({'answer': BLOCKED_INPUT_MSG, 'blocked': True})
+        return jsonify({'answer': BLOCKED_INPUT_MSG, 'blocked': True, 'conv_id': conv_id})
 
-    conv_id = None
-    if user_id:
+    # Start conversation if first message
+    if user_id and not conv_id:
         conv_id = start_conversation(user_id, 'ask', {'subject': subject})
+
+    if user_id and conv_id:
         log_message(user_id, conv_id, 'user', question)
 
-    conversation_input = [_system_prompt]
-    if subject:
-        conversation_input.append({'role': 'user', 'content': f'[Subject context: {subject}]'})
+    # Build conversation input
+    # Load chat assistant prompt (separate from scenario prompt)
+    chat_prompt = {
+        'role': 'system',
+        'content': (
+            "Jsi přátelský AI asistent vzdělávací platformy LearNovate. "
+            "Pomáháš studentům pochopit učivo. Odpovídej stručně, jasně a v češtině. "
+            "Pokud dostaneš kontext předmětu, drž se tématu ale odpověz na cokoliv se student zeptá."
+        )
+    }
+
+    conversation_input = [chat_prompt]
+
+    # Add subject context if available
+    if subject_context:
+        conversation_input.append({
+            'role': 'user',
+            'content': f'[Kontext lekce: {subject_context}]'
+        })
+        conversation_input.append({
+            'role': 'assistant',
+            'content': 'Rozumím, mám kontext této lekce. Na co se chceš zeptat?'
+        })
+
+    # Add conversation history
+    for msg in history:
+        conversation_input.append({
+            'role': msg.get('role', 'user'),
+            'content': msg.get('content', '')
+        })
+
+    # Add current question
     conversation_input.append({'role': 'user', 'content': question})
 
     try:
@@ -125,14 +159,12 @@ def ask():
         if not output_safe:
             if user_id and conv_id:
                 log_message(user_id, conv_id, 'ai', answer, {'blocked': True, 'reason': output_reason})
-                end_conversation(user_id, conv_id)
-            return jsonify({'answer': BLOCKED_OUTPUT_MSG, 'blocked': True})
+            return jsonify({'answer': BLOCKED_OUTPUT_MSG, 'blocked': True, 'conv_id': conv_id})
 
         if user_id and conv_id:
             log_message(user_id, conv_id, 'ai', answer)
-            end_conversation(user_id, conv_id)
 
-        return jsonify({'answer': answer})
+        return jsonify({'answer': answer, 'conv_id': conv_id})
     except Exception as e:
         return jsonify({'error': f'AI Error: {str(e)}'}), 500
 

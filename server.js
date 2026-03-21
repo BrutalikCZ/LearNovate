@@ -174,7 +174,10 @@ app.post('/api/ai/ask', authMiddleware, async (req, res) => {
   try {
     const response = await fetch(`${AI_URL}/ask`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': req.headers.authorization,
+      },
       body: JSON.stringify(req.body),
     });
     const data = await response.json();
