@@ -212,6 +212,7 @@ function startScenario(subject) {
   let milestonesCompleted = 0;
   let conversationHistory = [];
   let isLoading = false;
+  let convId = '';
 
   const main = document.getElementById('mainContent');
   if (!main) return;
@@ -382,9 +383,10 @@ function startScenario(subject) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          messages: conversationHistory,
-          user_message: text,
-          scenario_id: subject.scenarioId || '',    // ← TOTO PŘIDAT
+          messages:             conversationHistory,
+          user_message:         text,
+          scenario_id:          subject.scenarioId || '',    // ← TOTO PŘIDAT
+          conv_id:              convId,
           milestones_completed: milestonesCompleted,
           max_milestones: MAX_MILESTONES,
           milestone_points: milestonePoints,             // ← TOTO PŘIDAT
@@ -448,6 +450,7 @@ function startScenario(subject) {
         }
         milestonePoints = data.milestone_points || [];
         conversationHistory = data.messages || [];
+        convId = data.conv_id || '';  // přidat proměnnou
         addMessage('ai', data.answer);
         setInputEnabled(true);
       } else {

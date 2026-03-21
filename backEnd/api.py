@@ -1,21 +1,21 @@
 """
 LearNovate - Python AI backend
 """
+print("[API] ====== API.PY LOADED ======")
+
 import sys
 sys.stdout.reconfigure(line_buffering=True)
-print("[API] ====== API.PY LOADED ======")
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from AI.configAI import get_client, load_system_prompt
 from AI.scoring import start_scenario_run, award_milestone_points, get_multiplier
+from AI.logger import start_conversation, log_message, end_conversation
 import jwt as pyjwt
 
 app = Flask(__name__)
 CORS(app)
 
-# ===================================================
-# Configuration
-# ===================================================
 AI_CONFIG = {
     'model': 'gpt-5.4-mini',
     'temperature': 0.7,
@@ -61,7 +61,6 @@ def parse_flags(answer):
 
 
 def get_user_id_from_token(req):
-    """Extract user ID from JWT in Authorization header."""
     header = req.headers.get('Authorization', '')
     if not header.startswith('Bearer '):
         return None
@@ -71,6 +70,11 @@ def get_user_id_from_token(req):
         return payload.get('id')
     except Exception:
         return None
+
+
+@app.before_request
+def log_all_requests():
+    print(f"[FLASK] {request.method} {request.path}")
 
 
 @app.route('/health', methods=['GET'])
@@ -90,6 +94,14 @@ def ask():
     if not question:
         return jsonify({'error': 'Missing "question" parameter.'}), 400
 
+    user_id = get_user_id_from_token(request)
+
+    # Log conversation start
+    conv_id = None
+    if user_id:
+        conv_id = start_conversation(user_id, 'ask', {'subject': subject})
+        log_message(user_id, conv_id, 'user', question)
+
     conversation_input = [_system_prompt]
     if subject:
         conversation_input.append({'role': 'user', 'content': f'[Subject context: {subject}]'})
@@ -98,6 +110,12 @@ def ask():
     try:
         response = ai_call(conversation_input, 'ask')
         answer = response.output_text
+
+        # Log AI response
+        if user_id and conv_id:
+            log_message(user_id, conv_id, 'ai', answer)
+            end_conversation(user_id, conv_id)
+
         return jsonify({'answer': answer})
     except Exception as e:
         return jsonify({'error': f'AI Error: {str(e)}'}), 500
@@ -113,7 +131,6 @@ def scenario_start():
     subject_description = data.get('subject_description', '')
     scenario_id         = data.get('scenario_id', '').strip()
 
-    # Get user ID for scoring
     user_id = get_user_id_from_token(request)
 
     scenario_context = ''
@@ -127,7 +144,6 @@ def scenario_start():
             s = scenario.get('scenario', {})
             raw_milestones = s.get('milestones', [])
 
-            # Support both formats: string list or object list
             for m in raw_milestones:
                 if isinstance(m, dict):
                     milestones_list.append(m.get('name', ''))
@@ -155,7 +171,6 @@ def scenario_start():
         )
         milestone_points = [100] * 5
 
-    # Register scenario run for scoring
     repetition = 1
     multiplier = 1.0
     if user_id and scenario_id:
@@ -170,6 +185,18 @@ def scenario_start():
     try:
         response = ai_call(conversation_input, 'scenario_start')
         answer = response.output_text
+
+        # Start logging conversation
+        conv_id = None
+        if user_id:
+            conv_id = start_conversation(user_id, 'scenario', {
+                'scenario_id': scenario_id,
+                'subject_name': subject_name,
+                'repetition': repetition,
+                'multiplier': multiplier,
+            })
+            log_message(user_id, conv_id, 'ai', answer)
+
         history = [
             {'role': 'user',      'content': opening_prompt},
             {'role': 'assistant', 'phase': 'final_answer', 'content': answer},
@@ -181,21 +208,24 @@ def scenario_start():
             'milestone_points': milestone_points,
             'repetition': repetition,
             'multiplier': multiplier,
+            'conv_id': conv_id,
         })
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         return jsonify({'error': f'AI Error: {str(e)}'}), 500
 
 
 @app.route('/scenario/step', methods=['POST'])
 def scenario_step():
     if not _ai_ready:
-        print("[STEP] >>>>>> ENDPOINT HIT <<<<<<")
         return jsonify({'error': 'AI client not initialized.'}), 503
 
     data         = request.get_json(silent=True) or {}
     history      = data.get('messages', [])
     user_message = data.get('user_message', '').strip()
     scenario_id  = data.get('scenario_id', '').strip()
+    conv_id      = data.get('conv_id', '').strip()
     milestones_completed = int(data.get('milestones_completed', 0))
     milestone_points_list = data.get('milestone_points', [])
 
@@ -203,10 +233,16 @@ def scenario_step():
         return jsonify({'error': 'Missing user_message.'}), 400
 
     user_id = get_user_id_from_token(request)
+
     print(f"[STEP] User: {user_id}, Scenario: {scenario_id}")
+    print(f"[STEP] Conv ID: {conv_id}")
     print(f"[STEP] Milestones completed so far: {milestones_completed}")
     print(f"[STEP] Milestone points list: {milestone_points_list}")
     print(f"[STEP] User message: {user_message[:100]}")
+
+    # Log user message
+    if user_id and conv_id:
+        log_message(user_id, conv_id, 'user', user_message)
 
     full_conversation = [_system_prompt] + history + [{'role': 'user', 'content': user_message}]
 
@@ -233,8 +269,21 @@ def scenario_step():
             points_awarded, total_body, multiplier = award_milestone_points(
                 user_id, scenario_id, milestone_index, base_points
             )
-        elif milestone_complete:
-            print(f"[STEP] WARNING: Milestone detected but missing data — user_id: {user_id}, scenario_id: {scenario_id}")
+
+        # Log AI response
+        if user_id and conv_id:
+            log_message(user_id, conv_id, 'ai', answer, {
+                'milestone_complete': milestone_complete,
+                'task_complete': task_complete,
+                'points_awarded': points_awarded,
+            })
+
+            # End conversation if task complete
+            if task_complete:
+                end_conversation(user_id, conv_id, {
+                    'milestones_completed': milestones_completed + (1 if milestone_complete else 0),
+                    'total_points': total_body,
+                })
 
         return jsonify({
             'answer': answer,
@@ -249,8 +298,6 @@ def scenario_step():
         traceback.print_exc()
         return jsonify({'error': f'AI Error: {str(e)}'}), 500
 
-@app.before_request
-def log_all_requests():
-    print(f"[FLASK] {request.method} {request.path}")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
