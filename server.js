@@ -221,37 +221,67 @@ app.get('/api/gamification/leaderboard', (req, res) => {
 
 // GET /api/subjects?lang=cs|en
 app.get('/api/subjects', (req, res) => {
-  const lang   = req.query.lang === 'en' ? 'en' : 'cs';
-  const srcDir = path.join(APP_DIR, lang);
-  const baseDir = path.join(APP_DIR, 'cs'); // always use CS as source of truth for structure
+  const lang    = req.query.lang === 'en' ? 'en' : 'cs';
+  const langDir = path.join(APP_DIR, lang);
+  const csDir   = path.join(APP_DIR, 'cs');
 
-  if (!fs.existsSync(baseDir)) return res.json([]);
+  // Build a short→csPath map for fallback (cs subjects missing in en)
+  let csByShort = {};
+  if (lang === 'en' && fs.existsSync(csDir)) {
+    fs.readdirSync(csDir, { withFileTypes: true })
+      .filter(d => d.isDirectory())
+      .forEach(d => {
+        const metaPath = path.join(csDir, d.name, 'metadata.json');
+        if (fs.existsSync(metaPath)) {
+          try {
+            const m = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+            if (m.short) csByShort[m.short] = path.join(csDir, d.name);
+          } catch {}
+        }
+      });
+  }
+
+  const primaryDir = fs.existsSync(langDir) ? langDir : csDir;
+  if (!fs.existsSync(primaryDir)) return res.json([]);
 
   try {
-    const categories = fs.readdirSync(baseDir, { withFileTypes: true })
+    const categories = fs.readdirSync(primaryDir, { withFileTypes: true })
       .filter(d => d.isDirectory())
       .map(catDir => {
-        const catPath  = path.join(baseDir, catDir.name);
-        
+        const catPath = path.join(primaryDir, catDir.name);
+
         let metadata = { name: catDir.name.toUpperCase(), short: catDir.name };
-        const metadataEnPath = path.join(APP_DIR, 'en', catDir.name, 'metadata.json');
-        const metadataCsPath = path.join(APP_DIR, 'cs', catDir.name, 'metadata.json');
-        const metadataFilePath = (lang === 'en' && fs.existsSync(metadataEnPath)) ? metadataEnPath : metadataCsPath;
-        if (fs.existsSync(metadataFilePath)) {
-          metadata = JSON.parse(fs.readFileSync(metadataFilePath, 'utf8'));
+        const metaPath = path.join(catPath, 'metadata.json');
+        if (fs.existsSync(metaPath)) {
+          metadata = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
         }
 
-        const subjects = fs.readdirSync(catPath)
-          .filter(f => f.endsWith('.json') && f !== 'metadata.json')
-          .map(f => {
-            // Prefer target-lang file, fall back to Czech
-            const enPath = path.join(APP_DIR, 'en', catDir.name, f);
-            const csPath = path.join(APP_DIR, 'cs', catDir.name, f);
-            const filePath = (lang === 'en' && fs.existsSync(enPath)) ? enPath : csPath;
-            const raw  = fs.readFileSync(filePath, 'utf8');
-            const data = JSON.parse(raw);
+        // Fallback category dir in CS (matched by short key)
+        const fallbackCatPath = csByShort[metadata.short] || null;
+
+        // Collect all subject filenames (primary + any extra from fallback)
+        const primaryFiles = new Set(
+          fs.readdirSync(catPath).filter(f => f.endsWith('.json') && f !== 'metadata.json')
+        );
+        if (fallbackCatPath && fs.existsSync(fallbackCatPath)) {
+          fs.readdirSync(fallbackCatPath)
+            .filter(f => f.endsWith('.json') && f !== 'metadata.json')
+            .forEach(f => primaryFiles.add(f));
+        }
+
+        const subjects = Array.from(primaryFiles).map(f => {
+          const primaryFile  = path.join(catPath, f);
+          const fallbackFile = fallbackCatPath ? path.join(fallbackCatPath, f) : null;
+          const filePath = fs.existsSync(primaryFile)
+            ? primaryFile
+            : (fallbackFile && fs.existsSync(fallbackFile) ? fallbackFile : null);
+          if (!filePath) return null;
+          try {
+            const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             return { id: path.basename(f, '.json'), ...data };
-          });
+          } catch { return null; }
+        }).filter(Boolean);
+
         return { id: catDir.name, ...metadata, subjects };
       });
 
