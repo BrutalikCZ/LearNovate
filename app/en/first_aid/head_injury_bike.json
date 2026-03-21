@@ -1,0 +1,88 @@
+{
+  "name": "Head injury while riding a bicycle",
+  "description": "How to deal with a concussion or more serious head injury after falling off a bike.",
+  "icon": "bike",
+  "label": "PP",
+  "colorFrom": "#111827",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Cycling trip",
+    "setting": "You are riding a bike with a friend on a forest road. A friend hits a root, falls over the handlebars and hits his head on a rock. He is momentarily disoriented, confused, and bleeding from a head wound.",
+    "objective": "The user must assess the severity of the injury, stop the bleeding and monitor the level of consciousness.",
+    "milestones": [
+      {
+        "name": "Ensuring safety and checking the state of consciousness",
+        "points": 100
+      },
+      {
+        "name": "Stopping bleeding from the head",
+        "points": 150
+      },
+      {
+        "name": "Calling emergency services for symptoms of concussion",
+        "points": 100
+      },
+      {
+        "name": "Monitoring the condition until help arrives",
+        "points": 100
+      }
+    ],
+    "tutorial": "Always monitor consciousness in the event of a head injury. If the affected person is confused or loses consciousness, call 155. Stop the bleeding by applying pressure through a sterile cover. Do not move the victim more than necessary and monitor his condition."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Head Injury: The Hidden Threat Under the Helmet"
+    },
+    {
+      "type": "text",
+      "text": "Falls from bicycles are among the most common causes of serious head injuries. Even if the rider is wearing a helmet, the impact can cause a concussion or internal bleeding. The danger lies in the fact that the victim's condition may seem stable at first (the so-called light interval), but within a few tens of minutes there may be a sharp deterioration and unconsciousness."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to recognize a concussion and more serious injury"
+    },
+    {
+      "type": "text",
+      "text": "Watch for these warning signs that signal brain damage: \n1. **Amnesia:** Does not remember the events immediately before the fall or the fall itself.\n2. **Nausea:** Repeated vomiting or a strong feeling of vomiting.\n3. **Visual disorders:** Blurred vision, unequally sized pupils (anisokoria).\n4. **Confusion:** The affected person repeats the same questions, does not know where he is or what day it is.\n5. **Severe headache:** Pain that gets worse and doesn't go away."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "To take off the helmet or not?"
+    },
+    {
+      "type": "text",
+      "text": "If the affected person is communicating and breathing, **do not remove** his helmet. It may have an associated cervical spine injury and manipulation of the head could cause paralysis. Only remove the helmet if: \n- The victim is not breathing and you need to start resuscitation.\n- The helmet prevents the treatment of massive, life-threatening bleeding.\n- The affected person vomits in a supine position and the helmet prevents turning the head to the side."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First aid on site"
+    },
+    {
+      "type": "text",
+      "text": "1. **Stopping the Bleeding:** The head is heavily bloodied, so even a small wound can look scary. Use a sterile square or clean piece of cloth and apply gentle pressure directly to the wound. If you suspect a skull fracture (feel a soft spot or see a deformity), do not apply force to the wound, just cover it loosely.\n2. **Rest mode:** Place the affected person in a semi-sitting position with back and head support. Forbid him from any other physical activity. Adrenaline can mask the pain, but another bike ride is absolutely out of the question at this point.\n3. **Thermal comfort:** Shock can also occur in summer, keep your friend warm with clothing or isothermal foil."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When to call 155?"
+    },
+    {
+      "type": "text",
+      "text": "Always call 911 if there is even a short-term loss of consciousness, if there is confusion, vomiting, or if clear fluid (cerebrospinal fluid) is coming out of the ears or nose. In case of any doubt, it is better to be examined in a hospital - a CT scan is the only way to rule out bleeding in the brain 100%."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Important notice"
+    },
+    {
+      "type": "text",
+      "text": "If there has been a strong impact on the helmet, its structure is broken and it no longer provides protection. After such a fall, the helmet must be thrown away and a new one purchased, even if there are no visible cracks."
+    }
+  ]
+}

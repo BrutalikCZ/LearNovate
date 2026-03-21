@@ -1,0 +1,70 @@
+{
+  "name": "Overheated engine",
+  "description": "How to properly react to engine overheating and prevent engine damage.",
+  "icon": "car",
+  "label": "Overheating",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Overheated engine",
+    "setting": "You're driving up a long hill on a hot summer day and after a few minutes you notice that the engine temperature is rapidly rising into the red zone. Light smoke starts coming out from under the hood and the vehicle loses power, so you have to react immediately to avoid serious damage.",
+    "objective": "The user must react correctly to overheating of the engine and prevent damage to it.",
+    "milestones": [
+      {
+        "name": "Stopping the vehicle safely",
+        "points": 100
+      },
+      {
+        "name": "Shutting down the engine and ensuring cooling",
+        "points": 150
+      },
+      {
+        "name": "Checking the coolant after cooling",
+        "points": 150
+      },
+      {
+        "name": "Evaluation of the situation and decision on the next course of action",
+        "points": 100
+      }
+    ],
+    "tutorial": "As soon as the engine temperature starts to rise dangerously, immediately stop in a safe place and turn off the engine. Allow the vehicle to stand and the engine to cool down naturally, never open the radiator when hot because of the risk of scalding. After cooling sufficiently, check the coolant level and look for any leaks. If the fluid is low, it may be necessary to add it, but always only after the engine has completely cooled down."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How does engine cooling work?"
+    },
+    {
+      "type": "text",
+      "text": "The engine cooling system maintains optimal operating temperature. If it fails or is overloaded, the motor can quickly overheat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Causes of overheating"
+    },
+    {
+      "type": "text",
+      "text": "The most common causes include a low coolant level, a malfunctioning radiator fan, or a long drive in extreme temperatures."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Correct response"
+    },
+    {
+      "type": "text",
+      "text": "It is necessary to stop the vehicle immediately and turn off the engine. Continued driving may cause serious and irreversible engine damage."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Safety measures"
+    },
+    {
+      "type": "text",
+      "text": "Never open the radiator cap when it is hot. There is a risk of escaping hot steam and serious burns. Always wait for the system to cool down completely."
+    }
+  ]
+}

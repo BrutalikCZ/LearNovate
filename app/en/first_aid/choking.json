@@ -1,0 +1,97 @@
+{
+  "name": "Treatment of foreign body choking",
+  "description": "How to recognize and treat choking in an adult using the Heimlich maneuver and basic first aid.",
+  "icon": "wind",
+  "label": "PP",
+  "colorFrom": "#1f2937",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Stew in a restaurant",
+    "setting": "You are sitting with a colleague in a restaurant. During the meal, the friend suddenly begins to choke, cannot cough or speak, and grabs his neck. His face turns red quickly and he panics. There are other people around, but no one is responding.",
+    "objective": "The user must recognize the complete obstruction of the airway and take the correct steps to open it.",
+    "milestones": [
+      {
+        "name": "Recognizing severe choking (not talking, not coughing)",
+        "points": 100
+      },
+      {
+        "name": "Call for help (155 or call the neighborhood)",
+        "points": 50
+      },
+      {
+        "name": "Heimlich maneuver (repeated abdominal compression)",
+        "points": 200
+      },
+      {
+        "name": "Checking the status and repeating the intervention as needed",
+        "points": 100
+      }
+    ],
+    "tutorial": "In case of complete suffocation, it is necessary to act immediately. If the sufferer cannot speak, cough or breathe, it is a life-threatening condition. Call for help first. Stand behind the casualty, wrap your arms around his waist and apply sharp inward and upward compression (Heimlich maneuver). Repeat until the airway is cleared or consciousness is lost. If the person becomes unconscious, start CPR and call 911."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Suffocation: When seconds mean life"
+    },
+    {
+      "type": "text",
+      "text": "Suffocation by a foreign body (most often a bite of food) is a critical condition when the airways are mechanically blocked. The key to success is a quick distinction between partial and complete obstruction. If the victim is wheezing but able to speak or cough forcefully, the airway is not completely closed. However, if he's just silently gasping, turning red, and clutching his neck (the universal signal of suffocation), you have about 60 to 90 seconds before he passes out."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step One: Encouraging a cough"
+    },
+    {
+      "type": "text",
+      "text": "If the victim coughs, do not intervene physically! Coughing is the most effective mechanism to expel the body. Just encourage him: 'Cough, more!' and watch to see if the condition worsens. As soon as the coughing stops and the affected person only opens his mouth empty, go to more aggressive help."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Punches between the shoulder blades (Gordon maneuver)"
+    },
+    {
+      "type": "text",
+      "text": "Stand slightly to the side and for the disabled person. Support his chest with one hand and tilt him significantly forward so that the loose body can fall out by gravity and not slide deeper. With the other hand (palm), perform up to 5 sharp blows between the shoulder blades. After each blow, check whether the body has not flown out. If the blows do not work, immediately proceed to the Heimlich maneuver."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Heimlich Maneuver: Technique and Strength"
+    },
+    {
+      "type": "text",
+      "text": "This maneuver uses the air remaining in the lungs to 'shoot' the body out like a champagne cork. \n1. Stand behind the victim and wrap both arms around the upper abdomen (between the navel and the end of the sternum). \n2. Clench one hand into a fist, place it with the thumb side on the victim's stomach, and hold it firmly with the other hand. \n3. Make a sharp, strong push inwards and upwards (as if you wanted to lift the person up). \n4. Repeat up to 5 times in a row. Alternate between 5 kicks between the shoulder blades and 5 Heimlich maneuvers until the obstruction clears the way."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When NOT to perform the Heimlich?"
+    },
+    {
+      "type": "text",
+      "text": "The Heimlich maneuver is generally not performed on infants (up to 1 year) and on pregnant women in an advanced stage or on extremely obese persons where the abdomen cannot be hugged. For pregnant and obese women, replace abdominal compressions with vigorous chest compressions (at the point where the heart is massaged during CPR)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Critical Break: Unconsciousness"
+    },
+    {
+      "type": "text",
+      "text": "If the victim goes limp and falls unconscious, stop the maneuvers. Carefully place him on the ground on his back, immediately call 155 (if this has not already happened) and start classical resuscitation (CPR). Chest compressions during CPR can also help relax the body. Before each breath (if you take one), look in your mouth to see if you can see the body and if you can't remove it with two fingers. But never grope your throat blindly!"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Follow-up care"
+    },
+    {
+      "type": "text",
+      "text": "Even if the body can be removed and the victim looks fine, he must be examined by a doctor. The Heimlich maneuver is very aggressive and can cause internal injuries to organs (e.g. laceration of the liver or stomach) that are not apparent at first glance."
+    }
+  ]
+}

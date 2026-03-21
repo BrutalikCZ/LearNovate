@@ -1,0 +1,70 @@
+{
+  "name": "Charging the car battery",
+  "description": "How to properly charge a car battery and restore its functionality.",
+  "icon": "car",
+  "label": "Car battery",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Charging the car battery",
+    "setting": "The car has been parked for a long time and the battery is dead. Do you have a charger available?",
+    "objective": "The user must charge the car battery correctly.",
+    "milestones": [
+      {
+        "name": "Disconnecting the battery from the vehicle",
+        "points": 100
+      },
+      {
+        "name": "Connecting the charger the right way",
+        "points": 150
+      },
+      {
+        "name": "Setting up and starting charging",
+        "points": 100
+      },
+      {
+        "name": "Disconnecting the charger and reinstalling the battery",
+        "points": 150
+      }
+    ],
+    "tutorial": "Disconnect the battery first (minus pole first). Connect the charger correctly according to the polarity. Set the appropriate charging mode. After charging is complete, first turn off the charger and then unplug it. Reconnect the battery in the reverse order."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is a car battery"
+    },
+    {
+      "type": "text",
+      "text": "The car battery serves as a source of electrical energy for starting the engine and powering the vehicle's electronics. It can self-discharge when left standing for a long time."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When you need to charge"
+    },
+    {
+      "type": "text",
+      "text": "Typical symptoms of a dead battery are weak starting or the complete impossibility of starting. Lights may also go out or the lighting may be dim."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Safe charging procedure"
+    },
+    {
+      "type": "text",
+      "text": "Always disconnect the battery from the vehicle before charging. Connect the charger according to the correct polarity and make sure the device is switched off. Charge in a well-ventilated area."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "After charging is complete"
+    },
+    {
+      "type": "text",
+      "text": "After charging, first disconnect the battery from the charger and then reconnect it to the vehicle. Check the functionality of the starter and make sure that the contacts are tight."
+    }
+  ]
+}

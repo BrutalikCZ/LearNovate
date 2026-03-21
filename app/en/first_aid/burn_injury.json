@@ -1,0 +1,88 @@
+{
+  "name": "Burn treatment",
+  "description": "Basic first aid procedure for thermal burns of various degrees.",
+  "icon": "flame",
+  "label": "PP",
+  "colorFrom": "#7c2d12",
+  "colorTo": "#f97316",
+  "scenario": {
+    "title": "Burn in the kitchen",
+    "setting": "Boiling oil spills on your forearm while cooking. The pain is immediate, the skin reddens and blisters begin to form. There is water and a basic first aid kit in the kitchen.",
+    "objective": "The user must cool the burn quickly, prevent further damage and treat it properly.",
+    "milestones": [
+      {
+        "name": "Ensuring safety and removing the heat source",
+        "points": 50
+      },
+      {
+        "name": "Instant cooling of the affected area",
+        "points": 150
+      },
+      {
+        "name": "Removal of jewelry and clothing around the wound",
+        "points": 100
+      },
+      {
+        "name": "Sterile burn cover",
+        "points": 150
+      }
+    ],
+    "tutorial": "With burns, the key is to stop the heat as quickly as possible. Immediately cool the affected area with cold water for at least 10-20 minutes. Remove rings, watches and loose clothing in the vicinity, but do not remove the material stuck to the skin. After cooling, apply a sterile cover or clean cloth. Do not use greasy creams or ice directly on the skin. Seek medical attention for extensive burns."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Burns: Combat thermal inertia"
+    },
+    {
+      "type": "text",
+      "text": "The biggest trick with burns is that tissue damage continues even after you remove the heat source (hot oil, steam, flame). The tissues are 'cooked' and the heat accumulated in them spreads further in depth. The only way to stop this process is timely and long enough cooling. Correct first aid in the first seconds decides whether the wound will heal in a week or require a skin graft."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Degrees of burns - what do you see in the mirror?"
+    },
+    {
+      "type": "text",
+      "text": "1. **I. degree (Redness):** The skin is red, burning and stinging (typically sunburn). It heals quickly without consequences.\n2. **II. degree (Blisters):** The deeper layers of the skin are damaged. Blisters filled with clear fluid form. It is extremely painful because the nerve endings are exposed but still functional.\n3. **III. degree (Charred):** The skin is white, gray or black (charred). Paradoxically, it doesn't hurt as much because the nerves are destroyed. It always requires hospital treatment."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The key to success: Cooling, not freezing!"
+    },
+    {
+      "type": "text",
+      "text": "Cool immediately with a stream of lukewarm or cold drinking water (ideally around 8-15°C). Forget the ice! Icing causes blood vessels to constrict (vasoconstriction), which paradoxically worsens blood flow and tissue damage can become even worse. Cool for as long as it provides relief—usually 10 to 20 minutes. Cool only the burned area so as not to cause general hypothermia of the victim."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What about clothes and jewelry?"
+    },
+    {
+      "type": "text",
+      "text": "Remove rings, watches and bracelets immediately. The burned tissue will begin to swell very quickly and the jewelry could cut off blood circulation in the fingers. If the clothes are loose, take them off. **CAUTION:** If the fabric is glued to the wound (silon or T-shirt glued together), never pull it off with force! Cut the clothing around and leave the stained piece in place to be removed by a doctor in an aseptic environment."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Grandmother's Advice: The Greatest Enemy of Healing"
+    },
+    {
+      "type": "text",
+      "text": "A fresh burn **does not include**: butter, oil, flour, eggs, toothpaste or backfill. These substances 'seal' the heat in the wound, increasing the risk of infection, and the doctor must then painfully scrub them from the wound. Likewise, **don't pop blisters**! The fluid inside is sterile and the skin above it serves as the best natural cover against bacteria."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When to call 155 or go to the emergency room?"
+    },
+    {
+      "type": "text",
+      "text": "- If the burn is III. degrees.\n- If there are burns on the face, neck, palms, soles of the feet or genitals.\n- For children, if the range exceeds the size of their palm.\n- In adults, if the extent exceeds 5% of the body surface (roughly 5 palms).\n- If respiratory tract burns are suspected (inhalation of hot vapors or smoke)."
+    }
+  ]
+}

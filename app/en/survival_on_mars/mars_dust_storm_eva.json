@@ -1,0 +1,88 @@
+{
+  "name": "Dust storm during EVA",
+  "description": "Surviving an extraterrestrial activity (EVA) during a sudden Martian dust storm.",
+  "icon": "wind",
+  "label": "MARS",
+  "colorFrom": "#b91c1c",
+  "colorTo": "#1e3a8a",
+  "scenario": {
+    "title": "Catching storms on the way out",
+    "setting": "During an extraterrestrial mission (EVA) on the surface of Mars, a severe dust storm suddenly rises. Visibility drops to a minimum, communication with the base is unstable, and orientation systems fail. Spacesuit reports increased filter load.",
+    "objective": "The user must safely terminate the EVA, maintain orientation and return to the habitat.",
+    "milestones": [
+      {
+        "name": "Immediate termination of EVA protocol",
+        "points": 150
+      },
+      {
+        "name": "Activation of emergency navigation to the habitat",
+        "points": 200
+      },
+      {
+        "name": "Inspection of oxygen and filtration systems",
+        "points": 150
+      },
+      {
+        "name": "Safe return to airlock",
+        "points": 200
+      }
+    ],
+    "tutorial": "In a Martian dust storm, minimizing exposure is key. Terminate EVA immediately and switch to emergency navigation. Keep an eye on your oxygen supply and the condition of your filters, as dust can quickly reduce their effectiveness. Move slowly and in a controlled manner back to the habitat."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Physics of the Martian Storm: Static Electricity and Dust"
+    },
+    {
+      "type": "text",
+      "text": "Martian dust is extremely fine (particle size in the order of micrometers) and has sharp edges because there is no water erosion on Mars to grind them away. The friction of particles in a storm creates strong static electricity. It causes dust to literally stick to your space suit, sensors and helmet visors. The greatest risk is not the force of the wind, but the total loss of visibility and the gradual clogging of the moving parts of the space suit and life support filters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Emergency Navigation: Blind Return"
+    },
+    {
+      "type": "text",
+      "text": "Do not rely on sight in zero visibility. If you are out of visual contact with the habitat, activate the 'Dead Reckoning' navigation system (calculation of position from movement) or follow the digital route in the HUD display that your spacesuit recorded on the way out. If the GPS fails (which happens in a storm due to ionization of the atmosphere), use the inertial measurement unit (IMU) in the spacesuit. If you are within range of habitats, you can orient yourself by radio beacon or guide lines, if one has been installed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Spacesuit and filtration management"
+    },
+    {
+      "type": "text",
+      "text": "Dust in a storm drastically increases the wear and tear on PLSS (Portable Life Support System) filters. Watch the warning lights: if breathing resistance increases, the filters are clogged. In such a case, limit physical exertion to a minimum to reduce air consumption and flow through the filters. Static charge can also interfere with shortwave communications; switch to a backup frequency or rely on automatic emergency protocols broadcast in digital packets."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "'Lock and Wait' protocol"
+    },
+    {
+      "type": "text",
+      "text": "If you are too far from base and the storm reaches extreme intensity, consider a 'Lock and Wait' protocol. Find a lee (rock formation or rover), anchor to the ground and go into power saving mode. Moving in total darkness increases the risk of falling, ripping your space suit against a rock or getting lost. Monitor energy reserves for heating – in a storm the temperature drops and your spacesuit has to compensate for heat loss."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Decontamination in the transition chamber"
+    },
+    {
+      "type": "text",
+      "text": "The danger doesn't end with the return to the chamber. Martian dust contains toxic perchlorates. After closing the outer door, an intensive cleaning cycle (air showers and electromagnetic dust removal) must take place. Never remove your helmet until the sensors confirm that the dust concentration in the chamber has dropped to a safe level. Dust in the lungs is a death sentence on Mars."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The psychology of white darkness"
+    },
+    {
+      "type": "text",
+      "text": "Disorientation and isolation in a storm cause panic. However, rapid breathing only overwhelms the filters and fogs the visor sooner. Concentrate on the sound of your breath and the on-board computer's report. You are a trained professional; the storm is just another technical obstacle that you have to solve methodically."
+    }
+  ]
+}

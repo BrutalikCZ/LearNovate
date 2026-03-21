@@ -1,0 +1,70 @@
+{
+  "name": "Changing a tire",
+  "description": "How to safely replace a flat tire with a spare wheel on the road or rest stop.",
+  "icon": "car",
+  "label": "Tire",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Changing a tire",
+    "setting": "You are driving on the highway when you suddenly feel a strong vibration and the vehicle starts to pull to one side. You stop at a rest stop and discover that one of the tires is flat, so it needs to be replaced. You have a spare wheel, a lever and a wheel wrench in the trunk.",
+    "objective": "The user must properly replace the flat tire with the spare wheel.",
+    "milestones": [
+      {
+        "name": "Securely securing the vehicle (warning lights, handbrake, warning triangle)",
+        "points": 100
+      },
+      {
+        "name": "Preparation of tools and spare wheel",
+        "points": 50
+      },
+      {
+        "name": "Changing a wheel (lifting the vehicle, removing and installing the wheel)",
+        "points": 150
+      },
+      {
+        "name": "Completion (bolt tightening, vehicle lowering, stability check)",
+        "points": 100
+      }
+    ],
+    "tutorial": "First, stop safely at the shoulder or rest stop, turn on the hazard lights and secure the vehicle with the handbrake. Place the warning triangle so that it is sufficiently visible to other drivers. Then take out the spare wheel, lever and wheel wrench from the trunk. Place the jack on a fixed point of the body near the damaged wheel and gradually raise the vehicle until the tire is only minimally in contact with the ground. Loosen the wheel bolts, remove the flat tire and fit the spare wheel so that it fits correctly on the hub. Install and hand-tighten the bolts, then lower the vehicle back to the ground and finally tighten the bolts crosswise for even tightening. Finally, check the stability of the bike and store all the tools."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Safety when changing a wheel"
+    },
+    {
+      "type": "text",
+      "text": "Stopping and properly securing the vehicle is key to minimizing the risk of an accident when changing a tire."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Equipment preparation"
+    },
+    {
+      "type": "text",
+      "text": "The spare wheel, lever and wheel wrench must be ready before starting the exchange itself."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Exchange procedure"
+    },
+    {
+      "type": "text",
+      "text": "The vehicle is first raised, the wheel is removed and then the spare wheel is fitted with the correct seat on the hub."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Completion of work"
+    },
+    {
+      "type": "text",
+      "text": "After starting the vehicle, it is necessary to tighten the bolts and check the stability of the wheel before continuing to drive."
+    }
+  ]
+}

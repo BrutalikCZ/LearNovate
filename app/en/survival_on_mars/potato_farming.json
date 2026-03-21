@@ -1,0 +1,88 @@
+{
+  "name": "Growing potatoes in a Martian colony",
+  "description": "Food security using improvised hydroponics and biomass recycling in a closed system.",
+  "icon": "sprout",
+  "label": "MARS",
+  "colorFrom": "#14532d",
+  "colorTo": "#84cc16",
+  "scenario": {
+    "title": "Establishment of the first farm",
+    "setting": "The colony has limited food supplies and is awaiting the next supply mission. You decide to use the recycled organic material and water system of the habitats to establish the first cultivation zone. The glass dome is dimly lit and the ground must be created artificially.",
+    "objective": "The user must create a stable growing environment and ensure the first successful crop growth.",
+    "milestones": [
+      {
+        "name": "Provision of nutrients from available biomass",
+        "points": 150
+      },
+      {
+        "name": "Substrate creation and soil preparation",
+        "points": 200
+      },
+      {
+        "name": "Setting up the irrigation system",
+        "points": 150
+      },
+      {
+        "name": "Stabilization of growth conditions (temperature, light, humidity)",
+        "points": 200
+      }
+    ],
+    "tutorial": "In a closed system, nutrient recycling must be maximized. The organic material is processed into a substrate that serves as a basis for plant growth. The key is to maintain a stable temperature, humidity and light regime. Any imbalance can cause the entire crop to collapse."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Martian regolith: Toxic soil"
+    },
+    {
+      "type": "text",
+      "text": "Forget about just digging a hole in the red sand. The Martian regolith is full of perchlorates (toxic salts) and is devoid of any organic life. Before planting, the regolith must be thoroughly flushed with purified water to remove toxicity. Only after washing and adding biological fertilizer (recycled human waste and biomass residues) will you create a real soil in which potato roots can survive."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Closed nutrient cycle: There is no waste"
+    },
+    {
+      "type": "text",
+      "text": "In an isolated colony, every gram of biomass is a treasure. All organic waste from the habitat must pass through a composter, where bacteria break it down into fertilizer rich in nitrogen, phosphorus and potassium. This process must be strictly controlled to avoid the spread of pathogens from the crew to the food chain. Potatoes are an ideal crop because they provide a high caloric yield per square meter and can withstand harsher conditions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Atmosphere and Light: The Struggle for Photosynthesis"
+    },
+    {
+      "type": "text",
+      "text": "Mars receives only about 43% of the sunlight compared to Earth, and dust storms can block the sun for weeks. The glass dome must be equipped with additional LED lighting with wavelengths optimized for growth (red and blue spectrum). The CO2 level in the grow zone is kept higher than in the living areas, which accelerates plant growth and increases oxygen production for the colony."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hydroponics and drip irrigation"
+    },
+    {
+      "type": "text",
+      "text": "Water is rarer than gold on Mars, so traditional watering is ineffective. Computer-controlled drip irrigation directly to the roots, or aeroponics (spraying the roots with a nutrient mist) is used. Sensors in the substrate monitor the humidity to the milliliter precisely. Any excess water that evaporates from the leaves is immediately captured by the condensers and returned to the tanks."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Radiation: Protection of the gene pool"
+    },
+    {
+      "type": "text",
+      "text": "The thin Martian atmosphere does not block cosmic rays. If the growing modules are not shielded (e.g. with a layer of regolith or special glass with a water filter), there is a risk of plant mutation and crop failure. The colony's potatoes are genetically engineered to be more stress-resistant and have a shortened growing cycle, allowing for more harvests per Martian year."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Psychological factor: Green oasis"
+    },
+    {
+      "type": "text",
+      "text": "The farm is not just a source of calories. In an environment made up of metal and plastic, the growing zone is the only place with the natural color and smell of the earth. Farm work is critical for the crew to maintain mental health and prevent depression during long isolations on the red planet."
+    }
+  ]
+}

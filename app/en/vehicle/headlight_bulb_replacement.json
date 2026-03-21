@@ -1,0 +1,70 @@
+{
+  "name": "Headlight bulb replacement",
+  "description": "How to properly replace a headlight bulb and ensure safe vehicle lighting.",
+  "icon": "car",
+  "label": "Headlights",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Headlight bulb replacement",
+    "setting": "While driving at night, you notice that one of the front lights is not on. You stop in a safe place and decide to change the bulb to make driving safe again.",
+    "objective": "The user must replace the bulb correctly.",
+    "milestones": [
+      {
+        "name": "Turning off the lights and accessing the headlight",
+        "points": 100
+      },
+      {
+        "name": "Removing the old bulb",
+        "points": 100
+      },
+      {
+        "name": "Installing a new bulb without touching the glass",
+        "points": 150
+      },
+      {
+        "name": "Light functionality test",
+        "points": 100
+      }
+    ],
+    "tutorial": "Always turn off the lights and ideally the engine before changing. Open the headlight cover and carefully remove the old bulb. Do not hold the new bulb by the glass part to avoid damaging it or shortening its life. After installation, close everything carefully and test the light."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The importance of functional headlights"
+    },
+    {
+      "type": "text",
+      "text": "Headlights ensure vehicle visibility and safety when driving in the dark or in poor conditions. A malfunctioning light significantly increases the risk of an accident."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Types of light bulbs"
+    },
+    {
+      "type": "text",
+      "text": "Different types of bulbs are used in cars, such as halogen, xenon or LED. When replacing, it is necessary to use the correct type recommended by the manufacturer."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Proper handling"
+    },
+    {
+      "type": "text",
+      "text": "When handling the bulb, do not touch the glass part with your bare hands. Grease can cause overheating and shorten the life of the bulb."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Inspection after replacement"
+    },
+    {
+      "type": "text",
+      "text": "After replacement, always check the functionality of the light and the correct seating of the cover. Make sure the light shines in the right direction and is not dimmed."
+    }
+  ]
+}

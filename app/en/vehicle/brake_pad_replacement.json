@@ -1,0 +1,70 @@
+{
+  "name": "Replacement of brake pads",
+  "description": "How to replace brake pads.",
+  "icon": "car",
+  "label": "Brake pads",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Replacement of brake pads",
+    "setting": "You hear an unpleasant screeching sound when braking. You will find that the brake pads are worn.",
+    "objective": "The user must replace the brake pads correctly.",
+    "milestones": [
+      {
+        "name": "Securing the vehicle and removing the wheel",
+        "points": 100
+      },
+      {
+        "name": "Dismantling the caliper and removing the old plates",
+        "points": 150
+      },
+      {
+        "name": "Installation of new plates",
+        "points": 150
+      },
+      {
+        "name": "Wheel assembly and brake test",
+        "points": 100
+      }
+    ],
+    "tutorial": "The car must be securely secured and raised. After removing the wheel, remove the brake caliper. Remove the old pads and check the condition of the disc. Fit the new plates correctly and press the piston. After folding, depress the brake several times to seat the system."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Introduction to C++"
+    },
+    {
+      "type": "text",
+      "text": "C++ is a powerful, compiled programming language that combines low-level systems programming with high-level abstractions. It is widely used in game development, operating systems, embedded systems, and high-performance applications."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Basic syntax"
+    },
+    {
+      "type": "text",
+      "text": "Every C++ program begins with the main() function. Variables must be declared with a specific type (int, float, double, char, bool). C++ uses semicolons at the end of statements and braces for blocks of code."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pointers and References"
+    },
+    {
+      "type": "text",
+      "text": "Pointers are variables that store the address of another variable in memory. The & operator returns the address of a variable, while the * operator dereferences a pointer. References are aliases for existing variables and cannot be redirected after initialization."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Object-oriented programming"
+    },
+    {
+      "type": "text",
+      "text": "C++ supports classes and objects, inheritance, polymorphism, encapsulation, and abstraction. Classes define properties (attributes) and behavior (methods) of objects. Constructors and destructors control the life cycle of objects."
+    }
+  ]
+}

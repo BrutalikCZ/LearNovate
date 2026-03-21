@@ -1,0 +1,70 @@
+{
+  "name": "Refilling the washer fluid",
+  "description": "How to properly add washer fluid and ensure a clear view from the vehicle.",
+  "icon": "car",
+  "label": "Washers",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Refilling the washer fluid",
+    "setting": "While driving, you ran out of washer fluid and the windshield is heavily soiled, which limits visibility and impairs driving safety.",
+    "objective": "The user must correctly add fluid to the washers and restore their functionality.",
+    "milestones": [
+      {
+        "name": "Opening the hood and finding the washer tank",
+        "points": 100
+      },
+      {
+        "name": "Choosing the right fluid for the conditions",
+        "points": 100
+      },
+      {
+        "name": "Topping up the liquid to the correct level",
+        "points": 100
+      },
+      {
+        "name": "Checking the functionality of the washers",
+        "points": 100
+      }
+    ],
+    "tutorial": "Locate the hood release lever and lock it securely in the open position. Look for the washer reservoir, which is usually marked with a windshield symbol with drops. Check whether you are using the correct fluid according to the season, i.e. summer or winter mixture. Pour the liquid slowly to avoid overflow or leakage outside the tank. After filling, close the lid, secure the hood and test the functionality of the windshield washers."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Meaning of washer fluid"
+    },
+    {
+      "type": "text",
+      "text": "Windscreen washer fluid ensures a clear view from the windshield and is key to safe driving in rain, winter and when the road is dirty."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Choosing the right mix"
+    },
+    {
+      "type": "text",
+      "text": "The summer mixture is designed to remove insects and dust, the winter mixture resists low temperatures and prevents freezing."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Replenishment procedure"
+    },
+    {
+      "type": "text",
+      "text": "The liquid must be poured carefully into the marked container to avoid spillage or contamination of the engine compartment."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Function check"
+    },
+    {
+      "type": "text",
+      "text": "After refilling, it is advisable to activate the washers and verify that the liquid flows correctly onto the windshield."
+    }
+  ]
+}

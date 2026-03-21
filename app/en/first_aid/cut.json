@@ -1,0 +1,65 @@
+{
+  "name": "Cut wound treatment",
+  "description": "How to properly stop bleeding, treat and bandage a cut in the field and at home.",
+  "icon": "heart-pulse",
+  "label": "PP",
+  "colorFrom": "#7f1d1d",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Treatment of a cut wound in the field",
+    "setting": "You go hiking with a friend. You stop by the stream to rest. The friend reaches into his backpack, his hand slips on the broken glass from the bottle. A deep cut on the palm immediately begins to bleed profusely. The friend turns pale, holds his hand above his head and says, 'What now?' You have a first aid kit in your backpack.",
+    "objective": "The user must treat the cut properly — protect himself, stop the bleeding, treat the wound, and decide if medical attention is needed.",
+    "milestones": [
+      {
+        "name": "Rescuer protection (putting on gloves from the first aid kit)",
+        "points": 50
+      },
+      {
+        "name": "Stopping the bleeding (direct pressure on the wound with a sterile dressing)",
+        "points": 150
+      },
+      {
+        "name": "Cleaning and treatment of the wound (washing, disinfection, checking for foreign bodies)",
+        "points": 50
+      },
+      {
+        "name": "Proper coverage and fixation (sterile dressing, firm dressing)",
+        "points": 150
+      },
+      {
+        "name": "Decisions on further care (assessment of severity, provision of transport to a doctor)",
+        "points": 100
+      }
+    ],
+    "tutorial": "Treating a cut in the field is critical to preventing infection and ensuring proper healing. First, it is important to protect yourself to avoid contact with blood. Use gloves from the first aid kit if available. Then stop the bleeding by applying direct pressure to the wound using a sterile dressing or clean cloth. If the bleeding is profuse, you can use a pressure bandage or improvise with clothing, but never use too much force to avoid causing further damage. After the bleeding has stopped, it is important to clean the wound. If you have access to clean water, rinse it gently to remove dirt and foreign bodies. Then use the disinfectant from the first aid kit, if available, and apply it to the wound. Finally, cover the wound with a sterile dressing and bandage tightly to minimize the risk of infection. If the wound is deep, bleeding profusely or contains foreign bodies, it is important to seek medical attention as soon as possible."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cut wound — basics of treatment"
+    },
+    {
+      "type": "text",
+      "text": "A cut is an injury caused by a sharp object. Proper treatment includes stopping the bleeding, disinfecting and covering the wound. In case of heavy bleeding, the priority is to apply a pressure bandage and call the emergency services."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Treatment procedure"
+    },
+    {
+      "type": "text",
+      "text": "1. Protect yourself — put on gloves before touching someone else's blood. 2. Stop the bleeding — apply clean material and pressure directly to the wound for 5-10 minutes. Do not interrupt compression by continuous control. 3. Clean the wound — rinse with clean water for 5-10 minutes, remove visible impurities. 4. Disinfect — apply a disinfectant to the area around the wound, not to the wound itself. 5. Cover — with a sterile drape or plaster. For a deeper wound, see a doctor."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When to call an ambulance"
+    },
+    {
+      "type": "text",
+      "text": "Call 155 if: the bleeding cannot be stopped within 10 minutes, the wound is deeper than 1 cm or has frayed edges, the injured person is a child or an elderly person, the wound is on the face, hands or joint, or it was caused by contact with rusty metal (risk of tetanus)."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Chemical poisoning in the home",
+  "description": "What to do if you suspect poisoning with cleaning agents or toxic fumes.",
+  "icon": "flask-conical",
+  "label": "PP",
+  "colorFrom": "#064e3b",
+  "colorTo": "#dc2626",
+  "scenario": {
+    "title": "Cleaning the bathroom",
+    "setting": "You clean the bathroom with a strong cleaner. A friend accidentally mixes two chemicals and a strong pungent odor is created. He starts coughing, his eyes water and complains of nausea.",
+    "objective": "The user must provide ventilation, remove the victim from the exposure and call for help.",
+    "milestones": [
+      {
+        "name": "Immediately leave the infested area",
+        "points": 150
+      },
+      {
+        "name": "Provision of fresh air and ventilation",
+        "points": 100
+      },
+      {
+        "name": "Rinse eyes and skin in case of contact",
+        "points": 100
+      },
+      {
+        "name": "Call the emergency services or poison center",
+        "points": 150
+      }
+    ],
+    "tutorial": "If chemical poisoning is suspected, immediately move the victim to fresh air. Ensure ventilation of the area and avoid further inhalation of fumes. In case of contact with skin or eyes, rinse with water. Call for professional help as soon as possible."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chemical accident: An invisible attack on the lungs"
+    },
+    {
+      "type": "text",
+      "text": "Mixing common household cleaners (eg, bleach with acid or drain cleaner) can cause a violent chemical reaction that releases toxic chlorine or chloramine. When these gases come into contact with the mucous membranes of the respiratory tract, they create hydrochloric acid, which literally corrodes the lungs from the inside. Symptoms may worsen several hours after exposure."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Priority #1: Immediate Retreat (Rescuer Safety)"
+    },
+    {
+      "type": "text",
+      "text": "Never play as a hero in an enclosed space full of fumes. If you smell a pungent odor or see smoke, immediately hold your breath and take the affected person outside to fresh air. If the victim is unconscious in a small room (bathroom), do not enter without respiratory protection - you could stay in there with him. Open windows and doors from the outside if possible and create a draft."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First aid for eye and skin contact"
+    },
+    {
+      "type": "text",
+      "text": "If chemicals have been spilled, this is a chemical burn (etch). \n1. **Eyes:** Flush with a stream of lukewarm clean water for at least 15-20 minutes. Direct the stream of water from the inner corner to the outer corner so you don't wash the chemical into the other eye. \n2. **Skin:** Remove contaminated clothing (be careful not to touch the chemical!) and rinse the affected area with plenty of running water. Do not use soap or neutralizing solutions unless instructed to do so by a professional."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Do not induce vomiting!"
+    },
+    {
+      "type": "text",
+      "text": "If the chemical has been ingested (drank), **never induce vomiting**. The aggressive substance would corrode the esophagus a second time on the way back and there would be a risk of being inhaled into the lungs. The affected person can only rinse his mouth with water. Administration of activated carbon is unnecessary for caustic substances and may complicate the subsequent examination (endoscopy)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Toxicology Information Center (TIS)"
+    },
+    {
+      "type": "text",
+      "text": "In addition to line 155, a non-stop TIS line is available in the Czech Republic (224 91 92 93 or 224 91 54 02). Experts will tell you exactly how dangerous a particular substance is. Prepare a product label or take a photo of the composition on your mobile phone. For doctors in the hospital, this information will save valuable time when choosing an antidote or a course of treatment."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Late effects: Pulmonary edema"
+    },
+    {
+      "type": "text",
+      "text": "Even if the affected person feels better after inhaling the vapors after a while in the air, he must not be left unattended. Lung damage can manifest 2 to 24 hours later as pulmonary edema (water in the lungs). If the person starts coughing again, feels short of breath or has blue lips, immediate transport to the hospital is necessary."
+    }
+  ]
+}

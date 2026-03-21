@@ -1,0 +1,88 @@
+{
+  "name": "Treatment of a fracture during ski training",
+  "description": "How to proceed when a limb fracture is suspected in mountainous conditions.",
+  "icon": "snowflake",
+  "label": "PP",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#38bdf8",
+  "scenario": {
+    "title": "Ski training - falling on a slope",
+    "setting": "You are on a ski course in the mountains. A friend hits an ice sheet while going downhill, loses his balance and hits his leg hard. You hear a crunch, your leg is twisted unnaturally and your friend screams in pain. The instructor is far down the slope.",
+    "objective": "The user must ensure safety, immobilize the injured limb and call for help.",
+    "milestones": [
+      {
+        "name": "Ensuring safety on the slope (stopping other skiers)",
+        "points": 50
+      },
+      {
+        "name": "Assessing the condition and calling for help",
+        "points": 100
+      },
+      {
+        "name": "Immobilization of the limb in the found position",
+        "points": 200
+      },
+      {
+        "name": "Prevention of hypothermia (insulation and thermal comfort)",
+        "points": 100
+      }
+    ],
+    "tutorial": "If a fracture is suspected, it is crucial not to move the limb. Secure the scene of the accident and call for help. Do not straighten the limb in any way. Fix it in the position in which you find it using skis, poles or clothes. Prevent the victim from catching cold and wait for the emergency services."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Slope Fracture: More Than Just Pain"
+    },
+    {
+      "type": "text",
+      "text": "Falls at speed on the slopes often result in long bone fractures. The danger lies not only in damage to the bone itself, but also in the risk of internal bleeding, damage to nerves and blood vessels. In a mountain environment, this is compounded by the extremely rapid onset of shock and hypothermia due to contact with snow and ice."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Securing the scene of the accident (Priority No. 1)"
+    },
+    {
+      "type": "text",
+      "text": "Before you touch a friend, you must ensure your safety. A ski slope is a dangerous place. Stick your skis into the snow in a cross (form the letter X) at least 10-15 meters above the accident site so that oncoming skiers can see you in time and react. If you have someone else on hand, send them up to warn the others by waving."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fracture recognition and first steps"
+    },
+    {
+      "type": "text",
+      "text": "You can recognize a fracture by an unnatural angle of the limb, a jarring sound when moving (crepitus), massive swelling or bruising. If the bone is sticking out of the skin, it's an open fracture - never push it back! Cover it only with a sterile square or clean cloth to prevent infection."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Golden rule: Fixation in the found position"
+    },
+    {
+      "type": "text",
+      "text": "Never manipulate the limb or try to straighten it! Doing so could cut an artery or damage nerves with bone fragments. Fix the limb exactly as you found it. If you don't have a splint, use improvised means: ski poles, the other (healthy) leg as a splint, or backpacks. Fixation must always immobilize two adjacent joints (e.g. in the case of a leg fracture, the knee and ankle must be fixed)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prevention of shock and hypothermia"
+    },
+    {
+      "type": "text",
+      "text": "Pain and fear lead to the development of shock. The affected person may be pale, sweaty and have a rapid heart rate. The key is thermal comfort: \n1. **Isolation from the ground:** Cover your friend with a mat, jackets or backpacks. The snow will draw heat from it in a few minutes.\n2. **Warm up:** Cover him with thermofoil or other layers of clothing.\n3. **Psychic:** Talk to him constantly, calm him down and don't leave him alone."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Calling the Mountain Service"
+    },
+    {
+      "type": "text",
+      "text": "In the mountains, call the Mountain Service as a priority (via the Rescue app or number 1210). Enter the exact location (slope number, color, orientation point), describe the type of injury and the color of the victim's clothing so that rescuers on a scooter or helicopter do not miss you. Until the professionals arrive, constantly check the color and temperature of the fingers on the injured limb - if they turn blue, the fixation is too tight."
+    }
+  ]
+}

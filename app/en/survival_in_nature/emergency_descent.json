@@ -1,0 +1,88 @@
+{
+  "name": "Emergency descent",
+  "description": "Techniques of improvised abseiling without a climbing seat and belay.",
+  "icon": "arrow-down",
+  "label": "Ropes",
+  "colorFrom": "#f87171",
+  "colorTo": "#991b1b",
+  "scenario": {
+    "title": "The way down",
+    "setting": "You are stuck on a rock ledge while descending the mountain, the way forward is impassable and there is a risk of falling. The only option is to abseil ten meters down to a safe platform, but you have no seat or safety devices, only a static rope. The sun is burning, your muscles are shaking with exhaustion and you have to improvise or you risk falling.",
+    "objective": "Safely abseil the descending section using your body.",
+    "milestones": [
+      {
+        "name": "Securing the rope around a solid, reliable anchor point (rock, tree)",
+        "points": 100
+      },
+      {
+        "name": "Tying an improvised seat (e.g. dragon loop or Swiss seat)",
+        "points": 150
+      },
+      {
+        "name": "Inserting a rope across the body to create friction (Dülfer's sit technique)",
+        "points": 200
+      },
+      {
+        "name": "A slow and controlled descent with a strengthened center of the body",
+        "points": 150
+      }
+    ],
+    "tutorial": "The most famous technique is Dülfer's seat. Run the rope between the legs, around one side, across the chest to the opposite shoulder and from there around the inside of the arm to the back. The friction of the rope against your clothes and body will allow you to control the speed of your descent with the braking hand (the one holding the end of the rope behind your back). Attention: the rope burns! Dülfer's seat is extremely painful and dangerous without strong clothing and gloves. Use it only as a last resort for short, less steep sections. Always pay attention to the absolute reliability of the anchor point."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dülfer's seat: Friction as a brake"
+    },
+    {
+      "type": "text",
+      "text": "Dülfer's seat is a legendary but tough technique that doesn't need a saddle or carabiners. The whole principle is that you wrap the rope around your body so that there is enough friction. This allows you to control the fall with your own weight. Remember that the rope heats up when you move - without thick clothes (sweatshirt, tight pants) and gloves, you're begging for nasty burns that will force you to let go of the rope."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step-by-step threading technique"
+    },
+    {
+      "type": "text",
+      "text": "1. Straddle over a rope that hangs from a fixed point. \n2. Guide the rope from front to back between the legs. \n3. Wrap it around any thigh (e.g. right) from the outside to the front. \n4. Lead the rope diagonally across the chest to the opposite shoulder (left). \n5. Drop him over your shoulder and onto your back. \n6. Grab the free end of the rope behind your back with your other (right) hand. This hand is your MAIN BRAKE. Never let her go!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Descent control"
+    },
+    {
+      "type": "text",
+      "text": "You regulate the speed by the force of the grip and the angle of the braking hand behind the back. If you pull your hand closer to your body, the friction increases and you stop. If you loosen your hand slightly and move it away from your body, you will start to fall. Keep your feet shoulder-width apart and lean against the rock, your body should be roughly at right angles to the wall. Descend smoothly, no jumps - the shock load could tear out the anchor point."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Critical Point: Anchoring"
+    },
+    {
+      "type": "text",
+      "text": "Your survival depends on what you tie the rope to. \n- **Tree:** It must be alive, deeply rooted and at least the diameter of your thigh. \n- **Rock point:** Must be part of a massif, not just a loose boulder. Check for sharp edges that could cut the rope. \n- **Loop:** If you are putting the rope around the point, use a loop instead to avoid damaging the rope by rubbing against the rock."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Improvised seat (Swiss seat)"
+    },
+    {
+      "type": "text",
+      "text": "If you have an extra piece of rope or a flat loop, you can make a makeshift seat. You wrap the rope around the waist and crotch so that it creates support for the thighs. If you have a carabiner, you can insert the rope into it using a Menter's knot (half boat knot). It is a thousand times more comfortable and safer than the Dülfer, because the rope does not run directly on the skin, and in case of cramp or fatigue, the seat will hold you."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The psychology of descent"
+    },
+    {
+      "type": "text",
+      "text": "The biggest enemy is the fear of heights and looking down. Focus on your hands and anchor point. Breathe deeply. If you feel yourself losing power, stop, plant your feet against a rock, and pull the braking hand tight to your back. Rest before continuing. Confused and hasty actions lead to mistakes in the grip."
+    }
+  ]
+}

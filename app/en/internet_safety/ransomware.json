@@ -1,0 +1,88 @@
+{
+  "name": "Ransomware attack on computer",
+  "description": "How to respond to a ransomware attack that encrypts data and demands a ransom.",
+  "icon": "lock-keyhole",
+  "label": "NET",
+  "colorFrom": "#0f172a",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Encrypted work computer",
+    "setting": "You turn on your work laptop and instead of files you see a message that all documents have been encrypted. The attacker demands payment in cryptocurrency within 24 hours, otherwise the data will be deleted. The system is partially functional, but the files are unavailable.",
+    "objective": "The user must prevent the spread of ransomware and maintain the possibility of data recovery.",
+    "milestones": [
+      {
+        "name": "Disconnecting the device from the network",
+        "points": 150
+      },
+      {
+        "name": "Identifying the extent of the infection",
+        "points": 150
+      },
+      {
+        "name": "Ensuring backups or data isolation",
+        "points": 200
+      },
+      {
+        "name": "Incident reporting to administrators / IT security",
+        "points": 100
+      }
+    ],
+    "tutorial": "In a ransomware attack, it is crucial to immediately disconnect the device from the network to prevent it from spreading. Don't pay the ransom. Review available backups and the incident aloud to the security team."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First aid: Isolation zero"
+    },
+    {
+      "type": "text",
+      "text": "Once you see the encryption message (Ransom Note), every second counts against you. Ransomware often spreads further into the corporate network, shared drives or the cloud. The first step is to immediately physically disconnect from the network - unplug the Ethernet cable and turn off Wi-Fi. If you have external drives or USB flash drives connected, disconnect them immediately. This will stop the encryption process of other files and protect other devices on the network."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why (almost) never pay a ransom?"
+    },
+    {
+      "type": "text",
+      "text": "Paying a ransom (Ransom) is extremely risky for several reasons:\n- **No Guarantee:** The attacker is a criminal, not an honest merchant. Many victims paid but never received the decryption key.\n- **'Easy Target' Tag:** If you pay, you will be put on the priority target list. Attackers know you're willing to pay, and they'll be back in a few months.\n- **Financing crime:** Your money will likely go to further malware development or other criminal activity.\nThe only exception is situations of absolute threat to life (e.g. hospital systems without backups), but even then the assistance of the police is necessary."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Data identification and rescue"
+    },
+    {
+      "type": "text",
+      "text": "Sometimes there is a way out without paying. Different strains of ransomware have different weaknesses. Try to identify the type of attack (e.g. by the extension of the encrypted files or the address in the message). There are projects like 'No More Ransom' where security firms provide free decryption tools for older or poorly written types of ransomware. If you're lucky, your key may already be publicly available."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3-2-1 backup strategy"
+    },
+    {
+      "type": "text",
+      "text": "The best defense against ransomware is not an expensive antivirus, but a proper backup. The 3-2-1 rule says:\n- Have **3** copies of your data.\n- On **2** different types of media (eg internal disk and external disk).\n- **1** keep a copy 'Off-site' and 'Off-line' (in another building and mainly not connected to the network). \nRansomware that can't 'see' your backup device can't encrypt it. Regularly test that your backups are indeed functional and recoverable."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Forensic clue: Don't shut down now"
+    },
+    {
+      "type": "text",
+      "text": "While the instinct is to immediately 'hard' shutdown the computer, it may be better for IT specialists to leave it running (but in isolation). Encryption keys can sometimes be pulled directly from RAM while the system is powered on. If you turn off or restart your computer, this data will be irretrievably lost. If you are not an expert, disconnect the network and wait for instructions from the IT department or cyber security specialists."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Legal and Corporate Actions"
+    },
+    {
+      "type": "text",
+      "text": "A ransomware attack is a crime. For work equipment, you must immediately report the incident to your supervisor and IT security. Under the EU (GDPR), a company may be required to report a personal data leak to a supervisory authority within 72 hours. Don't try to sweep the incident under the carpet - the consequences of a data breach can be devastating for a company if it is not dealt with in a timely and transparent manner."
+    }
+  ]
+}

@@ -318,6 +318,62 @@ app.post('/api/ai/scenario/step', authMiddleware, async (req, res) => {
   }
 });
 
+
+
+// ADMIN PROXY
+app.post('/api/ai/admin/verify', authMiddleware, async (req, res) => {
+  try {
+    const response = await fetch(`${AI_URL}/admin/verify`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': req.headers.authorization },
+      body: JSON.stringify(req.body),
+    });
+    const data = await response.json();
+    res.status(response.status).json(data);
+  } catch (err) {
+    res.status(503).json({ error: 'AI služba není dostupná.' });
+  }
+});
+
+app.get('/api/ai/admin/users', authMiddleware, async (req, res) => {
+  try {
+    const response = await fetch(`${AI_URL}/admin/users`, {
+      headers: { 'Authorization': req.headers.authorization },
+    });
+    const data = await response.json();
+    res.status(response.status).json(data);
+  } catch (err) {
+    res.status(503).json({ error: 'AI služba není dostupná.' });
+  }
+});
+
+app.get('/api/ai/admin/logs/:userId', authMiddleware, async (req, res) => {
+  try {
+    const response = await fetch(`${AI_URL}/admin/logs/${req.params.userId}`, {
+      headers: { 'Authorization': req.headers.authorization },
+    });
+    const data = await response.json();
+    res.status(response.status).json(data);
+  } catch (err) {
+    res.status(503).json({ error: 'AI služba není dostupná.' });
+  }
+});
+
+app.get('/api/ai/admin/incidents', authMiddleware, async (req, res) => {
+  try {
+    const response = await fetch(`${AI_URL}/admin/incidents`, {
+      headers: { 'Authorization': req.headers.authorization },
+    });
+    const data = await response.json();
+    res.status(response.status).json(data);
+  } catch (err) {
+    res.status(503).json({ error: 'AI služba není dostupná.' });
+  }
+});
+
+
+
+
 // ── Start ─────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log(`✓ LearNovate server běží na http://localhost:${PORT}`);

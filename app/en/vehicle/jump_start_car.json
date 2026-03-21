@@ -1,0 +1,70 @@
+{
+  "name": "Starting the car via cables",
+  "description": "How to properly start a car with jump leads.",
+  "icon": "car",
+  "label": "Starting up",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Starting the car via cables",
+    "setting": "You can't start the car because the battery is dead. Another driver will stop by and offer help with jump leads, so you have a chance to solve the problem quickly.",
+    "objective": "The user must properly start the car with the cables.",
+    "milestones": [
+      {
+        "name": "Correct cable connection",
+        "points": 100
+      },
+      {
+        "name": "Starting the auxiliary vehicle",
+        "points": 100
+      },
+      {
+        "name": "Starting a dead vehicle",
+        "points": 150
+      },
+      {
+        "name": "Safe disconnection of cables",
+        "points": 100
+      }
+    ],
+    "tutorial": "First, connect the red cable to the positive poles of both batteries. Then connect the black cable to the negative pole of the auxiliary vehicle and the other end to the ground of the discharged car. Start the rescue car and then try to start the dead vehicle. Disconnect the cables in the reverse order and pay attention to sparks and short circuits."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why won't the car start?"
+    },
+    {
+      "type": "text",
+      "text": "The most common cause is a dead car battery, for example after standing for a long time or with the lights on. The motor does not spin or only clicks weakly."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Starter cables"
+    },
+    {
+      "type": "text",
+      "text": "Starter cables are used to transfer energy from a functioning battery to a discharged one. It is important to use high-quality cables with a sufficient cross-section."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Correct wiring"
+    },
+    {
+      "type": "text",
+      "text": "Following the correct wiring sequence is crucial for safety. Improper connection may cause damage to electronics or sparking."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "After starting up"
+    },
+    {
+      "type": "text",
+      "text": "After a successful start, let the engine run to recharge the battery. It is recommended to drive a longer route or fully charge the battery later."
+    }
+  ]
+}
