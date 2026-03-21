@@ -51,6 +51,7 @@
   "err_password_min": "Password must be at least 6 characters.",
   "err_password_match": "Passwords do not match.",
   "err_gdpr_consent": "You must agree to the Privacy Policy.",
+  "gdpr_consent_text": "I agree to the <a href=\"/privacy-policy.html\" target=\"_blank\" class=\"gdpr-link\">Privacy Policy</a> and processing of personal data.",
   "fallback_lesson": "This lesson covers the basics of the subject.",
   "title": "LearNovate — Interactive Learning Platform",
   "grid_toggle_title": "Toggle grid/list view",

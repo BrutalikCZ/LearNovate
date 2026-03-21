@@ -51,6 +51,7 @@
   "err_password_min": "Heslo musí mít alespoň 6 znaků.",
   "err_password_match": "Hesla se neshodují.",
   "err_gdpr_consent": "Musíte souhlasit se Zásadami ochrany osobních údajů.",
+  "gdpr_consent_text": "Souhlasím se <a href=\"/privacy-policy.html\" target=\"_blank\" class=\"gdpr-link\">Zásadami ochrany osobních údajů</a> a zpracováním osobních údajů.",
   "fallback_lesson": "Tato lekce pokrývá základy předmětu.",
   "title": "LearNovate — Interaktivní vzdělávací platforma",
   "grid_toggle_title": "Přepnout zobrazení mřížka/seznam",
