@@ -2004,20 +2004,150 @@ button {
   transform: translateX(-50%) translateY(0);
 }
 
-/* ─── RESPONSIVE ─────────────────────────────────────────────── */
-@media (max-width: 768px) {
+/* ════════════════════════════════════════════════════════════════
+   RESPONSIVE SYSTEM — Mobile-first breakpoints
+   ════════════════════════════════════════════════════════════════ */
+
+/* ─── MOBILE SIDEBAR OVERLAY ─────────────────────────────────── */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  backdrop-filter: blur(2px);
+  z-index: 200;
+  cursor: pointer;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* ─── HAMBURGER TOGGLE ───────────────────────────────────────── */
+.sidebar-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar-toggle:hover {
+  background: var(--hover);
+  color: var(--text);
+}
+
+.sidebar-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   TABLET — max-width: 1024px
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
   .sidebar {
     width: 280px;
     min-width: 280px;
   }
 
+  .subject-detail-chat {
+    width: 280px;
+    min-width: 280px;
+  }
+
   .main-content {
-    padding: 20px 16px;
+    padding: 24px 28px;
+  }
+
+  .subject-detail-main {
+    padding: 24px 28px;
   }
 
   .subject-card {
-    width: 120px;
-    height: 180px;
+    width: 125px;
+    height: 190px;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE — max-width: 768px
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── Výška pro iOS Safari (dvh s fallbackem) */
+  .app {
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  /* ── Navbar ─────────────────────────────────────────────────── */
+  .top-navbar {
+    height: 48px;
+    padding: 0 14px;
+    gap: 12px;
+  }
+
+  .sidebar-toggle {
+    display: flex;
+  }
+
+  .top-navbar .brand-name {
+    font-size: 14px;
+  }
+
+  /* ── Sidebar — posuvná zásuvka zleva ────────────────────────── */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 48px;
+    bottom: 0;
+    z-index: 250;
+    width: 300px;
+    min-width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.2s,
+                border-color 0.2s;
+    box-shadow: none;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    box-shadow: 4px 0 32px rgba(0, 0, 0, 0.4);
+  }
+
+  .sidebar-overlay {
+    top: 48px;
+  }
+
+  /* ── Hlavní obsah — plná šířka ──────────────────────────────── */
+  .app-body {
+    overflow: hidden;
+  }
+
+  .main-content {
+    padding: 16px;
+    width: 100%;
+    gap: 24px;
+  }
+
+  /* ── Subject karty — responzivní grid ───────────────────────── */
+  .subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 8px;
+  }
+
+  .subject-card {
+    width: 100%;
+    height: 155px;
   }
 
   .subject-card svg {
@@ -2025,14 +2155,206 @@ button {
     height: 32px;
   }
 
+  /* List view na mobilu */
+  .subject-grid.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
 
+  .subject-grid.list-view .subject-card {
+    width: 100%;
+    height: 52px;
+  }
 
+  /* ── Subject detail ─────────────────────────────────────────── */
   .subject-detail-chat {
     display: none;
   }
 
   .subject-detail-main {
+    padding: 16px;
+  }
+
+  .detail-title {
+    font-size: 24px;
+  }
+
+  .detail-hero {
+    height: 200px;
+  }
+
+  .detail-heading-2 {
+    font-size: 20px;
+  }
+
+  .detail-heading-3 {
+    font-size: 17px;
+  }
+
+  /* ── Scenario view ──────────────────────────────────────────── */
+  .scenario-header {
+    height: auto;
+    min-height: 52px;
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .scenario-steps-label {
+    display: none;
+  }
+
+  .scenario-body {
+    padding: 0 16px 16px;
+    max-width: 100%;
+  }
+
+  .scenario-msg-bubble {
+    max-width: 92%;
+  }
+
+  /* ── Modaly ─────────────────────────────────────────────────── */
+  .modal-overlay {
+    padding: 16px;
+    align-items: center;
+  }
+
+  .modal-box.login,
+  .modal-box.register {
+    width: 100%;
+    max-width: 440px;
+    padding: 24px 20px;
+  }
+
+  .gami-modal {
+    width: 100%;
+    max-width: calc(100vw - 32px);
+    max-height: 88vh;
+  }
+
+  .gami-modal-lb {
+    width: 100%;
+    max-width: calc(100vw - 32px);
+  }
+
+  /* ── Achievement toast — celá šířka na dně ───────────────────── */
+  .achievement-toast {
+    right: 16px;
+    left: 16px;
+    bottom: 16px;
+    min-width: unset;
+    width: auto;
+  }
+
+  /* ── App toast ──────────────────────────────────────────────── */
+  .app-toast {
+    white-space: normal;
+    text-align: center;
+    max-width: calc(100vw - 48px);
+    bottom: 16px;
+  }
+
+  /* ── Kategorie sort row — zmenšit ───────────────────────────── */
+  .category-sort-row {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 4px;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SMALL MOBILE — max-width: 480px
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .top-navbar {
+    height: 48px;
+    padding: 0 12px;
+  }
+
+  .main-content {
+    padding: 12px;
+    gap: 20px;
+  }
+
+  /* Menší karty na velmi malých obrazovkách */
+  .subject-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 6px;
+  }
+
+  .subject-card {
+    height: 135px;
+  }
+
+  .subject-card svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .subject-card-label {
+    font-size: 12px;
+  }
+
+  .subject-card-name {
+    font-size: 10px;
+  }
+
+  /* Scenario */
+  .scenario-steps-bar {
+    max-width: 120px;
+    overflow: hidden;
+  }
+
+  .scenario-step-dot {
+    width: 14px;
+    height: 5px;
+  }
+
+  .scenario-header {
+    padding: 8px 12px;
+  }
+
+  .scenario-body {
+    padding: 0 12px 12px;
+  }
+
+  .scenario-subject-name {
+    font-size: 13px;
+  }
+
+  /* Detail */
+  .subject-detail-main {
+    padding: 12px;
+  }
+
+  .detail-title {
+    font-size: 20px;
+  }
+
+  .detail-hero {
+    height: 160px;
+  }
+
+  /* Modaly plná šířka */
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-box.login,
+  .modal-box.register {
     padding: 20px 16px;
+    gap: 16px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  /* Sidebar ještě širší na malém telefonu pro pohodlí */
+  .sidebar {
+    width: 88vw;
+    min-width: unset;
   }
 }
 
@@ -2709,4 +3031,396 @@ button {
   font-size: 11px;
   color: var(--text-muted);
   font-weight: 500;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE DETAIL ACTION BAR + CHAT DRAWER
+   ════════════════════════════════════════════════════════════════ */
+
+/* ─── Spodní akční lišta v detailu (jen mobil) ───────────────── */
+.detail-mobile-bar {
+  display: none;
+}
+
+/* ─── Hlavička chat draweru (jen mobil) ──────────────────────── */
+.chat-drawer-header {
+  display: none;
+}
+
+/* ─── Backdrop za chat drawerem (jen mobil) ──────────────────── */
+.chat-drawer-backdrop {
+  display: none;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE STYLES pro detail bar + chat drawer
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── Spodní lišta ────────────────────────────────────────────── */
+  .detail-mobile-bar {
+    display: flex;
+    gap: 8px;
+    padding: 12px 0 4px;
+    flex-shrink: 0;
+  }
+
+  .detail-mobile-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 44px;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+
+  .detail-mobile-btn:hover {
+    background: var(--hover);
+  }
+
+  .detail-mobile-btn svg {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+  }
+
+  .detail-mobile-btn--primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: hsl(var(--primary-foreground));
+  }
+
+  .detail-mobile-btn--primary:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+
+  .detail-mobile-btn--primary svg {
+    color: hsl(var(--primary-foreground));
+  }
+
+  /* ── Chat drawer — vysune se zdola ───────────────────────────── */
+  .subject-detail-chat {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto !important;
+    height: 78vh;
+    width: 100% !important;
+    min-width: unset !important;
+    z-index: 350;
+    border-left: none !important;
+    border-top: 1px solid var(--border-color);
+    transform: translateY(100%);
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex !important;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .subject-detail-chat.mobile-open {
+    transform: translateY(0);
+  }
+
+  /* Drag indicator */
+  .subject-detail-chat::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 4px;
+    background: var(--border-color);
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-shrink: 0;
+  }
+
+  /* ── Drawer header ────────────────────────────────────────────── */
+  .chat-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px 8px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .chat-drawer-header span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  .chat-drawer-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .chat-drawer-close:hover {
+    background: hsl(var(--destructive) / 0.1);
+    color: hsl(var(--destructive));
+  }
+
+  .chat-drawer-close svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* ── Backdrop ────────────────────────────────────────────────── */
+  .chat-drawer-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--overlay);
+    backdrop-filter: blur(2px);
+    z-index: 340;
+    cursor: pointer;
+  }
+
+  .chat-drawer-backdrop.active {
+    display: block;
+  }
+
+  /* Subject detail main — přidat padding dole kvůli action bar */
+  .subject-detail-main {
+    padding-bottom: 72px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GDPR & AI ACT — Compliance UI Elements
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── GDPR Storage Banner ─────────────────────────────────── */
+.gdpr-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9000;
+  background: var(--bg-card, #1a1d27);
+  border-top: 1px solid rgba(59,130,246,.3);
+  padding: 14px 20px;
+  transform: translateY(100%);
+  transition: transform .3s ease;
+}
+
+.gdpr-banner.gdpr-banner-visible {
+  transform: translateY(0);
+}
+
+.gdpr-banner-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gdpr-banner-icon {
+  width: 20px;
+  height: 20px;
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+.gdpr-banner-text {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-secondary, #b0b8cc);
+  line-height: 1.5;
+}
+
+.gdpr-banner-btn {
+  background: rgba(59,130,246,.15);
+  border: 1px solid rgba(59,130,246,.4);
+  color: #60a5fa;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .15s;
+}
+
+.gdpr-banner-btn:hover {
+  background: rgba(59,130,246,.28);
+}
+
+/* ── GDPR Consent Checkbox ───────────────────────────────── */
+.gdpr-consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0 2px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-secondary, #b0b8cc);
+  line-height: 1.5;
+}
+
+.gdpr-consent-label input[type="checkbox"] {
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  accent-color: var(--accent, #3b82f6);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.gdpr-link {
+  color: var(--accent, #3b82f6);
+  text-decoration: underline;
+}
+
+.gdpr-link:hover {
+  opacity: .8;
+}
+
+/* ── Profile GDPR Section ────────────────────────────────── */
+.profile-gdpr-section {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.profile-gdpr-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.gdpr-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background .15s, border-color .15s;
+  text-decoration: none;
+}
+
+.gdpr-action-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.gdpr-export-btn {
+  background: rgba(59,130,246,.1);
+  border-color: rgba(59,130,246,.3);
+  color: #60a5fa;
+}
+
+.gdpr-export-btn:hover {
+  background: rgba(59,130,246,.22);
+}
+
+.gdpr-policy-btn {
+  background: rgba(107,114,128,.1);
+  border-color: rgba(107,114,128,.3);
+  color: var(--text-secondary, #b0b8cc);
+}
+
+.gdpr-policy-btn:hover {
+  background: rgba(107,114,128,.2);
+}
+
+.gdpr-delete-btn {
+  background: rgba(239,68,68,.08);
+  border-color: rgba(239,68,68,.25);
+  color: #f87171;
+}
+
+.gdpr-delete-btn:hover {
+  background: rgba(239,68,68,.18);
+}
+
+/* ── AI Act Disclaimer (chat footer) ─────────────────────── */
+.ai-act-disclaimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-muted, #6b7280);
+  margin-top: 5px;
+}
+
+.ai-act-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139,92,246,.18);
+  border: 1px solid rgba(139,92,246,.35);
+  color: #a78bfa;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  flex-shrink: 0;
+}
+
+.ai-act-info-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(107,114,128,.2);
+  border: 1px solid rgba(107,114,128,.35);
+  color: var(--text-muted, #6b7280);
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .15s;
+}
+
+.ai-act-info-link:hover {
+  background: rgba(107,114,128,.35);
+  color: var(--text-secondary, #b0b8cc);
+}
+
+/* ── AI-Generated Tag on messages ────────────────────────── */
+.ai-generated-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(139,92,246,.15);
+  border: 1px solid rgba(139,92,246,.3);
+  color: #c4b5fd;
+  border-radius: 4px;
+  padding: 0px 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  margin-left: 5px;
+  vertical-align: middle;
+  line-height: 14px;
 }

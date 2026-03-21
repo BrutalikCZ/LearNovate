@@ -50,6 +50,7 @@
   "err_username_min": "Uživatelské jméno musí mít alespoň 3 znaky.",
   "err_password_min": "Heslo musí mít alespoň 6 znaků.",
   "err_password_match": "Hesla se neshodují.",
+  "err_gdpr_consent": "Musíte souhlasit se Zásadami ochrany osobních údajů.",
   "fallback_lesson": "Tato lekce pokrývá základy předmětu.",
   "title": "LearNovate — Interaktivní vzdělávací platforma",
   "grid_toggle_title": "Přepnout zobrazení mřížka/seznam",

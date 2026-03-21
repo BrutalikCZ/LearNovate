@@ -198,6 +198,55 @@ app.get('/api/auth/me', authMiddleware, (req, res) => {
   res.json({ ...publicUser(user), newlyUnlocked });
 });
 
+// DELETE /api/auth/account — právo na výmaz (GDPR čl. 17)
+app.delete('/api/auth/account', authMiddleware, async (req, res) => {
+  const users = readUsers();
+  const idx = users.findIndex(u => u.id === req.user.id);
+  if (idx === -1) return res.status(404).json({ error: 'Uživatel nenalezen.' });
+
+  // Remove conversation logs from Python backend (best-effort)
+  try {
+    await fetch(`${AI_URL}/admin/delete-user/${req.user.id}`, {
+      method: 'DELETE',
+      headers: { 'Authorization': req.headers.authorization },
+    });
+  } catch (_) { /* Python backend může být nedostupný */ }
+
+  users.splice(idx, 1);
+  writeUsers(users);
+  res.json({ message: 'Účet byl trvale smazán.' });
+});
+
+// GET /api/auth/export-data — právo na přenositelnost (GDPR čl. 20)
+app.get('/api/auth/export-data', authMiddleware, (req, res) => {
+  const users = readUsers();
+  const user = users.find(u => u.id === req.user.id);
+  if (!user) return res.status(404).json({ error: 'Uživatel nenalezen.' });
+
+  const exportData = {
+    exportedAt: new Date().toISOString(),
+    gdpr_note: 'Export osobních údajů dle čl. 20 GDPR (nařízení EU 2016/679)',
+    account: {
+      id: user.id,
+      email: user.email,
+      username: user.username,
+      createdAt: user.createdAt,
+    },
+    gamification: {
+      xp: user.body || 0,
+      currentStreak: user.currentStreak || 0,
+      bestStreak: user.bestStreak || 0,
+      lastLoginDate: user.lastLoginDate || null,
+      achievements: user.achievements || [],
+    },
+    learningProgress: user.scenarios || {},
+  };
+
+  res.setHeader('Content-Disposition', 'attachment; filename="learnovate-my-data.json"');
+  res.setHeader('Content-Type', 'application/json');
+  res.json(exportData);
+});
+
 // GET /api/gamification/leaderboard — top 10 users by XP
 app.get('/api/gamification/leaderboard', (req, res) => {
   let currentId = null;

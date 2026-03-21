@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zásady ochrany osobních údajů — LearNovate</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html, body { height: auto; overflow: auto; }
+    body { background: var(--bg-app, #0f1117); color: var(--text-primary, #e8eaf0); font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+    .pp-container { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    .pp-back { display: inline-flex; align-items: center; gap: 8px; color: var(--accent, #3b82f6); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 32px; transition: opacity .15s; }
+    .pp-back:hover { opacity: .75; }
+    .pp-logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .pp-logo-row img { width: 36px; height: 36px; }
+    .pp-logo-row span { font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: .08em; color: var(--text-primary, #e8eaf0); }
+    h1 { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 700; margin: 0 0 8px; }
+    .pp-meta { color: var(--text-muted, #6b7280); font-size: 13px; margin-bottom: 40px; }
+    .pp-badge { display: inline-block; background: rgba(59,130,246,.15); color: #60a5fa; border: 1px solid rgba(59,130,246,.3); border-radius: 6px; padding: 3px 10px; font-size: 12px; font-weight: 600; margin-right: 6px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--text-primary, #e8eaf0); border-left: 3px solid var(--accent, #3b82f6); padding-left: 12px; }
+    h3 { font-size: 15px; font-weight: 600; margin: 24px 0 8px; color: var(--text-secondary, #b0b8cc); }
+    p, li { font-size: 14px; line-height: 1.7; color: var(--text-secondary, #b0b8cc); margin: 0 0 12px; }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    li { margin-bottom: 6px; }
+    .pp-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+    .pp-table th { background: rgba(255,255,255,.05); color: var(--text-primary, #e8eaf0); font-weight: 600; text-align: left; padding: 10px 14px; border: 1px solid rgba(255,255,255,.08); }
+    .pp-table td { padding: 10px 14px; border: 1px solid rgba(255,255,255,.06); color: var(--text-secondary, #b0b8cc); vertical-align: top; }
+    .pp-table tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+    .pp-highlight { background: rgba(245,158,11,.08); border: 1px solid rgba(245,158,11,.25); border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+    .pp-highlight p { margin: 0; color: #fbbf24; font-size: 13px; }
+    .pp-contact-box { background: rgba(59,130,246,.08); border: 1px solid rgba(59,130,246,.2); border-radius: 10px; padding: 20px 24px; margin-top: 32px; }
+    .pp-contact-box h3 { margin-top: 0; color: #60a5fa; }
+    .pp-contact-box p { margin: 4px 0; }
+    a { color: var(--accent, #3b82f6); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid rgba(255,255,255,.07); margin: 32px 0; }
+  </style>
+</head>
+
+<body>
+  <div class="pp-container">
+
+    <a class="pp-back" href="/">
+      ← Zpět na LearNovate
+    </a>
+
+    <div class="pp-logo-row">
+      <img src="logo.svg" alt="LearNovate Logo">
+      <span>LEARNOVATE</span>
+    </div>
+
+    <h1>Zásady ochrany osobních údajů</h1>
+    <p class="pp-meta">
+      <span class="pp-badge">GDPR</span>
+      <span class="pp-badge">AI Act</span>
+      Verze 1.0 &nbsp;·&nbsp; Platnost od 21. 3. 2026
+    </p>
+
+    <p>Tyto zásady popisují, jak LearNovate (<strong>správce osobních údajů</strong>) zpracovává osobní údaje v souladu s nařízením EU č. 2016/679 (GDPR) a nařízením EU č. 2024/1689 (AI Act).</p>
+
+    <hr>
+
+    <!-- ───── 1. Správce ───── -->
+    <h2>1. Správce osobních údajů</h2>
+    <p>Provozovatelem platformy LearNovate je její tvůrce/organizace. Kontaktní e-mail pro věci ochrany osobních údajů: <a href="mailto:gdpr@learnovate.local">gdpr@learnovate.local</a></p>
+
+    <!-- ───── 2. Jaké údaje sbíráme ───── -->
+    <h2>2. Jaké osobní údaje zpracováváme</h2>
+
+    <table class="pp-table">
+      <thead>
+        <tr><th>Kategorie</th><th>Konkrétní údaje</th><th>Účel</th><th>Právní základ (GDPR)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Identifikační údaje</td>
+          <td>E-mailová adresa, uživatelské jméno</td>
+          <td>Registrace a přihlášení k účtu</td>
+          <td>Čl. 6 odst. 1 písm. b) — plnění smlouvy</td>
+        </tr>
+        <tr>
+          <td>Autentizační údaje</td>
+          <td>Hash hesla (bcrypt, salt 10)</td>
+          <td>Bezpečné ověření identity</td>
+          <td>Čl. 6 odst. 1 písm. b) — plnění smlouvy</td>
+        </tr>
+        <tr>
+          <td>Provozní data</td>
+          <td>Datum registrace, datum posledního přihlášení, streak (počet dní), XP body, úroveň</td>
+          <td>Gamifikace a motivace ke vzdělávání</td>
+          <td>Čl. 6 odst. 1 písm. b) — plnění smlouvy</td>
+        </tr>
+        <tr>
+          <td>Vzdělávací výsledky</td>
+          <td>Absolvované scénáře, počet pokusů, nejlepší skóre</td>
+          <td>Sledování pokroku, personalizace</td>
+          <td>Čl. 6 odst. 1 písm. b) — plnění smlouvy</td>
+        </tr>
+        <tr>
+          <td>Konverzace s AI</td>
+          <td>Otázky a odpovědi v AI chatu, průběh scénářů</td>
+          <td>Poskytnutí AI asistenta, audit a bezpečnost AI systému</td>
+          <td>Čl. 6 odst. 1 písm. b) + čl. 6 odst. 1 písm. c) — zákonná povinnost (AI Act)</td>
+        </tr>
+        <tr>
+          <td>Technická data (localStorage)</td>
+          <td>JWT token (relace), jazykové preference, nastavení tématu</td>
+          <td>Udržení přihlášení a preferencí</td>
+          <td>Čl. 6 odst. 1 písm. b) — nezbytné pro funkci služby</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pp-highlight">
+      <p><strong>Upozornění:</strong> LearNovate nepoužívá HTTP cookies. Relace je spravována výhradně prostřednictvím JWT tokenu uloženého v localStorage vašeho prohlížeče. Direktivy ePrivacy se proto aplikují omezeně, přesto máte plnou kontrolu přes nástroje prohlížeče nebo tlačítko Odhlásit se.</p>
+    </div>
+
+    <!-- ───── 3. Jak dlouho ───── -->
+    <h2>3. Doba uchovávání údajů</h2>
+    <ul>
+      <li><strong>Údaje účtu</strong> — po dobu trvání účtu + 30 dní po smazání (záloha pro případ omylu).</li>
+      <li><strong>Konverzační logy AI</strong> — max. 12 měsíců od poslední aktivity; slouží k auditu AI systému dle čl. 12 AI Act.</li>
+      <li><strong>Logy bezpečnostních incidentů</strong> (blokovaný vstup/výstup AI) — max. 24 měsíců pro plnění zákonných povinností.</li>
+    </ul>
+
+    <!-- ───── 4. Třetí strany ───── -->
+    <h2>4. Příjemci a předávání údajů třetím stranám</h2>
+    <table class="pp-table">
+      <thead>
+        <tr><th>Příjemce</th><th>Účel</th><th>Umístění</th><th>Záruky</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>OpenAI, Inc.</td>
+          <td>Zpracování dotazů AI asistenta a interaktivních scénářů</td>
+          <td>USA</td>
+          <td>Standardní smluvní doložky (SCC) dle čl. 46 GDPR; DPA s OpenAI</td>
+        </tr>
+        <tr>
+          <td>Google Fonts</td>
+          <td>Načítání fontů Inter a Outfit</td>
+          <td>USA (CDN)</td>
+          <td>SCC; pouze IP adresa klienta, žádné sledování</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>LearNovate neprodává, nepronajímá ani jinak nepředává osobní údaje pro marketingové účely třetím stranám.</p>
+
+    <!-- ───── 5. Práva subjektů ───── -->
+    <h2>5. Vaše práva (GDPR čl. 15–22)</h2>
+    <ul>
+      <li><strong>Právo na přístup (čl. 15)</strong> — Můžete požádat o kopii svých údajů. K dispozici přes tlačítko <em>Exportovat moje data</em> v profilu.</li>
+      <li><strong>Právo na opravu (čl. 16)</strong> — Kontaktujte nás na <a href="mailto:gdpr@learnovate.local">gdpr@learnovate.local</a>.</li>
+      <li><strong>Právo na výmaz — právo být zapomenut (čl. 17)</strong> — Smazání účtu včetně všech dat je k dispozici přes tlačítko <em>Smazat účet</em> v profilu.</li>
+      <li><strong>Právo na omezení zpracování (čl. 18)</strong> — Kontaktujte nás na gdpr@learnovate.local.</li>
+      <li><strong>Právo na přenositelnost dat (čl. 20)</strong> — Tlačítko <em>Exportovat moje data</em> poskytne strojově čitelný formát JSON.</li>
+      <li><strong>Právo vznést námitku (čl. 21)</strong> — Kontaktujte nás.</li>
+      <li><strong>Právo podat stížnost</strong> — Úřad pro ochranu osobních údajů ČR: <a href="https://www.uoou.cz" target="_blank" rel="noopener">www.uoou.cz</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- ───── 6. AI Act ───── -->
+    <h2>6. Informace o AI systému (EU AI Act)</h2>
+
+    <div class="pp-highlight">
+      <p><strong>AI Act klasifikace:</strong> Vzdělávací AI systém — kategorie <strong>vysokého rizika</strong> dle čl. 6 a přílohy III bod 1(b) nařízení EU 2024/1689 (AI Act). Platforma splňuje povinnosti poskytovatele vysoce rizikových AI systémů.</p>
+    </div>
+
+    <h3>6.1 Transparentnost AI (čl. 13 AI Act)</h3>
+    <p>LearNovate používá AI systém postavený na modelu OpenAI GPT pro:</p>
+    <ul>
+      <li><strong>AI asistenta</strong> — odpovídá na otázky k vzdělávacímu obsahu.</li>
+      <li><strong>Interaktivní scénáře</strong> — řídí průběh vzdělávacích simulací (5 milníků).</li>
+    </ul>
+    <p>Každá odpověď AI je v rozhraní označena ikonou AI. Uživatelé jsou vždy informováni, že komunikují s umělou inteligencí, nikoli s člověkem.</p>
+
+    <h3>6.2 Lidský dohled (čl. 14 AI Act)</h3>
+    <p>Platforma implementuje:</p>
+    <ul>
+      <li>Filtrování nevhodného obsahu na vstupu i výstupu AI (tzv. blocking systém).</li>
+      <li>Protokolování všech interakcí s AI pro účely auditu.</li>
+      <li>Administrátorský panel pro sledování incidentů a uživatelské aktivity.</li>
+      <li>Možnost nahlásit nevhodnou odpověď AI přes kontaktní e-mail: <a href="mailto:ai-safety@learnovate.local">ai-safety@learnovate.local</a></li>
+    </ul>
+
+    <h3>6.3 Přesnost a omezení AI (čl. 15 AI Act)</h3>
+    <p>AI odpovědi jsou generovány jazykovým modelem a mohou obsahovat chyby. LearNovate doporučuje ověřovat faktické informace z AI v autoritativních zdrojích. AI systém nemá rozhodovací pravomoci s právními nebo srovnatelnými důsledky pro uživatele.</p>
+
+    <h3>6.4 Záznamy a audit (čl. 12 AI Act)</h3>
+    <p>Systém automaticky zaznamenává vstupy a výstupy AI interakcí za účelem monitorování výkonu, bezpečnosti a souladu s předpisy. Tyto záznamy jsou uchovávány max. 12 měsíců.</p>
+
+    <h3>6.5 Zákaz manipulace</h3>
+    <p>AI systém LearNovate nepoužívá sublimální techniky ani klamavé postupy k ovlivnění chování uživatelů v rozporu s jejich zájmy (čl. 5 AI Act).</p>
+
+    <hr>
+
+    <!-- ───── 7. Bezpečnost ───── -->
+    <h2>7. Bezpečnostní opatření</h2>
+    <ul>
+      <li>Hesla jsou ukládána výhradně jako bcrypt hash (salt rounds: 10).</li>
+      <li>Komunikace mezi klientem a serverem je zabezpečena HTTPS.</li>
+      <li>JWT tokeny mají platnost 7 dní a jsou ukládány pouze v localStorage.</li>
+      <li>Přístup k administrátorskému panelu je omezen na autorizované uživatele s příznakem admin.</li>
+    </ul>
+
+    <!-- ───── 8. Změny ───── -->
+    <h2>8. Změny těchto zásad</h2>
+    <p>O podstatných změnách budeme uživatele informovat prostřednictvím e-mailu nebo oznámení v aplikaci nejméně 14 dní předem. Datum účinnosti aktuální verze je uvedeno v záhlaví tohoto dokumentu.</p>
+
+    <!-- ───── Kontakt ───── -->
+    <div class="pp-contact-box">
+      <h3>Kontakt — ochrana osobních údajů</h3>
+      <p><strong>E-mail (GDPR):</strong> <a href="mailto:gdpr@learnovate.local">gdpr@learnovate.local</a></p>
+      <p><strong>E-mail (AI bezpečnost):</strong> <a href="mailto:ai-safety@learnovate.local">ai-safety@learnovate.local</a></p>
+      <p><strong>Dozorový úřad:</strong> <a href="https://www.uoou.cz" target="_blank" rel="noopener">Úřad pro ochranu osobních údajů ČR (ÚOOÚ)</a></p>
+    </div>
+
+  </div>
+</body>
+</html>

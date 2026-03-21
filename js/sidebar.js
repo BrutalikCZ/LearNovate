@@ -31,7 +31,38 @@ function closeCatDropdown() {
   ddTrigger.classList.remove('open');
 }
 
+function closeMobileSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+  sidebar?.classList.remove('mobile-open');
+  overlay?.classList.remove('active');
+}
+
 function initSidebar() {
+  // ── Mobile sidebar toggle ─────────────────────────────────────
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+  if (sidebarToggle && sidebar && sidebarOverlay) {
+    sidebarToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = sidebar.classList.toggle('mobile-open');
+      sidebarOverlay.classList.toggle('active', isOpen);
+    });
+
+    sidebarOverlay.addEventListener('click', () => {
+      closeMobileSidebar();
+    });
+  }
+
+  // Zavřít sidebar při kliknutí na cat-item na mobilu
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768 && e.target.closest('.cat-item')) {
+      closeMobileSidebar();
+    }
+  });
+
   // Lang button — toggle CS / EN
   const langBtn = document.getElementById('langBtn');
   if (langBtn) {
@@ -96,4 +127,4 @@ function initSidebar() {
   });
 }
 
-export { initSidebar, closeCatDropdown };
+export { initSidebar, closeCatDropdown, closeMobileSidebar };

@@ -119,11 +119,13 @@ async function handleRegister() {
   const password = document.getElementById('regPassword').value;
   const confirm  = document.getElementById('regConfirm').value;
 
+  const gdprConsent = document.getElementById('regGdprConsent')?.checked;
   if (!email || !username || !password || !confirm) { showError('registerError', t('err_fill_all')); return; }
   if (!isValidEmail(email))  { showError('registerError', t('err_invalid_email')); return; }
   if (username.length < 3)   { showError('registerError', t('err_username_min')); return; }
   if (password.length < 6)   { showError('registerError', t('err_password_min')); return; }
   if (password !== confirm)  { showError('registerError', t('err_password_match')); return; }
+  if (!gdprConsent)          { showError('registerError', t('err_gdpr_consent')); return; }
 
   try {
     const res  = await fetch('/api/auth/register', {
@@ -140,6 +142,8 @@ async function handleRegister() {
     ['regEmail', 'regUsername', 'regPassword', 'regConfirm'].forEach(id => {
       document.getElementById(id).value = '';
     });
+    const consent = document.getElementById('regGdprConsent');
+    if (consent) consent.checked = false;
   } catch {
     showError('registerError', t('err_server'));
   }

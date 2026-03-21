@@ -50,6 +50,7 @@
   "err_username_min": "Username must be at least 3 characters.",
   "err_password_min": "Password must be at least 6 characters.",
   "err_password_match": "Passwords do not match.",
+  "err_gdpr_consent": "You must agree to the Privacy Policy.",
   "fallback_lesson": "This lesson covers the basics of the subject.",
   "title": "LearNovate — Interactive Learning Platform",
   "grid_toggle_title": "Toggle grid/list view",

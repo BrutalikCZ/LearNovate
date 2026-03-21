@@ -63,10 +63,29 @@ function navigateToSubject(categoryId, subject) {
         <div class="detail-content-body">
           ${contentHTML}
         </div>
+
+        <!-- Mobile-only action bar (fixed at bottom) -->
+        <div class="detail-mobile-bar">
+          <button class="detail-mobile-btn" id="mobileAiBtn">
+            <i data-lucide="sparkles"></i>
+            <span>${t('ai_assistant')}</span>
+          </button>
+          <button class="detail-mobile-btn detail-mobile-btn--primary" id="mobileScenarioBtn">
+            <i data-lucide="play"></i>
+            <span>${t('start_scenario')}</span>
+          </button>
+        </div>
       </div>
 
-      <!-- Chat panel (right column) -->
+      <!-- Chat panel (right column on desktop / bottom drawer on mobile) -->
       <div class="subject-detail-chat" id="detailChat">
+        <!-- Mobile drawer header (hidden on desktop) -->
+        <div class="chat-drawer-header">
+          <span>${t('ai_assistant')}</span>
+          <button class="chat-drawer-close" id="chatDrawerClose">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
         <div class="chat-messages" id="chatMessages">
           <div class="chat-welcome">
             <i data-lucide="sparkles"></i>
@@ -81,8 +100,10 @@ function navigateToSubject(categoryId, subject) {
               <i data-lucide="arrow-up"></i>
             </button>
           </div>
-          <div style="font-size: 10px; color: var(--text-muted); text-align: center; margin-top: 4px;">
-            ${t('ai_disclaimer')}
+          <div class="ai-act-disclaimer">
+            <span class="ai-act-badge">AI</span>
+            <span>${t('ai_disclaimer')}</span>
+            <a href="/privacy-policy.html#ai-act" target="_blank" class="ai-act-info-link" title="Informace o AI systému (AI Act)">?</a>
           </div>
         </div>
         <button class="chat-action-btn" id="startScenarioBtn">
@@ -90,6 +111,9 @@ function navigateToSubject(categoryId, subject) {
           <span>${t('start_scenario')}</span>
         </button>
       </div>
+
+      <!-- Mobile chat backdrop -->
+      <div class="chat-drawer-backdrop" id="chatDrawerBackdrop"></div>
     </div>
   `;
 
@@ -189,7 +213,7 @@ function navigateToSubject(categoryId, subject) {
       const aiMsg = document.createElement('div');
       aiMsg.className = 'chat-msg ai';
       aiMsg.innerHTML = `
-        <span class="chat-msg-label">LearNovate AI</span>
+        <span class="chat-msg-label">LearNovate AI <span class="ai-generated-tag">AI</span></span>
         <div class="chat-msg-bubble">${data.answer.replace(/\n/g, '<br>')}</div>
       `;
       chatMessages.appendChild(aiMsg);
@@ -219,6 +243,36 @@ function navigateToSubject(categoryId, subject) {
   });
 
   document.getElementById('startScenarioBtn').addEventListener('click', () => {
+    if (!state.currentUser) {
+      window.showModal('login');
+      return;
+    }
+    startScenario(state.currentSubject);
+  });
+
+  // ── Mobile: AI drawer toggle ──────────────────────────────
+  const detailChat = document.getElementById('detailChat');
+  const chatDrawerBackdrop = document.getElementById('chatDrawerBackdrop');
+  const chatDrawerClose = document.getElementById('chatDrawerClose');
+  const mobileAiBtn = document.getElementById('mobileAiBtn');
+  const mobileScenarioBtn = document.getElementById('mobileScenarioBtn');
+
+  function openChatDrawer() {
+    detailChat?.classList.add('mobile-open');
+    chatDrawerBackdrop?.classList.add('active');
+    document.getElementById('chatInput')?.focus();
+  }
+
+  function closeChatDrawer() {
+    detailChat?.classList.remove('mobile-open');
+    chatDrawerBackdrop?.classList.remove('active');
+  }
+
+  mobileAiBtn?.addEventListener('click', openChatDrawer);
+  chatDrawerClose?.addEventListener('click', closeChatDrawer);
+  chatDrawerBackdrop?.addEventListener('click', closeChatDrawer);
+
+  mobileScenarioBtn?.addEventListener('click', () => {
     if (!state.currentUser) {
       window.showModal('login');
       return;
@@ -367,7 +421,7 @@ function startScenario(subject) {
     const msg = document.createElement('div');
     msg.className = `scenario-msg ${role}`;
     msg.innerHTML = `
-      <span class="scenario-msg-label">${role === 'ai' ? t('ai_screenwriter') : t('you')}</span>
+      <span class="scenario-msg-label">${role === 'ai' ? `${t('ai_screenwriter')} <span class="ai-generated-tag">AI</span>` : t('you')}</span>
       <div class="scenario-msg-bubble">${text.replace(/\n/g, '<br>')}</div>
     `;
     messagesEl.appendChild(msg);

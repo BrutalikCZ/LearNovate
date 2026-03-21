@@ -8,79 +8,193 @@
     "createdAt": "2026-03-21T00:47:32.013Z",
     "admin": true,
     "scenarios": {
-      "rezna_rana": {
-        "repetitions": 8,
-        "best_milestones": 1
-      },
-      "car_battery_replacement": {
-        "repetitions": 4,
-        "best_milestones": 1
-      },
-      "oxigen_generator_failure": {
-        "repetitions": 5,
-        "best_milestones": 0
-      },
-      "unconscious_cpr": {
-        "repetitions": 4,
-        "best_milestones": 0
-      },
-      "drowning_pool": {
-        "repetitions": 2,
-        "best_milestones": 0
-      },
-      "cut": {
-        "repetitions": 1,
-        "best_milestones": 0
-      },
-      "chemical_poisoning_home": {
-        "repetitions": 1,
-        "best_milestones": 0
-      }
+      "rezna_rana": { "repetitions": 8, "best_milestones": 1 },
+      "car_battery_replacement": { "repetitions": 4, "best_milestones": 1 },
+      "oxigen_generator_failure": { "repetitions": 5, "best_milestones": 0 },
+      "unconscious_cpr": { "repetitions": 4, "best_milestones": 0 },
+      "drowning_pool": { "repetitions": 2, "best_milestones": 0 },
+      "cut": { "repetitions": 1, "best_milestones": 0 },
+      "chemical_poisoning_home": { "repetitions": 1, "best_milestones": 0 }
     },
-    "achievements": [
-      "first_scenario",
-      "points_100",
-      "scenarios_5"
-    ]
+    "achievements": ["first_scenario", "points_100", "scenarios_5"]
   },
   {
-    "id": "mmzmiiuwftve1jmnfev",
-    "email": "idk.idk@idk.com",
-    "username": "idk",
-    "passwordHash": "$2a$10$xhUUV.tnjLQHff/aQMXy2OCZC4kp5uF8FrbhAo64thwRl1UlUllQy",
-    "body": 50,
-    "createdAt": "2026-03-21T01:02:33.464Z",
+    "id": "u1a2b3c4d5e6f7g8h9",
+    "email": "jana.novakova@gmail.com",
+    "username": "jana_novak",
+    "passwordHash": "$2a$10$XkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 870,
+    "createdAt": "2025-11-14T09:22:41.000Z",
+    "admin": false,
     "scenarios": {
-      "rezna_rana": {
-        "repetitions": 7,
-        "best_milestones": 1
-      }
-    }
+      "rezna_rana": { "repetitions": 12, "best_milestones": 3 },
+      "car_battery_replacement": { "repetitions": 9, "best_milestones": 2 },
+      "oxigen_generator_failure": { "repetitions": 7, "best_milestones": 1 },
+      "unconscious_cpr": { "repetitions": 5, "best_milestones": 1 },
+      "drowning_pool": { "repetitions": 4, "best_milestones": 1 },
+      "cut": { "repetitions": 6, "best_milestones": 1 },
+      "chemical_poisoning_home": { "repetitions": 3, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3"]
   },
   {
-    "id": "mmzp35wlaild5fzf4fl",
-    "email": "sidasdenate@proton.me",
-    "username": "asdasdhvcc",
-    "passwordHash": "$2a$10$oei0c4/KPhfUew7gsXw5E.1S2lKnsqRhSiWF68HwnjjSJrThdYYhS",
-    "body": 0,
-    "createdAt": "2026-03-21T02:14:35.685Z"
+    "id": "u2b3c4d5e6f7g8h9i0",
+    "email": "tomas.kral@seznam.cz",
+    "username": "tomas_k",
+    "passwordHash": "$2a$10$YkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 340,
+    "createdAt": "2025-12-03T14:05:18.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 5, "best_milestones": 1 },
+      "car_battery_replacement": { "repetitions": 3, "best_milestones": 1 },
+      "oxigen_generator_failure": { "repetitions": 2, "best_milestones": 0 },
+      "unconscious_cpr": { "repetitions": 3, "best_milestones": 1 },
+      "drowning_pool": { "repetitions": 1, "best_milestones": 0 },
+      "cut": { "repetitions": 2, "best_milestones": 0 },
+      "chemical_poisoning_home": { "repetitions": 1, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5"]
   },
   {
-    "id": "mmzpl3d5vd7ce740xgp",
-    "email": "asdfsdcvbcxx@ghgdskj.sdf",
-    "username": "sdfdfghkjcbcvb",
-    "passwordHash": "$2a$10$V5ghj0xwpcPuh5uUTW1bD.Wjcw9dJ28ODDzyiS0y7g1ySWbWZmvPe",
-    "body": 0,
-    "createdAt": "2026-03-21T02:28:32.201Z"
+    "id": "u3c4d5e6f7g8h9i0j1",
+    "email": "petra.svobodova@email.cz",
+    "username": "petra_sv",
+    "passwordHash": "$2a$10$ZkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 1240,
+    "createdAt": "2025-09-27T07:33:55.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 18, "best_milestones": 4 },
+      "car_battery_replacement": { "repetitions": 14, "best_milestones": 3 },
+      "oxigen_generator_failure": { "repetitions": 11, "best_milestones": 2 },
+      "unconscious_cpr": { "repetitions": 9, "best_milestones": 2 },
+      "drowning_pool": { "repetitions": 7, "best_milestones": 1 },
+      "cut": { "repetitions": 8, "best_milestones": 2 },
+      "chemical_poisoning_home": { "repetitions": 5, "best_milestones": 1 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3", "streak_7", "level_5"]
   },
   {
-    "id": "mmzrwxk3g9e3al0k2wm",
-    "email": "gfdsfg@ghjkhjvjm.cz",
-    "username": "adgjrztýztgfdcv",
-    "passwordHash": "$2a$10$C5Yod0Jsa2/BzxlG.id97OsFgV4tKKebuMrESnQBGonxvtVn0/4Ya",
-    "body": 0,
-    "createdAt": "2026-03-21T03:33:43.779Z",
-    "currentStreak": 1,
-    "lastLoginDate": "2026-03-21"
+    "id": "u4d5e6f7g8h9i0j1k2",
+    "email": "martin.horak@volny.cz",
+    "username": "martin_h",
+    "passwordHash": "$2a$10$AkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 155,
+    "createdAt": "2026-01-08T16:44:02.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 3, "best_milestones": 0 },
+      "car_battery_replacement": { "repetitions": 2, "best_milestones": 0 },
+      "oxigen_generator_failure": { "repetitions": 1, "best_milestones": 0 },
+      "unconscious_cpr": { "repetitions": 1, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100"]
+  },
+  {
+    "id": "u5e6f7g8h9i0j1k2l3",
+    "email": "lucie.dvorak@gmail.com",
+    "username": "lucie_d",
+    "passwordHash": "$2a$10$BkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 620,
+    "createdAt": "2025-10-19T11:12:29.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 9, "best_milestones": 2 },
+      "car_battery_replacement": { "repetitions": 6, "best_milestones": 1 },
+      "oxigen_generator_failure": { "repetitions": 5, "best_milestones": 1 },
+      "unconscious_cpr": { "repetitions": 4, "best_milestones": 1 },
+      "drowning_pool": { "repetitions": 3, "best_milestones": 0 },
+      "cut": { "repetitions": 4, "best_milestones": 1 },
+      "chemical_poisoning_home": { "repetitions": 2, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5", "points_500", "streak_3"]
+  },
+  {
+    "id": "u6f7g8h9i0j1k2l3m4",
+    "email": "ondrej.vesely@centrum.cz",
+    "username": "ondrej_v",
+    "passwordHash": "$2a$10$CkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 90,
+    "createdAt": "2026-02-14T20:07:11.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 2, "best_milestones": 0 },
+      "car_battery_replacement": { "repetitions": 1, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario"]
+  },
+  {
+    "id": "u7g8h9i0j1k2l3m4n5",
+    "email": "katerina.blaha@post.cz",
+    "username": "kate_b",
+    "passwordHash": "$2a$10$DkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 480,
+    "createdAt": "2025-11-30T08:58:44.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 7, "best_milestones": 1 },
+      "car_battery_replacement": { "repetitions": 5, "best_milestones": 1 },
+      "oxigen_generator_failure": { "repetitions": 4, "best_milestones": 1 },
+      "unconscious_cpr": { "repetitions": 3, "best_milestones": 0 },
+      "drowning_pool": { "repetitions": 2, "best_milestones": 0 },
+      "cut": { "repetitions": 3, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5", "streak_3"]
+  },
+  {
+    "id": "u8h9i0j1k2l3m4n5o6",
+    "email": "jakub.mares@gmail.com",
+    "username": "jakub_m",
+    "passwordHash": "$2a$10$EkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 1580,
+    "createdAt": "2025-08-05T13:27:03.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 22, "best_milestones": 5 },
+      "car_battery_replacement": { "repetitions": 17, "best_milestones": 4 },
+      "oxigen_generator_failure": { "repetitions": 14, "best_milestones": 3 },
+      "unconscious_cpr": { "repetitions": 12, "best_milestones": 2 },
+      "drowning_pool": { "repetitions": 9, "best_milestones": 2 },
+      "cut": { "repetitions": 10, "best_milestones": 3 },
+      "chemical_poisoning_home": { "repetitions": 7, "best_milestones": 1 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3", "streak_7", "level_5"]
+  },
+  {
+    "id": "u9i0j1k2l3m4n5o6p7",
+    "email": "monika.ruzicka@atlas.cz",
+    "username": "monika_r",
+    "passwordHash": "$2a$10$FkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 215,
+    "createdAt": "2025-12-22T10:41:37.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 4, "best_milestones": 1 },
+      "car_battery_replacement": { "repetitions": 2, "best_milestones": 0 },
+      "oxigen_generator_failure": { "repetitions": 2, "best_milestones": 0 },
+      "unconscious_cpr": { "repetitions": 1, "best_milestones": 0 },
+      "cut": { "repetitions": 2, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100"]
+  },
+  {
+    "id": "u0j1k2l3m4n5o6p7q8",
+    "email": "radek.polak@quick.cz",
+    "username": "radek_p",
+    "passwordHash": "$2a$10$GkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
+    "body": 730,
+    "createdAt": "2025-10-07T15:19:22.000Z",
+    "admin": false,
+    "scenarios": {
+      "rezna_rana": { "repetitions": 10, "best_milestones": 2 },
+      "car_battery_replacement": { "repetitions": 8, "best_milestones": 2 },
+      "oxigen_generator_failure": { "repetitions": 6, "best_milestones": 1 },
+      "unconscious_cpr": { "repetitions": 5, "best_milestones": 1 },
+      "drowning_pool": { "repetitions": 4, "best_milestones": 1 },
+      "cut": { "repetitions": 5, "best_milestones": 1 },
+      "chemical_poisoning_home": { "repetitions": 3, "best_milestones": 0 }
+    },
+    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3"]
   }
 ]

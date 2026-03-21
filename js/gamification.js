@@ -219,10 +219,61 @@ function openProfileModal(user) {
       <h3 class="profile-section-title">${lang === 'en' ? 'Achievements' : 'Odměny'} <span class="ach-count">${userAchievements.length}/${ACHIEVEMENTS.length}</span></h3>
       <div class="ach-grid">${achHtml}</div>
     </div>
+
+    <div class="profile-gdpr-section">
+      <h3 class="profile-section-title" style="border-left-color:#6b7280">${lang === 'en' ? 'My Data (GDPR)' : 'Moje data (GDPR)'}</h3>
+      <div class="profile-gdpr-actions">
+        <button class="gdpr-action-btn gdpr-export-btn" id="exportDataBtn">
+          <i data-lucide="download"></i>
+          <span>${lang === 'en' ? 'Export my data' : 'Exportovat moje data'}</span>
+        </button>
+        <a href="/privacy-policy.html" target="_blank" class="gdpr-action-btn gdpr-policy-btn">
+          <i data-lucide="file-text"></i>
+          <span>${lang === 'en' ? 'Privacy Policy' : 'Zásady ochrany osobních údajů'}</span>
+        </a>
+        <button class="gdpr-action-btn gdpr-delete-btn" id="deleteAccountBtn">
+          <i data-lucide="trash-2"></i>
+          <span>${lang === 'en' ? 'Delete account' : 'Smazat účet'}</span>
+        </button>
+      </div>
+    </div>
   `;
 
   lucide.createIcons({ nodes: modal.querySelectorAll('[data-lucide]') });
   modal.classList.add('open');
+
+  // GDPR — Export data
+  document.getElementById('exportDataBtn')?.addEventListener('click', async () => {
+    const token = localStorage.getItem('token');
+    const res = await fetch('/api/auth/export-data', { headers: { Authorization: `Bearer ${token}` } });
+    if (!res.ok) return;
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'learnovate-my-data.json'; a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // GDPR — Delete account
+  document.getElementById('deleteAccountBtn')?.addEventListener('click', async () => {
+    const confirmed = window.confirm(
+      lang === 'en'
+        ? 'Are you sure? This will permanently delete your account and all your data. This action cannot be undone.'
+        : 'Opravdu chcete smazat účet? Tato akce trvale odstraní váš účet a všechna vaše data. Nelze ji vrátit zpět.'
+    );
+    if (!confirmed) return;
+    const token = localStorage.getItem('token');
+    const res = await fetch('/api/auth/account', {
+      method: 'DELETE',
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (res.ok) {
+      localStorage.removeItem('token');
+      window.location.reload();
+    } else {
+      alert(lang === 'en' ? 'Account deletion failed. Please try again.' : 'Smazání účtu se nezdařilo. Zkuste to znovu.');
+    }
+  });
 }
 
 function closeProfileModal() {
