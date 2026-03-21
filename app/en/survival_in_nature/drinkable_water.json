@@ -1,0 +1,84 @@
+{
+  "name": "Obtaining drinking water",
+  "description": "Methods of improvised filtration and disinfection of water in the wilderness.",
+  "icon": "droplet",
+  "label": "Water",
+  "colorFrom": "#3b82f6",
+  "colorTo": "#1d4ed8",
+  "scenario": {
+    "title": "Rescue from dehydration",
+    "setting": "You are without water for the second day. You found a standing pool, but the water looks murky and dangerous. You have to adjust it, otherwise you risk infection.",
+    "objective": "The user must make a filter and rid the water of pathogens.",
+    "milestones": [
+      {
+        "name": "Assembling a layered filter (sand, coal, gravel)",
+        "points": 150
+      },
+      {
+        "name": "Mechanical filtration of impurities",
+        "points": 50
+      },
+      {
+        "name": "Boiling water (minimum 1 minute of boiling)",
+        "points": 200
+      }
+    ],
+    "tutorial": "If you don't have cleaning tablets, use a mechanical filter (e.g. a PET bottle with layers of fabric, crushed charcoal from the fire pit and sand). This will remove the sludge. However, boiling is necessary to eliminate bacteria and viruses. The water must boil for at least a minute, longer at high altitudes."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Priority #1: Why isn't just filtration enough?"
+    },
+    {
+      "type": "text",
+      "text": "A mechanical filter (sand, cloth) gets rid of mud, leaves and visible dirt. The water may look clean, but it can still contain millions of bacteria, viruses and parasites (such as Giardia or Cryptosporidium). These microorganisms cause severe intestinal problems that lead to rapid fluid loss. Filtration is only the first step – disinfection is the vital second."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Construction of an improvised filter"
+    },
+    {
+      "type": "text",
+      "text": "If you have a PET bottle, cut off the bottom and stuff a piece of clean cloth or moss into the neck. Fill the bottle in layers in this order (from the neck up):\n1. Fine sand (captures small particles).\n2. Crushed charcoal from the fireplace (absorbs toxins and odors – the most important layer!).\n3. Fine gravel or coarser sand.\n4. Larger stones.\nLet the water flow slowly. Pour out the first liter of filtered water as it will be full of coal dust."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Disinfection by boiling: The only certainty"
+    },
+    {
+      "type": "text",
+      "text": "Boiling is the oldest and most reliable method. You will kill most pathogens already at 70 degrees, but for 100% certainty, let the water boil (gurgle) for at least 1 minute. If you are high in the mountains where water boils at a lower temperature, extend the boil to 3 minutes. Boiled water tastes 'dull' because it has lost oxygen - just pour it from container to container to aerate it and the flavor will return."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The SODIS method: Disinfection by the sun"
+    },
+    {
+      "type": "text",
+      "text": "If you don't have a fire, you can use the SODIS (Solar Water Disinfection) method. Fill a clear PET bottle with filtered water and place it in direct sunlight (on a dark, warm surface) for 6 hours. UV radiation and heat will destroy most bacteria and viruses. Attention: the method only works in clear bottles and in clear weather. The water must not be cloudy, otherwise the UV rays will not penetrate inside."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Natural indicators of purity"
+    },
+    {
+      "type": "text",
+      "text": "Always look for running water. A stagnant pool is a breeding ground for bacteria. If you find a spring flowing directly from the rock, it is the safest source. The presence of crayfish in a stream means clean water, but it does not mean that it is drinkable without treatment - crayfish can tolerate many things that the human stomach cannot. Avoid water near pastures (cattle excrement) or industrial facilities where there is a risk of chemical contamination that will not be removed by boiling."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Collecting water from dew and plants"
+    },
+    {
+      "type": "text",
+      "text": "Early in the morning, you can collect dew from the grass with a piece of cloth that you tie around your ankles and walk through the meadow. You then wring out the fabric. It is pure distilled water. Another option is a 'transpiration bag' - you tie a plastic bag around a leafy tree branch. The sun causes the leaves to release moisture, which condenses on the walls of the bag. So you can get several deciliters of drinking water per day."
+    }
+  ]
+}

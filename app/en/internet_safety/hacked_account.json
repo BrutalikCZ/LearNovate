@@ -1,0 +1,88 @@
+{
+  "name": "Loss of control over online account",
+  "description": "How to hack an account on a social network or email.",
+  "icon": "user-lock",
+  "label": "NET",
+  "colorFrom": "#0f172a",
+  "colorTo": "#f59e0b",
+  "scenario": {
+    "title": "A social network account has been compromised",
+    "setting": "You find that you cannot log into your social network account. You get notifications about changing your password and logging in from unknown devices. Friends report strange messages coming from your account.",
+    "objective": "The user must regain control of the account and prevent further abuse.",
+    "milestones": [
+      {
+        "name": "Attempt to restore access through the recovery process",
+        "points": 150
+      },
+      {
+        "name": "Logging out of all active devices",
+        "points": 150
+      },
+      {
+        "name": "Change password and account security",
+        "points": 200
+      },
+      {
+        "name": "Scan and remove malicious activity",
+        "points": 100
+      }
+    ],
+    "tutorial": "It is necessary to act quickly when taking over the account. Use the official password reset. Disconnect all devices and change the password to a strong and unique one. Activate two-factor authentication and check recent activity."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First aid: A race against time"
+    },
+    {
+      "type": "text",
+      "text": "As soon as you find that you cannot log in, immediately check your email for a password change message. Most platforms (Meta, Google, Apple) send a notification that includes a 'It wasn't me' or 'Secure account' link. This link often works even after the attacker has changed the password and allows you to reverse the process. If you do not have this email, go directly to the official support page for hacked accounts (eg facebook.com/hacked) and follow the instructions to verify your identity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kicking out an uninvited guest"
+    },
+    {
+      "type": "text",
+      "text": "Changing your password is only half the battle. An attacker can still be logged in via an active session (token) in their browser or application. In your account security settings, you need to find the 'Active devices' or 'Where you're signed in' section and select the 'Sign out from all devices' option. This ensures that the attacker will have to enter a new password that they (hopefully) no longer have. Also, don't forget to check connected apps (eg games or other sites logged in through your account) and remove suspicious accesses."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Track cleaning and damage control"
+    },
+    {
+      "type": "text",
+      "text": "Hackers often don't just change passwords. Check that the attacker hasn't set up automatic message forwarding, changed your recovery phone number, or added their own device as trusted for two-factor authentication. Also check recent posts or messages - attackers often send phishing links or requests for money to your contacts. It's polite (and safe) to warn your friends that your account has been temporarily compromised so they don't click on anything."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Why did this happen? Attack analysis"
+    },
+    {
+      "type": "text",
+      "text": "Nobody hacks the account 'just like that'. Think about how the attacker got to you. Have you used the same password elsewhere and experienced a data breach? Did you click on a suspicious link in an email? Do you have malware on your computer? If you do not find the cause, the attack may soon recur. If you've had the same password on other services, consider them all compromised and change them immediately."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Strengthening the walls for next time"
+    },
+    {
+      "type": "text",
+      "text": "Activate two-factor authentication (2FA) immediately after access is restored. If possible, do not use SMS codes that can be forged (SIM swapping), but rather an authentication application (Google Authenticator, Microsoft Authenticator) or a physical security key. Also generate 'Recovery Codes', print them and keep them in a safe place away from your computer. It's your last resort if you lose access to both your phone and email."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Legal action and reporting"
+    },
+    {
+      "type": "text",
+      "text": "If there has been a leak of sensitive data, identity theft or financial loss, do not hesitate to contact the Police of the Czech Republic. Screenshots of suspicious messages, notifications of logins from foreign IP addresses and confirmation of data changes serve as evidence. Digital identity is as important as physical identity today, so don't underestimate its protection."
+    }
+  ]
+}

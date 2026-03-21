@@ -1,0 +1,79 @@
+{
+  "name": "Phishing email and account theft",
+  "description": "How to recognize and deal with a phishing attack targeting credentials.",
+  "icon": "mail-warning",
+  "label": "NET",
+  "colorFrom": "#1e1b4b",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Suspicious email from a bank",
+    "setting": "You open an email that looks like a message from your bank. They claim that your account will be blocked if you don't log in immediately via the attached link. The page looks almost identical to the original, but the address is slightly different.",
+    "objective": "The user must recognize phishing, prevent data entry and secure the account.",
+    "milestones": [
+      {
+        "name": "Recognizing a suspicious message",
+        "points": 150
+      },
+      {
+        "name": "Not opening or leaving a malicious link",
+        "points": 150
+      },
+      {
+        "name": "Source verification through official means",
+        "points": 100
+      },
+      {
+        "name": "Password change and 2FA activation",
+        "points": 200
+      }
+    ],
+    "tutorial": "Phishing tries to create pressure and fear. Never click on links from unverified emails. Always check the domain and log in only through the official website. If in doubt, change your password and activate two-factor authentication."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anatomy of a Deception: Why Does It Look So Believable?"
+    },
+    {
+      "type": "text",
+      "text": "A phishing email is not just a random message. It is a carefully constructed trap that copies the visual style of your bank, including the logo, colors and tone of communication. The attacker relies on the psychology of fear. They claim that your account has been hacked or that your access is expiring. This forces you to act quickly without thinking. The goal is to get you to a fraudulent site that looks like a true copy of banking, but only serves to collect passwords."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Detective work: How to detect a trap"
+    },
+    {
+      "type": "text",
+      "text": "Watch for details that an attacker can't perfectly falsify. The actual sender address is often different from the one displayed (just click on it and you'll see the truth). Links in an email may look official, but if you hover over them without clicking, you'll see the actual destination in the corner of your browser. If the domain ends suspiciously or contains typos, delete the email immediately."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The rule of the golden mean"
+    },
+    {
+      "type": "text",
+      "text": "If you receive a warning from your bank, never use the links in the email. Open a new browser panel, manually type in your bank's address, or use their official mobile app. If you don't see a warning there, the email was a scam. Banks will never ask you for sensitive information or passwords via a direct link in an email."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Two-factor authentication: The last line of defense"
+    },
+    {
+      "type": "text",
+      "text": "Even if an attacker manages to get your password, 2FA (two-factor authentication) makes it useless. Without confirmation in the mobile application or SMS code, it will not get into the account. If you suddenly receive a confirmation code that you did not ask for, this is a clear sign that someone knows your password and is trying to hack it. In this case, immediately change the password from a secure device."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Reporting and prevention"
+    },
+    {
+      "type": "text",
+      "text": "You should report any detected phishing email to your bank or IT department. This will help block malicious servers and protect other users who might be less careful. Digital security education is a never-ending process as attackers are constantly improving their methods using artificial intelligence and sophisticated techniques."
+    }
+  ]
+}

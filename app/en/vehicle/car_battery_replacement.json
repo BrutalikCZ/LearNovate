@@ -1,0 +1,74 @@
+{
+  "name": "Car battery replacement",
+  "description": "How to properly replace a car battery and restore vehicle functionality.",
+  "icon": "car",
+  "label": "Car battery",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Car battery replacement",
+    "setting": "You are driving a car through the desert. Suddenly your lights went out and the engine went silent. The car stopped. You have everything you need in your suitcase.",
+    "objective": "The user must replace the car battery correctly.",
+    "milestones": [
+      {
+        "name": "Ensuring safety (engine off, gloves, glasses)",
+        "points": 50
+      },
+      {
+        "name": "Disconnecting the old battery (correct polarity)",
+        "points": 150
+      },
+      {
+        "name": "Removing the old battery",
+        "points": 50
+      },
+      {
+        "name": "Installing and connecting a new battery (correct polarity)",
+        "points": 150
+      },
+      {
+        "name": "Functionality verification (startup)",
+        "points": 100
+      }
+    ],
+    "tutorial": "Changing a car battery is an operation that can be done at home with a little care, but before starting it is crucial to ensure safety by turning off the engine, turning off all lights and wearing safety glasses and work gloves. Beforehand, make sure you have a new battery with the correct parameters and prepare the necessary tools, such as a side or socket wrench. The disassembly itself starts with disconnecting the minus pole, then the plus one, to avoid a short circuit. Carefully remove the old battery and prepare a place for the new one. Place the new battery firmly and connect it in the reverse order - first plus, then minus. Once done, check that everything is secure and start the vehicle. Always hand over the old battery for ecological disposal."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is a car battery"
+    },
+    {
+      "type": "text",
+      "text": "The car battery is a source of electrical energy that enables the engine to start and power the vehicle's electronics. Without a functional battery, the vehicle is unable to operate."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When a replacement is needed"
+    },
+    {
+      "type": "text",
+      "text": "Replacement is necessary when the battery fails completely, discharges frequently, or if the battery cannot maintain capacity. Symptoms include poor starting or complete inoperability of the vehicle."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Correct replacement procedure"
+    },
+    {
+      "type": "text",
+      "text": "When replacing, always disconnect the minus pole first, then the plus. Connect the new battery in reverse. Pay attention to a firm attachment and correct polarity to avoid damage to the electrical system."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "After replacing the battery"
+    },
+    {
+      "type": "text",
+      "text": "After installation, check vehicle starting and electronics functionality. Clocks or other systems may need to be set. Always dispose of the old battery in an environmentally friendly way."
+    }
+  ]
+}

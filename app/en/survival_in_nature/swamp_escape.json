@@ -1,0 +1,84 @@
+{
+  "name": "Escape from the swamp",
+  "description": "How to get out of deep mud or bog without help.",
+  "icon": "droplet",
+  "label": "Terrain",
+  "colorFrom": "#65a30d",
+  "colorTo": "#1a2e05",
+  "scenario": {
+    "title": "Death grip",
+    "setting": "While picking mushrooms in a remote part of the Šumava Mountains, you took a bad step and fell into a hidden bog. The slimy, cold mud is already up to your waist, and with every movement you sink deeper, while your body temperature drops. You are alone, your cell phone has no signal and the forest around you silently watches your fight for life.",
+    "objective": "The user must extricate themselves without drowning or becoming weak.",
+    "milestones": [
+      {
+        "name": "Stopping panic and distributing body weight (lying on your back)",
+        "points": 200
+      },
+      {
+        "name": "Slow, smooth leg movements to release the vacuum effect",
+        "points": 150
+      },
+      {
+        "name": "Clinging to a fixed point (branch, tuft of grass) or crawling away",
+        "points": 100
+      }
+    ],
+    "tutorial": "Above all, don't panic and don't make sudden movements - it will only pull you in deeper. Immediately try to spread your weight over as large an area as possible: slowly lean back and lie on your back as if you were lying on water. Slowly release your legs one by one in a smooth motion. Once your feet are on the surface, 'crawl' (or roll) onto your back onto firmer ground. If you have a backpack, use it as a float under your back, or throw it away if it drags you down."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Swamp Physics: Why Combat Kills You"
+    },
+    {
+      "type": "text",
+      "text": "Swamp, bog or liquid sand are so-called non-Newtonian fluids. The more force you try to pull your leg, the more the mass around you solidifies and increases its friction. A vacuum effect is created which, with a sharp jerk, can generate the force needed to tear the femur out of the hip. Although a human is less dense than a swamp (so should theoretically float), the panic and vertical position causes you to sink in up to your waist, where the pressure of the mass traps you."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Weight distribution strategy"
+    },
+    {
+      "type": "text",
+      "text": "The key to survival is to increase the area you affect the swamp. Think of it as snowshoeing vs. in shoes. As soon as you start to sink, immediately get rid of the heavy pack (if it does not contain something that floats) and unfurl. Slowly lean back as if you were lying in a bathtub. The goal is to get the torso in a horizontal position. The more part of the body 'lies' on the surface, the less the rest breaks and the more the pressure on your feet is reduced."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Leg release - 'wobble' technique"
+    },
+    {
+      "type": "text",
+      "text": "Once you are lying on your back, start moving one leg slowly. Do not force it upwards, but in circular movements to the sides. This creates a space around the leg where water can flow. The water acts as a lubricant to cancel out the vacuum suction. Be patient - it may take several minutes of steady 'wobbling' to loosen one leg. Once one leg is free, bend it and rest it on the surface (or a pole if you have one) and continue with the other."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Crawling to safety"
+    },
+    {
+      "type": "text",
+      "text": "Once you have both feet out, don't try to get up just yet! Remain lying down and move slowly (similar to a swimming stroke) towards solid ground or the nearest clump of grass or branch. If you have a pole or long stick, place it in front of you (or under you) perpendicular to your body to help keep you afloat as a makeshift float."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hypothermia and exhaustion"
+    },
+    {
+      "type": "text",
+      "text": "The water in the bogs is also very cold in the summer. In addition, the mud closely surrounds the body and dissipates heat much more efficiently than air. If you don't recover within the first 15-30 minutes, your muscles will begin to stiffen and you will lose the strength needed to manipulate your legs. If you manage to get outside, change into dry clothes immediately or keep moving to restore body temperature. The shock of confinement combined with the cold can lead to collapse even after a successful rescue."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prevention in unknown terrain"
+    },
+    {
+      "type": "text",
+      "text": "In areas with swamps (Šumava, marshes, floodplain forests), never go alone outside the marked trails. Always carry a sturdy stick with you to test the ground in front of you. If you see a suspiciously green, moss-covered surface that looks like a solid carpet, it could be a 'rocking bank' over deep water or mud. Avoid places with a high incidence of reeds and dry grass in places where the ground under your feet 'springs'."
+    }
+  ]
+}

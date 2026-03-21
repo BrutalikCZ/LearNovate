@@ -1,0 +1,79 @@
+{
+  "name": "An attack on public Wi-Fi",
+  "description": "How to protect yourself when using an unsecured public Wi-Fi network.",
+  "icon": "wifi-off",
+  "label": "NET",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Coffee in the cafe and public network",
+    "setting": "You are sitting in a cafe and connect to public Wi-Fi without a password. You open e-mail and internet banking. Shortly after, the connection becomes unstable and the device reports an unknown login.",
+    "objective": "The user must recognize the risk of the public network and prevent data leakage.",
+    "milestones": [
+      {
+        "name": "Recognizing the risk of unsecured Wi-Fi",
+        "points": 150
+      },
+      {
+        "name": "Disconnection from the public network",
+        "points": 150
+      },
+      {
+        "name": "Account security (password change)",
+        "points": 200
+      },
+      {
+        "name": "Check for unusual activity",
+        "points": 100
+      }
+    ],
+    "tutorial": "Public Wi-Fi can be misused to eavesdrop on communications. Never access sensitive services on it without a VPN. If in doubt, change your passwords immediately."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Man-in-the-Middle (MitM) attack"
+    },
+    {
+      "type": "text",
+      "text": "The biggest risk of public networks is a man-in-the-middle attack. The attacker inserts himself between your device and the Wi-Fi router. All the data you send (passwords, e-mails, messages) flows through his computer first. If the website does not use strong encryption (HTTPS), the attacker can see your login information in clear text, as if you had written it on a note."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Evil Twin: A false double"
+    },
+    {
+      "type": "text",
+      "text": "Attackers often create networks with trusted names such as 'Kavarna_Host' or 'Free_Airport_WiFi'. Your phone will happily connect to them automatically. But in reality, you are not connecting to the cafe's Internet, but directly to the attacker's hotspot. He can then monitor your activity or redirect you to fake versions of your bank or social networks."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The golden rules of secure Wi-Fi"
+    },
+    {
+      "type": "text",
+      "text": "- **VPN is a must:** Virtual Private Network will create an encrypted tunnel. Even if an attacker intercepts the data, all they will see is a meaningless jumble of characters.\n- **Turn off automatic connection:** Your phone should not report itself to known networks. An attacker can emulate the network that your mobile knows from home.\n- **Forget banking:** Never log into a bank, e-mail or e-shop with a stored card on a public network. If you have to, use mobile data (4G/5G), which is much safer.\n- **File sharing:** Turn off file and printer sharing in the system settings so that no one on the network can easily 'break into' your drive."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Certificate tracking"
+    },
+    {
+      "type": "text",
+      "text": "If a warning about an invalid certificate appears in your browser (e.g. 'Your connection is not private'), close the website immediately. This often means that someone is attempting SSL stripping - a method that forces your browser to communicate insecurely so that an attacker can read your data."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What to do after an attack?"
+    },
+    {
+      "type": "text",
+      "text": "If you suspect someone has 'hacked' you on Wi-Fi:\n1. Immediately turn off Wi-Fi and switch to mobile data.\n2. Change the passwords for all the services you had open during the connection.\n3. In the account settings (Google, Facebook), look at 'Active sessions' and opt out of all suspicious devices.\n4. Check your device's DNS settings to see if the attacker has redirected you to their servers."
+    }
+  ]
+}

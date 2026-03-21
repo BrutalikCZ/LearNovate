@@ -1,0 +1,75 @@
+{
+  "name": "Determining the sides of the world",
+  "description": "How to find north using a shadow or a watch.",
+  "icon": "compass",
+  "label": "Navigation",
+  "colorFrom": "#0ea5e9",
+  "colorTo": "#0369a1",
+  "scenario": {
+    "title": "Lost in the fog",
+    "setting": "Your cell phone is dead and the thick fog makes it impossible to see the landmarks. You have to determine where north is to continue in the right direction towards civilization.",
+    "objective": "Correctly determine the sides of the world without technology.",
+    "milestones": [
+      {
+        "name": "The shadow method (a stick stuck in and watching the movement of the shadow)",
+        "points": 150
+      },
+      {
+        "name": "Checking for natural clues (moss on trees, anthills)",
+        "points": 50
+      },
+      {
+        "name": "Determining the direction of march",
+        "points": 100
+      }
+    ],
+    "tutorial": "Stick a stick into the ground and mark the end of the shadow. Wait 15 minutes and mark the new end of the shadow. The connector forms the east-west axis (the first marker is west). Take natural indications such as moss (often in the north) as indicative only, they can be misleading due to the local microclimate."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigating Without a Compass: The Physics of Shadows"
+    },
+    {
+      "type": "text",
+      "text": "The Sun is the most reliable navigator. It moves across the sky from east to west (in the northern hemisphere through the south). Even though it's under a cloud, shadows still exist. The 'shadow pin' method is the most accurate improvised method of determining the cardinal points without a watch. The longer the time period between measurements you choose, the more accurate the result you will get."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shadow Tip Method"
+    },
+    {
+      "type": "text",
+      "text": "1. **First mark:** Drive a peg (approx. 1 m high) into the flat ground. Mark the tip of its shadow with a stone or a groove in the ground. This mark ALWAYS represents the westerly direction (because the sun rises in the east and casts a shadow in the west).\n2. **Waiting:** Wait 15-30 minutes for the shadow to move a few centimeters.\n3. **Second mark:** Mark the new position of the tip of the shadow. This sign points to the east.\n4. **Axis V-Z:** Connect the two marks with a straight line. This is your east-west axis. \n5. **Determining North:** Stand with the first mark on your left and the second on your right. You are now looking directly NORTH. The south is behind you."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Analog watch method"
+    },
+    {
+      "type": "text",
+      "text": "If you have a classic watch with hands (or can imagine one), you can determine the south: \n- Point the small (hour) hand directly at the sun.\n- Divide the angle between the small hand and the number 12 on the dial exactly in half. \n- The axis of this angle points SOUTH. (Attention: during summer time, the number 1 is not used, but the number 12)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Natural Clues: Myths vs. reality"
+    },
+    {
+      "type": "text",
+      "text": "Natural signs are indicative only and may be misleading. Never rely on just one!\n- **Moss:** It often grows on the north side of the trunks because that's where the most moisture and shade is. But be careful - in a deep forest, moss can be everywhere or where there is the most moisture (by a stream).\n- **Anthill:** Ants build the steeper side of the anthill towards the north and the milder (sunny) side towards the south to trap as much heat as possible.\n- **Stumps:** The rings on solitary stumps tend to be denser (closer together) on the north side, while they are wider on the south side due to faster growth in the heat.\n- **Solitary trees:** Trees on the south side, where they have more light, tend to have denser crowns and longer branches."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The technique of maintaining a straight line"
+    },
+    {
+      "type": "text",
+      "text": "Without landmarks, you will unconsciously start turning (usually to the right if you are right-handed). \n- **Three Point Method:** Choose two trees in a line in front of you. Before you get to the first one, choose the third one that overlaps with them. This will keep you in a perfect straight line.\n- **Look Back:** Periodically turn around and look back the way you came. This will help you realize if you are straying and know the terrain should you have to go back."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Avalanche survival",
+  "description": "Key avalanche procedures and subsequent self-help.",
+  "icon": "snowflake",
+  "label": "Winter survival",
+  "colorFrom": "#cbd5e1",
+  "colorTo": "#475569",
+  "scenario": {
+    "title": "White terror",
+    "setting": "You are skiing in open terrain in the Krkonoše mountains when suddenly there is a booming sound and the slope above you begins to move. A huge mass of snow pulls you down and you lose control, surrounded by nothing but white darkness and crushing pressure. Your life now depends on split-second decisions under meters of snow.",
+    "objective": "The user must take steps to maximize the chance of breathing and subsequent recovery.",
+    "milestones": [
+      {
+        "name": "Swimming movements to stay on the surface and get rid of the pack",
+        "points": 100
+      },
+      {
+        "name": "Creating an air pocket in front of the face before stopping",
+        "points": 200
+      },
+      {
+        "name": "Calming breathing and conserving oxygen (constant shouting will not help)",
+        "points": 150
+      },
+      {
+        "name": "Attempting to determine the 'up' direction (using saliva) and slow digging",
+        "points": 100
+      }
+    ],
+    "tutorial": "If an avalanche sweeps you away, try to 'swim' to the surface. Get rid of the skis and poles, they work as anchors. Just before the snow stops, put your hands in front of your face and create a breathing space - an air pocket. Once the snow stops, it hardens like concrete. Keep calm, unnecessary panicking and shouting will use up oxygen in minutes. If you can move your hand, spit to see where the saliva is flowing - this will show you the direction of gravity and where it is 'up' so you know where to dig."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avalanche Physics: From Liquid to Concrete"
+    },
+    {
+      "type": "text",
+      "text": "While moving, the avalanche behaves like a liquid, but when it stops, a process called 'settling' occurs. The frictional heat is instantly dissipated and the snow around you hardens like concrete. If you didn't have time to create an air pocket, you won't be able to move your finger, let alone dig out. In addition, the pressure of the snow can prevent the full expansion of the chest during breathing, which leads to rapid exhaustion and suffocation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Battle for the Surface: Swim!"
+    },
+    {
+      "type": "text",
+      "text": "Fight as the avalanche sweeps you away. Use arms and legs like swimming (stroke or crawl) to stay as close to the surface as possible. If you have an avalanche backpack with an airbag, activate it immediately - it will increase your volume and, thanks to the physics phenomenon of 'inverse segregation', push you up into the larger particles of snow. Get rid of your skis (unless you have safety bindings that turn themselves off) as they act as anchors and pull you down."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Air pocket: Your lungs under the snow"
+    },
+    {
+      "type": "text",
+      "text": "A second before the avalanche stops, you need to make a key movement: put your hands in front of your face (elbows together, palms in front of your mouth). This creates a space - an air pocket. Even a small space the size of a fist can provide you with oxygen for dozens of extra minutes. Also, before coming to a complete stop, take a deep breath to 'expand' your ribcage and prevent the snow around you from solidifying at the moment of exhalation, when your chest is smallest."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Disorientation and gravity test"
+    },
+    {
+      "type": "text",
+      "text": "It is completely dark under the snow and your sense of direction is zero. You often don't know where it's up and where it's down. If you have a free hand, dig out a small space and spit. Watch (or feel) where the saliva flows. Gravity will pull it down - you have to dig in exactly the opposite direction. If your hands are trapped, don't scream. The snow absorbs the sound outwards, but you can hear the steps of the rescuers above you very clearly. Conserve oxygen and only shout when they are directly above you."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Ice mask"
+    },
+    {
+      "type": "text",
+      "text": "Breathing into a small pocket causes the moisture from your breath to condense around your face and form an impermeable ice crust (ice mask). This will gradually prevent the passage of oxygen from the snow to you. If possible, try to break this layer in front of your face with your hands. Calm and shallow breathing is essential to delay this effect."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Friend help: The first 15 minutes are decisive"
+    },
+    {
+      "type": "text",
+      "text": "The statistics are inexorable: after 15 minutes under the snow, the chance of survival drops sharply below 30%. Professional rescue usually does not manage to arrive on time. Your survival depends on your mates, who must immediately switch their beepers to 'SEARCH', locate the signal, use the probe to accurately determine the depth and position of the body, and start digging effectively 'in the lap' at an angle to prevent you from being buried further."
+    }
+  ]
+}

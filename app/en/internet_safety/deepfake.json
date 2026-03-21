@@ -1,0 +1,88 @@
+{
+  "name": "Deepfake fraud in online communication",
+  "description": "Fraud detection using fake AI-generated voice or video.",
+  "icon": "video",
+  "label": "NET",
+  "colorFrom": "#1e1b4b",
+  "colorTo": "#f97316",
+  "scenario": {
+    "title": "A phone call from a \"colleague\" with an urgent request",
+    "setting": "You receive a video call from a work colleague. He looks and sounds exactly like him, but he is asking you to transfer money to an unknown account immediately due to a supposed crisis situation. Communication is pressured and without time for verification.",
+    "objective": "The user must recognize the deepfake scam and verify the identity of the other party.",
+    "milestones": [
+      {
+        "name": "Questioning the authenticity of the call",
+        "points": 150
+      },
+      {
+        "name": "Refusal to act immediately under pressure",
+        "points": 150
+      },
+      {
+        "name": "Identity verification through another channel",
+        "points": 200
+      },
+      {
+        "name": "Report an attempted fraud",
+        "points": 100
+      }
+    ],
+    "tutorial": "Deepfake scams use a realistic image and voice to manipulate. Never conduct financial transactions based on a call alone. Always verify identity through another independent channel."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Technology in the hands of fraudsters"
+    },
+    {
+      "type": "text",
+      "text": "Deepfake uses advanced artificial intelligence algorithms (generative networks) to map someone else's features onto the attacker's face in real time. Voice cloning works similarly – just a few minutes of a recording from a public video on social networks and AI can create a perfect copy of the voice, including accent and intonation. The result is a video call that looks like your boss, colleague or family member asking for urgent help."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Warning signals in video and audio"
+    },
+    {
+      "type": "text",
+      "text": "Even though the technology is advanced, it still has its cracks. Watch for minor artifacts:\n- Unnatural blinking: Deepfake models often have a problem with realistic eyelid movement.\n- Edges of the face: Look for blurring or 'twitching' where the face touches the hair or ears.\n- Lip Sync: Notice if the mouth movement exactly matches the spoken syllables.\n- Robotic tone: The voice can sometimes have a metallic tinge or unnatural pauses between words that don't match the emotions in the face."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Psychological pressure: Time is the enemy"
+    },
+    {
+      "type": "text",
+      "text": "A key element of the deepfake scam is the time crunch. The attacker knows that the longer you watch the video or think about the situation, the more likely you are to discover the bug. That's why he creates crisis scenarios: 'They blocked our company account', 'I had an accident and I need money for towing'. This pressure is intended to force you into action before you can engage in critical thinking."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Out-of-Band authentication method"
+    },
+    {
+      "type": "text",
+      "text": "If someone asks you for money or sensitive data via video or voice message, end the call immediately. Use another, independent channel to verify identity – call the person on their real phone number, text them through another app, or connect with someone else close to them. Never use contact details given to you by a 'colleague' during a suspicious call."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Verification question and password"
+    },
+    {
+      "type": "text",
+      "text": "In a family or close work circle, it's good to have a 'safety word' or control question that only a real person knows the answer to and that can't be googled. When in doubt, ask about something very specific from your past together. An AI attacker, even if he looks like your brother, won't know what you had for lunch three years ago on vacation in Croatia."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Reporting and data protection"
+    },
+    {
+      "type": "text",
+      "text": "If you become the target of a deepfake attack, report it to the police and your company's IT department. It is important to document the incident (e.g. with a screen recording). At the same time, consider how much of your biometric data (videos with clear voice and face) is publicly available on the Internet. The less quality material an attacker has, the harder it is to create a credible clone of your identity."
+    }
+  ]
+}

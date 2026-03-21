@@ -1,0 +1,88 @@
+{
+  "name": "Social engineering in social networks",
+  "description": "How to recognize manipulation and attempts to obtain sensitive data via social networks.",
+  "icon": "users",
+  "label": "NET",
+  "colorFrom": "#064e3b",
+  "colorTo": "#0ea5e9",
+  "scenario": {
+    "title": "Unknown contact on social network",
+    "setting": "An unknown account is writing to you on the social network, which claims to support the platform. It claims your account has been compromised and requires verification via a link. The messages are urgent and contain threats to block the account.",
+    "objective": "The user must recognize social engineering and protect their data.",
+    "milestones": [
+      {
+        "name": "Identification of manipulative communication",
+        "points": 150
+      },
+      {
+        "name": "Ignoring and blocking suspicious contact",
+        "points": 150
+      },
+      {
+        "name": "Verification of the account status through official means",
+        "points": 150
+      },
+      {
+        "name": "Account security (2FA, password change)",
+        "points": 100
+      }
+    ],
+    "tutorial": "Social engineering uses pressure and fear to obtain data. Official support never asks for passwords via messages. Always verify information directly in the application."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Attack Psychology: Why Does It Work?"
+    },
+    {
+      "type": "text",
+      "text": "Social engineering is not based on technical errors, but on the use of human emotions. Attackers most often target fear (your account will be deleted), urgency (you have 10 minutes), curiosity (look at this photo), or authority (platform support is writing to you). The goal is to induce panic that shuts down your critical thinking and forces you to act impulsively."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Red Flags"
+    },
+    {
+      "type": "text",
+      "text": "Learn to recognize the typical signs of fraud:\n- **Duress and Emotion:** The message requires immediate action under threat of penalty.\n- **Suspicious Sender:** Account has a strange name, lacks history, or has typos in the name (eg 'Support_Metta' instead of 'Meta').\n- **External links:** The link leads to a page that looks official but has a different URL (eg 'security-verify-login.com').\n- **Grammar and Tone:** While AI translations are improving, messages often feel unnatural or combine different languages."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Phishing mechanism"
+    },
+    {
+      "type": "text",
+      "text": "The most common form is phishing. The attacker will send you a link to a fake login form. As soon as you enter your name and password there, the attacker will immediately get it. If you have two-factor authentication (2FA) turned on, he may try to force you to send him that SMS code as well. Remember: No official support will EVER ask you for your password or 2FA code via chat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "'Out-of-Band' Verification"
+    },
+    {
+      "type": "text",
+      "text": "If you receive a suspicious message, never communicate through the channel that contacted you. Go directly to the official application or website of the service by entering the address in the browser. There in the 'Security' or 'Support messages' section you will see if the request is genuine. Most platforms have a history of communication with the user directly in the account settings."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Security: Strength in the network"
+    },
+    {
+      "type": "text",
+      "text": "Even if you fly in, an attacker can hit a wall if you have the right security:\n- **2FA (Two-Factor Authentication):** Use an app (Google Authenticator, Authy) rather than an interceptable SMS.\n- **Unique passwords:** Use a password manager. If an attacker gets the password to one network, they won't get into your email or bank.\n- **Privacy Settings:** Limit the amount of information you share about yourself publicly. Attackers use these details (pet names, hometowns) to personalize attacks or guess security questions."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What to do after clicking?"
+    },
+    {
+      "type": "text",
+      "text": "If you have already clicked on the link and entered your data, act immediately: \n1. Change your password on the compromised service and everywhere else you use the same one.\n2. Sign out all active devices in account settings.\n3. Check if the attacker has changed your contact email or phone number.\n4. Report the fraudulent account to the platform so that it cannot target other victims."
+    }
+  ]
+}

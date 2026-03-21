@@ -1,0 +1,88 @@
+{
+  "name": "Encounter with the bear",
+  "description": "Proper behavior in close contact with a large beast in the mountains.",
+  "icon": "paw",
+  "label": "Animals",
+  "colorFrom": "#a16207",
+  "colorTo": "#422006",
+  "scenario": {
+    "title": "Face the beast",
+    "setting": "You are returning to the evening along a narrow path in the thick undergrowth of the Slovak Tatras and suddenly, just twenty meters in front of you, an adult brown bear stands on its back. The animal has clearly taken you by surprise, snorting nervously and watching you intently as you feel pure adrenaline rush through your veins. There is nowhere to run and the seconds pass like hours.",
+    "objective": "The user must manage the situation without provoking an attack.",
+    "milestones": [
+      {
+        "name": "Stopping movement and avoiding eye contact (do not look into the eyes)",
+        "points": 150
+      },
+      {
+        "name": "Calmly speaking in a deep voice and slowly raising hands (zoom in silhouette)",
+        "points": 100
+      },
+      {
+        "name": "Backing slowly, without turning your back to the animal",
+        "points": 200
+      },
+      {
+        "name": "Preparing for a 'dead bug' (if a bear attacks)",
+        "points": 50
+      }
+    ],
+    "tutorial": "Never run away! A bear is faster than a horse, and running away triggers its hunting instinct. Stay standing, don't look him directly in the eyes (it's a challenge), but watch him peripherally. Start talking calmly (in a deep, even voice) so he knows you're human. Slowly, without sudden movements, back up the way you came. If a bear attacks, lie on your stomach, intertwine your fingers behind your neck, shield your face and pretend to be a dead bug. Leave the backpack on your back, it will serve as protection for the searcher."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bear psychology: Why does it stand on the back?"
+    },
+    {
+      "type": "text",
+      "text": "When a bear stands on its back, it is usually not in preparation for an attack, but an effort to gain a better overview. Bears have poor eyesight, so they try to catch your scent and identify what you are. At this point, you are not prey, but an unknown object. The key to survival is to prove to him that you are human and not a threat or food to him."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Eye contact and body language"
+    },
+    {
+      "type": "text",
+      "text": "In the beast kingdom, direct eye contact means a challenge to fight or aggression. Therefore, look slightly to the side, but always keep the bear in your peripheral vision. Speak in a deep, calm, monotone voice. Don't scream - a high-pitched screeching voice reminds the bear of wounded prey and could awaken the hunting instinct in it. Slowly raise your arms above your head and wave them to make yourself look bigger than you really are."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Escape is judgment"
+    },
+    {
+      "type": "text",
+      "text": "Never, ever run away. A brown bear can reach speeds of over 50 km/h and is incredibly agile in rugged terrain or uphill. By running away, you trigger the instinct of a predator chasing prey. If the bear is standing, back up slowly. If he starts to approach you, stop and keep talking. If it stops, reverse slowly again. Keep track of the terrain to avoid tripping."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "False lunge vs. real attack"
+    },
+    {
+      "type": "text",
+      "text": "Bears often make so-called bluff charges. They run towards you, stomp, snort, but stop a few meters in front of you or turn sharply. It's a test of your reaction. If you don't run away at this point, the bear will often judge that you are not prey and leave. However, if physical contact occurs, curl up on your stomach, clasp your hands behind your neck, and try to remain still. A backpack on your back will protect your spine and kidneys."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bear Spray: Your Best Chance"
+    },
+    {
+      "type": "text",
+      "text": "If you carry bear spray, always have it handy (in a holster on your belt or backpack), not hidden inside. The effective range is usually 5 to 10 meters. Spray in short bursts (2-3 seconds) directly into the bear's face, ideally slightly under the nose, so that the cloud created hits the bear's mucous membranes. The spray does not cause permanent damage, but will give you valuable time to retreat to safety."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When to fight?"
+    },
+    {
+      "type": "text",
+      "text": "There is an exception to the dead bug rule: the predator attack. If a bear follows you for a long time, sneaks up behind you, or attacks you in a tent in the middle of the night, it doesn't see you as a threat, but as food. In that case, the dead bug doesn't work. You have to fight with everything you have - hit him in the sensitive muzzle, in the eyes, use rocks or sticks. Everything is at stake in this scenario."
+    }
+  ]
+}

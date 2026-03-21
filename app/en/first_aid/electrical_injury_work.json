@@ -1,0 +1,88 @@
+{
+  "name": "Electric shock in the workplace",
+  "description": "First aid procedure for electrocution in the home or work environment.",
+  "icon": "zap",
+  "label": "PP",
+  "colorFrom": "#111827",
+  "colorTo": "#facc15",
+  "scenario": {
+    "title": "Appliance malfunction in the workshop",
+    "setting": "You work in a workshop. A colleague is fixing an extension cord, suddenly screams and remains chained to the device. You see sparks and smell burning.",
+    "objective": "The user must safely disconnect the electrical current and provide first aid.",
+    "milestones": [
+      {
+        "name": "Switching off the power source",
+        "points": 150
+      },
+      {
+        "name": "Ensuring the safety of the rescuer",
+        "points": 100
+      },
+      {
+        "name": "Checking consciousness and breathing",
+        "points": 100
+      },
+      {
+        "name": "Calling the emergency services",
+        "points": 100
+      }
+    ],
+    "tutorial": "Never touch the victim until the power is off. First, turn off the main breaker or disconnect the source. If the victim is not breathing normally, start CPR and call 155. Watch for possible burns at the entry and exit points."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Electric shock: An invisible hazard"
+    },
+    {
+      "type": "text",
+      "text": "The passage of electric current through the body can cause immediate cardiac arrest, severe burns, but also muscle spasms, which make it impossible for the affected person to let go of the conductor (the so-called 'shaking' effect). Even if the victim looks fine after the intervention, damage to internal organs or a dangerous heart rhythm disorder can occur several hours later."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rule No. 1: Do not touch the affected person!"
+    },
+    {
+      "type": "text",
+      "text": "If the victim is still in contact with the conductor, your touch would mean that the current would close through your body as well. \n1. **Turn off the circuit breakers:** This is the safest way. \n2. **Unplug the cord:** If it is safe to do so. \n3. **Removing the wire:** Only as a last resort and only for low voltage (domestic sockets). Use a dry, non-conductive object (wooden broom handle, plastic rod). Never use metal or wet objects!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "High voltage specifications"
+    },
+    {
+      "type": "text",
+      "text": "An electric arc occurs in the case of high-voltage wires (external lines, train traction). Do not get closer than 18 meters to the victim until the power personnel confirm that the power has been turned off. A step on the ground can cause a so-called 'step voltage', which can kill you even without direct contact with the wire."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First aid and resuscitation"
+    },
+    {
+      "type": "text",
+      "text": "Once the power is off and the location is safe: \n- **Breathing control:** Electrical shock often causes ventricular fibrillation or respiratory arrest. If the casualty is not breathing normally, start CPR (chest compressions) immediately.\n- **AED:** If a defibrillator is within reach, use it immediately. The heart rhythm disrupted by electricity responds very well to the shock.\n- **Burns:** A blast leaves an 'entry' and 'exit' wound. These are deep burns that can burn strongly or be numb due to nerve damage. Cool is pure water, but the priority is always circulation and breathing."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Why call 155 even in the case of a 'light' hit?"
+    },
+    {
+      "type": "text",
+      "text": "Anyone who has been electrocuted from an outlet (230V and more) must be examined by a doctor and have an EKG recorded. An electric shock can cause the breakdown of muscle fibers (rhabdomyolysis), which can lead to kidney failure, or cause an arrhythmia that manifests itself only after several hours of sleep. Don't underestimate it, even if the person feels 'just a little shaken'."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Falling from a height"
+    },
+    {
+      "type": "text",
+      "text": "An electric shock is often accompanied by a violent muscle twitch, which throws the affected person away, or a fall from a ladder. Therefore, always expect a possible spinal injury or internal bleeding from a subsequent fall."
+    }
+  ]
+}

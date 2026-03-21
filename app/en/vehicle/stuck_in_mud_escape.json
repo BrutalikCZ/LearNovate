@@ -1,0 +1,79 @@
+{
+  "name": "Stuck in the mud",
+  "description": "How to safely extricate a vehicle stuck in mud or soft terrain.",
+  "icon": "car",
+  "label": "Extrication",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Stuck in the mud",
+    "setting": "You went on an off-road trip and after a heavy rain, you hit a muddy road. The wheels began to spin and the vehicle gradually sank in such a way that you could neither move forward nor backward, the surrounding terrain being soft and slippery.",
+    "objective": "The user must get the car out of the mud safely without damaging the vehicle.",
+    "milestones": [
+      {
+        "name": "Stopping unnecessary wheel spin",
+        "points": 100
+      },
+      {
+        "name": "Improved traction under the wheels",
+        "points": 150
+      },
+      {
+        "name": "Correct smooth start technique",
+        "points": 150
+      },
+      {
+        "name": "Successfully getting out of the mud",
+        "points": 100
+      }
+    ],
+    "tutorial": "If the wheels are spinning, immediately stop increasing the gas, as this will only deepen the sinkhole. First, try to remove excess mud from around the wheels and pad them with available material, such as branches, stones or carpets, to improve traction. Then turn off or adjust the traction assist if the situation allows, and try to get off smoothly without suddenly applying the gas. A technique of gently rocking the vehicle between fore and aft motion is also useful, which can help loosen the wheels from the mud. Once the vehicle begins to move, maintain a steady, gentle motion until you reach firmer ground."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why does the car get stuck in the mud?"
+    },
+    {
+      "type": "text",
+      "text": "A soft and soaked surface reduces tire grip. The wheels begin to spin and the vehicle gradually sinks deeper."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The most common mistake"
+    },
+    {
+      "type": "text",
+      "text": "Constantly adding gas when the wheels slip leads to further sinking and worsening the situation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Increase traction"
+    },
+    {
+      "type": "text",
+      "text": "Wheel mats, removing mud from around the tires or reducing tire pressure in an emergency can help."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Drive-out technique"
+    },
+    {
+      "type": "text",
+      "text": "A smooth start without jerks and gently rocking the vehicle back and forth can help restore movement."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prevention"
+    },
+    {
+      "type": "text",
+      "text": "When driving off-road, it is important to observe the terrain and avoid areas with deep mud or standing water."
+    }
+  ]
+}

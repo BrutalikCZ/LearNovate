@@ -1,0 +1,100 @@
+{
+  "name": "Hypothermia in the mountains",
+  "description": "How to recognize and deal with hypothermia in winter mountain conditions.",
+  "icon": "thermometer-snowflake",
+  "label": "PP",
+  "colorFrom": "#0f172a",
+  "colorTo": "#38bdf8",
+  "scenario": {
+    "title": "Lost tour group",
+    "setting": "The weather will deteriorate on the mountain hike. Strong wind, snow and darkness. One of the group members is slow, shaking, confused and having trouble speaking. He doesn't have enough clothes and sits in the snow.",
+    "objective": "The user must recognize hypothermia, prevent further heat loss and provide assistance.",
+    "milestones": [
+      {
+        "name": "Recognizing the symptoms of hypothermia",
+        "points": 100
+      },
+      {
+        "name": "Ensuring warmth and dryness",
+        "points": 200
+      },
+      {
+        "name": "Providing shelter or isolation from the ground",
+        "points": 150
+      },
+      {
+        "name": "Calling the emergency services",
+        "points": 100
+      }
+    ],
+    "tutorial": "In case of hypothermia, it is necessary to immediately prevent further heat loss. Move the casualty out of the wind, isolate them from the cold ground, and keep them warm with dry clothing or blankets. If conscious, give warm, sweet drinks. Call for help as soon as possible."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hypothermia: The silent killer in the mountains"
+    },
+    {
+      "type": "text",
+      "text": "Hypothermia is a condition where the body temperature drops below 35 °C. In the mountains, it occurs due to a combination of cold, moisture (sweat, rain) and wind (wind-chill effect). The danger lies in the fact that the sufferer often loses judgment and ceases to be aware of his condition. Once he stops shaking and becomes lethargic, this is a life-threatening stage."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to recognize the stages of hypothermia"
+    },
+    {
+      "type": "text",
+      "text": "1. **Slight hypothermia (35-32 °C):** The affected person has severe muscle tremors (the body uses it to generate heat), is cold, speaks clearly, but may be agitated. Heart rate and breathing are accelerated."
+    },
+    {
+      "type": "text",
+      "text": "2. **Moderate hypothermia (32-28°C):** Shivering stops! This is a critical sign that the body has run out of energy. The affected person is confused, sleepy, speaks unintelligibly ('like drunk') and has impaired coordination of movements (staggers)."
+    },
+    {
+      "type": "text",
+      "text": "3. **Severe hypothermia (below 28°C):** Unconsciousness, breathing is very shallow and slow, pulse is barely palpable. Cardiac arrest is imminent."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key first aid steps"
+    },
+    {
+      "type": "text",
+      "text": "The most important thing is to prevent further hypothermia. Get the victim to leeward and isolate him from the ground (use backpacks, mats, branches). If his clothes are wet, he has to come down - but only if you're in a dry shelter! Replace it with dry layers and aluminum isothermal foil (silver side to the body)."
+    },
+    {
+      "type": "text",
+      "text": "Warm the body only passively - by placing warm (not boiling!) objects or another person (sharing body heat in the sleeping bag). Direct the heat to the center of the body (chest, abdomen, groin), never to the hands and feet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Beware of 'Afterdrop' - Deadly Flaw"
+    },
+    {
+      "type": "text",
+      "text": "Handle the victim extremely gently and massage him! If you start to rub the cold limbs or force the victim to move, the cold blood from the hands and feet will rush to the heart. This causes a further drop in core temperature (the so-called afterdrop), which can lead to immediate cardiac arrest. In case of severe hypothermia, the victim must lie still and horizontally."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Food and drinks"
+    },
+    {
+      "type": "text",
+      "text": "Give warm sweet drinks (tea with sugar) but ONLY if the victim is fully conscious and there is no risk of inhalation. Sugar will provide energy for muscle tremors. **Never give alcohol!** Alcohol dilates the blood vessels in the skin, which while making you feel warm, actually drastically accelerates heat loss from the body's core and worsens hypothermia."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Calling for help"
+    },
+    {
+      "type": "text",
+      "text": "Call the Mountain Service or 155 (the Rescue app is ideal in the mountains because of GPS). Into the phone, clearly describe the state of consciousness and whether muscle tremors are present. If the casualty stops breathing, start CPR (resuscitation) - remember that resuscitation can take much longer and is more successful than normal arrests in hypothermia."
+    }
+  ]
+}
