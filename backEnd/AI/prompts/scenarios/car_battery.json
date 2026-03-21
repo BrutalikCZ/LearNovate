@@ -3,6 +3,12 @@
     "title": "Výměna autobaterie",
     "setting": "Jedeš autem pouští. Najednou ti zhasla světla a motor ztichl. Auto se zastavilo. V kufru máš vše co budeš potřebovat.",
     "objective": "Uživatel musí správně vyměnit autobaterii.",
+    "milestones": [
+      {"name": "Zajištění bezpečnosti (motor vypnutý, rukavice, brýle)", "points": 50},
+      {"name": "Odpojení staré baterie (správné pořadí pólů)", "points": 150},
+      {"name": "Vyjmutí staré baterie", "points": 50},
+      {"name": "Instalace a zapojení nové baterie (správné pořadí pólů)", "points": 150},
+      {"name": "Ověření funkčnosti (nastartování)", "points": 100}],
     "tutorial": "Výměna autobaterie je úkon, který s trochou pečlivosti zvládnete i doma, ale před samotným začátkem je klíčové zajistit bezpečnost vypnutím motoru, zhasnutím všech světel a použitím ochranných brýlí a pracovních rukavic. Předem se ujistěte, že máte novou baterii se správnými parametry, a připravte si potřebné nářadí, jako je stranový nebo nástrčný klíč o velikosti 10 a 13 milimetrů, ocelový kartáč a ochranný sprej na kontakty. Samotná demontáž začíná tím nejdůležitějším pravidlem, a to nejprve odpojením mínusového pólu s černým kabelem, po kterém následuje odpojení plusového červeného kabelu, abyste spolehlivě zabránili zkratu o karoserii. Následně povolte upevňovací rámeček nebo patku na dně kastlíku a těžkou starou baterii oběma rukama opatrně vyjměte z vozidla. Před instalací nové baterie důkladně očistěte vnitřek kabelových svorek v autě ocelovým kartáčem do kovového lesku a novou baterii usaďte přesně na své místo tak, aby se vůbec nehýbala, načež ji pevně přišroubujte. Postup zapojení je přesně opačný než u demontáže, takže jako první nasadíte a utáhnete plusový pól s červeným kabelem a až jako poslední připojíte mínusový pól s černým kabelem, přičemž případná malá jiskra při dotyku je zcela normální. Připojené svorky nakonec ošetřete tenkou vrstvou ochranného spreje nebo měděné vazelíny proti oxidaci a následně můžete vyzkoušet nastartovat motor. Po úspěšné výměně a obnovení napájení bude možná nutné zadat bezpečnostní kód k autorádiu, nastavit palubní hodiny nebo zkalibrovat dorazy elektrických oken, zatímco starou baterii, která obsahuje nebezpečné olovo a kyselinu, musíte odevzdat k ekologické likvidaci ve sběrném dvoře nebo u prodejce autodílů, nikdy ne do běžného odpadu."
   }
 }

@@ -16,7 +16,7 @@ function navigateToSubject(categoryId, subject) {
 
   // Override the main-content area to become a 3-column layout
   // matching the .pen "State: Subject Detail" design
-  main.style.padding = '0';
+  main.style.padding = '0'; 
   main.style.gap = '0';
   main.style.flexDirection = 'row';
 
@@ -395,8 +395,10 @@ function startScenario(subject) {
         body: JSON.stringify({
           messages:             conversationHistory,
           user_message:         text,
+          scenario_id:          subject.scenarioId || '',    // ← TOTO PŘIDAT
           milestones_completed: milestonesCompleted,
           max_milestones:       MAX_MILESTONES,
+          milestone_points:     milestonePoints,             // ← TOTO PŘIDAT
         }),
       });
       const data = await res.json();
@@ -409,7 +411,7 @@ function startScenario(subject) {
       if (data.milestone_complete) {
         milestonesCompleted++;
         updateMilestoneDots();
-        showMilestoneBanner();
+        showMilestoneBanner(data.points_awarded, data.multiplier);
       }
 
       if (data.is_complete) {
@@ -432,6 +434,8 @@ function startScenario(subject) {
   });
 
   // Auto-start
+  let milestonePoints = [];  // ← přidat nahoře vedle ostatních proměnných
+
   async function autoStart() {
     const token = localStorage.getItem('token');
     try {
@@ -449,11 +453,11 @@ function startScenario(subject) {
       if (initMsg) initMsg.remove();
 
       if (data.answer) {
-        // Dynamický počet milestones z backendu
         if (data.max_milestones && data.max_milestones !== MAX_MILESTONES) {
           MAX_MILESTONES = data.max_milestones;
           rebuildStepDots();
         }
+        milestonePoints = data.milestone_points || [];
         conversationHistory = data.messages || [];
         addMessage('ai', data.answer);
         setInputEnabled(true);
