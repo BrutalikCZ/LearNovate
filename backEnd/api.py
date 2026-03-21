@@ -364,5 +364,157 @@ def scenario_step():
         return jsonify({'error': f'AI Error: {str(e)}'}), 500
 
 
+
+
+# ===================================================
+# ADMIN ENDPOINTS
+# ===================================================
+
+def require_admin(req):
+    """Check if request comes from an admin user. Returns (user_id, error_response)."""
+    user_id = get_user_id_from_token(req)
+    if not user_id:
+        return None, (jsonify({'error': 'Unauthorized'}), 401)
+
+    # Read users and check admin flag
+    import json
+    from pathlib import Path
+    users_file = Path(__file__).resolve().parent.parent / "data" / "users.json"
+    try:
+        with open(users_file, "r", encoding="utf-8") as f:
+            users = json.load(f)
+        user = next((u for u in users if u["id"] == user_id), None)
+        if not user or not user.get("admin", False):
+            return None, (jsonify({'error': 'Forbidden — admin only'}), 403)
+        return user_id, None
+    except Exception:
+        return None, (jsonify({'error': 'Failed to verify admin'}), 500)
+
+
+@app.route('/admin/verify', methods=['POST'])
+def admin_verify():
+    """Verify admin password for admin panel access."""
+    user_id = get_user_id_from_token(request)
+    if not user_id:
+        return jsonify({'error': 'Unauthorized'}), 401
+
+    data = request.get_json(silent=True) or {}
+    password = data.get('password', '')
+
+    import json
+    import bcrypt
+    from pathlib import Path
+
+    users_file = Path(__file__).resolve().parent.parent / "data" / "users.json"
+    print(f"[ADMIN] Verify — users_file: {users_file}, exists: {users_file.exists()}")
+
+    try:
+        with open(users_file, "r", encoding="utf-8") as f:
+            users = json.load(f)
+        user = next((u for u in users if u["id"] == user_id), None)
+
+        if not user or not user.get("admin", False):
+            return jsonify({'error': 'Not an admin account'}), 403
+
+        if not bcrypt.checkpw(password.encode('utf-8'), user['passwordHash'].encode('utf-8')):
+            return jsonify({'error': 'Wrong password'}), 401
+
+        return jsonify({'verified': True, 'username': user['username']})
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/admin/users', methods=['GET'])
+def admin_users():
+    """List all users with stats."""
+    admin_id, err = require_admin(request)
+    if err:
+        return err
+
+    import json
+    from pathlib import Path
+    users_file = Path(__file__).resolve().parent.parent / "data" / "users.json"
+    with open(users_file, "r", encoding="utf-8") as f:
+        users = json.load(f)
+
+    safe_users = []
+    for u in users:
+        safe_users.append({
+            'id': u['id'],
+            'username': u['username'],
+            'email': u['email'],
+            'body': u.get('body', 0),
+            'admin': u.get('admin', False),
+            'scenarios': u.get('scenarios', {}),
+            'createdAt': u.get('createdAt', ''),
+        })
+    return jsonify(safe_users)
+
+
+@app.route('/admin/logs/<user_id>', methods=['GET'])
+def admin_user_logs(user_id):
+    """Get conversation logs for a specific user."""
+    admin_id, err = require_admin(request)
+    if err:
+        return err
+
+    import json
+    from pathlib import Path
+    logs_file = Path(__file__).resolve().parent.parent.parent / "data" / "logs" / f"{user_id}.json"
+    if not logs_file.exists():
+        return jsonify([])
+
+    try:
+        with open(logs_file, "r", encoding="utf-8") as f:
+            return jsonify(json.load(f))
+    except Exception:
+        return jsonify([])
+
+
+@app.route('/admin/incidents', methods=['GET'])
+def admin_incidents():
+    """Get all blocked/forbidden messages across all users."""
+    admin_id, err = require_admin(request)
+    if err:
+        return err
+
+    import json
+    from pathlib import Path
+    logs_dir = Path(__file__).resolve().parent.parent.parent / "data" / "logs"
+    incidents = []
+
+    if not logs_dir.exists():
+        return jsonify([])
+
+    for log_file in logs_dir.glob("*.json"):
+        if log_file.suffix != ".json" or log_file.name.endswith(".lock"):
+            continue
+        try:
+            with open(log_file, "r", encoding="utf-8") as f:
+                conversations = json.load(f)
+            user_id = log_file.stem
+            for conv in conversations:
+                for msg in conv.get("messages", []):
+                    extra = msg.get("extra", {})
+                    if extra.get("blocked"):
+                        incidents.append({
+                            'user_id': user_id,
+                            'conv_id': conv['id'],
+                            'conv_type': conv.get('type', ''),
+                            'role': msg['role'],
+                            'content': msg['content'][:200],
+                            'reason': extra.get('reason', ''),
+                            'timestamp': msg.get('timestamp', ''),
+                        })
+        except Exception:
+            continue
+
+    incidents.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
+    return jsonify(incidents)
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

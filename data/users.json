@@ -5,7 +5,8 @@
     "username": "dad",
     "passwordHash": "$2a$10$jkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
     "body": 0,
-    "createdAt": "2026-03-21T00:47:32.013Z"
+    "createdAt": "2026-03-21T00:47:32.013Z",
+    "admin": true
   },
   {
     "id": "mmzmiiuwftve1jmnfev",
