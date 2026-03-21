@@ -1,2 +1,0 @@
-Data jsou ukládaná z chatovací historie
-Chaty jsou monitorovány

@@ -462,7 +462,7 @@
     "email": "nekdo.nekdo@nekdo.com",
     "username": "nekdo",
     "passwordHash": "$2a$10$iPZqI5sv.BDFzipBMIkmqeFnhgysfcdC0YZlzCumVSYRTsDKdJQd2",
-    "body": 0,
+    "body": 50,
     "createdAt": "2026-03-21T07:32:54.784Z",
     "admin": true,
     "currentStreak": 1,
@@ -472,7 +472,18 @@
       "lighting_a_fire": {
         "repetitions": 1,
         "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 1,
+        "best_milestones": 0
+      },
+      "car_battery_replacement": {
+        "repetitions": 1,
+        "best_milestones": 1
       }
-    }
+    },
+    "achievements": [
+      "first_scenario"
+    ]
   }
 ]
