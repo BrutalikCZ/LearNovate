@@ -12,11 +12,11 @@
     "email": "idk.idk@idk.com",
     "username": "idk",
     "passwordHash": "$2a$10$xhUUV.tnjLQHff/aQMXy2OCZC4kp5uF8FrbhAo64thwRl1UlUllQy",
-    "body": 25,
+    "body": 50,
     "createdAt": "2026-03-21T01:02:33.464Z",
     "scenarios": {
       "rezna_rana": {
-        "repetitions": 5,
+        "repetitions": 7,
         "best_milestones": 1
       }
     }

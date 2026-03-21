@@ -11,6 +11,7 @@ from flask_cors import CORS
 from AI.configAI import get_client, load_system_prompt
 from AI.scoring import start_scenario_run, award_milestone_points, get_multiplier
 from AI.logger import start_conversation, log_message, end_conversation
+from AI.monitor import check_input, check_output, BLOCKED_INPUT_MSG, BLOCKED_OUTPUT_MSG
 import jwt as pyjwt
 
 app = Flask(__name__)
@@ -96,7 +97,15 @@ def ask():
 
     user_id = get_user_id_from_token(request)
 
-    # Log conversation start
+    # MONITOR: check input
+    input_safe, input_reason = check_input(question)
+    if not input_safe:
+        if user_id:
+            conv_id = start_conversation(user_id, 'ask', {'subject': subject, 'blocked': True})
+            log_message(user_id, conv_id, 'user', question, {'blocked': True, 'reason': input_reason})
+            end_conversation(user_id, conv_id)
+        return jsonify({'answer': BLOCKED_INPUT_MSG, 'blocked': True})
+
     conv_id = None
     if user_id:
         conv_id = start_conversation(user_id, 'ask', {'subject': subject})
@@ -111,7 +120,14 @@ def ask():
         response = ai_call(conversation_input, 'ask')
         answer = response.output_text
 
-        # Log AI response
+        # MONITOR: check output
+        output_safe, output_reason = check_output(answer)
+        if not output_safe:
+            if user_id and conv_id:
+                log_message(user_id, conv_id, 'ai', answer, {'blocked': True, 'reason': output_reason})
+                end_conversation(user_id, conv_id)
+            return jsonify({'answer': BLOCKED_OUTPUT_MSG, 'blocked': True})
+
         if user_id and conv_id:
             log_message(user_id, conv_id, 'ai', answer)
             end_conversation(user_id, conv_id)
@@ -186,7 +202,17 @@ def scenario_start():
         response = ai_call(conversation_input, 'scenario_start')
         answer = response.output_text
 
-        # Start logging conversation
+        # MONITOR: check scenario start output
+        output_safe, output_reason = check_output(answer)
+        if not output_safe:
+            if user_id:
+                conv_id = start_conversation(user_id, 'scenario', {
+                    'scenario_id': scenario_id, 'blocked_at_start': True, 'reason': output_reason
+                })
+                log_message(user_id, conv_id, 'ai', answer, {'blocked': True, 'reason': output_reason})
+                end_conversation(user_id, conv_id)
+            return jsonify({'error': BLOCKED_OUTPUT_MSG, 'blocked': True})
+
         conv_id = None
         if user_id:
             conv_id = start_conversation(user_id, 'scenario', {
@@ -234,13 +260,22 @@ def scenario_step():
 
     user_id = get_user_id_from_token(request)
 
+    # MONITOR: check user input
+    input_safe, input_reason = check_input(user_message)
+    if not input_safe:
+        if user_id and conv_id:
+            log_message(user_id, conv_id, 'user', user_message, {'blocked': True, 'reason': input_reason})
+        return jsonify({
+            'answer': BLOCKED_INPUT_MSG,
+            'is_complete': False,
+            'milestone_complete': False,
+            'points_awarded': 0,
+            'blocked': True,
+        })
+
     print(f"[STEP] User: {user_id}, Scenario: {scenario_id}")
-    print(f"[STEP] Conv ID: {conv_id}")
-    print(f"[STEP] Milestones completed so far: {milestones_completed}")
-    print(f"[STEP] Milestone points list: {milestone_points_list}")
     print(f"[STEP] User message: {user_message[:100]}")
 
-    # Log user message
     if user_id and conv_id:
         log_message(user_id, conv_id, 'user', user_message)
 
@@ -250,11 +285,23 @@ def scenario_step():
         response = ai_call(full_conversation, 'scenario_step')
         raw_answer = response.output_text
 
-        print(f"[STEP] Raw AI answer: {raw_answer[:300]}")
         print(f"[STEP] Contains [MILESTONE_COMPLETE]: {'[MILESTONE_COMPLETE]' in raw_answer}")
         print(f"[STEP] Contains [TASK_COMPLETE]: {'[TASK_COMPLETE]' in raw_answer}")
 
         answer, task_complete, milestone_complete = parse_flags(raw_answer)
+
+        # MONITOR: check AI output
+        output_safe, output_reason = check_output(answer)
+        if not output_safe:
+            if user_id and conv_id:
+                log_message(user_id, conv_id, 'ai', answer, {'blocked': True, 'reason': output_reason})
+            return jsonify({
+                'answer': BLOCKED_OUTPUT_MSG,
+                'is_complete': False,
+                'milestone_complete': False,
+                'points_awarded': 0,
+                'blocked': True,
+            })
 
         points_awarded = 0
         total_body = 0
@@ -270,15 +317,12 @@ def scenario_step():
                 user_id, scenario_id, milestone_index, base_points
             )
 
-        # Log AI response
         if user_id and conv_id:
             log_message(user_id, conv_id, 'ai', answer, {
                 'milestone_complete': milestone_complete,
                 'task_complete': task_complete,
                 'points_awarded': points_awarded,
             })
-
-            # End conversation if task complete
             if task_complete:
                 end_conversation(user_id, conv_id, {
                     'milestones_completed': milestones_completed + (1 if milestone_complete else 0),
