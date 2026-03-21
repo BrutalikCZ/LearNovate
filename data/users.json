@@ -1,58 +1,24 @@
 [
   {
-    "id": "mmz518c2gqjzvn5tvqw",
-    "email": "sidenate@proton.me",
-    "username": "sadf",
-    "passwordHash": "$2a$10$JnOo9PLmBMGIyGLcA3ZK6e910l68YwuOrBs6kh2Ol4bNVzU73nShu",
+    "id": "mmzlz7aluytuf9vp41",
+    "email": "dad.dad@dad.com",
+    "username": "dad",
+    "passwordHash": "$2a$10$jkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
     "body": 0,
-    "createdAt": "2026-03-20T16:53:13.202Z"
+    "createdAt": "2026-03-21T00:47:32.013Z"
   },
   {
-    "id": "mmz9jxqfumc6iwfaqe8",
-    "email": "sidensate@proton.me",
-    "username": "asdasdasd",
-    "passwordHash": "$2a$10$VCFTj4ngTUrtvj3R4tG.Desj.AExio/ARwMUO20bncsNMPVfT/TV2",
-    "body": 0,
-    "createdAt": "2026-03-20T18:59:44.391Z"
-  },
-  {
-    "id": "mmzdw0s9j9ylfgs4dti",
-    "email": "dad.dada@idk.com",
-    "username": "Tomik",
-    "passwordHash": "$2a$10$EDK9mT1.5zmbXQ55f8HQXejkjUfvYQHA4Hwzx.EgBBOswqBXHlHBS",
-    "body": 0,
-    "createdAt": "2026-03-20T21:01:06.681Z"
-  },
-  {
-    "id": "mmzdx635jlayjrw9pw",
-    "email": "tomik.tomik@tomik.com",
-    "username": "Tomik00",
-    "passwordHash": "$2a$10$5SCokrQ1n1psMgYFtyTfFeXIE1oMx9IevT8M35TMtQGZB7xRt2CCa",
-    "body": 0,
-    "createdAt": "2026-03-20T21:02:00.209Z"
-  },
-  {
-    "id": "mmzki4wahrlid5x226l",
-    "email": "fghfsdgdsa@hdjfk.sdfg",
-    "username": "sdgdsfgdfg",
-    "passwordHash": "$2a$10$4AgUgyh3t1MKXr5pEuUNheLoMnnDIhMbjkUZMSz.rvHS9NtChpuR6",
-    "body": 0,
-    "createdAt": "2026-03-21T00:06:16.138Z"
-  },
-  {
-    "id": "mmzl2jbysj2ifhj39u",
-    "email": "asfdsggnffadsfg@fgvhbsjknmd.sfg",
-    "username": "asdfghdrseftuzjhg",
-    "passwordHash": "$2a$10$ixRL2EtOgc73SritsIre2.oR.Fes3pZ7Lp3LxVWJ2H3kJLzhZK0vK",
-    "body": 0,
-    "createdAt": "2026-03-21T00:22:07.966Z"
-  },
-  {
-    "id": "mmzlxcgs8w13xxoo56c",
-    "email": "test@test.com",
-    "username": "test",
-    "passwordHash": "$2a$10$qnToZCaqsn1u3WnoEdGCc.iK7Ta8c4CxkEn0GqSiwh5QBeraPRsNK",
-    "body": 0,
-    "createdAt": "2026-03-21T00:46:05.404Z"
+    "id": "mmzmiiuwftve1jmnfev",
+    "email": "idk.idk@idk.com",
+    "username": "idk",
+    "passwordHash": "$2a$10$xhUUV.tnjLQHff/aQMXy2OCZC4kp5uF8FrbhAo64thwRl1UlUllQy",
+    "body": 25,
+    "createdAt": "2026-03-21T01:02:33.464Z",
+    "scenarios": {
+      "rezna_rana": {
+        "repetitions": 3,
+        "best_milestones": 1
+      }
+    }
   }
 ]

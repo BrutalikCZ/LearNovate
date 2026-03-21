@@ -16,6 +16,8 @@ function navigateToSubject(categoryId, subject) {
   const category = state.subjectsData.find(c => c.id === categoryId);
   const catDisplayName = category?.name || categoryId.toUpperCase();
 
+  // Override the main-content area to become a 3-column layout
+  // matching the .pen "State: Subject Detail" design
   main.style.padding = '0';
   main.style.gap = '0';
   main.style.flexDirection = 'row';
@@ -93,7 +95,7 @@ function navigateToSubject(categoryId, subject) {
     item.classList.toggle('active', item.dataset.subjectId === subject.id && item.dataset.categoryId === categoryId);
   });
 
-  const chatInput   = document.getElementById('chatInput');
+  const chatInput = document.getElementById('chatInput');
   const chatSendBtn = document.getElementById('chatSendBtn');
   const chatMessages = document.getElementById('chatMessages');
 
@@ -262,8 +264,8 @@ function startScenario(subject) {
   lucide.createIcons({ nodes: main.querySelectorAll('[data-lucide]') });
 
   const messagesEl = document.getElementById('scenarioMessages');
-  const inputEl    = document.getElementById('scenarioInput');
-  const sendBtn    = document.getElementById('scenarioSendBtn');
+  const inputEl = document.getElementById('scenarioInput');
+  const sendBtn = document.getElementById('scenarioSendBtn');
   const stepsCount = document.getElementById('scenarioStepsCount');
 
   document.getElementById('scenarioBackBtn').addEventListener('click', () => {
@@ -380,23 +382,25 @@ function startScenario(subject) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          messages:             conversationHistory,
-          user_message:         text,
+          messages: conversationHistory,
+          user_message: text,
+          scenario_id: subject.scenarioId || '',    // ← TOTO PŘIDAT
           milestones_completed: milestonesCompleted,
-          max_milestones:       MAX_MILESTONES,
+          max_milestones: MAX_MILESTONES,
+          milestone_points: milestonePoints,             // ← TOTO PŘIDAT
         }),
       });
       const data = await res.json();
       hideTyping();
 
-      conversationHistory.push({ role: 'user',      content: text });
+      conversationHistory.push({ role: 'user', content: text });
       conversationHistory.push({ role: 'assistant', content: data.answer });
       addMessage('ai', data.answer);
 
       if (data.milestone_complete) {
         milestonesCompleted++;
         updateMilestoneDots();
-        showMilestoneBanner();
+        showMilestoneBanner(data.points_awarded, data.multiplier);
       }
 
       if (data.is_complete) {
@@ -418,6 +422,9 @@ function startScenario(subject) {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendStep(); }
   });
 
+  // Auto-start
+  let milestonePoints = [];  // ← přidat nahoře vedle ostatních proměnných
+
   async function autoStart() {
     const token = localStorage.getItem('token');
     try {
@@ -425,9 +432,9 @@ function startScenario(subject) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          subject_name:        subject.name,
+          subject_name: subject.name,
           subject_description: subject.description || '',
-          scenario_id:         subject.scenarioId  || '',
+          scenario_id: subject.scenarioId || '',
         }),
       });
       const data = await res.json();
@@ -439,6 +446,7 @@ function startScenario(subject) {
           MAX_MILESTONES = data.max_milestones;
           rebuildStepDots();
         }
+        milestonePoints = data.milestone_points || [];
         conversationHistory = data.messages || [];
         addMessage('ai', data.answer);
         setInputEnabled(true);

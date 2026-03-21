@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently --names \"NODE,PYTHON\" --prefix-colors \"cyan,yellow\" \"nodemon server.js\" \"python backEnd/api.py\""
+    "dev": "concurrently --names \"NODE,PYTHON\" --prefix-colors \"cyan,yellow\" \"nodemon --ignore data/ server.js\" \"python -u backEnd/api.py\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

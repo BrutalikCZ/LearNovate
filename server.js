@@ -188,7 +188,10 @@ app.post('/api/ai/scenario/start', authMiddleware, async (req, res) => {
   try {
     const response = await fetch(`${AI_URL}/scenario/start`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': req.headers.authorization,  // forward JWT
+      },
       body: JSON.stringify(req.body),
     });
     const data = await response.json();
@@ -202,7 +205,10 @@ app.post('/api/ai/scenario/step', authMiddleware, async (req, res) => {
   try {
     const response = await fetch(`${AI_URL}/scenario/step`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': req.headers.authorization,  // forward JWT
+      },
       body: JSON.stringify(req.body),
     });
     const data = await response.json();
