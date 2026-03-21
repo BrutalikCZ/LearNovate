@@ -494,13 +494,13 @@ function startScenario(subject) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          messages: conversationHistory,
-          user_message: text,
-          scenario_id: subject.scenarioId || '',    // ← TOTO PŘIDAT
-          conv_id: convId,
+          messages:             conversationHistory,
+          user_message:         text,
+          scenario_id:          subject.id || '',
+          conv_id:              convId,
           milestones_completed: milestonesCompleted,
-          max_milestones: MAX_MILESTONES,
-          milestone_points: milestonePoints,             // ← TOTO PŘIDAT
+          max_milestones:       MAX_MILESTONES,
+          milestone_points:     milestonePoints,
         }),
       });
       const data = await res.json();
@@ -545,9 +545,10 @@ function startScenario(subject) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({
-          subject_name: subject.name,
+          subject_name:        subject.name,
           subject_description: subject.description || '',
-          scenario_id: subject.scenarioId || '',
+          scenario_id:         subject.id || '',
+          scenario_data:       subject.scenario || null,
         }),
       });
       const data = await res.json();

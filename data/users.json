@@ -4,9 +4,44 @@
     "email": "dad.dad@dad.com",
     "username": "dad",
     "passwordHash": "$2a$10$jkG.xLRbSZd6jZU3qiiBJefEzGNhtG5yN/weL8yFDlK5MmrlwJUc.",
-    "body": 0,
+    "body": 360,
     "createdAt": "2026-03-21T00:47:32.013Z",
-    "admin": true
+    "admin": true,
+    "scenarios": {
+      "rezna_rana": {
+        "repetitions": 8,
+        "best_milestones": 1
+      },
+      "car_battery_replacement": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 5,
+        "best_milestones": 0
+      },
+      "unconscious_cpr": {
+        "repetitions": 4,
+        "best_milestones": 0
+      },
+      "drowning_pool": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 1,
+        "best_milestones": 0
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 1,
+        "best_milestones": 0
+      }
+    },
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5"
+    ]
   },
   {
     "id": "mmzmiiuwftve1jmnfev",

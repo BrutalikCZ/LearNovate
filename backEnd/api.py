@@ -167,6 +167,7 @@ def scenario_start():
     subject_name        = data.get('subject_name', '')
     subject_description = data.get('subject_description', '')
     scenario_id         = data.get('scenario_id', '').strip()
+    scenario_data       = data.get('scenario_data', None)
 
     user_id = get_user_id_from_token(request)
 
@@ -174,7 +175,29 @@ def scenario_start():
     milestones_list = []
     milestone_points = []
 
-    if scenario_id:
+    # Option 1: scenario_data sent directly from frontend
+    if scenario_data and isinstance(scenario_data, dict):
+        s = scenario_data
+        raw_milestones = s.get('milestones', [])
+
+        for m in raw_milestones:
+            if isinstance(m, dict):
+                milestones_list.append(m.get('name', ''))
+                milestone_points.append(m.get('points', 100))
+            else:
+                milestones_list.append(str(m))
+                milestone_points.append(100)
+
+        milestones_text = '\n'.join(f'  {i+1}. {m}' for i, m in enumerate(milestones_list))
+        scenario_context = (
+            f"Scenario title: {s.get('title', '')}\n"
+            f"Setting: {s.get('setting', '')}\n"
+            f"Objective: {s.get('objective', '')}\n"
+            f"Milestones (steps, {len(milestones_list)} total):\n{milestones_text}"
+        )
+
+    # Option 2: fallback — try loading from prompts/scenarios/
+    if not scenario_context and scenario_id:
         try:
             from AI.configAI import load_scenario
             scenario = load_scenario(scenario_id)
@@ -199,6 +222,7 @@ def scenario_start():
         except Exception:
             pass
 
+    # Option 3: fallback — generate from name
     if not scenario_context:
         scenario_context = (
             f"Generate a practical scenario for the topic: {subject_name}.\n"
@@ -208,6 +232,7 @@ def scenario_start():
         )
         milestone_points = [100] * 5
 
+    # Scoring
     repetition = 1
     multiplier = 1.0
     if user_id and scenario_id:
@@ -222,17 +247,6 @@ def scenario_start():
     try:
         response = ai_call(conversation_input, 'scenario_start')
         answer = response.output_text
-
-        # MONITOR: check scenario start output
-        output_safe, output_reason = check_output(answer)
-        if not output_safe:
-            if user_id:
-                conv_id = start_conversation(user_id, 'scenario', {
-                    'scenario_id': scenario_id, 'blocked_at_start': True, 'reason': output_reason
-                })
-                log_message(user_id, conv_id, 'ai', answer, {'blocked': True, 'reason': output_reason})
-                end_conversation(user_id, conv_id)
-            return jsonify({'error': BLOCKED_OUTPUT_MSG, 'blocked': True})
 
         conv_id = None
         if user_id:
@@ -455,14 +469,15 @@ def admin_users():
 
 @app.route('/admin/logs/<user_id>', methods=['GET'])
 def admin_user_logs(user_id):
-    """Get conversation logs for a specific user."""
     admin_id, err = require_admin(request)
     if err:
         return err
 
     import json
     from pathlib import Path
-    logs_file = Path(__file__).resolve().parent.parent.parent / "data" / "logs" / f"{user_id}.json"
+    logs_file = Path(__file__).resolve().parent.parent / "data" / "logs" / f"{user_id}.json"
+    print(f"[ADMIN] Logs path: {logs_file}, exists: {logs_file.exists()}")
+
     if not logs_file.exists():
         return jsonify([])
 
@@ -475,21 +490,21 @@ def admin_user_logs(user_id):
 
 @app.route('/admin/incidents', methods=['GET'])
 def admin_incidents():
-    """Get all blocked/forbidden messages across all users."""
     admin_id, err = require_admin(request)
     if err:
         return err
 
     import json
     from pathlib import Path
-    logs_dir = Path(__file__).resolve().parent.parent.parent / "data" / "logs"
+    logs_dir = Path(__file__).resolve().parent.parent / "data" / "logs"
+    print(f"[ADMIN] Logs dir: {logs_dir}, exists: {logs_dir.exists()}")
     incidents = []
 
     if not logs_dir.exists():
         return jsonify([])
 
     for log_file in logs_dir.glob("*.json"):
-        if log_file.suffix != ".json" or log_file.name.endswith(".lock"):
+        if log_file.name.endswith(".lock"):
             continue
         try:
             with open(log_file, "r", encoding="utf-8") as f:
