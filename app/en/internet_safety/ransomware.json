@@ -2,7 +2,7 @@
   "name": "Ransomware attack on computer",
   "description": "How to respond to a ransomware attack that encrypts data and demands a ransom.",
   "icon": "lock-keyhole",
-  "label": "NET",
+  "label": "Ransomware response",
   "colorFrom": "#0f172a",
   "colorTo": "#ef4444",
   "scenario": {

@@ -2,7 +2,7 @@
   "name": "Ruční mytí auta",
   "description": "Jak správně umýt auto ručně bez poškození laku.",
   "icon": "car",
-  "label": "Mytí auta",
+  "label": "Ruční mytí auta",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,74 +11,74 @@
     "objective": "Uživatel musí správně umýt auto bez poškození laku.",
     "milestones": [
       {
-        "name": "Předmytí auta vodou", 
+        "name": "Předmytí auta vodou",
         "points": 100
       },
       {
-        "name": "Mytí houbou a autošamponem", 
+        "name": "Mytí houbou a autošamponem",
         "points": 150
       },
       {
-        "name": "Důkladný oplach a sušení", 
+        "name": "Důkladný oplach a sušení",
         "points": 100
       }
     ],
     "tutorial": "Nejprve opláchni auto vodou, abys odstranil hrubé nečistoty, které by mohly poškrábat lak. Použij speciální autošampon a měkkou houbu nebo rukavici. Myj vozidlo odshora dolů a pravidelně oplachuj houbu. Nakonec auto důkladně opláchni čistou vodou a osušte ho, ideálně mikrovláknovou utěrkou, aby nevznikly skvrny."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Metoda dvou kbelíků: Základ úspěchu"
-  },
-  {
-    "type": "text",
-    "text": "Tohle je svatý grál ručního mytí. Potřebuješ dva kbelíky: v jednom máš vodu s autošamponem, ve druhém čistou vodu na máchání. Proč? Protože když namočíš špinavou rukavici do šamponu, spláchneš písek a nečistoty do čisté směsi a pak je třeš zpátky o lak. S dvěma kbelíky rukavici nejdřív vypereš v čisté vodě a až pak nabereš čistý šampon. Ideální je mít na dně kbelíků mřížku (Grid Guard), která udrží nečistoty u dna, aby se nevířily nahoru."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Předmytí: Nejdůležitější krok"
-  },
-  {
-    "type": "text",
-    "text": "Nikdy nesahej na auto houbou, dokud ho důkladně neopláchneš. Prach a bláto fungují jako brusný papír. Nejlepší je použít aktivní pěnu, která nečistoty uvolní a nechá je sklouznout dolů. Pokud pěnu nemáš, použij aspoň silný proud vody. Zaměř se na podběhy a spodní části dveří, kde je špíny nejvíc. Teprve když je auto zbavené hrubých nečistot, můžeš začít s kontaktním mytím."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Odshora dolů a bez tlaku"
-  },
-  {
-    "type": "text",
-    "text": "Fyzika neuhne – nejvíc špíny je vždycky dole. Začni střechou, pokračuj okny, kapotou a konči nárazníky a prahy. Tím zajistíš, že špína stéká na části, které jsi ještě nemyl. Na mycí rukavici nebo houbu netlač. Kvalitní autošampon má za úkol vytvořit lubrikaci, díky které rukavice po laku klouže. Pokud narazíš na zaschlý hmyz, netlač, ale nech na místě chvíli působit víc šamponu."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Sušení: Mikrovlákno vs. zaschlé kapky"
-  },
-  {
-    "type": "text",
-    "text": "Voda z řadu obsahuje minerály. Když ji necháš na slunci samovolně uschnout, zůstanou ti na laku bílé skvrny (tzv. water spots), které jdou špatně dolů. Použij velký sušicí ručník z mikrovlákna s vysokou gramáží. Ručník na auto jen přilož a nechej ho nasát vodu, nebo ho lehce táhni po povrchu. Vyhni se starým tričkům nebo drsným hadrům, ty lak zaručeně poškrábou."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Pozor na kola a chemii"
-  },
-  {
-    "type": "text",
-    "text": "Kola myj vždy jako první nebo jako úplně poslední, ale rozhodně na ně měj jinou houbu a jiný kbelík. Prach z brzdových destiček je extrémně abrazivní (obsahuje kovové částečky). Taky zapomeň na jar nebo mýdlo na ruce – tyhle přípravky odmašťují až příliš a zbaví tvůj lak ochranných vosků a olejů, takže lak dřív zmatní a začne oxidovat."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Kdy a kde mýt?"
-  },
-  {
-    "type": "text",
-    "text": "Zlaté pravidlo: Nikdy nemyj auto na přímém slunci nebo když je kapota horká. Šampon i voda zaschnou dřív, než stihneš cokoli udělat, a naděláš si víc škody než užitku. Ideální je stín nebo brzké ráno či podvečer. Lak by měl být na dotek chladný."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metoda dvou kbelíků: Základ úspěchu"
+    },
+    {
+      "type": "text",
+      "text": "Tohle je svatý grál ručního mytí. Potřebuješ dva kbelíky: v jednom máš vodu s autošamponem, ve druhém čistou vodu na máchání. Proč? Protože když namočíš špinavou rukavici do šamponu, spláchneš písek a nečistoty do čisté směsi a pak je třeš zpátky o lak. S dvěma kbelíky rukavici nejdřív vypereš v čisté vodě a až pak nabereš čistý šampon. Ideální je mít na dně kbelíků mřížku (Grid Guard), která udrží nečistoty u dna, aby se nevířily nahoru."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Předmytí: Nejdůležitější krok"
+    },
+    {
+      "type": "text",
+      "text": "Nikdy nesahej na auto houbou, dokud ho důkladně neopláchneš. Prach a bláto fungují jako brusný papír. Nejlepší je použít aktivní pěnu, která nečistoty uvolní a nechá je sklouznout dolů. Pokud pěnu nemáš, použij aspoň silný proud vody. Zaměř se na podběhy a spodní části dveří, kde je špíny nejvíc. Teprve když je auto zbavené hrubých nečistot, můžeš začít s kontaktním mytím."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Odshora dolů a bez tlaku"
+    },
+    {
+      "type": "text",
+      "text": "Fyzika neuhne – nejvíc špíny je vždycky dole. Začni střechou, pokračuj okny, kapotou a konči nárazníky a prahy. Tím zajistíš, že špína stéká na části, které jsi ještě nemyl. Na mycí rukavici nebo houbu netlač. Kvalitní autošampon má za úkol vytvořit lubrikaci, díky které rukavice po laku klouže. Pokud narazíš na zaschlý hmyz, netlač, ale nech na místě chvíli působit víc šamponu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sušení: Mikrovlákno vs. zaschlé kapky"
+    },
+    {
+      "type": "text",
+      "text": "Voda z řadu obsahuje minerály. Když ji necháš na slunci samovolně uschnout, zůstanou ti na laku bílé skvrny (tzv. water spots), které jdou špatně dolů. Použij velký sušicí ručník z mikrovlákna s vysokou gramáží. Ručník na auto jen přilož a nechej ho nasát vodu, nebo ho lehce táhni po povrchu. Vyhni se starým tričkům nebo drsným hadrům, ty lak zaručeně poškrábou."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pozor na kola a chemii"
+    },
+    {
+      "type": "text",
+      "text": "Kola myj vždy jako první nebo jako úplně poslední, ale rozhodně na ně měj jinou houbu a jiný kbelík. Prach z brzdových destiček je extrémně abrazivní (obsahuje kovové částečky). Taky zapomeň na jar nebo mýdlo na ruce – tyhle přípravky odmašťují až příliš a zbaví tvůj lak ochranných vosků a olejů, takže lak dřív zmatní a začne oxidovat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kdy a kde mýt?"
+    },
+    {
+      "type": "text",
+      "text": "Zlaté pravidlo: Nikdy nemyj auto na přímém slunci nebo když je kapota horká. Šampon i voda zaschnou dřív, než stihneš cokoli udělat, a naděláš si víc škody než užitku. Ideální je stín nebo brzké ráno či podvečer. Lak by měl být na dotek chladný."
+    }
+  ]
 }

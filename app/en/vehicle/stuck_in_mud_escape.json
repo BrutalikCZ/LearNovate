@@ -2,7 +2,7 @@
   "name": "Stuck in the mud",
   "description": "How to safely extricate a vehicle stuck in mud or soft terrain.",
   "icon": "car",
-  "label": "Extrication",
+  "label": "Extrication from mud",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

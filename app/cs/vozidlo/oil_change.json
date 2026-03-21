@@ -2,7 +2,7 @@
   "name": "Výměna motorového oleje",
   "description": "Jak správně zkontrolovat hladinu motorového oleje a doplnit jej do správné úrovně.",
   "icon": "car",
-  "label": "Motorový olej",
+  "label": "Výměna motorového oleje",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,15 +11,15 @@
     "objective": "Uživatel musí správně změřit hladinu oleje, dolít olej a následně znovu zkontrolovat hladinu.",
     "milestones": [
       {
-        "name": "Změření hladiny oleje (měrka – vytažení, otření, opětovné vložení a odečet)", 
+        "name": "Změření hladiny oleje (měrka – vytažení, otření, opětovné vložení a odečet)",
         "points": 50
       },
       {
-        "name": "Dolití motorového oleje (správné otevření víčka, použití trychtýře, postupné dolévání)", 
+        "name": "Dolití motorového oleje (správné otevření víčka, použití trychtýře, postupné dolévání)",
         "points": 150
       },
       {
-        "name": "Opětovná kontrola hladiny oleje po dolití", 
+        "name": "Opětovná kontrola hladiny oleje po dolití",
         "points": 50
       }
     ],

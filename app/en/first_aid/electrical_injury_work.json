@@ -2,7 +2,7 @@
   "name": "Electric shock in the workplace",
   "description": "First aid procedure for electrocution in the home or work environment.",
   "icon": "zap",
-  "label": "PP",
+  "label": "First aid for electric shock",
   "colorFrom": "#111827",
   "colorTo": "#facc15",
   "scenario": {

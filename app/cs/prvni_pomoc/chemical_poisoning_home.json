@@ -2,7 +2,7 @@
   "name": "Otrava chemikálií v domácnosti",
   "description": "Jak postupovat při podezření na otravu čisticími prostředky nebo toxickými výpary.",
   "icon": "flask-conical",
-  "label": "PP",
+  "label": "První pomoc při otravě",
   "colorFrom": "#064e3b",
   "colorTo": "#dc2626",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "Při podezření na otravu chemikáliemi okamžitě přesuň postiženého na čerstvý vzduch. Zajisti větrání prostoru a vyhni se dalšímu vdechování výparů. Při kontaktu s kůží nebo očima oplachuj vodou. Volej odbornou pomoc co nejdříve."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Chemická nehoda: Neviditelný útok na plíce"
-  },
-  {
-    "type": "text",
-    "text": "Smíchání běžných domácích čističů (např. bělidla s kyselinou nebo čističem odpadů) může vyvolat bouřlivou chemickou reakci, při které se uvolňuje toxický chlór nebo chloramin. Tyto plyny při kontaktu se sliznicemi dýchacích cest vytvářejí kyselinu chlorovodíkovou, která doslova leptá plíce zevnitř. Příznaky se mohou zhoršovat i několik hodin po expozici."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Priorita č. 1: Okamžitý ústup (Bezpečnost zachránce)"
-  },
-  {
-    "type": "text",
-    "text": "Nikdy si nehraj na hrdinu v uzavřeném prostoru plném výparů. Pokud cítíš štiplavý zápach nebo vidíš dým, okamžitě zadrž dech a vyveď postiženého ven na čerstvý vzduch. Pokud je postižený v bezvědomí v malé místnosti (koupelna), nevstupuj tam bez ochrany dýchacích cest – mohl bys tam zůstat s ním. Otevři okna a dveře zvenčí, pokud je to možné, a vytvoř průvan."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "První pomoc při zasažení očí a kůže"
-  },
-  {
-    "type": "text",
-    "text": "Pokud došlo k potřísnění chemikálií, jedná se o chemickou popáleninu (poleptání). \n1. **Oči:** Vyplachuj proudem vlažné čisté vody po dobu minimálně 15–20 minut. Proud vody směřuj od vnitřního koutku k vnějšímu, aby sis nevyplavil chemii do druhého oka. \n2. **Kůže:** Odstraň kontaminovaný oděv (pozor, ať se chemie nedotkneš ty!) a oplachuj zasažené místo velkým množstvím tekoucí vody. Nepoužívej mýdlo ani neutralizační roztoky, pokud ti to neřekne odborník."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Zákaz vyvolávání zvracení!"
-  },
-  {
-    "type": "text",
-    "text": "Pokud došlo k požití (vypití) chemikálie, **nikdy nevyvolávej zvracení**. Agresivní látka by při cestě zpět jícen poleptala podruhé a hrozilo by její vdechnutí do plic. Postižený si může pouze vypláchnout ústa vodou. Podání aktivního uhlí je u leptavých látek zbytečné a může zkomplikovat následné vyšetření (endoskopii)."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Toxikologické informační středisko (TIS)"
-  },
-  {
-    "type": "text",
-    "text": "Kromě linky 155 je v ČR k dispozici nepřetržitá linka TIS (224 91 92 93 nebo 224 91 54 02). Odborníci ti přesně řeknou, jak nebezpečná je konkrétní látka. Připrav si etiketu od výrobku nebo si vyfoť složení na mobil. Lékařům v nemocnici tato informace ušetří drahocenný čas při volbě protijedu nebo postupu léčby."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Pozdní následky: Plicní edém"
-  },
-  {
-    "type": "text",
-    "text": "I když se postižený po nadýchání výparů cítí po chvíli na vzduchu lépe, nesmí zůstat bez dozoru. Poškození plic se může projevit s odstupem 2 až 24 hodin jako plicní edém (voda v plicích). Pokud začne dotyčný znovu kašlat, cítí dušnost nebo má promodralé rty, je nutný okamžitý transport do nemocnice."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chemická nehoda: Neviditelný útok na plíce"
+    },
+    {
+      "type": "text",
+      "text": "Smíchání běžných domácích čističů (např. bělidla s kyselinou nebo čističem odpadů) může vyvolat bouřlivou chemickou reakci, při které se uvolňuje toxický chlór nebo chloramin. Tyto plyny při kontaktu se sliznicemi dýchacích cest vytvářejí kyselinu chlorovodíkovou, která doslova leptá plíce zevnitř. Příznaky se mohou zhoršovat i několik hodin po expozici."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Priorita č. 1: Okamžitý ústup (Bezpečnost zachránce)"
+    },
+    {
+      "type": "text",
+      "text": "Nikdy si nehraj na hrdinu v uzavřeném prostoru plném výparů. Pokud cítíš štiplavý zápach nebo vidíš dým, okamžitě zadrž dech a vyveď postiženého ven na čerstvý vzduch. Pokud je postižený v bezvědomí v malé místnosti (koupelna), nevstupuj tam bez ochrany dýchacích cest – mohl bys tam zůstat s ním. Otevři okna a dveře zvenčí, pokud je to možné, a vytvoř průvan."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "První pomoc při zasažení očí a kůže"
+    },
+    {
+      "type": "text",
+      "text": "Pokud došlo k potřísnění chemikálií, jedná se o chemickou popáleninu (poleptání). \n1. **Oči:** Vyplachuj proudem vlažné čisté vody po dobu minimálně 15–20 minut. Proud vody směřuj od vnitřního koutku k vnějšímu, aby sis nevyplavil chemii do druhého oka. \n2. **Kůže:** Odstraň kontaminovaný oděv (pozor, ať se chemie nedotkneš ty!) a oplachuj zasažené místo velkým množstvím tekoucí vody. Nepoužívej mýdlo ani neutralizační roztoky, pokud ti to neřekne odborník."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Zákaz vyvolávání zvracení!"
+    },
+    {
+      "type": "text",
+      "text": "Pokud došlo k požití (vypití) chemikálie, **nikdy nevyvolávej zvracení**. Agresivní látka by při cestě zpět jícen poleptala podruhé a hrozilo by její vdechnutí do plic. Postižený si může pouze vypláchnout ústa vodou. Podání aktivního uhlí je u leptavých látek zbytečné a může zkomplikovat následné vyšetření (endoskopii)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Toxikologické informační středisko (TIS)"
+    },
+    {
+      "type": "text",
+      "text": "Kromě linky 155 je v ČR k dispozici nepřetržitá linka TIS (224 91 92 93 nebo 224 91 54 02). Odborníci ti přesně řeknou, jak nebezpečná je konkrétní látka. Připrav si etiketu od výrobku nebo si vyfoť složení na mobil. Lékařům v nemocnici tato informace ušetří drahocenný čas při volbě protijedu nebo postupu léčby."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pozdní následky: Plicní edém"
+    },
+    {
+      "type": "text",
+      "text": "I když se postižený po nadýchání výparů cítí po chvíli na vzduchu lépe, nesmí zůstat bez dozoru. Poškození plic se může projevit s odstupem 2 až 24 hodin jako plicní edém (voda v plicích). Pokud začne dotyčný znovu kašlat, cítí dušnost nebo má promodralé rty, je nutný okamžitý transport do nemocnice."
+    }
+  ]
 }

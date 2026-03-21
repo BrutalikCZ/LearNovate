@@ -2,7 +2,7 @@
   "name": "Tonutí v bazénu",
   "description": "Postup první pomoci při tonutí a resuscitaci po vytažení z vody.",
   "icon": "waves",
-  "label": "PP",
+  "label": "Záchrana tonoucího",
   "colorFrom": "#0ea5e9",
   "colorTo": "#1e3a8a",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "Po vytažení z vody zkontroluj vědomí a dýchání. Pokud dítě nedýchá normálně, ihned volej 155 a zahaj KPR. Stlačuj hrudník v pravidelném rytmu a pokračuj bez přerušení do příjezdu pomoci."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Tonutí: Boj o každou molekulu kyslíku"
-  },
-  {
-    "type": "text",
-    "text": "U tonutí dochází k uzávěru dýchacích cest vodou nebo křečí hrtanu (laryngospasmus). Výsledkem je akutní nedostatek kyslíku (hypoxie), který vede k bezvědomí a následné zástavě srdce. Na rozdíl od infarktu u dospělých, kde je v krvi ještě nějaký kyslík, u tonoucího je kyslíkový dluh okamžitý a devastující pro mozek."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Mýtus o vylévání vody z plic"
-  },
-  {
-    "type": "text",
-    "text": "Zapomeň na filmy. Nikdy se nepokoušej z tonoucího 'vylévat' vodu tím, že ho budeš věšet za nohy nebo mu mačkat břicho. Většinou jde o vodu ze žaludku, kterou by mohl vdechnout do plic. V plicích je vody obvykle málo a ta se vstřebá sama. Zbytečnou manipulací jen ztrácíš drahocenné vteřiny, které máš věnovat resuscitaci."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Specifika KPR u tonoucích (Pravidlo 5 vdechů)"
-  },
-  {
-    "type": "text",
-    "text": "Protože je příčinou zástavy dušení, musíme kyslík dodat co nejdříve. \n1. **Zprůchodnění dýchacích cest:** Zakloň hlavu a zvedni bradu. \n2. **5 úvodních vdechů:** Na rozdíl od běžné KPR začni pěti vdechy. U dětí vdechuj jen objem svých úst, u dospělých normální výdech. Sleduj, zda se zvedá hrudník. \n3. **Masáž srdce:** Pokud se postižený nezačne hýbat nebo normálně dýchat, pokračuj v rytmu 30 stlačení a 2 vdechy (u dětí mohou laici držet stejný poměr, profesionálové 15:2)."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Podchlazení a 'Mokrý šok'"
-  },
-  {
-    "type": "text",
-    "text": "Voda odvádí teplo z těla velmi rychle. I v létě může být tonoucí silně podchlazený. Po vytažení z vody z něj odstraň mokré oblečení a zabal ho do suchého a do izotermické fólie. Podchlazení paradoxně může chránit mozek před poškozením z nedostatku kyslíku, proto resuscitaci nikdy nevzdávej předčasně – záchranáři mají rčení: 'Nikdo není mrtvý, dokud není teplý a mrtvý'."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Sekundární tonutí"
-  },
-  {
-    "type": "text",
-    "text": "Pozor! I když se tonoucí po vytažení z vody 'rozdýchá' a zdá se být v pořádku, hrozí mu smrtelné nebezpečí v následujících 24 hodinách. Malé množství vdechnuté vody (zejména chlorované nebo slané) může v plicích vyvolat zánět a otok (plicní edém). Každý, kdo vdechl vodu nebo vykazoval známky tonutí, musí být transportován do nemocnice na pozorování."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Bezpečnost zachránce"
-  },
-  {
-    "type": "text",
-    "text": "Tonoucí v panice má obrovskou sílu a může tě stáhnout pod hladinu. Pokud nejsi trénovaný plavčík, snaž se mu podat větev, hodit lano nebo kruh. Do vody skákej až jako poslední možnost a vždy se snaž mít mezi sebou a tonoucím nějaký předmět (plovák, desku, tričko), kterého se může chytit."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tonutí: Boj o každou molekulu kyslíku"
+    },
+    {
+      "type": "text",
+      "text": "U tonutí dochází k uzávěru dýchacích cest vodou nebo křečí hrtanu (laryngospasmus). Výsledkem je akutní nedostatek kyslíku (hypoxie), který vede k bezvědomí a následné zástavě srdce. Na rozdíl od infarktu u dospělých, kde je v krvi ještě nějaký kyslík, u tonoucího je kyslíkový dluh okamžitý a devastující pro mozek."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mýtus o vylévání vody z plic"
+    },
+    {
+      "type": "text",
+      "text": "Zapomeň na filmy. Nikdy se nepokoušej z tonoucího 'vylévat' vodu tím, že ho budeš věšet za nohy nebo mu mačkat břicho. Většinou jde o vodu ze žaludku, kterou by mohl vdechnout do plic. V plicích je vody obvykle málo a ta se vstřebá sama. Zbytečnou manipulací jen ztrácíš drahocenné vteřiny, které máš věnovat resuscitaci."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specifika KPR u tonoucích (Pravidlo 5 vdechů)"
+    },
+    {
+      "type": "text",
+      "text": "Protože je příčinou zástavy dušení, musíme kyslík dodat co nejdříve. \n1. **Zprůchodnění dýchacích cest:** Zakloň hlavu a zvedni bradu. \n2. **5 úvodních vdechů:** Na rozdíl od běžné KPR začni pěti vdechy. U dětí vdechuj jen objem svých úst, u dospělých normální výdech. Sleduj, zda se zvedá hrudník. \n3. **Masáž srdce:** Pokud se postižený nezačne hýbat nebo normálně dýchat, pokračuj v rytmu 30 stlačení a 2 vdechy (u dětí mohou laici držet stejný poměr, profesionálové 15:2)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Podchlazení a 'Mokrý šok'"
+    },
+    {
+      "type": "text",
+      "text": "Voda odvádí teplo z těla velmi rychle. I v létě může být tonoucí silně podchlazený. Po vytažení z vody z něj odstraň mokré oblečení a zabal ho do suchého a do izotermické fólie. Podchlazení paradoxně může chránit mozek před poškozením z nedostatku kyslíku, proto resuscitaci nikdy nevzdávej předčasně – záchranáři mají rčení: 'Nikdo není mrtvý, dokud není teplý a mrtvý'."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sekundární tonutí"
+    },
+    {
+      "type": "text",
+      "text": "Pozor! I když se tonoucí po vytažení z vody 'rozdýchá' a zdá se být v pořádku, hrozí mu smrtelné nebezpečí v následujících 24 hodinách. Malé množství vdechnuté vody (zejména chlorované nebo slané) může v plicích vyvolat zánět a otok (plicní edém). Každý, kdo vdechl vodu nebo vykazoval známky tonutí, musí být transportován do nemocnice na pozorování."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bezpečnost zachránce"
+    },
+    {
+      "type": "text",
+      "text": "Tonoucí v panice má obrovskou sílu a může tě stáhnout pod hladinu. Pokud nejsi trénovaný plavčík, snaž se mu podat větev, hodit lano nebo kruh. Do vody skákej až jako poslední možnost a vždy se snaž mít mezi sebou a tonoucím nějaký předmět (plovák, desku, tričko), kterého se může chytit."
+    }
+  ]
 }

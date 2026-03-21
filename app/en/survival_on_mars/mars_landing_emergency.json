@@ -2,7 +2,7 @@
   "name": "Crash landing on Mars",
   "description": "The first hours after the landing of the capsule and stabilization of the crew in an unknown environment.",
   "icon": "rocket",
-  "label": "MARS",
+  "label": "Post-crash stabilization",
   "colorFrom": "#7f1d1d",
   "colorTo": "#ef4444",
   "scenario": {

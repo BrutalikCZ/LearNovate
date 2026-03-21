@@ -2,7 +2,7 @@
   "name": "Podchlazení v horách",
   "description": "Jak rozpoznat a řešit hypothermii v zimních horských podmínkách.",
   "icon": "thermometer-snowflake",
-  "label": "PP",
+  "label": "První pomoc při podchlazení",
   "colorFrom": "#0f172a",
   "colorTo": "#38bdf8",
   "scenario": {
@@ -30,71 +30,71 @@
     "tutorial": "Při podchlazení je nutné okamžitě zabránit dalším tepelným ztrátám. Přesuň postiženého z větru, izoluj ho od studené země a zahřej ho suchým oblečením nebo dekami. Pokud je při vědomí, podávej teplé sladké nápoje. Volej pomoc co nejdříve."
   },
   "content": [
-  {
+    {
       "type": "heading",
       "level": 2,
       "text": "Hypotermie: Tichý zabiják v horách"
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "Podchlazení (hypotermie) je stav, kdy tělesná teplota klesne pod 35 °C. V horách k němu dochází kombinací chladu, vlhka (pot, déšť) a větru (wind-chill efekt). Nebezpečí spočívá v tom, že postižený často ztrácí soudnost a přestává si svůj stav uvědomovat. Jakmile se přestane třást a začne být apatický, jde o život ohrožující stadium."
-  },
-  {
+    },
+    {
       "type": "heading",
       "level": 2,
       "text": "Jak poznat stadia podchlazení"
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "1. **Lehké podchlazení (35–32 °C):** Postižený má silný svalový třes (tělo si jím vyrábí teplo), je mu zima, mluví srozumitelně, ale může být rozrušený. Tep a dýchání jsou zrychlené."
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "2. **Střední podchlazení (32–28 °C):** Třes ustává! To je kritické znamení, že tělu došla energie. Postižený je zmatený, ospalý, mluví nesrozumitelně ('jako opilý') a má narušenou koordinaci pohybů (vrávorá)."
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "3. **Těžké podchlazení (pod 28 °C):** Bezvědomí, dýchání je velmi povrchní a pomalé, puls je sotva hmatatelný. Hrozí zástava srdce."
-  },
-  {
+    },
+    {
       "type": "heading",
       "level": 2,
       "text": "Klíčové kroky první pomoci"
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "Nejdůležitější je zamezit dalšímu prochládání. Dostaň postiženého do závětří a izoluj ho od země (použij batohy, karimatky, větve). Pokud má mokré oblečení, musí dolů – ale jen pokud jsi v suchém krytu! Nahraď ho suchými vrstvami a hliníkovou izotermickou fólií (stříbrnou stranou k tělu)."
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "Zahřívej tělo pouze pasivně – přikládáním teplých (ne vařících!) předmětů nebo jiným člověkem (sdílení tělesného tepla ve spacáku). Teplo směřuj na střed těla (hrudník, břicho, třísla), nikdy ne na ruce a nohy."
-  },
-  {
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "Pozor na 'Afterdrop' – Smrtící chyba"
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "S postiženým manipuluj extrémně jemně a masíruj ho! Pokud začneš třít prochladlé končetiny nebo postiženého nutit k pohybu, studená krev z rukou a nohou se nahrne k srdci. To způsobí další pokles teploty jádra (tzv. afterdrop), což může vést k okamžité zástavě srdce. U těžkého podchlazení musí postižený ležet v klidu a vodorovně."
-  },
-  {
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "Jídlo a nápoje"
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "Podávej teplé sladké nápoje (čaj s cukrem), ale POUZE pokud je postižený plně při vědomí a nehrozí vdechnutí. Cukr dodá energii pro svalový třes. **Nikdy nedávej alkohol!** Alkohol roztahuje cévy v kůži, což sice vyvolá pocit tepla, ale ve skutečnosti drasticky urychluje únik tepla z tělesného jádra a zhoršuje podchlazení."
-  },
-  {
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "Volání pomoci"
-  },
-  {
+    },
+    {
       "type": "text",
       "text": "Volej Horskou službu nebo 155 (aplikace Záchranka je v horách ideální kvůli GPS). Do telefonu jasně popiš stav vědomí a zda je přítomen svalový třes. Pokud postižený přestane dýchat, zahaj KPR (resuscitaci) – pamatuj, že u podchlazeného může trvat oživování mnohem déle a bývá úspěšnější než u běžných zástav."
-  }
+    }
   ]
 }

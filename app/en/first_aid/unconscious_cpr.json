@@ -2,7 +2,7 @@
   "name": "Unconsciousness and CPR",
   "description": "How to proceed in case of unconsciousness, respiratory arrest and perform cardiopulmonary resuscitation.",
   "icon": "activity",
-  "label": "PP",
+  "label": "CPR and unconsciousness",
   "colorFrom": "#0f172a",
   "colorTo": "#ef4444",
   "scenario": {

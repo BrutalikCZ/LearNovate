@@ -2,7 +2,7 @@
   "name": "Encounter with the bear",
   "description": "Proper behavior in close contact with a large beast in the mountains.",
   "icon": "panda",
-  "label": "Animals",
+  "label": "Encountering a bear",
   "colorFrom": "#a16207",
   "colorTo": "#422006",
   "scenario": {

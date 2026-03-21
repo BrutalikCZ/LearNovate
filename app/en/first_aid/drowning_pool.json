@@ -2,7 +2,7 @@
   "name": "Drowning in the pool",
   "description": "First aid procedure for drowning and resuscitation after being pulled out of the water.",
   "icon": "waves",
-  "label": "PP",
+  "label": "Saving a drowning person",
   "colorFrom": "#0ea5e9",
   "colorTo": "#1e3a8a",
   "scenario": {

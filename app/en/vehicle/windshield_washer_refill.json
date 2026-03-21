@@ -2,7 +2,7 @@
   "name": "Refilling the washer fluid",
   "description": "How to properly add washer fluid and ensure a clear view from the vehicle.",
   "icon": "bubbles",
-  "label": "Washers",
+  "label": "Refilling washer fluid",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

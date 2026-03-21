@@ -2,7 +2,7 @@
   "name": "Výměna žárovky světlometu",
   "description": "Jak správně vyměnit žárovku světlometu a zajistit bezpečné osvětlení vozidla.",
   "icon": "lightbulb",
-  "label": "Světlomety",
+  "label": "Výměna žárovky světlometu",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí správně vyměnit žárovku.",
     "milestones": [
       {
-        "name": "Vypnutí světel a přístup ke světlometu", 
+        "name": "Vypnutí světel a přístup ke světlometu",
         "points": 100
       },
       {
-        "name": "Vyjmutí staré žárovky", 
+        "name": "Vyjmutí staré žárovky",
         "points": 100
       },
       {
-        "name": "Instalace nové žárovky bez dotyku skla", 
+        "name": "Instalace nové žárovky bez dotyku skla",
         "points": 150
       },
       {
-        "name": "Test funkčnosti světla", 
+        "name": "Test funkčnosti světla",
         "points": 100
       }
     ],

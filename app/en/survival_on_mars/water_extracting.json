@@ -2,7 +2,7 @@
   "name": "Harvesting water from Martian ice",
   "description": "Extraction and purification of water from subsurface ice for the colony.",
   "icon": "droplets",
-  "label": "MARS",
+  "label": "Obtaining drinking water",
   "colorFrom": "#0ea5e9",
   "colorTo": "#1e3a8a",
   "scenario": {

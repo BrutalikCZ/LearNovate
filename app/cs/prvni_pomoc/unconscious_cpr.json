@@ -2,7 +2,7 @@
   "name": "Bezvědomí a KPR",
   "description": "Jak postupovat při bezvědomí, zástavě dechu a provádět kardiopulmonální resuscitaci.",
   "icon": "activity",
-  "label": "PP",
+  "label": "KPR a řešení bezvědomí",
   "colorFrom": "#0f172a",
   "colorTo": "#ef4444",
   "scenario": {
@@ -29,7 +29,7 @@
     ],
     "tutorial": "Při bezvědomí nejprve zkontroluj reakci a dýchání. Pokud postižený nedýchá normálně, okamžitě volej 155. Zahaj nepřímou masáž srdce – stlačuj střed hrudníku frekvencí 100–120 stlačení za minutu do hloubky přibližně 5–6 cm. Pokračuj bez přerušení. Pokud je k dispozici AED, použij ho co nejdříve a řiď se hlasovými pokyny přístroje."
   },
-    "content": [
+  "content": [
     {
       "type": "heading",
       "level": 2,

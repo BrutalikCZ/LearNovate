@@ -2,7 +2,7 @@
   "name": "Changing a tire",
   "description": "How to safely replace a flat tire with a spare wheel on the road or rest stop.",
   "icon": "car",
-  "label": "Tire",
+  "label": "Changing a flat tire",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

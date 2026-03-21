@@ -2,7 +2,7 @@
   "name": "Uvíznutí v bahně",
   "description": "Jak bezpečně vyprostit vozidlo, které uvízlo v bahně nebo měkkém terénu.",
   "icon": "car",
-  "label": "Vyproštění",
+  "label": "Vyproštění z bahna",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí dostat auto bezpečně ven z bahna bez poškození vozidla.",
     "milestones": [
       {
-        "name": "Zastavení zbytečného protáčení kol", 
+        "name": "Zastavení zbytečného protáčení kol",
         "points": 100
       },
       {
-        "name": "Zlepšení trakce pod koly", 
+        "name": "Zlepšení trakce pod koly",
         "points": 150
       },
       {
-        "name": "Správná technika plynulého rozjezdu", 
+        "name": "Správná technika plynulého rozjezdu",
         "points": 150
       },
       {
-        "name": "Úspěšné vyjetí z bahna", 
+        "name": "Úspěšné vyjetí z bahna",
         "points": 100
       }
     ],

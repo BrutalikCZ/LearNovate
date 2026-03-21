@@ -2,7 +2,7 @@
   "name": "Dust storm during EVA",
   "description": "Surviving an extraterrestrial activity (EVA) during a sudden Martian dust storm.",
   "icon": "wind",
-  "label": "MARS",
+  "label": "Surviving a dust storm",
   "colorFrom": "#b91c1c",
   "colorTo": "#1e3a8a",
   "scenario": {

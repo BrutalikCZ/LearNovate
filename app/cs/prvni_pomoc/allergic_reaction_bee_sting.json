@@ -2,7 +2,7 @@
   "name": "Anafylaktická reakce po bodnutí hmyzem",
   "description": "Jak rozpoznat a řešit těžkou alergickou reakci po bodnutí včelou nebo vosou.",
   "icon": "bug",
-  "label": "PP",
+  "label": "První pomoc při anafylaxi",
   "colorFrom": "#064e3b",
   "colorTo": "#f59e0b",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "Anafylaxe je život ohrožující stav. Při otoku, dušnosti a kolapsu okamžitě volej 155. Pokud má postižený autoinjektor adrenalinu, ihned ho podej do stehna. Polož osobu do polohy, která jí usnadňuje dýchání, a sleduj její stav až do příjezdu pomoci."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Anafylaxe: Když se imunitní systém zblázní"
-  },
-  {
-    "type": "text",
-    "text": "Anafylaktický šok je extrémní a život ohrožující alergická reakce, která postihuje celé tělo. Nejde jen o svědění nebo vyrážku. Během několika sekund až minut dojde k masivnímu uvolnění histaminu, což způsobí prudký pokles krevního tlaku a otok sliznic. Pokud se otok rozšíří do hrdla a hlasivek, postižený se může udusit během neuvěřitelně krátké doby. Čím dříve po bodnutí se příznaky objeví, tím bývá průběh dramatičtější."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Jak poznat nastupující šok?"
-  },
-  {
-    "type": "text",
-    "text": "Sleduj kombinaci příznaků v různých systémech těla:\n1. **Kůže:** Kopřivka, svědění, otok obličeje, rtů a jazyka.\n2. **Dýchání:** Chrapot, sípání, pocit 'knedlíku v krku', dušnost a kašel.\n3. **Oběh:** Rychlý a slabý puls, závratě, pocit na omdlení nebo náhlá slabost.\n4. **Trávicí trakt:** Křeče v břiše, zvracení nebo průjem.\nVarovným signálem je také náhlý, nevysvětlitelný pocit úzkosti a strachu ze smrti (tzv. pocit zmaru)."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Adrenalinové pero (EpiPen): Život v kapse"
-  },
-  {
-    "type": "text",
-    "text": "Lidé se silnou alergií u sebe nosí autoinjektor s adrenalinem. Adrenalin stáhne cévy (zvýší tlak) a uvolní svalstvo v plicích (zlepší dýchání). \n- **Kam bodnout:** VŽDY do vnější strany stehna, klidně i přes oblečení (kromě tlustých švů nebo obsahu kapes).\n- **Jak na to:** Sundej bezpečnostní víčko, přitiskni pero ke stehnu, dokud neuslyšíš cvaknutí, a drž ho tam minimálně 10 sekund, aby se lék vstřebal. Místo vpichu pak krátce promasíruj.\n- **Pozor:** Po podání adrenalinu se stav může dočasně zlepšit, ale účinek po 15–20 minutách odezní. Proto je nemocniční péče NEZBYTNÁ i po úspěšném podání léku."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Správná poloha těla"
-  },
-  {
-    "type": "text",
-    "text": "Poloha těla u anafylaxe závisí na hlavním problému: \n- **Při dušnosti:** Poloha v sedě s oporou zad usnadňuje dýchání.\n- **Při pocitu na omdlení (pokles tlaku):** Poloha vleže se zvednutými dolními končetinami pomůže udržet prokrvení mozku.\n- **POZOR:** Pokud postižený kolabuje a má nízký tlak, nikdy ho nenechávej stát ani prudce posazovat – mohl by nastat náhlý kolaps krevního oběhu a zástava srdce."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Bodnutí do úst nebo krku"
-  },
-  {
-    "type": "text",
-    "text": "Pokud včela bodne člověka do jazyka nebo vnitřku hrdla, hrozí udušení otokem i bez celkové alergie. V tomto případě dej postiženému cucat led nebo pít velmi studenou vodu po malých doušcích, abys zpomalil nástup otoku, a okamžitě volej 155. Žihadlo se snaž odstranit vyškrábnutím nehtem, nikdy ho nemačkej pinzetou (vymáčkl bys do rány zbytek jedu z váčku)."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Když není adrenalin k dispozici"
-  },
-  {
-    "type": "text",
-    "text": "Pokud postižený u sebe lék nemá, jedinou šancí je okamžité volání 155 a neustálý monitoring vědomí a dýchání. Pokud dojde k zástavě dechu, okamžitě zahaj klasickou resuscitaci (KPR). U anafylaxe může být dýchání přes oteklé cesty velmi těžké, soustřeď se tedy hlavně na kvalitní masáž srdce."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anafylaxe: Když se imunitní systém zblázní"
+    },
+    {
+      "type": "text",
+      "text": "Anafylaktický šok je extrémní a život ohrožující alergická reakce, která postihuje celé tělo. Nejde jen o svědění nebo vyrážku. Během několika sekund až minut dojde k masivnímu uvolnění histaminu, což způsobí prudký pokles krevního tlaku a otok sliznic. Pokud se otok rozšíří do hrdla a hlasivek, postižený se může udusit během neuvěřitelně krátké doby. Čím dříve po bodnutí se příznaky objeví, tím bývá průběh dramatičtější."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Jak poznat nastupující šok?"
+    },
+    {
+      "type": "text",
+      "text": "Sleduj kombinaci příznaků v různých systémech těla:\n1. **Kůže:** Kopřivka, svědění, otok obličeje, rtů a jazyka.\n2. **Dýchání:** Chrapot, sípání, pocit 'knedlíku v krku', dušnost a kašel.\n3. **Oběh:** Rychlý a slabý puls, závratě, pocit na omdlení nebo náhlá slabost.\n4. **Trávicí trakt:** Křeče v břiše, zvracení nebo průjem.\nVarovným signálem je také náhlý, nevysvětlitelný pocit úzkosti a strachu ze smrti (tzv. pocit zmaru)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adrenalinové pero (EpiPen): Život v kapse"
+    },
+    {
+      "type": "text",
+      "text": "Lidé se silnou alergií u sebe nosí autoinjektor s adrenalinem. Adrenalin stáhne cévy (zvýší tlak) a uvolní svalstvo v plicích (zlepší dýchání). \n- **Kam bodnout:** VŽDY do vnější strany stehna, klidně i přes oblečení (kromě tlustých švů nebo obsahu kapes).\n- **Jak na to:** Sundej bezpečnostní víčko, přitiskni pero ke stehnu, dokud neuslyšíš cvaknutí, a drž ho tam minimálně 10 sekund, aby se lék vstřebal. Místo vpichu pak krátce promasíruj.\n- **Pozor:** Po podání adrenalinu se stav může dočasně zlepšit, ale účinek po 15–20 minutách odezní. Proto je nemocniční péče NEZBYTNÁ i po úspěšném podání léku."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Správná poloha těla"
+    },
+    {
+      "type": "text",
+      "text": "Poloha těla u anafylaxe závisí na hlavním problému: \n- **Při dušnosti:** Poloha v sedě s oporou zad usnadňuje dýchání.\n- **Při pocitu na omdlení (pokles tlaku):** Poloha vleže se zvednutými dolními končetinami pomůže udržet prokrvení mozku.\n- **POZOR:** Pokud postižený kolabuje a má nízký tlak, nikdy ho nenechávej stát ani prudce posazovat – mohl by nastat náhlý kolaps krevního oběhu a zástava srdce."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bodnutí do úst nebo krku"
+    },
+    {
+      "type": "text",
+      "text": "Pokud včela bodne člověka do jazyka nebo vnitřku hrdla, hrozí udušení otokem i bez celkové alergie. V tomto případě dej postiženému cucat led nebo pít velmi studenou vodu po malých doušcích, abys zpomalil nástup otoku, a okamžitě volej 155. Žihadlo se snaž odstranit vyškrábnutím nehtem, nikdy ho nemačkej pinzetou (vymáčkl bys do rány zbytek jedu z váčku)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Když není adrenalin k dispozici"
+    },
+    {
+      "type": "text",
+      "text": "Pokud postižený u sebe lék nemá, jedinou šancí je okamžité volání 155 a neustálý monitoring vědomí a dýchání. Pokud dojde k zástavě dechu, okamžitě zahaj klasickou resuscitaci (KPR). U anafylaxe může být dýchání přes oteklé cesty velmi těžké, soustřeď se tedy hlavně na kvalitní masáž srdce."
+    }
+  ]
 }

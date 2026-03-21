@@ -2,7 +2,7 @@
   "name": "Selhání generátoru kyslíku",
   "description": "Kritická situace při výpadku systému výroby kyslíku v uzavřené kolonii.",
   "icon": "wind",
-  "label": "MARS",
+  "label": "Porucha generátoru kyslíku",
   "colorFrom": "#0f172a",
   "colorTo": "#ef4444",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "V uzavřeném prostředí je kyslík kritický limitující faktor. Při poklesu je nutné okamžitě aktivovat zálohy a snížit spotřebu. Každé zpoždění zvyšuje riziko hypoxie posádky."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Kyslíková bilance: Vteřiny, které rozhodují"
-  },
-  {
-    "type": "text",
-    "text": "V uzavřeném habitatu na Marsu není největším nepřítelem okamžitý nedostatek kyslíku, ale hromadění oxidu uhličitého (CO2). Zatímco hladina O2 klesá pomalu, koncentrace CO2 může dosáhnout toxické úrovně mnohem dříve. Příznaky hypoxie (nedostatku kyslíku) jsou zrádné: euforie, zmatenost a ztráta soudnosti, což posádce znemožňuje racionálně opravit závadu. Prvním krokem je proto nasazení individuálních dýchacích masek napojených na nezávislé nouzové zásobníky."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Elektrolýza vody a systém MOXIE"
-  },
-  {
-    "type": "text",
-    "text": "Hlavní produkce kyslíku probíhá elektrolýzou vytěžené vody (rozklad H2O na vodík a kyslík). Záložní systém MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) dokáže extrahovat kyslík přímo z marsovské atmosféry tvořené z 95 % CO2. Tento proces je však energeticky extrémně náročný a vyžaduje vysoké provozní teploty kolem 800 °C. Při selhání hlavního generátoru je nutné okamžitě přesměrovat veškerou dostupnou energii z neprioritních systémů (vědecké experimenty, ohřev nespících modulů) právě sem."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Pohlcovače CO2: LiOH a molekulární síta"
-  },
-  {
-    "type": "text",
-    "text": "Pokud selže recyklace plynů, nastupuje chemické čištění. Kanystry s hydroxidem lithným (LiOH) nebo střídavá molekulární síta (zeolity) pasivně pohlcují CO2 z vnitřní atmosféry. Tyto zdroje jsou však konečné. V kritické situaci musí posádka omezit fyzickou aktivitu na minimum – metabolická spotřeba kyslíku při stresu a pohybu stoupá až na pětinásobek klidového stavu. Spánek nebo řízená meditace jsou v tuto chvíli legitimní techniky přežití."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Nouzová hermetizace sektorů"
-  },
-  {
-    "type": "text",
-    "text": "Při masivním poklesu tlaku nebo kontaminaci vzduchu je nutné habitat rozdělit na nezávislé sekce. Posádka se stáhne do 'bezpečné zóny' (obvykle centrální modul s nejsilnějším stíněním), která má nejmenší objem a nejsnáze se v ní udržuje dýchatelná atmosféra. Ostatní moduly jsou odpojeny od ventilace, aby se zabránilo úniku drahocenného O2 do poškozených částí stanice."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Botanická podpora: Skleník jako plíce"
-  },
-  {
-    "type": "text",
-    "text": "Pokud je v kolonii funkční farma, rostliny fungují jako biologický filtr. V krizovém režimu lze zvýšit intenzitu osvětlení na maximum (přebuzení fotosyntézy), aby rostliny produkovaly více kyslíku a pohlcovaly více CO2. Tato biomasa však nedokáže plně nahradit mechanický generátor, slouží pouze jako 'nárazník', který prodlouží čas na opravu o drahocenné hodiny."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Symptomy otravy CO2"
-  },
-  {
-    "type": "text",
-    "text": "Je kritické, aby posádka sledovala vzájemně svůj stav. Bolest hlavy, dušnost, poruchy vidění a zčervenání kůže jsou jasné signály, že filtrace selhává. V takovém případě je nutné okamžitě přejít na čistý kyslík z tlakových lahví, i za cenu jejich rychlého vyčerpání. Bez čisté hlavy inženýři generátor neopraví."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kyslíková bilance: Vteřiny, které rozhodují"
+    },
+    {
+      "type": "text",
+      "text": "V uzavřeném habitatu na Marsu není největším nepřítelem okamžitý nedostatek kyslíku, ale hromadění oxidu uhličitého (CO2). Zatímco hladina O2 klesá pomalu, koncentrace CO2 může dosáhnout toxické úrovně mnohem dříve. Příznaky hypoxie (nedostatku kyslíku) jsou zrádné: euforie, zmatenost a ztráta soudnosti, což posádce znemožňuje racionálně opravit závadu. Prvním krokem je proto nasazení individuálních dýchacích masek napojených na nezávislé nouzové zásobníky."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Elektrolýza vody a systém MOXIE"
+    },
+    {
+      "type": "text",
+      "text": "Hlavní produkce kyslíku probíhá elektrolýzou vytěžené vody (rozklad H2O na vodík a kyslík). Záložní systém MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) dokáže extrahovat kyslík přímo z marsovské atmosféry tvořené z 95 % CO2. Tento proces je však energeticky extrémně náročný a vyžaduje vysoké provozní teploty kolem 800 °C. Při selhání hlavního generátoru je nutné okamžitě přesměrovat veškerou dostupnou energii z neprioritních systémů (vědecké experimenty, ohřev nespících modulů) právě sem."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pohlcovače CO2: LiOH a molekulární síta"
+    },
+    {
+      "type": "text",
+      "text": "Pokud selže recyklace plynů, nastupuje chemické čištění. Kanystry s hydroxidem lithným (LiOH) nebo střídavá molekulární síta (zeolity) pasivně pohlcují CO2 z vnitřní atmosféry. Tyto zdroje jsou však konečné. V kritické situaci musí posádka omezit fyzickou aktivitu na minimum – metabolická spotřeba kyslíku při stresu a pohybu stoupá až na pětinásobek klidového stavu. Spánek nebo řízená meditace jsou v tuto chvíli legitimní techniky přežití."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Nouzová hermetizace sektorů"
+    },
+    {
+      "type": "text",
+      "text": "Při masivním poklesu tlaku nebo kontaminaci vzduchu je nutné habitat rozdělit na nezávislé sekce. Posádka se stáhne do 'bezpečné zóny' (obvykle centrální modul s nejsilnějším stíněním), která má nejmenší objem a nejsnáze se v ní udržuje dýchatelná atmosféra. Ostatní moduly jsou odpojeny od ventilace, aby se zabránilo úniku drahocenného O2 do poškozených částí stanice."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Botanická podpora: Skleník jako plíce"
+    },
+    {
+      "type": "text",
+      "text": "Pokud je v kolonii funkční farma, rostliny fungují jako biologický filtr. V krizovém režimu lze zvýšit intenzitu osvětlení na maximum (přebuzení fotosyntézy), aby rostliny produkovaly více kyslíku a pohlcovaly více CO2. Tato biomasa však nedokáže plně nahradit mechanický generátor, slouží pouze jako 'nárazník', který prodlouží čas na opravu o drahocenné hodiny."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Symptomy otravy CO2"
+    },
+    {
+      "type": "text",
+      "text": "Je kritické, aby posádka sledovala vzájemně svůj stav. Bolest hlavy, dušnost, poruchy vidění a zčervenání kůže jsou jasné signály, že filtrace selhává. V takovém případě je nutné okamžitě přejít na čistý kyslík z tlakových lahví, i za cenu jejich rychlého vyčerpání. Bez čisté hlavy inženýři generátor neopraví."
+    }
+  ]
 }

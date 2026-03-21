@@ -2,7 +2,7 @@
   "name": "Loss of control over online account",
   "description": "How to hack an account on a social network or email.",
   "icon": "user-lock",
-  "label": "NET",
+  "label": "Resolving a hacked account",
   "colorFrom": "#0f172a",
   "colorTo": "#f59e0b",
   "scenario": {

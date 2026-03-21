@@ -2,7 +2,7 @@
   "name": "Suspected stroke",
   "description": "How to recognize a stroke and get help quickly using the FAST method.",
   "icon": "brain",
-  "label": "PP",
+  "label": "Stroke recognition (FAST)",
   "colorFrom": "#1e1b4b",
   "colorTo": "#ef4444",
   "scenario": {

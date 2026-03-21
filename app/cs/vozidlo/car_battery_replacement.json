@@ -2,7 +2,7 @@
   "name": "Výměna autobaterie",
   "description": "Jak správně vyměnit autobaterii a obnovit funkčnost vozidla.",
   "icon": "battery",
-  "label": "Autobaterie",
+  "label": "Výměna autobaterie",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,23 +11,23 @@
     "objective": "Uživatel musí správně vyměnit autobaterii.",
     "milestones": [
       {
-        "name": "Zajištění bezpečnosti (motor vypnutý, rukavice, brýle)", 
+        "name": "Zajištění bezpečnosti (motor vypnutý, rukavice, brýle)",
         "points": 50
       },
       {
-        "name": "Odpojení staré baterie (správné pořadí pólů)", 
+        "name": "Odpojení staré baterie (správné pořadí pólů)",
         "points": 150
       },
       {
-        "name": "Vyjmutí staré baterie", 
+        "name": "Vyjmutí staré baterie",
         "points": 50
       },
       {
-        "name": "Instalace a zapojení nové baterie (správné pořadí pólů)", 
+        "name": "Instalace a zapojení nové baterie (správné pořadí pólů)",
         "points": 150
       },
       {
-        "name": "Ověření funkčnosti (nastartování)", 
+        "name": "Ověření funkčnosti (nastartování)",
         "points": 100
       }
     ],

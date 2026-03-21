@@ -2,7 +2,7 @@
   "name": "Power outage in Martian colony",
   "description": "Addressing a critical power system failure in a closed colony.",
   "icon": "battery-warning",
-  "label": "MARS",
+  "label": "Power outage resolution",
   "colorFrom": "#0f172a",
   "colorTo": "#f59e0b",
   "scenario": {

@@ -2,7 +2,7 @@
   "name": "Startování auta přes kabely",
   "description": "Jak správně nastartovat auto pomocí startovacích kabelů.",
   "icon": "battery-low",
-  "label": "Startování",
+  "label": "Startování přes kabely",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí správně nastartovat auto pomocí kabelů.",
     "milestones": [
       {
-        "name": "Správné zapojení kabelů", 
+        "name": "Správné zapojení kabelů",
         "points": 100
       },
       {
-        "name": "Nastartování pomocného vozidla", 
+        "name": "Nastartování pomocného vozidla",
         "points": 100
       },
       {
-        "name": "Nastartování vybitého vozidla", 
+        "name": "Nastartování vybitého vozidla",
         "points": 150
       },
       {
-        "name": "Bezpečné odpojení kabelů", 
+        "name": "Bezpečné odpojení kabelů",
         "points": 100
       }
     ],

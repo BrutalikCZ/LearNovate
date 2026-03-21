@@ -2,7 +2,7 @@
   "name": "Nabíjení autobaterie",
   "description": "Jak správně nabít autobaterii a obnovit její funkčnost.",
   "icon": "battery-charging",
-  "label": "Autobaterie",
+  "label": "Nabíjení autobaterie",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí správně nabít autobaterii.",
     "milestones": [
       {
-        "name": "Odpojení baterie od vozidla", 
+        "name": "Odpojení baterie od vozidla",
         "points": 100
       },
       {
-        "name": "Připojení nabíječky správným způsobem", 
+        "name": "Připojení nabíječky správným způsobem",
         "points": 150
       },
       {
-        "name": "Nastavení a spuštění nabíjení", 
+        "name": "Nastavení a spuštění nabíjení",
         "points": 100
       },
       {
-        "name": "Odpojení nabíječky a opětovná instalace baterie", 
+        "name": "Odpojení nabíječky a opětovná instalace baterie",
         "points": 150
       }
     ],

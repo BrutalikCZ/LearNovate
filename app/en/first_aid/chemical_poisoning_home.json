@@ -2,7 +2,7 @@
   "name": "Chemical poisoning in the home",
   "description": "What to do if you suspect poisoning with cleaning agents or toxic fumes.",
   "icon": "flask-conical",
-  "label": "PP",
+  "label": "First aid for poisoning",
   "colorFrom": "#064e3b",
   "colorTo": "#dc2626",
   "scenario": {

@@ -2,7 +2,7 @@
   "name": "Building a shed",
   "description": "Simple housing type 'A' construction for protection from rain and wind.",
   "icon": "tent",
-  "label": "Shelter",
+  "label": "Building a shelter",
   "colorFrom": "#16a34a",
   "colorTo": "#14532d",
   "scenario": {

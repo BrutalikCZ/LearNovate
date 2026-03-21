@@ -2,7 +2,7 @@
   "name": "Ošetření řezné rány",
   "description": "Jak správně zastavit krvácení, ošetřit a obvázat řeznou ránu v terénu i doma.",
   "icon": "heart-pulse",
-  "label": "PP",
+  "label": "Ošetření řezné rány",
   "colorFrom": "#7f1d1d",
   "colorTo": "#ef4444",
   "scenarioId": "rezna_rana",

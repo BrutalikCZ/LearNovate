@@ -2,7 +2,7 @@
   "name": "Oheň bez zápalek",
   "description": "Jak rozdělat oheň pomocí křesadla v náročných podmínkách.",
   "icon": "flame",
-  "label": "Přežití",
+  "label": "Rozdělání ohně křesadlem",
   "colorFrom": "#f59e0b",
   "colorTo": "#ef4444",
   "scenario": {
@@ -11,78 +11,78 @@
     "objective": "Uživatel musí úspěšně založit a udržet oheň.",
     "milestones": [
       {
-        "name": "Příprava suchého podkladu a izolace od země", 
+        "name": "Příprava suchého podkladu a izolace od země",
         "points": 50
       },
       {
-        "name": "Nasbírání tří fází paliva (troud, drobné větvičky, polena)", 
+        "name": "Nasbírání tří fází paliva (troud, drobné větvičky, polena)",
         "points": 100
       },
       {
-        "name": "Vykřesání jiskry do troudu", 
+        "name": "Vykřesání jiskry do troudu",
         "points": 200
       },
       {
-        "name": "Rozfoukání a postupné přikládání", 
+        "name": "Rozfoukání a postupné přikládání",
         "points": 150
       }
     ],
     "tutorial": "Základem je suchý troud (suchá tráva, březová kůra). Připrav si místo chráněné před větrem a izoluj ho od vlhké země vrstvou větví. Křesadlem miř přímo do troudu. Jakmile se objeví dým, jemně do ohniska foukej. Přikládej nejprve nejtenčí větvičky a až po vytvoření stabilního žáru přidej silnější dřevo."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Fyzika ohně: Trojúhelník hoření"
-  },
-  {
-    "type": "text",
-    "text": "Aby oheň hořel, potřebujete tři věci: palivo, teplo (jiskru) a kyslík. Pokud jedna chybí, oheň skončí dřív, než začne. V mokrém lese je největším nepřítelem vlhkost země, která odebírá teplo z rodícího se ohniště. Vždy si proto vytvořte 'postel' z tlustých větví nebo kůry, která vaše ohniště izoluje od mokrého podkladu."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Troud: Srdce vašeho ohně"
-  },
-  {
-    "type": "text",
-    "text": "Jiskra z křesadla má sice přes 2000 stupňů Celsia, ale žije jen zlomek vteřiny. Potřebujete něco, co ji zachytí. Nejlepším přírodním troudem je březová kůra (obsahuje hořlavé oleje a hoří, i když je mokrá), suchá tráva, rozmělněné suché dřevo nebo vnitřek suchého rákosu. Pokud máte nůž, naškrábejte z křesadla trochu hořčíkových pilin přímo do troudu, výrazně to usnadní zapálení."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Tři fáze paliva"
-  },
-  {
-    "type": "text",
-    "text": "Nejčastější chyba je přiložit velké dřevo příliš brzy. Mějte připraveny tři hromádky: \n1. Troud: Jemný materiál, který chytne od jiskry. \n2. Podpal: Větvičky tenké jako zápalka nebo tužka. \n3. Palivo: Silnější větve a polena. \nZásada je jednoduchá: přikládejte materiál jen tak silný, jako je aktuální plamen. Pokud je plamen vysoký 5 cm, nepřikládejte větev silnější než 5 cm."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Technika křesání"
-  },
-  {
-    "type": "text",
-    "text": "Neškrabte křesadlo pomalu. Přiložte konec tyčinky přímo k troudu pod úhlem 45 stupňů. Jezdcem (nebo hřbetem nože) prudce a silně přejeďte po tyčince směrem dolů. Snažte se, aby jiskry dopadaly na jedno místo. Jakmile troud začne doutnat, jemně a vytrvale do něj foukejte. Kyslík promění doutnání v plamen. Jakmile se objeví oheň, začněte opatrně přikládat nejtenčí větvičky v podobě pyramidy (týpí)."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Hledání suchého dřeva v dešti"
-  },
-  {
-    "type": "text",
-    "text": "I když prší, v lese je stále suché dřevo. Hledejte spodní mrtvé větve jehličnatých stromů, které jsou chráněny hustou korunou. Další možností je rozštěpit mokré poleno – vnitřek dřeva bývá suchý. Naškrábejte si z tohoto suchého vnitřku jemné hobliny (tzv. feather sticks), které chytnou velmi snadno."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Bezpečnost a udržování"
-  },
-  {
-    "type": "text",
-    "text": "Ohniště vždy ohraničte kameny nebo vykopejte mělkou jamku, aby se oheň nešířil kořeny v zemi. Pokud potřebujete, aby oheň vydržel celou noc bez přikládání, použijte techniku 'samokrmného' ohně nebo přiložte dvě silná polena těsně k sobě, aby mezi nimi žhnuly uhlíky. Před odchodem ohniště důkladně uhašte vodou a zasypte hlínou. Nezapomeňte: oheň je dobrý sluha, ale zlý pán."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fyzika ohně: Trojúhelník hoření"
+    },
+    {
+      "type": "text",
+      "text": "Aby oheň hořel, potřebujete tři věci: palivo, teplo (jiskru) a kyslík. Pokud jedna chybí, oheň skončí dřív, než začne. V mokrém lese je největším nepřítelem vlhkost země, která odebírá teplo z rodícího se ohniště. Vždy si proto vytvořte 'postel' z tlustých větví nebo kůry, která vaše ohniště izoluje od mokrého podkladu."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Troud: Srdce vašeho ohně"
+    },
+    {
+      "type": "text",
+      "text": "Jiskra z křesadla má sice přes 2000 stupňů Celsia, ale žije jen zlomek vteřiny. Potřebujete něco, co ji zachytí. Nejlepším přírodním troudem je březová kůra (obsahuje hořlavé oleje a hoří, i když je mokrá), suchá tráva, rozmělněné suché dřevo nebo vnitřek suchého rákosu. Pokud máte nůž, naškrábejte z křesadla trochu hořčíkových pilin přímo do troudu, výrazně to usnadní zapálení."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tři fáze paliva"
+    },
+    {
+      "type": "text",
+      "text": "Nejčastější chyba je přiložit velké dřevo příliš brzy. Mějte připraveny tři hromádky: \n1. Troud: Jemný materiál, který chytne od jiskry. \n2. Podpal: Větvičky tenké jako zápalka nebo tužka. \n3. Palivo: Silnější větve a polena. \nZásada je jednoduchá: přikládejte materiál jen tak silný, jako je aktuální plamen. Pokud je plamen vysoký 5 cm, nepřikládejte větev silnější než 5 cm."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Technika křesání"
+    },
+    {
+      "type": "text",
+      "text": "Neškrabte křesadlo pomalu. Přiložte konec tyčinky přímo k troudu pod úhlem 45 stupňů. Jezdcem (nebo hřbetem nože) prudce a silně přejeďte po tyčince směrem dolů. Snažte se, aby jiskry dopadaly na jedno místo. Jakmile troud začne doutnat, jemně a vytrvale do něj foukejte. Kyslík promění doutnání v plamen. Jakmile se objeví oheň, začněte opatrně přikládat nejtenčí větvičky v podobě pyramidy (týpí)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hledání suchého dřeva v dešti"
+    },
+    {
+      "type": "text",
+      "text": "I když prší, v lese je stále suché dřevo. Hledejte spodní mrtvé větve jehličnatých stromů, které jsou chráněny hustou korunou. Další možností je rozštěpit mokré poleno – vnitřek dřeva bývá suchý. Naškrábejte si z tohoto suchého vnitřku jemné hobliny (tzv. feather sticks), které chytnou velmi snadno."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bezpečnost a udržování"
+    },
+    {
+      "type": "text",
+      "text": "Ohniště vždy ohraničte kameny nebo vykopejte mělkou jamku, aby se oheň nešířil kořeny v zemi. Pokud potřebujete, aby oheň vydržel celou noc bez přikládání, použijte techniku 'samokrmného' ohně nebo přiložte dvě silná polena těsně k sobě, aby mezi nimi žhnuly uhlíky. Před odchodem ohniště důkladně uhašte vodou a zasypte hlínou. Nezapomeňte: oheň je dobrý sluha, ale zlý pán."
+    }
+  ]
 }

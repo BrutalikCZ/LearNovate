@@ -2,7 +2,7 @@
   "name": "An attack on public Wi-Fi",
   "description": "How to protect yourself when using an unsecured public Wi-Fi network.",
   "icon": "wifi-off",
-  "label": "NET",
+  "label": "Safe public Wi-Fi usage",
   "colorFrom": "#1e3a8a",
   "colorTo": "#ef4444",
   "scenario": {

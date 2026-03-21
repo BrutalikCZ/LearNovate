@@ -2,7 +2,7 @@
   "name": "Locked keys in the car",
   "description": "How to safely access a locked car without damaging it.",
   "icon": "key-square",
-  "label": "Locked car",
+  "label": "Unlocking a locked car",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

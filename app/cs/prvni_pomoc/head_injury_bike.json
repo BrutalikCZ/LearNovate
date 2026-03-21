@@ -2,7 +2,7 @@
   "name": "Poranění hlavy při jízdě na kole",
   "description": "Jak postupovat při otřesu mozku nebo vážnějším poranění hlavy po pádu z kola.",
   "icon": "bike",
-  "label": "PP",
+  "label": "Ošetření poranění hlavy",
   "colorFrom": "#111827",
   "colorTo": "#ef4444",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "Při poranění hlavy vždy sleduj vědomí. Pokud je postižený zmatený nebo ztrácí vědomí, volej 155. Krvácení zastav přiložením tlaku přes sterilní krytí. S postiženým nehýbej více, než je nutné, a sleduj jeho stav."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Úraz hlavy: Skrytá hrozba pod helmou"
-  },
-  {
-    "type": "text",
-    "text": "Pády z kola patří k nejčastějším příčinám vážných úrazů hlavy. I když má jezdec helmu, náraz může způsobit otřes mozku nebo vnitřní krvácení. Nebezpečí tkví v tom, že se stav postiženého může zdát zpočátku stabilní (tzv. světlý interval), ale během několika desítek minut může dojít k prudkému zhoršení a bezvědomí."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Jak poznat otřes mozku a vážnější zranění"
-  },
-  {
-    "type": "text",
-    "text": "Sleduj tyto varovné příznaky, které signalizují poškození mozku: \n1. **Ztráta paměti:** Nepamatuje si události těsně před pádem nebo pád samotný.\n2. **Nevolnost:** Opakované zvracení nebo silný pocit na zvracení.\n3. **Poruchy zraku:** Rozmazané vidění, nestejně velké zorničky (anizokorie).\n4. **Zmatenost:** Postižený opakuje stejné otázky, neví kde je nebo jaký je den.\n5. **Silná bolest hlavy:** Bolest, která se stupňuje a neustupuje."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Sundat helmu, nebo ne?"
-  },
-  {
-    "type": "text",
-    "text": "Pokud postižený komunikuje a dýchá, helmu mu **nesundávej**. Může mít přidružené poranění krční páteře a manipulace s hlavou by mohla způsobit ochrnutí. Helmu sundávej pouze v případě, že: \n- Postižený nedýchá a potřebuješ zahájit resuscitaci.\n- Helma brání v ošetření masivního, život ohrožujícího krvácení.\n- Postižený zvrací v poloze na zádech a helma brání otočení hlavy na bok."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "První pomoc na místě"
-  },
-  {
-    "type": "text",
-    "text": "1. **Zastavení krvácení:** Hlava je silně prokrvená, takže i malá rána může vypadat děsivě. Použij sterilní čtverec nebo čistý kus látky a aplikuj mírný tlak přímo na ránu. Pokud máš podezření na zlomeninu lebky (cítíš měkké místo nebo vidíš deformaci), na ránu netlač silou, jen ji volně překryj.\n2. **Klidový režim:** Postiženého ulož do polosedu s oporou zad a hlavy. Zakaž mu jakoukoli další fyzickou aktivitu. Adrenalin může maskovat bolest, ale další jízda na kole je v tuto chvíli absolutně vyloučená.\n3. **Tepelný komfort:** I v létě může dojít k šoku, udržuj kamaráda v teple pomocí oblečení nebo izotermické fólie."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Kdy volat 155?"
-  },
-  {
-    "type": "text",
-    "text": "Záchranku volej vždy, pokud došlo k byť jen krátkodobé ztrátě vědomí, pokud je přítomna zmatenost, zvracení, nebo pokud z uší či nosu vytéká čirá tekutina (mozkomíšní mok). Při jakýchkoli pochybnostech je lepší nechat se vyšetřit v nemocnici – CT vyšetření je jediný způsob, jak stoprocentně vyloučit krvácení do mozku."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Důležité upozornění"
-  },
-  {
-    "type": "text",
-    "text": "Pokud došlo k silnému nárazu do helmy, je její struktura narušena a již neposkytuje ochranu. Helmu je nutné po takovém pádu vyhodit a koupit novou, i když na ní nejsou viditelné praskliny."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Úraz hlavy: Skrytá hrozba pod helmou"
+    },
+    {
+      "type": "text",
+      "text": "Pády z kola patří k nejčastějším příčinám vážných úrazů hlavy. I když má jezdec helmu, náraz může způsobit otřes mozku nebo vnitřní krvácení. Nebezpečí tkví v tom, že se stav postiženého může zdát zpočátku stabilní (tzv. světlý interval), ale během několika desítek minut může dojít k prudkému zhoršení a bezvědomí."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Jak poznat otřes mozku a vážnější zranění"
+    },
+    {
+      "type": "text",
+      "text": "Sleduj tyto varovné příznaky, které signalizují poškození mozku: \n1. **Ztráta paměti:** Nepamatuje si události těsně před pádem nebo pád samotný.\n2. **Nevolnost:** Opakované zvracení nebo silný pocit na zvracení.\n3. **Poruchy zraku:** Rozmazané vidění, nestejně velké zorničky (anizokorie).\n4. **Zmatenost:** Postižený opakuje stejné otázky, neví kde je nebo jaký je den.\n5. **Silná bolest hlavy:** Bolest, která se stupňuje a neustupuje."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sundat helmu, nebo ne?"
+    },
+    {
+      "type": "text",
+      "text": "Pokud postižený komunikuje a dýchá, helmu mu **nesundávej**. Může mít přidružené poranění krční páteře a manipulace s hlavou by mohla způsobit ochrnutí. Helmu sundávej pouze v případě, že: \n- Postižený nedýchá a potřebuješ zahájit resuscitaci.\n- Helma brání v ošetření masivního, život ohrožujícího krvácení.\n- Postižený zvrací v poloze na zádech a helma brání otočení hlavy na bok."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "První pomoc na místě"
+    },
+    {
+      "type": "text",
+      "text": "1. **Zastavení krvácení:** Hlava je silně prokrvená, takže i malá rána může vypadat děsivě. Použij sterilní čtverec nebo čistý kus látky a aplikuj mírný tlak přímo na ránu. Pokud máš podezření na zlomeninu lebky (cítíš měkké místo nebo vidíš deformaci), na ránu netlač silou, jen ji volně překryj.\n2. **Klidový režim:** Postiženého ulož do polosedu s oporou zad a hlavy. Zakaž mu jakoukoli další fyzickou aktivitu. Adrenalin může maskovat bolest, ale další jízda na kole je v tuto chvíli absolutně vyloučená.\n3. **Tepelný komfort:** I v létě může dojít k šoku, udržuj kamaráda v teple pomocí oblečení nebo izotermické fólie."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kdy volat 155?"
+    },
+    {
+      "type": "text",
+      "text": "Záchranku volej vždy, pokud došlo k byť jen krátkodobé ztrátě vědomí, pokud je přítomna zmatenost, zvracení, nebo pokud z uší či nosu vytéká čirá tekutina (mozkomíšní mok). Při jakýchkoli pochybnostech je lepší nechat se vyšetřit v nemocnici – CT vyšetření je jediný způsob, jak stoprocentně vyloučit krvácení do mozku."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Důležité upozornění"
+    },
+    {
+      "type": "text",
+      "text": "Pokud došlo k silnému nárazu do helmy, je její struktura narušena a již neposkytuje ochranu. Helmu je nutné po takovém pádu vyhodit a koupit novou, i když na ní nejsou viditelné praskliny."
+    }
+  ]
 }

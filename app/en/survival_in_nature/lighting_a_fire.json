@@ -2,7 +2,7 @@
   "name": "Fire without matches",
   "description": "How to start a fire using flint in difficult conditions.",
   "icon": "flame",
-  "label": "Survival",
+  "label": "Starting a fire",
   "colorFrom": "#f59e0b",
   "colorTo": "#ef4444",
   "scenario": {

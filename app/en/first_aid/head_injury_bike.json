@@ -2,7 +2,7 @@
   "name": "Head injury while riding a bicycle",
   "description": "How to deal with a concussion or more serious head injury after falling off a bike.",
   "icon": "bike",
-  "label": "PP",
+  "label": "Treating a head injury",
   "colorFrom": "#111827",
   "colorTo": "#ef4444",
   "scenario": {

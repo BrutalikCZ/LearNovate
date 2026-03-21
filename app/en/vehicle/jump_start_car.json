@@ -2,7 +2,7 @@
   "name": "Starting the car via cables",
   "description": "How to properly start a car with jump leads.",
   "icon": "battery-low",
-  "label": "Starting up",
+  "label": "Jump starting a car",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

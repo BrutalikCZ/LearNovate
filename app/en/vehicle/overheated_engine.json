@@ -2,7 +2,7 @@
   "name": "Overheated engine",
   "description": "How to properly react to engine overheating and prevent engine damage.",
   "icon": "thermometer",
-  "label": "Overheating",
+  "label": "Overheated engine handling",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

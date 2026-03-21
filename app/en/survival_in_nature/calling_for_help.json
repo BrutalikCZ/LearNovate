@@ -2,7 +2,7 @@
   "name": "A call for help",
   "description": "Visual and audible signaling for rescue teams and aircraft.",
   "icon": "megaphone",
-  "label": "Rescue",
+  "label": "Calling for help",
   "colorFrom": "#ec4899",
   "colorTo": "#9d174d",
   "scenario": {

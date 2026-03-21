@@ -2,7 +2,7 @@
   "name": "QR phishing attack",
   "description": "Fraudulent QR codes leading to fake login pages or malicious websites.",
   "icon": "qr-code",
-  "label": "NET",
+  "label": "Protection against QR phishing",
   "colorFrom": "#0f172a",
   "colorTo": "#f97316",
   "scenario": {

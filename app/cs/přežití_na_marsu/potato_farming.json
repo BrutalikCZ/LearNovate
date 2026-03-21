@@ -2,7 +2,7 @@
   "name": "Pěstování brambor v marsovské kolonii",
   "description": "Zajištění potravy pomocí improvizované hydroponie a recyklace biomasy v uzavřeném systému.",
   "icon": "sprout",
-  "label": "MARS",
+  "label": "Zajištění potravy",
   "colorFrom": "#14532d",
   "colorTo": "#84cc16",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "V uzavřeném systému je nutné maximalizovat recyklaci živin. Organický materiál se zpracuje na substrát, který slouží jako základ pro růst rostlin. Klíčové je udržet stabilní teplotu, vlhkost a světelný režim. Jakákoli nerovnováha může způsobit kolaps celé úrody."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Marsovský regolit: Toxická půda"
-  },
-  {
-    "type": "text",
-    "text": "Zapomeň na to, že jen vyhrabeš díru do červeného písku. Marsovský regolit je plný perchlorátů (toxických solí) a postrádá jakýkoliv organický život. Před výsadbou musí být regolit důkladně propláchnut vyčištěnou vodou, aby se odstranila toxicita. Teprve po promytí a přidání biologického hnojiva (recyklovaného lidského odpadu a zbytků biomasy) z něj vytvoříš skutečnou půdu, ve které mohou kořeny brambor přežít."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Uzavřený cyklus živin: Žádný odpad neexistuje"
-  },
-  {
-    "type": "text",
-    "text": "V izolované kolonii je každý gram biomasy poklad. Veškerý organický odpad z habitatu musí projít kompostérem, kde ho bakterie rozloží na hnojivo bohaté na dusík, fosfor a draslík. Tento proces musí být přísně kontrolován, aby nedošlo k šíření patogenů z posádky do potravinového řetězce. Brambory jsou ideální plodinou, protože poskytují vysoký kalorický výnos na metr čtvereční a snesou i drsnější podmínky."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Atmosféra a světlo: Boj o fotosyntézu"
-  },
-  {
-    "type": "text",
-    "text": "Mars dostává jen asi 43 % slunečního světla ve srovnání se Zemí a prachové bouře mohou blokovat slunce celé týdny. Skleněná kupole musí být vybavena doplňkovým LED osvětlením s vlnovými délkami optimalizovanými pro růst (červené a modré spektrum). Hladina CO2 v pěstební zóně se udržuje vyšší než v obytných částech, což urychluje růst rostlin a zvyšuje produkci kyslíku pro kolonii."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Hydroponie a kapková závlaha"
-  },
-  {
-    "type": "text",
-    "text": "Voda je na Marsu vzácnější než zlato, proto je klasické zalévání neefektivní. Používá se počítačem řízená kapková závlaha přímo ke kořenům, nebo aeroponie (ostřikování kořenů živnou mlhou). Senzory v substrátu hlídají vlhkost na mililitr přesně. Jakýkoliv přebytek vody, který se odpaří z listů, je okamžitě zachycen kondenzátory a vrácen zpět do nádrží."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Radiace: Ochrana genofondu"
-  },
-  {
-    "type": "text",
-    "text": "Tenká marsovská atmosféra neblokuje kosmické záření. Pokud nebudou pěstební moduly stíněny (např. vrstvou regolitu nebo speciálním sklem s vodním filtrem), hrozí mutace rostlin a selhání úrody. Brambory v kolonii jsou geneticky upraveny tak, aby byly odolnější vůči stresu a měly zkrácený vegetační cyklus, což umožňuje více sklizní za marsovský rok."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Psychologický faktor: Zelená oáza"
-  },
-  {
-    "type": "text",
-    "text": "Farma neslouží jen jako zdroj kalorií. V prostředí tvořeném kovem a plastem je pěstební zóna jediné místo s přirozenou barvou a vůní země. Práce na farmě je pro posádku kriticky důležitá pro udržení duševního zdraví a prevenci deprese během dlouhých izolací na rudé planetě."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Marsovský regolit: Toxická půda"
+    },
+    {
+      "type": "text",
+      "text": "Zapomeň na to, že jen vyhrabeš díru do červeného písku. Marsovský regolit je plný perchlorátů (toxických solí) a postrádá jakýkoliv organický život. Před výsadbou musí být regolit důkladně propláchnut vyčištěnou vodou, aby se odstranila toxicita. Teprve po promytí a přidání biologického hnojiva (recyklovaného lidského odpadu a zbytků biomasy) z něj vytvoříš skutečnou půdu, ve které mohou kořeny brambor přežít."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Uzavřený cyklus živin: Žádný odpad neexistuje"
+    },
+    {
+      "type": "text",
+      "text": "V izolované kolonii je každý gram biomasy poklad. Veškerý organický odpad z habitatu musí projít kompostérem, kde ho bakterie rozloží na hnojivo bohaté na dusík, fosfor a draslík. Tento proces musí být přísně kontrolován, aby nedošlo k šíření patogenů z posádky do potravinového řetězce. Brambory jsou ideální plodinou, protože poskytují vysoký kalorický výnos na metr čtvereční a snesou i drsnější podmínky."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Atmosféra a světlo: Boj o fotosyntézu"
+    },
+    {
+      "type": "text",
+      "text": "Mars dostává jen asi 43 % slunečního světla ve srovnání se Zemí a prachové bouře mohou blokovat slunce celé týdny. Skleněná kupole musí být vybavena doplňkovým LED osvětlením s vlnovými délkami optimalizovanými pro růst (červené a modré spektrum). Hladina CO2 v pěstební zóně se udržuje vyšší než v obytných částech, což urychluje růst rostlin a zvyšuje produkci kyslíku pro kolonii."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hydroponie a kapková závlaha"
+    },
+    {
+      "type": "text",
+      "text": "Voda je na Marsu vzácnější než zlato, proto je klasické zalévání neefektivní. Používá se počítačem řízená kapková závlaha přímo ke kořenům, nebo aeroponie (ostřikování kořenů živnou mlhou). Senzory v substrátu hlídají vlhkost na mililitr přesně. Jakýkoliv přebytek vody, který se odpaří z listů, je okamžitě zachycen kondenzátory a vrácen zpět do nádrží."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Radiace: Ochrana genofondu"
+    },
+    {
+      "type": "text",
+      "text": "Tenká marsovská atmosféra neblokuje kosmické záření. Pokud nebudou pěstební moduly stíněny (např. vrstvou regolitu nebo speciálním sklem s vodním filtrem), hrozí mutace rostlin a selhání úrody. Brambory v kolonii jsou geneticky upraveny tak, aby byly odolnější vůči stresu a měly zkrácený vegetační cyklus, což umožňuje více sklizní za marsovský rok."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Psychologický faktor: Zelená oáza"
+    },
+    {
+      "type": "text",
+      "text": "Farma neslouží jen jako zdroj kalorií. V prostředí tvořeném kovem a plastem je pěstební zóna jediné místo s přirozenou barvou a vůní země. Práce na farmě je pro posádku kriticky důležitá pro udržení duševního zdraví a prevenci deprese během dlouhých izolací na rudé planetě."
+    }
+  ]
 }

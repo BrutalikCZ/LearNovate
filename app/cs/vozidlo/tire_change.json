@@ -2,7 +2,7 @@
   "name": "Výměna pneumatiky",
   "description": "Jak bezpečně vyměnit prasklou pneumatiku za rezervní kolo na silnici nebo odpočívadle.",
   "icon": "car",
-  "label": "Pneumatika",
+  "label": "Výměna prasklé pneumatiky",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí správně vyměnit prasklou pneumatiku za rezervní kolo.",
     "milestones": [
       {
-        "name": "Bezpečné zajištění vozidla (výstražná světla, ruční brzda, výstražný trojúhelník)", 
+        "name": "Bezpečné zajištění vozidla (výstražná světla, ruční brzda, výstražný trojúhelník)",
         "points": 100
       },
       {
-        "name": "Příprava nářadí a rezervního kola", 
+        "name": "Příprava nářadí a rezervního kola",
         "points": 50
       },
       {
-        "name": "Výměna kola (zvednutí vozidla, demontáž a montáž kola)", 
+        "name": "Výměna kola (zvednutí vozidla, demontáž a montáž kola)",
         "points": 150
       },
       {
-        "name": "Dokončení (dotažení šroubů, spuštění vozidla, kontrola stability)", 
+        "name": "Dokončení (dotažení šroubů, spuštění vozidla, kontrola stability)",
         "points": 100
       }
     ],

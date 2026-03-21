@@ -2,7 +2,7 @@
   "name": "Nouzový sestup",
   "description": "Techniky improvizovaného slaňování bez lezeckého sedáku a jistítka.",
   "icon": "arrow-down",
-  "label": "Lana",
+  "label": "Improvizované slaňování",
   "colorFrom": "#f87171",
   "colorTo": "#991b1b",
   "scenario": {
@@ -11,78 +11,78 @@
     "objective": "Bezpečně slanit klesající úsek pomocí těla.",
     "milestones": [
       {
-        "name": "Zabezpečení lana kolem pevného, spolehlivého kotevního bodu (skála, strom)", 
+        "name": "Zabezpečení lana kolem pevného, spolehlivého kotevního bodu (skála, strom)",
         "points": 100
       },
       {
-        "name": "Uvázání improvizovaného sedáku (např. dračí smyčka nebo švýcarský sedák)", 
+        "name": "Uvázání improvizovaného sedáku (např. dračí smyčka nebo švýcarský sedák)",
         "points": 150
       },
       {
-        "name": "Zavedení lana přes tělo pro vytvoření tření (technika Dülferův sed)", 
+        "name": "Zavedení lana přes tělo pro vytvoření tření (technika Dülferův sed)",
         "points": 200
       },
       {
-        "name": "Pomalý a kontrolovaný sestup se zpevněným středem těla", 
+        "name": "Pomalý a kontrolovaný sestup se zpevněným středem těla",
         "points": 150
       }
     ],
     "tutorial": "Nejznámější technikou je Dülferův sed. Lano veď mezi nohama, kolem jednoho boku, křížem přes hrudník na opačné rameno a odtud zevnitř kolem paže na záda. Tření lana o oblečení a tělo ti umožní kontrolovat rychlost sestupu brzdící rukou (tou, která drží konec lana za zády). Pozor: lano pálí! Dülferův sed je extrémně bolestivý a nebezpečný bez silného oblečení a rukavic. Použij ho jen v krajní nouzi na krátké, méně strmé úseky. Vždy dbej na absolutní spolehlivost kotevního bodu."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Dülferův sed: Tření jako brzda"
-  },
-  {
-    "type": "text",
-    "text": "Dülferův sed je legendární, ale drsná technika, která nepotřebuje sedák ani karabiny. Celý princip spočívá v tom, že lano omotáte kolem vlastního těla tak, aby vzniklo dostatečné tření. To vám umožní kontrolovat pád vlastní vahou. Pamatujte, že lano se při pohybu zahřívá – bez tlustého oblečení (mikina, pevné kalhoty) a rukavic si koledujete o ošklivé popáleniny, které vás donutí lano pustit."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Technika provlečení krok za krokem"
-  },
-  {
-    "type": "text",
-    "text": "1. Rozkročte se nad lanem, které visí z pevného bodu. \n2. Lano veďte zepředu dozadu mezi nohama. \n3. Obejděte jím libovolné stehno (např. pravé) zvenčí dopředu. \n4. Veďte lano šikmo přes prsa na opačné rameno (levé). \n5. Přes rameno ho pusťte dozadu na záda. \n6. Druhou rukou (pravou) uchopte volný konec lana za zády. Tato ruka je vaše HLAVNÍ BRZDA. Nikdy ji nepouštějte!"
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Kontrola sestupu"
-  },
-  {
-    "type": "text",
-    "text": "Rychlost regulujete silou stisku a úhlem brzdící ruky za zády. Pokud ruku přitáhnete k tělu, tření se zvýší a vy zastavíte. Pokud ruku mírně povolíte a oddálíte od těla, začnete klesat. Nohy mějte rozkročené na šířku ramen a opřené o skálu, tělo by mělo svírat se stěnou zhruba pravý úhel. Sestupujte plynule, žádné skoky – rázové zatížení by mohlo vytrhnout kotevní bod."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Kritický bod: Kotvení"
-  },
-  {
-    "type": "text",
-    "text": "Vaše přežití závisí na tom, k čemu lano přivážete. \n- **Strom:** Musí být živý, hluboce zakořeněný a mít průměr aspoň jako vaše stehno. \n- **Skalní hrot:** Musí být součástí masivu, ne jen volně ležící balvan. Zkontrolujte, zda nemá ostré hrany, které by lano přeřízly. \n- **Smyčka:** Pokud lano dáváte kolem hrotu, použijte raději smyčku, abyste lano nepoškodili třením o skálu."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Improvizovaný sedák (Švýcarský sed)"
-  },
-  {
-    "type": "text",
-    "text": "Pokud máte kousek lana navíc nebo plochou smyčku, můžete si vyrobit improvizovaný sedák. Lano obtočíte kolem pasu a rozkroku tak, aby vytvořilo oporu pro stehna. Pokud máte karabinu, můžete do ní lano vložit pomocí Menterova uzlu (poloviční lodní uzel). Je to tisíckrát pohodlnější a bezpečnější než Dülfer, protože lano neběhá přímo po kůži a v případě křeče nebo únavy vás sedák udrží."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Psychologie sestupu"
-  },
-  {
-    "type": "text",
-    "text": "Největším nepřítelem je strach z výšky a pohled pod nohy. Soustřeďte se na své ruce a na kotevní bod. Dýchejte zhluboka. Pokud cítíte, že ztrácíte sílu, zastavte, zapřete se nohama o skálu a přitáhněte brzdící ruku pevně k zádům. Odpočiňte si, než budete pokračovat. Zmatené a zbrklé jednání vede k chybám v úchopu."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dülferův sed: Tření jako brzda"
+    },
+    {
+      "type": "text",
+      "text": "Dülferův sed je legendární, ale drsná technika, která nepotřebuje sedák ani karabiny. Celý princip spočívá v tom, že lano omotáte kolem vlastního těla tak, aby vzniklo dostatečné tření. To vám umožní kontrolovat pád vlastní vahou. Pamatujte, že lano se při pohybu zahřívá – bez tlustého oblečení (mikina, pevné kalhoty) a rukavic si koledujete o ošklivé popáleniny, které vás donutí lano pustit."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Technika provlečení krok za krokem"
+    },
+    {
+      "type": "text",
+      "text": "1. Rozkročte se nad lanem, které visí z pevného bodu. \n2. Lano veďte zepředu dozadu mezi nohama. \n3. Obejděte jím libovolné stehno (např. pravé) zvenčí dopředu. \n4. Veďte lano šikmo přes prsa na opačné rameno (levé). \n5. Přes rameno ho pusťte dozadu na záda. \n6. Druhou rukou (pravou) uchopte volný konec lana za zády. Tato ruka je vaše HLAVNÍ BRZDA. Nikdy ji nepouštějte!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kontrola sestupu"
+    },
+    {
+      "type": "text",
+      "text": "Rychlost regulujete silou stisku a úhlem brzdící ruky za zády. Pokud ruku přitáhnete k tělu, tření se zvýší a vy zastavíte. Pokud ruku mírně povolíte a oddálíte od těla, začnete klesat. Nohy mějte rozkročené na šířku ramen a opřené o skálu, tělo by mělo svírat se stěnou zhruba pravý úhel. Sestupujte plynule, žádné skoky – rázové zatížení by mohlo vytrhnout kotevní bod."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kritický bod: Kotvení"
+    },
+    {
+      "type": "text",
+      "text": "Vaše přežití závisí na tom, k čemu lano přivážete. \n- **Strom:** Musí být živý, hluboce zakořeněný a mít průměr aspoň jako vaše stehno. \n- **Skalní hrot:** Musí být součástí masivu, ne jen volně ležící balvan. Zkontrolujte, zda nemá ostré hrany, které by lano přeřízly. \n- **Smyčka:** Pokud lano dáváte kolem hrotu, použijte raději smyčku, abyste lano nepoškodili třením o skálu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Improvizovaný sedák (Švýcarský sed)"
+    },
+    {
+      "type": "text",
+      "text": "Pokud máte kousek lana navíc nebo plochou smyčku, můžete si vyrobit improvizovaný sedák. Lano obtočíte kolem pasu a rozkroku tak, aby vytvořilo oporu pro stehna. Pokud máte karabinu, můžete do ní lano vložit pomocí Menterova uzlu (poloviční lodní uzel). Je to tisíckrát pohodlnější a bezpečnější než Dülfer, protože lano neběhá přímo po kůži a v případě křeče nebo únavy vás sedák udrží."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Psychologie sestupu"
+    },
+    {
+      "type": "text",
+      "text": "Největším nepřítelem je strach z výšky a pohled pod nohy. Soustřeďte se na své ruce a na kotevní bod. Dýchejte zhluboka. Pokud cítíte, že ztrácíte sílu, zastavte, zapřete se nohama o skálu a přitáhněte brzdící ruku pevně k zádům. Odpočiňte si, než budete pokračovat. Zmatené a zbrklé jednání vede k chybám v úchopu."
+    }
+  ]
 }

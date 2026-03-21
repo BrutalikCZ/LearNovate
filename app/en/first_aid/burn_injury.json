@@ -2,7 +2,7 @@
   "name": "Burn treatment",
   "description": "Basic first aid procedure for thermal burns of various degrees.",
   "icon": "flame",
-  "label": "PP",
+  "label": "First aid for burns",
   "colorFrom": "#7c2d12",
   "colorTo": "#f97316",
   "scenario": {

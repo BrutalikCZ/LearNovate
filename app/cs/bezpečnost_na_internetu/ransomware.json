@@ -2,7 +2,7 @@
   "name": "Ransomware útok na počítač",
   "description": "Jak reagovat na útok ransomwarem, který zašifruje data a požaduje výkupné.",
   "icon": "lock-keyhole",
-  "label": "NET",
+  "label": "Reakce na ransomware",
   "colorFrom": "#0f172a",
   "colorTo": "#ef4444",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "Při ransomware útoku je klíčové okamžitě odpojit zařízení od sítě, aby se zabránilo šíření. Neplať výkupné. Zkontroluj dostupné zálohy a incident nahlas bezpečnostnímu týmu."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "První pomoc: Izolace nula"
-  },
-  {
-    "type": "text",
-    "text": "Jakmile uvidíte zprávu o zašifrování (Ransom Note), každá vteřina hraje proti vám. Ransomware se často šíří dál do firemní sítě, na sdílené disky nebo do cloudu. Prvním krokem je okamžité fyzické odpojení od sítě – vytáhněte ethernetový kabel a vypněte Wi-Fi. Pokud máte připojené externí disky nebo USB flashky, ihned je odpojte. Tím zastavíte proces šifrování dalších souborů a ochráníte ostatní zařízení v síti."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Proč (téměř) nikdy neplatit výkupné?"
-  },
-  {
-    "type": "text",
-    "text": "Placení výkupného (Ransom) je extrémně rizikové z několika důvodů:\n- **Žádná záruka:** Útočník je zločinec, ne čestný obchodník. Mnoho obětí zaplatilo, ale dešifrovací klíč nikdy nedostalo.\n- **Značka 'Snadný cíl':** Pokud zaplatíte, dostanete se na seznam prioritních cílů. Útočníci vědí, že jste ochotni platit, a za pár měsíců se vrátí.\n- **Financování zločinu:** Vaše peníze pravděpodobně pojdou na další vývoj malwaru nebo jinou kriminální činnost.\nJedinou výjimkou jsou situace absolutního ohrožení života (např. nemocniční systémy bez záloh), ale i tehdy je nutná asistence policie."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Identifikace a záchrana dat"
-  },
-  {
-    "type": "text",
-    "text": "Někdy existuje cesta ven bez placení. Různé kmeny ransomwaru mají různé slabiny. Zkuste identifikovat typ útoku (např. podle přípony zašifrovaných souborů nebo adresy ve zprávě). Existují projekty jako 'No More Ransom', kde bezpečnostní firmy zdarma poskytují dešifrovací nástroje pro starší nebo špatně napsané typy ransomwaru. Pokud máte štěstí, váš klíč už může být veřejně dostupný."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Strategie zálohování 3-2-1"
-  },
-  {
-    "type": "text",
-    "text": "Nejlepší obranou proti ransomwaru není drahý antivirus, ale správné zálohování. Pravidlo 3-2-1 říká:\n- Mějte **3** kopie svých dat.\n- Na **2** různých typech médií (např. interní disk a externí disk).\n- **1** kopii mějte 'Off-site' a 'Off-line' (v jiné budově a hlavně nepřipojenou k síti). \nRansomware, který 'nevidí' na vaše záložní zařízení, ho nemůže zašifrovat. Pravidelně testujte, zda jsou vaše zálohy skutečně funkční a obnovitelné."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Forenzní stopa: Nevypínejte hned"
-  },
-  {
-    "type": "text",
-    "text": "I když je instinktem počítač okamžitě 'natvrdo' vypnout, pro IT specialisty může být lepší ho nechat běžet (ale v izolaci). Šifrovací klíče se někdy dají vytáhnout přímo z operační paměti (RAM), dokud je systém zapnutý. Pokud počítač vypnete nebo restartujete, tato data se nenávratně ztratí. Pokud nejste odborník, odpojte síť a počkejte na instrukce IT oddělení nebo specialistů na kybernetickou bezpečnost."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Právní a firemní kroky"
-  },
-  {
-    "type": "text",
-    "text": "Útok ransomwarem je trestný čin. Pokud jde o pracovní zařízení, musíte incident okamžitě nahlásit nadřízenému a IT bezpečnosti. V rámci EU (GDPR) může být firma povinna nahlásit únik osobních údajů dozorovému úřadu do 72 hodin. Nezkoušejte incident zamést pod koberec – následky úniku dat mohou být pro firmu likvidační, pokud se neřeší včas a transparentně."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "První pomoc: Izolace nula"
+    },
+    {
+      "type": "text",
+      "text": "Jakmile uvidíte zprávu o zašifrování (Ransom Note), každá vteřina hraje proti vám. Ransomware se často šíří dál do firemní sítě, na sdílené disky nebo do cloudu. Prvním krokem je okamžité fyzické odpojení od sítě – vytáhněte ethernetový kabel a vypněte Wi-Fi. Pokud máte připojené externí disky nebo USB flashky, ihned je odpojte. Tím zastavíte proces šifrování dalších souborů a ochráníte ostatní zařízení v síti."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Proč (téměř) nikdy neplatit výkupné?"
+    },
+    {
+      "type": "text",
+      "text": "Placení výkupného (Ransom) je extrémně rizikové z několika důvodů:\n- **Žádná záruka:** Útočník je zločinec, ne čestný obchodník. Mnoho obětí zaplatilo, ale dešifrovací klíč nikdy nedostalo.\n- **Značka 'Snadný cíl':** Pokud zaplatíte, dostanete se na seznam prioritních cílů. Útočníci vědí, že jste ochotni platit, a za pár měsíců se vrátí.\n- **Financování zločinu:** Vaše peníze pravděpodobně pojdou na další vývoj malwaru nebo jinou kriminální činnost.\nJedinou výjimkou jsou situace absolutního ohrožení života (např. nemocniční systémy bez záloh), ale i tehdy je nutná asistence policie."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Identifikace a záchrana dat"
+    },
+    {
+      "type": "text",
+      "text": "Někdy existuje cesta ven bez placení. Různé kmeny ransomwaru mají různé slabiny. Zkuste identifikovat typ útoku (např. podle přípony zašifrovaných souborů nebo adresy ve zprávě). Existují projekty jako 'No More Ransom', kde bezpečnostní firmy zdarma poskytují dešifrovací nástroje pro starší nebo špatně napsané typy ransomwaru. Pokud máte štěstí, váš klíč už může být veřejně dostupný."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Strategie zálohování 3-2-1"
+    },
+    {
+      "type": "text",
+      "text": "Nejlepší obranou proti ransomwaru není drahý antivirus, ale správné zálohování. Pravidlo 3-2-1 říká:\n- Mějte **3** kopie svých dat.\n- Na **2** různých typech médií (např. interní disk a externí disk).\n- **1** kopii mějte 'Off-site' a 'Off-line' (v jiné budově a hlavně nepřipojenou k síti). \nRansomware, který 'nevidí' na vaše záložní zařízení, ho nemůže zašifrovat. Pravidelně testujte, zda jsou vaše zálohy skutečně funkční a obnovitelné."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Forenzní stopa: Nevypínejte hned"
+    },
+    {
+      "type": "text",
+      "text": "I když je instinktem počítač okamžitě 'natvrdo' vypnout, pro IT specialisty může být lepší ho nechat běžet (ale v izolaci). Šifrovací klíče se někdy dají vytáhnout přímo z operační paměti (RAM), dokud je systém zapnutý. Pokud počítač vypnete nebo restartujete, tato data se nenávratně ztratí. Pokud nejste odborník, odpojte síť a počkejte na instrukce IT oddělení nebo specialistů na kybernetickou bezpečnost."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Právní a firemní kroky"
+    },
+    {
+      "type": "text",
+      "text": "Útok ransomwarem je trestný čin. Pokud jde o pracovní zařízení, musíte incident okamžitě nahlásit nadřízenému a IT bezpečnosti. V rámci EU (GDPR) může být firma povinna nahlásit únik osobních údajů dozorovému úřadu do 72 hodin. Nezkoušejte incident zamést pod koberec – následky úniku dat mohou být pro firmu likvidační, pokud se neřeší včas a transparentně."
+    }
+  ]
 }

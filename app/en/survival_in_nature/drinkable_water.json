@@ -2,7 +2,7 @@
   "name": "Obtaining drinking water",
   "description": "Methods of improvised filtration and disinfection of water in the wilderness.",
   "icon": "droplet",
-  "label": "Water",
+  "label": "Water filtration",
   "colorFrom": "#3b82f6",
   "colorTo": "#1d4ed8",
   "scenario": {

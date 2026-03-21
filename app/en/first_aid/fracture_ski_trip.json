@@ -2,7 +2,7 @@
   "name": "Treatment of a fracture during ski training",
   "description": "How to proceed when a limb fracture is suspected in mountainous conditions.",
   "icon": "snowflake",
-  "label": "PP",
+  "label": "Treating a fracture",
   "colorFrom": "#1e3a8a",
   "colorTo": "#38bdf8",
   "scenario": {

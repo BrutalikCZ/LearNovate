@@ -2,7 +2,7 @@
   "name": "Hand washing the car",
   "description": "How to properly wash a car by hand without damaging the paint.",
   "icon": "car",
-  "label": "Car wash",
+  "label": "Hand washing a car",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

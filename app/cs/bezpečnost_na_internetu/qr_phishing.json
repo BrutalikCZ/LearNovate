@@ -2,7 +2,7 @@
   "name": "QR phishing útok",
   "description": "Podvodné QR kódy vedoucí na falešné přihlašovací stránky nebo škodlivé weby.",
   "icon": "qr-code",
-  "label": "NET",
+  "label": "Ochrana před QR phishingem",
   "colorFrom": "#0f172a",
   "colorTo": "#f97316",
   "scenario": {
@@ -29,51 +29,51 @@
     ],
     "tutorial": "QR kódy mohou skrývat škodlivé odkazy. Nikdy nezadávej citlivé údaje bez ověření domény. Vždy používej oficiální aplikaci nebo web."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Quishing: Past ukrytá v černobílých čtvercích"
-  },
-  {
-    "type": "text",
-    "text": "QR kód je v podstatě jen vizuální zkratka pro URL adresu. Problém je, že lidským okem nepoznáte, kam kód vede, dokud ho naskenujete. Útočníci vylepují falešné QR kódy na parkovací automaty, zastávky nebo jídelní lístky v restauracích. Často jimi přelepují ty skutečné, oficiální kódy. Cíl je jednoduchý: dostat vás na podvodnou stránku, která z vás vytáhne údaje k platební kartě nebo přihlášení k e-mailu."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Jak poznat podvodný QR kód?"
-  },
-  {
-    "type": "text",
-    "text": "Před naskenováním a po něm sledujte tyto varovné signály:\n- **Fyzická manipulace:** Vypadá kód jako nálepka nalepená přes jiný kód? Jsou na plakátu vidět stopy po lepidle?\n- **Podezřelá URL:** Většina moderních telefonů vám před otevřením odkazu ukáže náhled adresy. Pokud vypadá jako shluk náhodných písmen (např. bit.ly/3xY8z) nebo komolí název známé firmy (např. 'ceska-posta-baliky.net'), okamžitě stop.\n- **Žádost o citlivá data:** Pokud po vás QR kód z nálepky na ulici chce heslo k bankovnictví nebo PIN ke kartě, je to na 99 % podvod."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Anatomie útoku: Scénář s balíčkem"
-  },
-  {
-    "type": "text",
-    "text": "Útočník využije psychologii očekávání. Mnoho lidí neustále čeká na nějaký balíček. Nápis 'Zkontrolujte stav zásilky' vyvolá zvědavost. Stránka, na kterou vás kód zavede, vypadá identicky jako web doručovací služby. Požadavek na 'doplatek za doručení' ve výši 20 Kč zní zanedbatelně, ale slouží k získání kompletních údajů o vaší kartě, kterou útočník následně vyčerpá."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Bezpečné skenování"
-  },
-  {
-    "type": "text",
-    "text": "Chraňte se jednoduchými pravidly:\n- **Neduveřujte kódům na veřejných místech:** Pokud potřebujete zaplatit parkovné nebo sledovat balík, najděte si oficiální aplikaci v App Store/Google Play nebo zadejte adresu ručně do prohlížeče.\n- **Používejte bezpečnou čtečku:** Některé bezpečnostní aplikace (např. od antivirových firem) kontrolují URL adresu v QR kódu v databázi škodlivých webů ještě předtím, než ji otevřou.\n- **Zkontrolujte certifikát (zámek):** I když má stránka HTTPS a ikonku zámku, neznamená to, že je bezpečná. Znamená to jen, že spojení je šifrované – útočník může mít certifikát na své falešné doméně."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Co dělat, když jste naskenovali?"
-  },
-  {
-    "type": "text",
-    "text": "Pokud jste kód naskenovali, ale nic nevyplnili, pravděpodobně jste v bezpečí (pokud web nezkusil stáhnout malware do telefonu). Pokud jste ale zadali kartu nebo heslo:\n1. Okamžitě zablokujte platební kartu v bankovní aplikaci.\n2. Změňte si hesla k účtům, která jste na webu zadali.\n3. Pokud se do telefonu stáhl nějaký soubor, neotevírejte ho a smažte ho.\n4. Pokud šlo o nálepku na veřejném místě, klidně ji strhněte nebo nahlaste obsluze, ať nenaletí další lidé."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Quishing: Past ukrytá v černobílých čtvercích"
+    },
+    {
+      "type": "text",
+      "text": "QR kód je v podstatě jen vizuální zkratka pro URL adresu. Problém je, že lidským okem nepoznáte, kam kód vede, dokud ho naskenujete. Útočníci vylepují falešné QR kódy na parkovací automaty, zastávky nebo jídelní lístky v restauracích. Často jimi přelepují ty skutečné, oficiální kódy. Cíl je jednoduchý: dostat vás na podvodnou stránku, která z vás vytáhne údaje k platební kartě nebo přihlášení k e-mailu."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Jak poznat podvodný QR kód?"
+    },
+    {
+      "type": "text",
+      "text": "Před naskenováním a po něm sledujte tyto varovné signály:\n- **Fyzická manipulace:** Vypadá kód jako nálepka nalepená přes jiný kód? Jsou na plakátu vidět stopy po lepidle?\n- **Podezřelá URL:** Většina moderních telefonů vám před otevřením odkazu ukáže náhled adresy. Pokud vypadá jako shluk náhodných písmen (např. bit.ly/3xY8z) nebo komolí název známé firmy (např. 'ceska-posta-baliky.net'), okamžitě stop.\n- **Žádost o citlivá data:** Pokud po vás QR kód z nálepky na ulici chce heslo k bankovnictví nebo PIN ke kartě, je to na 99 % podvod."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anatomie útoku: Scénář s balíčkem"
+    },
+    {
+      "type": "text",
+      "text": "Útočník využije psychologii očekávání. Mnoho lidí neustále čeká na nějaký balíček. Nápis 'Zkontrolujte stav zásilky' vyvolá zvědavost. Stránka, na kterou vás kód zavede, vypadá identicky jako web doručovací služby. Požadavek na 'doplatek za doručení' ve výši 20 Kč zní zanedbatelně, ale slouží k získání kompletních údajů o vaší kartě, kterou útočník následně vyčerpá."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bezpečné skenování"
+    },
+    {
+      "type": "text",
+      "text": "Chraňte se jednoduchými pravidly:\n- **Neduveřujte kódům na veřejných místech:** Pokud potřebujete zaplatit parkovné nebo sledovat balík, najděte si oficiální aplikaci v App Store/Google Play nebo zadejte adresu ručně do prohlížeče.\n- **Používejte bezpečnou čtečku:** Některé bezpečnostní aplikace (např. od antivirových firem) kontrolují URL adresu v QR kódu v databázi škodlivých webů ještě předtím, než ji otevřou.\n- **Zkontrolujte certifikát (zámek):** I když má stránka HTTPS a ikonku zámku, neznamená to, že je bezpečná. Znamená to jen, že spojení je šifrované – útočník může mít certifikát na své falešné doméně."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Co dělat, když jste naskenovali?"
+    },
+    {
+      "type": "text",
+      "text": "Pokud jste kód naskenovali, ale nic nevyplnili, pravděpodobně jste v bezpečí (pokud web nezkusil stáhnout malware do telefonu). Pokud jste ale zadali kartu nebo heslo:\n1. Okamžitě zablokujte platební kartu v bankovní aplikaci.\n2. Změňte si hesla k účtům, která jste na webu zadali.\n3. Pokud se do telefonu stáhl nějaký soubor, neotevírejte ho a smažte ho.\n4. Pokud šlo o nálepku na veřejném místě, klidně ji strhněte nebo nahlaste obsluze, ať nenaletí další lidé."
+    }
+  ]
 }

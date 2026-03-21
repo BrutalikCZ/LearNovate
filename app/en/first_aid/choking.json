@@ -2,7 +2,7 @@
   "name": "Treatment of foreign body choking",
   "description": "How to recognize and treat choking in an adult using the Heimlich maneuver and basic first aid.",
   "icon": "wind",
-  "label": "PP",
+  "label": "First aid for choking",
   "colorFrom": "#1f2937",
   "colorTo": "#ef4444",
   "scenario": {

@@ -2,7 +2,7 @@
   "name": "Setkání s medvědem",
   "description": "Správné chování při blízkém kontaktu s velkou šelmou v horách.",
   "icon": "panda",
-  "label": "Zvířata",
+  "label": "Setkání s medvědem",
   "colorFrom": "#a16207",
   "colorTo": "#422006",
   "scenario": {
@@ -11,78 +11,78 @@
     "objective": "Uživatel musí zvládnout situaci bez vyprovokování útoku.",
     "milestones": [
       {
-        "name": "Zastavení pohybu a vyhnutí se očnímu kontaktu (nekoukat do očí)", 
+        "name": "Zastavení pohybu a vyhnutí se očnímu kontaktu (nekoukat do očí)",
         "points": 150
       },
       {
-        "name": "Klidné mluvení hlubokým hlasem a pomalé zvednutí rukou (zvětšení siluety)", 
+        "name": "Klidné mluvení hlubokým hlasem a pomalé zvednutí rukou (zvětšení siluety)",
         "points": 100
       },
       {
-        "name": "Pomalé couvání zpět, bez otáčení se zády ke zvířeti", 
+        "name": "Pomalé couvání zpět, bez otáčení se zády ke zvířeti",
         "points": 200
       },
       {
-        "name": "Příprava na 'mrtvého brouka' (pokud medvěd zaútočí)", 
+        "name": "Příprava na 'mrtvého brouka' (pokud medvěd zaútočí)",
         "points": 50
       }
     ],
     "tutorial": "Nikdy neutíkej! Medvěd je rychlejší než kůň a útěk v něm spustí lovecký instinkt. Zůstaň stát, nedívej se mu přímo do očí (je to výzva), ale sleduj ho periferně. Začni klidně mluvit (hlubokým, vyrovnaným hlasem), aby věděl, že jsi člověk. Pomaloučku, bez prudkých pohybů, couvej zpět cestou, odkud jsi přišel. Pokud by medvěd zaútočil, lehni si na břicho, propleť prsty za krkem, chraň si obličej a dělej mrtvého brouka. Batoh nech na zádech, poslouží jako ochrana pátrače."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Medvědí psychologie: Proč se staví na zadní?"
-  },
-  {
-    "type": "text",
-    "text": "Když se medvěd postaví na zadní, většinou to není příprava k útoku, ale snaha získat lepší přehled. Medvědi mají slabší zrak, takže se snaží zachytit váš pach a identifikovat, co jste zač. V tuto chvíli nejste kořist, ale neznámý objekt. Klíčem k přežití je dokázat mu, že jste člověk a nejste pro něj hrozbou ani potravou."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Oční kontakt a řeč těla"
-  },
-  {
-    "type": "text",
-    "text": "V říši šelem znamená přímý pohled do očí výzvu k boji nebo agresi. Dívejte se proto mírně stranou, ale mějte medvěda stále v periferním vidění. Mluvte hlubokým, klidným a monotónním hlasem. Nekřičte – vysoký vřískavý hlas připomíná medvědovi zraněnou kořist a mohl by v něm probudit lovecký pud. Pomalu zvedněte ruce nad hlavu a zamávejte jimi, abyste vypadali větší, než ve skutečnosti jste."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Útěk je rozsudek"
-  },
-  {
-    "type": "text",
-    "text": "Nikdy, opravdu nikdy neutíkejte. Medvěd hnědý dokáže vyvinout rychlost přes 50 km/h a v členitém terénu nebo do kopce je neuvěřitelně obratný. Útěkem v něm spustíte instinkt predátora pronásledujícího kořist. Pokud medvěd stojí, pomalu couvejte zpět. Pokud se k vám začne přibližovat, zastavte a mluvte dál. Pokud se zastaví, znovu pomalu couvejte. Udržujte si přehled o terénu, abyste nezakopli."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Falešný výpad vs. skutečný útok"
-  },
-  {
-    "type": "text",
-    "text": "Medvědi často dělají takzvané falešné výpady (bluff charge). Rozběhnou se proti vám, dupou, funí, ale několik metrů před vámi se zastaví nebo prudce odbočí. Je to test vaší reakce. Pokud v tuto chvíli neutečete, medvěd často vyhodnotí, že nejste kořist, a odejde. Pokud však dojde k fyzickému kontaktu, stočte se do klubíčka na břicho, spojte ruce za krkem a snažte se zůstat nehybní. Batoh na zádech vám ochrání páteř a ledviny."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Bear Spray: Vaše nejlepší šance"
-  },
-  {
-    "type": "text",
-    "text": "Pokud nosíte sprej na medvědy, mějte ho vždy po ruce (v pouzdře na opasku nebo batohu), ne schovaný uvnitř. Účinný dosah je obvykle 5 až 10 metrů. Stříkejte v krátkých dávkách (2-3 sekundy) přímo do obličeje medvěda, ideálně mírně pod nos, aby vytvořený mrak zasáhl jeho sliznice. Sprej nezpůsobuje trvalé zranění, ale poskytne vám drahocenný čas na bezpečný ústup."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Kdy bojovat?"
-  },
-  {
-    "type": "text",
-    "text": "Existuje výjimka z pravidla mrtvého brouka: dravčí útok. Pokud vás medvěd delší dobu sleduje, plíží se za vámi nebo na vás zaútočí ve stanu uprostřed noci, nepovažuje vás za hrozbu, ale za jídlo. V takovém případě mrtvý brouk nefunguje. Musíte bojovat vším, co máte – bijte ho do citlivého čenichu, do očí, používejte kameny nebo klacky. V tomto scénáři jde o všechno."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Medvědí psychologie: Proč se staví na zadní?"
+    },
+    {
+      "type": "text",
+      "text": "Když se medvěd postaví na zadní, většinou to není příprava k útoku, ale snaha získat lepší přehled. Medvědi mají slabší zrak, takže se snaží zachytit váš pach a identifikovat, co jste zač. V tuto chvíli nejste kořist, ale neznámý objekt. Klíčem k přežití je dokázat mu, že jste člověk a nejste pro něj hrozbou ani potravou."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Oční kontakt a řeč těla"
+    },
+    {
+      "type": "text",
+      "text": "V říši šelem znamená přímý pohled do očí výzvu k boji nebo agresi. Dívejte se proto mírně stranou, ale mějte medvěda stále v periferním vidění. Mluvte hlubokým, klidným a monotónním hlasem. Nekřičte – vysoký vřískavý hlas připomíná medvědovi zraněnou kořist a mohl by v něm probudit lovecký pud. Pomalu zvedněte ruce nad hlavu a zamávejte jimi, abyste vypadali větší, než ve skutečnosti jste."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Útěk je rozsudek"
+    },
+    {
+      "type": "text",
+      "text": "Nikdy, opravdu nikdy neutíkejte. Medvěd hnědý dokáže vyvinout rychlost přes 50 km/h a v členitém terénu nebo do kopce je neuvěřitelně obratný. Útěkem v něm spustíte instinkt predátora pronásledujícího kořist. Pokud medvěd stojí, pomalu couvejte zpět. Pokud se k vám začne přibližovat, zastavte a mluvte dál. Pokud se zastaví, znovu pomalu couvejte. Udržujte si přehled o terénu, abyste nezakopli."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Falešný výpad vs. skutečný útok"
+    },
+    {
+      "type": "text",
+      "text": "Medvědi často dělají takzvané falešné výpady (bluff charge). Rozběhnou se proti vám, dupou, funí, ale několik metrů před vámi se zastaví nebo prudce odbočí. Je to test vaší reakce. Pokud v tuto chvíli neutečete, medvěd často vyhodnotí, že nejste kořist, a odejde. Pokud však dojde k fyzickému kontaktu, stočte se do klubíčka na břicho, spojte ruce za krkem a snažte se zůstat nehybní. Batoh na zádech vám ochrání páteř a ledviny."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bear Spray: Vaše nejlepší šance"
+    },
+    {
+      "type": "text",
+      "text": "Pokud nosíte sprej na medvědy, mějte ho vždy po ruce (v pouzdře na opasku nebo batohu), ne schovaný uvnitř. Účinný dosah je obvykle 5 až 10 metrů. Stříkejte v krátkých dávkách (2-3 sekundy) přímo do obličeje medvěda, ideálně mírně pod nos, aby vytvořený mrak zasáhl jeho sliznice. Sprej nezpůsobuje trvalé zranění, ale poskytne vám drahocenný čas na bezpečný ústup."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kdy bojovat?"
+    },
+    {
+      "type": "text",
+      "text": "Existuje výjimka z pravidla mrtvého brouka: dravčí útok. Pokud vás medvěd delší dobu sleduje, plíží se za vámi nebo na vás zaútočí ve stanu uprostřed noci, nepovažuje vás za hrozbu, ale za jídlo. V takovém případě mrtvý brouk nefunguje. Musíte bojovat vším, co máte – bijte ho do citlivého čenichu, do očí, používejte kameny nebo klacky. V tomto scénáři jde o všechno."
+    }
+  ]
 }

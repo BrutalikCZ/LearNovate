@@ -2,7 +2,7 @@
   "name": "Emergency descent",
   "description": "Techniques of improvised abseiling without a climbing seat and belay.",
   "icon": "arrow-down",
-  "label": "Ropes",
+  "label": "Improvised abseiling",
   "colorFrom": "#f87171",
   "colorTo": "#991b1b",
   "scenario": {

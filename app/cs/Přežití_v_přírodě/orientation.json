@@ -2,7 +2,7 @@
   "name": "Určení světových stran",
   "description": "Jak najít sever pomocí stínu nebo hodinek.",
   "icon": "compass",
-  "label": "Navigace",
+  "label": "Určení severu bez kompasu",
   "colorFrom": "#0ea5e9",
   "colorTo": "#0369a1",
   "scenario": {
@@ -11,65 +11,65 @@
     "objective": "Správně určit světové strany bez techniky.",
     "milestones": [
       {
-        "name": "Metoda stínu (zapíchnutý klacek a sledování pohybu stínu)", 
+        "name": "Metoda stínu (zapíchnutý klacek a sledování pohybu stínu)",
         "points": 150
       },
       {
-        "name": "Kontrola přírodních indicií (mech na stromech, mraveniště)", 
+        "name": "Kontrola přírodních indicií (mech na stromech, mraveniště)",
         "points": 50
       },
       {
-        "name": "Určení směru pochodu", 
+        "name": "Určení směru pochodu",
         "points": 100
       }
     ],
     "tutorial": "Zapíchni klacek do země a označ konec stínu. Počkej 15 minut a označ nový konec stínu. Spojnice tvoří osu východ-západ (první značka je západ). Přírodní indicie jako mech (často na severu) ber jen jako orientační, mohou být zavádějící kvůli místnímu mikroklimatu."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Navigace bez kompasu: Fyzika stínů"
-  },
-  {
-    "type": "text",
-    "text": "Slunce je nejspolehlivější navigátor. Pohybuje se po obloze od východu na západ (na severní polokouli přes jih). I když je pod mrakem, stíny stále existují. Metoda 'stínového kolíku' je nejpřesnější improvizovaná metoda určení světových stran bez hodinek. Čím delší časový úsek mezi měřeními zvolíte, tím přesnější výsledek dostanete."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Metoda stínového kolíku (Shadow Tip Method)"
-  },
-  {
-    "type": "text",
-    "text": "1. **První značka:** Zapíchněte do rovné země kolík (cca 1 m vysoký). Špičku jeho stínu označte kamenem nebo rýhou v zemi. Tato značka představuje VŽDY západní směr (protože slunce vychází na východě a vrhá stín na západ).\n2. **Čekání:** Počkejte 15–30 minut, dokud se stín neposune o několik centimetrů.\n3. **Druhá značka:** Označte novou polohu špičky stínu. Tato značka směřuje k východu.\n4. **Osa V-Z:** Spojte obě značky přímkou. To je vaše osa východ-západ. \n5. **Určení severu:** Postavte se tak, aby první značka byla po vaší levici a druhá po pravici. Nyní se díváte přímo na SEVER. Za vašimi zády je jih."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Metoda analogových hodinek"
-  },
-  {
-    "type": "text",
-    "text": "Pokud máte klasické hodinky s ručičkami (nebo si je dokážete představit), můžete určit jih: \n- Nasměrujte malou (hodinovou) ručičku přímo na slunce.\n- Úhel mezi malou ručičkou a číslicí 12 na ciferníku rozdělte přesně napůl. \n- Osa tohoto úhlu ukazuje na JIH. (Pozor: v době letního času se nepoužívá dvanáctka, ale číslice 1)."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Přírodní indicie: Mýty vs. realita"
-  },
-  {
-    "type": "text",
-    "text": "Přírodní znaky jsou pouze orientační a mohou být zavádějící. Nikdy se nespoléhejte jen na jeden!\n- **Mech:** Často roste na severní straně kmenů, protože tam je nejvíce vlhka a stínu. Ale pozor – v hlubokém lese může být mech všude nebo tam, kde je největší vlhkost (u potoka).\n- **Mraveniště:** Mravenci staví strmější stranu mraveniště směrem k severu a mírnější (osluněnou) stranu k jihu, aby zachytili co nejvíce tepla.\n- **Pařezy:** Letokruhy u osamocených pařezů bývají na severní straně hustší (blíže u sebe), zatímco na jižní straně jsou širší díky rychlejšímu růstu v teple.\n- **Osamocené stromy:** Hustší korunu a delší větve mívají stromy na jižní straně, kde mají více světla."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Technika udržování přímého směru"
-  },
-  {
-    "type": "text",
-    "text": "Bez orientačních bodů začnete nevědomky zatáčet (obvykle doprava, pokud jste praváci). \n- **Metoda tří bodů:** Vyberte si dva stromy v linii před sebou. Než dojdete k prvnímu, vyberte si třetí, který je s nimi v zákrytu. Tím udržíte dokonalou přímku.\n- **Zpětný pohled:** Pravidelně se otáčejte a dívejte se zpět na cestu, kterou jste přišli. Pomůže vám to uvědomit si, zda se neodchylujete, a poznat terén, pokud byste se museli vrátit."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigace bez kompasu: Fyzika stínů"
+    },
+    {
+      "type": "text",
+      "text": "Slunce je nejspolehlivější navigátor. Pohybuje se po obloze od východu na západ (na severní polokouli přes jih). I když je pod mrakem, stíny stále existují. Metoda 'stínového kolíku' je nejpřesnější improvizovaná metoda určení světových stran bez hodinek. Čím delší časový úsek mezi měřeními zvolíte, tím přesnější výsledek dostanete."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metoda stínového kolíku (Shadow Tip Method)"
+    },
+    {
+      "type": "text",
+      "text": "1. **První značka:** Zapíchněte do rovné země kolík (cca 1 m vysoký). Špičku jeho stínu označte kamenem nebo rýhou v zemi. Tato značka představuje VŽDY západní směr (protože slunce vychází na východě a vrhá stín na západ).\n2. **Čekání:** Počkejte 15–30 minut, dokud se stín neposune o několik centimetrů.\n3. **Druhá značka:** Označte novou polohu špičky stínu. Tato značka směřuje k východu.\n4. **Osa V-Z:** Spojte obě značky přímkou. To je vaše osa východ-západ. \n5. **Určení severu:** Postavte se tak, aby první značka byla po vaší levici a druhá po pravici. Nyní se díváte přímo na SEVER. Za vašimi zády je jih."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metoda analogových hodinek"
+    },
+    {
+      "type": "text",
+      "text": "Pokud máte klasické hodinky s ručičkami (nebo si je dokážete představit), můžete určit jih: \n- Nasměrujte malou (hodinovou) ručičku přímo na slunce.\n- Úhel mezi malou ručičkou a číslicí 12 na ciferníku rozdělte přesně napůl. \n- Osa tohoto úhlu ukazuje na JIH. (Pozor: v době letního času se nepoužívá dvanáctka, ale číslice 1)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Přírodní indicie: Mýty vs. realita"
+    },
+    {
+      "type": "text",
+      "text": "Přírodní znaky jsou pouze orientační a mohou být zavádějící. Nikdy se nespoléhejte jen na jeden!\n- **Mech:** Často roste na severní straně kmenů, protože tam je nejvíce vlhka a stínu. Ale pozor – v hlubokém lese může být mech všude nebo tam, kde je největší vlhkost (u potoka).\n- **Mraveniště:** Mravenci staví strmější stranu mraveniště směrem k severu a mírnější (osluněnou) stranu k jihu, aby zachytili co nejvíce tepla.\n- **Pařezy:** Letokruhy u osamocených pařezů bývají na severní straně hustší (blíže u sebe), zatímco na jižní straně jsou širší díky rychlejšímu růstu v teple.\n- **Osamocené stromy:** Hustší korunu a delší větve mívají stromy na jižní straně, kde mají více světla."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Technika udržování přímého směru"
+    },
+    {
+      "type": "text",
+      "text": "Bez orientačních bodů začnete nevědomky zatáčet (obvykle doprava, pokud jste praváci). \n- **Metoda tří bodů:** Vyberte si dva stromy v linii před sebou. Než dojdete k prvnímu, vyberte si třetí, který je s nimi v zákrytu. Tím udržíte dokonalou přímku.\n- **Zpětný pohled:** Pravidelně se otáčejte a dívejte se zpět na cestu, kterou jste přišli. Pomůže vám to uvědomit si, zda se neodchylujete, a poznat terén, pokud byste se museli vrátit."
+    }
+  ]
 }

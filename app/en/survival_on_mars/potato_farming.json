@@ -2,7 +2,7 @@
   "name": "Growing potatoes in a Martian colony",
   "description": "Food security using improvised hydroponics and biomass recycling in a closed system.",
   "icon": "sprout",
-  "label": "MARS",
+  "label": "Food security",
   "colorFrom": "#14532d",
   "colorTo": "#84cc16",
   "scenario": {

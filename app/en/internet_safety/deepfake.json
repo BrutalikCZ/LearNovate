@@ -2,7 +2,7 @@
   "name": "Deepfake fraud in online communication",
   "description": "Fraud detection using fake AI-generated voice or video.",
   "icon": "video",
-  "label": "NET",
+  "label": "Deepfake recognition",
   "colorFrom": "#1e1b4b",
   "colorTo": "#f97316",
   "scenario": {

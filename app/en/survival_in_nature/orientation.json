@@ -2,7 +2,7 @@
   "name": "Determining the sides of the world",
   "description": "How to find north using a shadow or a watch.",
   "icon": "compass",
-  "label": "Navigation",
+  "label": "Finding north",
   "colorFrom": "#0ea5e9",
   "colorTo": "#0369a1",
   "scenario": {

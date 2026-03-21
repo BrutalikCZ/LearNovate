@@ -2,7 +2,7 @@
   "name": "Oxygen generator failure",
   "description": "Critical situation when the oxygen production system fails in a closed colony.",
   "icon": "wind",
-  "label": "MARS",
+  "label": "Oxygen generator failure",
   "colorFrom": "#0f172a",
   "colorTo": "#ef4444",
   "scenario": {

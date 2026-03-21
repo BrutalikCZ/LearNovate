@@ -2,7 +2,7 @@
   "name": "Car battery replacement",
   "description": "How to properly replace a car battery and restore vehicle functionality.",
   "icon": "battery",
-  "label": "Car battery",
+  "label": "Replacing a car battery",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {

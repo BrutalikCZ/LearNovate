@@ -2,7 +2,7 @@
   "name": "Phishing email and account theft",
   "description": "How to recognize and deal with a phishing attack targeting credentials.",
   "icon": "mail-warning",
-  "label": "NET",
+  "label": "Phishing defense",
   "colorFrom": "#1e1b4b",
   "colorTo": "#ef4444",
   "scenario": {

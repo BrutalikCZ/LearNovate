@@ -2,7 +2,7 @@
   "name": "Escape from the swamp",
   "description": "How to get out of deep mud or bog without help.",
   "icon": "droplet",
-  "label": "Terrain",
+  "label": "Escaping a swamp",
   "colorFrom": "#65a30d",
   "colorTo": "#1a2e05",
   "scenario": {

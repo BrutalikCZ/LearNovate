@@ -2,7 +2,7 @@
   "name": "Ztráta kontroly nad online účtem",
   "description": "Postup při hacknutí účtu na sociální síti nebo e-mailu.",
   "icon": "user-lock",
-  "label": "NET",
+  "label": "Řešení hacknutého účtu",
   "colorFrom": "#0f172a",
   "colorTo": "#f59e0b",
   "scenario": {
@@ -29,60 +29,60 @@
     ],
     "tutorial": "Při převzetí účtu je nutné jednat rychle. Použij oficiální obnovu hesla. Odpoj všechna zařízení a změň heslo na silné a unikátní. Aktivuj dvoufaktorové ověření a zkontroluj nedávnou aktivitu."
   },
-"content": [
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "První pomoc: Závod s časem"
-  },
-  {
-    "type": "text",
-    "text": "Jakmile zjistíte, že se nemůžete přihlásit, okamžitě hledejte v e-mailu zprávu o změně hesla. Většina platforem (Meta, Google, Apple) posílá upozornění, které obsahuje odkaz 'To jsem nebyl já' nebo 'Zabezpečit účet'. Tento odkaz často funguje i poté, co útočník heslo změnil, a umožní vám proces zvrátit. Pokud tento e-mail nemáte, jděte přímo na oficiální stránku podpory pro napadené účty (např. facebook.com/hacked) a postupujte podle pokynů pro ověření identity."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Vykopnutí nezvaného hosta"
-  },
-  {
-    "type": "text",
-    "text": "Změna hesla je jen polovina vítězství. Útočník může být stále přihlášený přes aktivní relaci (token) ve svém prohlížeči nebo aplikaci. V nastavení zabezpečení účtu musíte najít sekci 'Aktivní zařízení' nebo 'Kde jste přihlášeni' a zvolit možnost 'Odhlásit ze všech zařízení'. Tím zajistíte, že útočník bude muset zadat nové heslo, které už (doufejme) nemá. Nezapomeňte také zkontrolovat propojené aplikace (např. hry nebo jiné weby přihlášené přes váš účet) a podezřelé přístupy odebrat."
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Čištění stop a kontrola škod"
-  },
-  {
-    "type": "text",
-    "text": "Hackeři často nemění jen heslo. Zkontrolujte, zda útočník nenastavil automatické přeposílání zpráv, nezměnil vaše telefonní číslo pro obnovu nebo nepřidal své vlastní zařízení jako důvěryhodné pro dvoufaktorové ověření. Projděte si také poslední příspěvky nebo zprávy – útočníci často rozesílají vašim kontaktům phishingové odkazy nebo prosby o peníze. Je slušností (a bezpečností) varovat své přátele, že váš účet byl dočasně kompromitován, aby na nic neklikali."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Proč se to stalo? Analýza útoku"
-  },
-  {
-    "type": "text",
-    "text": "Účet nikdo nehackne 'jen tak'. Zamyslete se, jak se k vám útočník dostal. Používali jste stejné heslo i jinde a došlo k úniku dat? Klikli jste na podezřelý odkaz v e-mailu? Máte v počítači malware? Pokud nezjistíte příčinu, útok se může brzy opakovat. Pokud jste měli stejné heslo i na jiných službách, považujte je všechny za ohrožené a okamžitě je změňte."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Zpevnění hradeb pro příště"
-  },
-  {
-    "type": "text",
-    "text": "Po obnovení přístupu okamžitě aktivujte dvoufaktorové ověření (2FA). Pokud je to možné, nepoužívejte SMS kódy, které lze podvrhnout (SIM swapping), ale raději autentizační aplikaci (Google Authenticator, Microsoft Authenticator) nebo fyzický bezpečnostní klíč. Vygenerujte si také 'obnovovací kódy' (Recovery Codes), vytiskněte je a schovejte na bezpečné místo mimo počítač. Jsou to vaše poslední zadní vrátka, pokud byste ztratili přístup k telefonu i e-mailu."
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Právní kroky a nahlášení"
-  },
-  {
-    "type": "text",
-    "text": "Pokud došlo k úniku citlivých dat, krádeži identity nebo finanční ztrátě, neváhejte kontaktovat Policii ČR. Screenshoty podezřelých zpráv, upozornění na přihlášení z cizích IP adres a potvrzení o změně údajů slouží jako důkazy. Digitální identita je dnes stejně důležitá jako ta fyzická, proto její ochranu nepodceňujte."
-  }
-]
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "První pomoc: Závod s časem"
+    },
+    {
+      "type": "text",
+      "text": "Jakmile zjistíte, že se nemůžete přihlásit, okamžitě hledejte v e-mailu zprávu o změně hesla. Většina platforem (Meta, Google, Apple) posílá upozornění, které obsahuje odkaz 'To jsem nebyl já' nebo 'Zabezpečit účet'. Tento odkaz často funguje i poté, co útočník heslo změnil, a umožní vám proces zvrátit. Pokud tento e-mail nemáte, jděte přímo na oficiální stránku podpory pro napadené účty (např. facebook.com/hacked) a postupujte podle pokynů pro ověření identity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vykopnutí nezvaného hosta"
+    },
+    {
+      "type": "text",
+      "text": "Změna hesla je jen polovina vítězství. Útočník může být stále přihlášený přes aktivní relaci (token) ve svém prohlížeči nebo aplikaci. V nastavení zabezpečení účtu musíte najít sekci 'Aktivní zařízení' nebo 'Kde jste přihlášeni' a zvolit možnost 'Odhlásit ze všech zařízení'. Tím zajistíte, že útočník bude muset zadat nové heslo, které už (doufejme) nemá. Nezapomeňte také zkontrolovat propojené aplikace (např. hry nebo jiné weby přihlášené přes váš účet) a podezřelé přístupy odebrat."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Čištění stop a kontrola škod"
+    },
+    {
+      "type": "text",
+      "text": "Hackeři často nemění jen heslo. Zkontrolujte, zda útočník nenastavil automatické přeposílání zpráv, nezměnil vaše telefonní číslo pro obnovu nebo nepřidal své vlastní zařízení jako důvěryhodné pro dvoufaktorové ověření. Projděte si také poslední příspěvky nebo zprávy – útočníci často rozesílají vašim kontaktům phishingové odkazy nebo prosby o peníze. Je slušností (a bezpečností) varovat své přátele, že váš účet byl dočasně kompromitován, aby na nic neklikali."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Proč se to stalo? Analýza útoku"
+    },
+    {
+      "type": "text",
+      "text": "Účet nikdo nehackne 'jen tak'. Zamyslete se, jak se k vám útočník dostal. Používali jste stejné heslo i jinde a došlo k úniku dat? Klikli jste na podezřelý odkaz v e-mailu? Máte v počítači malware? Pokud nezjistíte příčinu, útok se může brzy opakovat. Pokud jste měli stejné heslo i na jiných službách, považujte je všechny za ohrožené a okamžitě je změňte."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Zpevnění hradeb pro příště"
+    },
+    {
+      "type": "text",
+      "text": "Po obnovení přístupu okamžitě aktivujte dvoufaktorové ověření (2FA). Pokud je to možné, nepoužívejte SMS kódy, které lze podvrhnout (SIM swapping), ale raději autentizační aplikaci (Google Authenticator, Microsoft Authenticator) nebo fyzický bezpečnostní klíč. Vygenerujte si také 'obnovovací kódy' (Recovery Codes), vytiskněte je a schovejte na bezpečné místo mimo počítač. Jsou to vaše poslední zadní vrátka, pokud byste ztratili přístup k telefonu i e-mailu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Právní kroky a nahlášení"
+    },
+    {
+      "type": "text",
+      "text": "Pokud došlo k úniku citlivých dat, krádeži identity nebo finanční ztrátě, neváhejte kontaktovat Policii ČR. Screenshoty podezřelých zpráv, upozornění na přihlášení z cizích IP adres a potvrzení o změně údajů slouží jako důkazy. Digitální identita je dnes stejně důležitá jako ta fyzická, proto její ochranu nepodceňujte."
+    }
+  ]
 }

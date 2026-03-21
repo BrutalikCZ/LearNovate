@@ -2,7 +2,7 @@
   "name": "Zamčené klíče v autě",
   "description": "Jak bezpečně získat přístup do zamčeného auta bez jeho poškození.",
   "icon": "key-square",
-  "label": "Zamčené auto",
+  "label": "Odemčení zamčeného auta",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí bezpečně získat přístup do auta bez jeho poškození.",
     "milestones": [
       {
-        "name": "Zhodnocení situace a kontrola všech dveří", 
+        "name": "Zhodnocení situace a kontrola všech dveří",
         "points": 100
       },
       {
-        "name": "Použití dostupných nástrojů (např. klín, drát)", 
+        "name": "Použití dostupných nástrojů (např. klín, drát)",
         "points": 150
       },
       {
-        "name": "Otevření dveří bez poškození", 
+        "name": "Otevření dveří bez poškození",
         "points": 150
       },
       {
-        "name": "Prevence opakování situace", 
+        "name": "Prevence opakování situace",
         "points": 100
       }
     ],
