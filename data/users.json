@@ -1,5 +1,10 @@
 [
   {
+    "id": "mn02xoxizt83dtmv78s",
+    "email": "admin@a.com",
+    "username": "admin",
+    "passwordHash": "$2a$10$1CpcMj2nAS.vryqQM3PXx.r6MHIGVtlVvylraLcZ5jJoCfoCHSBJC",
+    "body": 0,
     "id": "mmzlz7aluytuf9vp41",
     "email": "dad.dad@dad.com",
     "username": "dad",
@@ -465,11 +470,13 @@
     "body": 50,
     "createdAt": "2026-03-21T07:32:54.784Z",
     "admin": true,
+    "createdAt": "2026-03-21T08:42:15.030Z",
     "currentStreak": 1,
     "lastLoginDate": "2026-03-21",
     "bestStreak": 1,
+    "achievements": [],
     "scenarios": {
-      "lighting_a_fire": {
+      "allergic_reaction_bee_sting": {
         "repetitions": 1,
         "best_milestones": 0
       },

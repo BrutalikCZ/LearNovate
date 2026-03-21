@@ -40,7 +40,7 @@ function applyTranslations() {
     if (attr) {
       el.setAttribute(attr, t(key));
     } else {
-      el.textContent = t(key);
+      el.innerHTML = t(key);
     }
   });
   document.documentElement.lang = currentLang;
