@@ -1,0 +1,88 @@
+{
+  "name": "Oxygen generator failure",
+  "description": "Critical situation when the oxygen production system fails in a closed colony.",
+  "icon": "wind",
+  "label": "MARS",
+  "colorFrom": "#0f172a",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "A decrease in oxygen in the habitat",
+    "setting": "During a routine night, the colony registers an alarm: the oxygen level is falling below the safe limit. The main electrolytic generator shows a fault and the secondary system does not have time to compensate for the loss.",
+    "objective": "The user must stabilize the oxygen system and prevent crew hypoxia.",
+    "milestones": [
+      {
+        "name": "Generator fault identification",
+        "points": 150
+      },
+      {
+        "name": "Activation of the backup oxygen circuit",
+        "points": 200
+      },
+      {
+        "name": "Limitation of oxygen consumption in the colony",
+        "points": 150
+      },
+      {
+        "name": "Restoring a stable O2 level",
+        "points": 200
+      }
+    ],
+    "tutorial": "In a closed environment, oxygen is a critical limiting factor. In the event of a drop, it is necessary to immediately activate backups and reduce consumption. Each delay increases the risk of crew hypoxia."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Oxygen balance: Seconds that matter"
+    },
+    {
+      "type": "text",
+      "text": "In the closed habitat on Mars, the biggest enemy is not the immediate lack of oxygen, but the accumulation of carbon dioxide (CO2). While the O2 level declines slowly, the CO2 concentration can reach toxic levels much sooner. The symptoms of hypoxia (lack of oxygen) are tell-tale: euphoria, confusion, and loss of judgment, making it impossible for the crew to rationally repair the malfunction. The first step is therefore to put on individual breathing masks connected to independent emergency reservoirs."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Water electrolysis and the MOXIE system"
+    },
+    {
+      "type": "text",
+      "text": "The main production of oxygen takes place through the electrolysis of mined water (decomposition of H2O into hydrogen and oxygen). The backup system MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) can extract oxygen directly from the 95% CO2 Martian atmosphere. However, this process is extremely energy-intensive and requires high operating temperatures of around 800°C. In case of failure of the main generator, it is necessary to immediately redirect all available energy from non-priority systems (scientific experiments, heating of non-sleeping modules) right here."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CO2 absorbers: LiOH and molecular sieves"
+    },
+    {
+      "type": "text",
+      "text": "If gas recycling fails, chemical cleaning begins. Lithium hydroxide (LiOH) canisters or alternating molecular sieves (zeolites) passively absorb CO2 from the indoor atmosphere. However, these resources are finite. In a critical situation, the crew must limit physical activity to a minimum - the metabolic consumption of oxygen during stress and movement rises up to five times the resting state. Sleep or guided meditation are legitimate survival techniques at this point."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Emergency sealing of sectors"
+    },
+    {
+      "type": "text",
+      "text": "In the event of a massive drop in pressure or air contamination, the habitat must be divided into independent sections. The crew retreats to the 'safe zone' (usually the central module with the strongest shielding), which has the smallest volume and is the easiest to maintain a breathable atmosphere. Other modules are disconnected from ventilation to prevent precious O2 from leaking into damaged parts of the station."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Botanical support: Greenhouse as a lung"
+    },
+    {
+      "type": "text",
+      "text": "If there is a functioning farm in the colony, the plants act as a biological filter. In crisis mode, the light intensity can be increased to the maximum (photosynthesis overstimulation) so that the plants produce more oxygen and absorb more CO2. However, this biomass cannot fully replace a mechanical generator, it serves only as a 'bumper' that will extend the repair time by precious hours."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Symptoms of CO2 poisoning"
+    },
+    {
+      "type": "text",
+      "text": "It is critical that the crew monitor each other's status. Headache, shortness of breath, visual disturbances and reddening of the skin are clear signs that filtration is failing. In such a case, it is necessary to immediately switch to pure oxygen from pressure cylinders, even at the cost of their rapid depletion. Without a clear head, the engineers won't fix the generator."
+    }
+  ]
+}

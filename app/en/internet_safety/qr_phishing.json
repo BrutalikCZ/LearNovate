@@ -1,0 +1,79 @@
+{
+  "name": "QR phishing attack",
+  "description": "Fraudulent QR codes leading to fake login pages or malicious websites.",
+  "icon": "qr-code",
+  "label": "NET",
+  "colorFrom": "#0f172a",
+  "colorTo": "#f97316",
+  "scenario": {
+    "title": "Fake QR code in a public place",
+    "setting": "At the bus stop you see a QR code with the inscription 'Check your package here'. After scanning, a login page will open that looks like a delivery service. The page requires entering personal data.",
+    "objective": "The user must recognize QR phishing and prevent sensitive data from being entered.",
+    "milestones": [
+      {
+        "name": "Challenge an unknown QR code",
+        "points": 150
+      },
+      {
+        "name": "Failure to enter personal data",
+        "points": 150
+      },
+      {
+        "name": "Service verification through official means",
+        "points": 200
+      },
+      {
+        "name": "Deleting a suspicious link",
+        "points": 50
+      }
+    ],
+    "tutorial": "QR codes can hide malicious links. Never enter sensitive information without domain verification. Always use the official app or website."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Quishing: A trap hidden in black and white squares"
+    },
+    {
+      "type": "text",
+      "text": "A QR code is basically just a visual abbreviation for a URL address. The problem is that you can't tell with the human eye where the code goes until you scan it. Attackers paste fake QR codes on parking meters, stops or menus in restaurants. They often paste over the real, official codes with them. The goal is simple: get you to a fraudulent page that will extract your credit card or email login details."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to recognize a fraudulent QR code?"
+    },
+    {
+      "type": "text",
+      "text": "Watch for these warning signs before and after scanning:\n- **Physical manipulation:** Does the code look like a sticker pasted over another code? Are there any traces of glue on the poster?\n- **Suspicious URL:** Most modern phones will show you a preview of the address before opening the link. If it looks like a bunch of random letters (eg bit.ly/3xY8z) or mumbles the name of a well-known company (eg 'ceska-posta-baliky.net'), stop immediately.\n- **Request for sensitive data:** If a QR code from a sticker on the street asks you for your banking password or card PIN, it's 99% a scam."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anatomy of an Attack: A Packaged Scenario"
+    },
+    {
+      "type": "text",
+      "text": "The attacker will use the psychology of expectation. Many people are constantly waiting for some package. The inscription 'Check the status of the shipment' will arouse curiosity. The page the code takes you to looks identical to the delivery service's website. The request for a 'surcharge for delivery' in the amount of 20 CZK sounds negligible, but it is used to obtain complete data about your card, which the attacker then uses."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Secure scanning"
+    },
+    {
+      "type": "text",
+      "text": "Protect yourself with simple rules:\n- **Don't trust codes in public places:** If you need to pay a parking fee or track a package, find the official app in the App Store/Google Play or enter the address manually in the browser.\n- **Use a secure reader:** Some security applications (e.g. from antivirus companies) check the URL address in the QR code against a database of malicious websites before opening it.\n- **Check the certificate (lock):** Even if a page has HTTPS and a lock icon, it doesn't mean it's secure. It just means that the connection is encrypted - the attacker can have a certificate on his fake domain."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What to do when you have scanned?"
+    },
+    {
+      "type": "text",
+      "text": "If you scanned the code but didn't fill in anything, you're probably safe (unless the site tried to download malware to your phone). But if you entered a card or password:\n1. Immediately block the payment card in the banking application.\n2. Change the account passwords you entered on the site.\n3. If any file has been downloaded to your phone, do not open it and delete it.\n4. If it was a sticker in a public place, feel free to tear it down or report it to the staff, so that other people don't attack."
+    }
+  ]
+}

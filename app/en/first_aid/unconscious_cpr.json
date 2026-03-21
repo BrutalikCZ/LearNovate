@@ -1,0 +1,92 @@
+{
+  "name": "Unconsciousness and CPR",
+  "description": "How to proceed in case of unconsciousness, respiratory arrest and perform cardiopulmonary resuscitation.",
+  "icon": "activity",
+  "label": "PP",
+  "colorFrom": "#0f172a",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Collapse in the park",
+    "setting": "While jogging in the park, you see a person lying on the ground. Does not respond to being addressed or shaken. He's not breathing normally, he's just grunting. There are other runners nearby.",
+    "objective": "The user must recognize unconsciousness with respiratory arrest and initiate resuscitation.",
+    "milestones": [
+      {
+        "name": "Checking consciousness and breathing",
+        "points": 100
+      },
+      {
+        "name": "Emergency call 155",
+        "points": 100
+      },
+      {
+        "name": "Initiating chest compressions",
+        "points": 250
+      },
+      {
+        "name": "Use of AED if available",
+        "points": 150
+      }
+    ],
+    "tutorial": "If unconscious, first check reaction and breathing. If the victim is not breathing normally, immediately call 155. Begin indirect heart massage - compress the center of the chest with a frequency of 100-120 compressions per minute to a depth of approximately 5-6 cm. Continue without interruption. If an AED is available, use it as soon as possible and follow the device's voice instructions."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognition of circulatory arrest"
+    },
+    {
+      "type": "text",
+      "text": "The key to survival is speed. If you find an unconscious person, you must find out if they are breathing within 10 seconds. Tilt the victim's head by pulling the chin up, put your ear to his mouth and look at his chest. If you can't feel the air flow, can't hear breathing or the chest is rising, the situation is critical. Watch out for so-called gasping – they look like the gasping of a fish on land. This is NOT normal breathing, but a sign of incipient circulatory arrest!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Activating the lifeline"
+    },
+    {
+      "type": "text",
+      "text": "If you are alone, put your phone on speakerphone and dial 155 (or the Emergency app) immediately. If there are people around, point to a specific person and clearly command them: 'You in the blue shirt, call 155 and get an AED!'. The operator of the emergency line will guide you step by step (so-called TANR - telephone-assisted emergency resuscitation). Never hang up the phone until the operator tells you to."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chest Compression Technique (CPR)"
+    },
+    {
+      "type": "text",
+      "text": "The patient must lie on a hard surface (not on a bed or couch). Kneel next to him, place the edge of your palm on the center of the sternum (between the nipples). Place the second palm on top of the first and interlace the fingers. Keep your arms bent at the elbows and your shoulders perpendicular to the victim's chest. Use your body weight, not just arm strength."
+    },
+    {
+      "type": "text",
+      "text": "The depth of compression must be 5-6 cm (for an adult), but not more than 6 cm. The frequency is 100-120 compressions per minute - the rhythm corresponds to the hit 'Stayin' Alive' by the Bee Gees. After each compression, relax the chest completely to allow the heart to fill with blood again, but do not remove the palms from the skin."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Artificial respiration - yes or no?"
+    },
+    {
+      "type": "text",
+      "text": "If you are not a trained rescuer or do not have a barrier device (mask), perform chest compressions ONLY. Continuous massage without interruption is crucial for the survival of an adult, because there is still enough oxygen in the blood for several minutes after the arrest. However, in children or those who are drowning (drowning), artificial respiration (30:2 ratio) is extremely important, because the cause of the arrest is lack of oxygen."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Automated External Defibrillator (AED)"
+    },
+    {
+      "type": "text",
+      "text": "An AED is an intelligent device that can 'restart' the heart with an electrical shock. Turn it on immediately when it arrives. The device speaks Czech and tells you exactly what to do. Stick the electrodes on the victim's bare chest according to the pictures on the packaging. Stop resuscitation only when the device is performing a rhythm analysis or when it gives a shock instruction ('Do not touch the patient!'). If the discharge is not recommended, continue the massage immediately."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When to stop?"
+    },
+    {
+      "type": "text",
+      "text": "Continue resuscitation until: 1. The patient is taken over by professional emergency services. 2. The affected person does not start to move, speak or open their eyes clearly. 3. Your complete physical exhaustion will not occur. If more people are present, take turns in the massage every 2 minutes to maintain the quality of compression."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Drowning in the pool",
+  "description": "First aid procedure for drowning and resuscitation after being pulled out of the water.",
+  "icon": "waves",
+  "label": "PP",
+  "colorFrom": "#0ea5e9",
+  "colorTo": "#1e3a8a",
+  "scenario": {
+    "title": "Summer swimming pool",
+    "setting": "At the swimming pool, you notice a child who does not move under the surface. The lifeguard pulls him out of the water, the child is unresponsive and not breathing normally. The surroundings are chaotic and noisy.",
+    "objective": "The user must recognize drowning and initiate CPR after being pulled from the water.",
+    "milestones": [
+      {
+        "name": "Ensuring safety and getting out of the water",
+        "points": 100
+      },
+      {
+        "name": "Checking consciousness and breathing",
+        "points": 100
+      },
+      {
+        "name": "Calling the emergency services",
+        "points": 100
+      },
+      {
+        "name": "Initiate CPR",
+        "points": 250
+      }
+    ],
+    "tutorial": "After being pulled from the water, check for consciousness and breathing. If the child is not breathing normally, immediately call 155 and start CPR. Compress the chest in a regular rhythm and continue without interruption until help arrives."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Drowning: Fighting for every molecule of oxygen"
+    },
+    {
+      "type": "text",
+      "text": "In drowning, the airways are blocked by water or the larynx spasms (laryngospasm). The result is an acute lack of oxygen (hypoxia), which leads to unconsciousness and subsequent cardiac arrest. Unlike a heart attack in adults, where there is still some oxygen in the blood, in a drowning person the oxygen debt is immediate and devastating to the brain."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The myth of pouring water from the lungs"
+    },
+    {
+      "type": "text",
+      "text": "Forget the movies. Never try to 'pour' water out of a drowning person by hanging him by his legs or squeezing his stomach. It is mostly water from the stomach that he could inhale into his lungs. There is usually little water in the lungs and it is absorbed by itself. Unnecessary handling only wastes precious seconds that should be devoted to resuscitation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specifics of CPR for drowning people (Rule of 5 breaths)"
+    },
+    {
+      "type": "text",
+      "text": "As it is the cause of asphyxiation, we need to give oxygen as soon as possible. \n1. **Open the airway:** Tilt your head and lift your chin. \n2. **5 initial breaths:** Unlike regular CPR, start with five breaths. For children, inhale only the volume of your mouth, for adults, exhale normally. Watch to see if the chest rises. \n3. **Heart massage:** If the victim does not start to move or breathe normally, continue with the rhythm of 30 compressions and 2 breaths (for children, lay people can keep the same ratio, professionals 15:2)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hypothermia and 'Wet Shock'"
+    },
+    {
+      "type": "text",
+      "text": "Water removes heat from the body very quickly. Even in summer, a drowning person can be severely hypothermic. After taking it out of the water, remove the wet clothes from it and wrap it in dry and isothermal foil. Paradoxically, hypothermia can protect the brain from damage from lack of oxygen, so never give up on resuscitation prematurely - paramedics have a saying: 'Nobody's dead until they're warm and dead'."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Secondary drowning"
+    },
+    {
+      "type": "text",
+      "text": "Attention! Even if a drowning person 'breathes' after being pulled from the water and appears to be fine, he is in danger of dying in the next 24 hours. Small amounts of inhaled water (especially chlorinated or salt water) can cause inflammation and swelling in the lungs (pulmonary oedema). Anyone who has inhaled water or shows signs of drowning must be transported to a hospital for observation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Lifeguard safety"
+    },
+    {
+      "type": "text",
+      "text": "Drowning in panic has tremendous power and can pull you under the surface. If you are not a trained lifeguard, try to give him a branch, throw a rope or a circle. Jump into the water only as a last resort and always try to have an object between you and the drowning person (float, board, T-shirt) that he can grab onto."
+    }
+  ]
+}

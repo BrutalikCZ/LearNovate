@@ -1,0 +1,84 @@
+{
+  "name": "Hand washing the car",
+  "description": "How to properly wash a car by hand without damaging the paint.",
+  "icon": "car",
+  "label": "Car wash",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Hand washing the car",
+    "setting": "The car is covered in mud and dirt after several days of rain. You decide to wash it by hand at home to keep the paint in the best possible condition.",
+    "objective": "The user must wash the car properly without damaging the paintwork.",
+    "milestones": [
+      {
+        "name": "Pre-wash the car with water",
+        "points": 100
+      },
+      {
+        "name": "Washing with a sponge and car shampoo",
+        "points": 150
+      },
+      {
+        "name": "Thorough rinsing and drying",
+        "points": 100
+      }
+    ],
+    "tutorial": "First, rinse the car with water to remove any coarse dirt that could scratch the paint. Use a special car shampoo and a soft sponge or glove. Wash the vehicle from top to bottom and rinse the sponge regularly. Finally, rinse the car thoroughly with clean water and dry it, ideally with a microfibre cloth, to avoid stains."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Two-Bucket Method: The Key to Success"
+    },
+    {
+      "type": "text",
+      "text": "This is the holy grail of hand washing. You need two buckets: in one you have water with car shampoo, in the other you have clean water for rinsing. Why? Because when you soak a dirty glove in shampoo, you wash away the sand and dirt into a clean mixture and then rub it back against the polish. With two buckets, you first wash the glove in clean water and only then apply clean shampoo. It is ideal to have a grid (Grid Guard) on the bottom of the buckets, which will keep the dirt at the bottom so that it does not swirl up."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pre-wash: The most important step"
+    },
+    {
+      "type": "text",
+      "text": "Never touch your car with a sponge until you have thoroughly rinsed it. Dust and mud act like sandpaper. It is best to use an active foam that loosens the dirt and lets it slide down. If you don't have foam, at least use a strong stream of water. Focus on the door sills and lower parts of the doors, where there is the most dirt. Only when the car is free of coarse dirt can you start with contact washing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Top down and no pressure"
+    },
+    {
+      "type": "text",
+      "text": "Physics doesn't budge - the most dirt is always at the bottom. Start with the roof, continue with the windows, hood and end with the bumpers and sills. This will ensure that the dirt flows to the parts that you haven't washed yet. Do not press on the washing glove or sponge. The task of a high-quality car shampoo is to create lubrication, thanks to which the glove slides over the paint. If you come across a dried insect, do not press, but let more shampoo work on the spot for a while."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Drying: Microfiber vs. dried drops"
+    },
+    {
+      "type": "text",
+      "text": "Water from the range contains minerals. If you let it dry on its own in the sun, white spots (so-called water spots) will remain on the paint, which do not go down well. Use a large, heavy duty microfiber drying towel. Just put the towel on the car and let it soak up the water, or lightly drag it over the surface. Avoid old t-shirts or rough rags, they are guaranteed to scratch the paint."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Watch out for bikes and chemicals"
+    },
+    {
+      "type": "text",
+      "text": "Always wash the wheels first or last, but definitely use a different sponge and a different bucket. Brake pad dust is extremely abrasive (contains metal particles). Also, forget spring or hand soap - these products degrease too much and strip your paint of protective waxes and oils, so the paint dulls sooner and starts to oxidize."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When and where to wash?"
+    },
+    {
+      "type": "text",
+      "text": "Golden rule: Never wash your car in direct sunlight or when the hood is hot. Both shampoo and water will dry before you can do anything, and you'll do more harm than good. Shade or early morning or late evening is ideal. The varnish should be cool to the touch."
+    }
+  ]
+}

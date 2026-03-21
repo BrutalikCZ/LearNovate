@@ -1,0 +1,88 @@
+{
+  "name": "Building a shed",
+  "description": "Simple housing type 'A' construction for protection from rain and wind.",
+  "icon": "tent",
+  "label": "Shelter",
+  "colorFrom": "#16a34a",
+  "colorTo": "#14532d",
+  "scenario": {
+    "title": "Night in the forest",
+    "setting": "You're lost in the woods and it's starting to rain. You have to build a dry place to sleep before it gets completely dark.",
+    "objective": "Build a stable and insulated shelter.",
+    "milestones": [
+      {
+        "name": "Choosing a safe place (watch out for dry branches overhead)",
+        "points": 50
+      },
+      {
+        "name": "Building a supporting structure from branches",
+        "points": 100
+      },
+      {
+        "name": "Roof covering (conifers, bark, leaves in thick layers)",
+        "points": 150
+      },
+      {
+        "name": "Creating floor insulation",
+        "points": 100
+      }
+    ],
+    "tutorial": "Find a sturdy tree or brush. Lean the main beam against it. Stack the ribs from the branches on it. The key to waterproofing is layering – start from the bottom up so the water runs down like roof tiles. Don't forget a thick layer of dry leaves underneath, the ground dissipates heat the fastest."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Survival Priority: Why Build First?"
+    },
+    {
+      "type": "text",
+      "text": "In survival, the 'rule of three' applies: without shelter and warmth in extreme conditions (rain, frost, wind) you can die after just 3 hours. The shelter is not only protection from the rain, but above all a tool for maintaining the body's microclimate. As soon as you get wet and the wind starts blowing, hypothermia occurs in a flash. Therefore, start construction early, ideally 2-3 hours before sunset."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Location Selection (The 'Widowmakers' Rule)"
+    },
+    {
+      "type": "text",
+      "text": "Before you start building, look above you. Look for 'widowmakers' - dry, broken branches hanging in the treetops that the wind could blow onto your shelter. Also avoid: \n1. **In the bottom of the valley and in the troughs:** This is where the coldest holds and there is a risk of flash flooding during rain.\n2. **Top of ridges:** You are exposed to wind and lightning.\n3. **Anthills and game trails:** You don't want to have uninvited guests at night."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Type 'A' Construction (Lean-to)"
+    },
+    {
+      "type": "text",
+      "text": "The basis is a strong and solid 'ridge bar' (beam), one end of which you lean against a tree trunk or a solid stump at waist height. The other end lies on the ground. \n- **Ribs:** Lean a dense row of smaller branches against the ridge bar at an angle of 45-60 degrees. \n- **Lattice:** Weave thinner twigs horizontally across these ribs. A net will be created that will hold the insulating material and prevent it from falling inside."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The secret to waterproofing: Layering from the bottom up"
+    },
+    {
+      "type": "text",
+      "text": "Use pine needles, leaves or bark as cover. The 'laying the bags' technique is key: start layering the material from the ground and work your way towards the ridge so that the top layer always overlaps the bottom layer. This will ensure that the water runs off the surface and does not flow inside. The layer of material must be at least 30-50 cm thick (the length of the forearm) so that it does not really get wet."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Isolation from the ground (Mattress)"
+    },
+    {
+      "type": "text",
+      "text": "Earth dissipates heat from the body up to 25 times faster than air. Sleeping on the bare ground in the rain is a sentence to hypothermia. Make a 'bed' of a thick layer of dry material (needles, grass, dry leaves). This layer should be at least 20 cm thick after laying down. If you have logs available, use them to create a frame that you fill with insulation to keep the moisture out."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Orientation against the wind"
+    },
+    {
+      "type": "text",
+      "text": "The rear wall of the shelter must face the prevailing wind. If it blows from the side, the shelter acts like a wind tunnel and you can't keep the heat inside. The entrance should face the fireplace (safely about 1.5-2 meters away), which will reflect the heat inside."
+    }
+  ]
+}

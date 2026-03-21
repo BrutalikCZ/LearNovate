@@ -1,0 +1,84 @@
+{
+  "name": "A call for help",
+  "description": "Visual and audible signaling for rescue teams and aircraft.",
+  "icon": "megaphone",
+  "label": "Rescue",
+  "colorFrom": "#ec4899",
+  "colorTo": "#9d174d",
+  "scenario": {
+    "title": "Location of rescuers",
+    "setting": "You hear a helicopter, but you're in the thick of it. You have to make yourself visible before they fly away.",
+    "objective": "Create a visible signal and attract attention.",
+    "milestones": [
+      {
+        "name": "Preparation of a signal fire with thick smoke",
+        "points": 150
+      },
+      {
+        "name": "Creating an SOS or X symbol in an open space",
+        "points": 100
+      },
+      {
+        "name": "Using a mirror or shiny object to signal",
+        "points": 150
+      }
+    ],
+    "tutorial": "For daily fire signaling, add fresh pine needles or grass to the fire for thick white smoke. On snow or sand, create a large SOS symbol from rocks or branches. The international distress signal is a triple of anything (three shots, three whistles on a whistle, three fires in a row)."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Rule of Three: The Universal Language of Emergency"
+    },
+    {
+      "type": "text",
+      "text": "In the wild, the number 3 is the international symbol for distress. Three fires in a row (or in a triangle), three whistle blows, three gunshots or three mirror flashes. If you hear a response in the form of two signals, it means that the rescuers have heard and located you. Take regular breaks between sets of signals to conserve energy and listen for a response."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Signal Fires: White vs. black"
+    },
+    {
+      "type": "text",
+      "text": "Fire is great at night, but smoke is key during the day. The color of the smoke must contrast with the surroundings:\n1. White smoke: You create it by adding fresh needles, wet leaves or grass to a burning fire. It's great to see against the dark forest.\n2. Black smoke: If you have rubber, plastic or oil available, you will create thick black smoke. The latter is best seen on snow or light sand.\nPrepare three piles of fuel well apart from each other, but have them ready to ignite immediately when you hear the plane."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Heliograph: The power of reflected light"
+    },
+    {
+      "type": "text",
+      "text": "A signal mirror (or any shiny object such as a knife, ash cap or CD) is the most effective daily tool. The flash can be seen for tens of kilometers. \nHow to Aim: Hold your hand out in front of you and form a 'V' with your fingers around the target (aircraft). Use the mirror to cast a glare over your fingers directly at the target. Do not stop signaling until you are sure the pilot can see you. Caution: never shine into the pilot's eyes for too long during the landing maneuver!"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Ground symbols for the Air Force"
+    },
+    {
+      "type": "text",
+      "text": "If you don't have a fire, make large symbols out of rocks, branches, or trampled snow in an open space. They must be as large as possible (at least 6 meters in length) and create a shadow so that they can be seen from above.\n- V: I need help (Require assistance).\n- X: I need medical assistance (Require medical assistance).\n- SOS: International call for help.\n- Arrow: The direction I took."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Body language for a helicopter"
+    },
+    {
+      "type": "text",
+      "text": "When the helicopter approaches you, communicate with your whole body:\n- YES (I need help): Raise both hands above your head in the shape of the letter 'Y' (Yes).\n- NO (I don't need help): Keep one hand down, raise the other diagonally up to form the letter 'N' (No).\nNever wave with just one hand (it can look like a greeting). Stand in a visible place, but be prepared for a strong air current from the rotor that can blow away your belongings or fire pit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sound signaling"
+    },
+    {
+      "type": "text",
+      "text": "Your voice quickly fades and gets tired in the forest. The whistle can be heard much further and requires a minimum of energy. If you don't have it, bang a rock against a rock or into a hollow tree. The sound of metal on metal or regular rhythmic blows to hardwood sound out of place in nature and immediately attract the attention of searchers."
+    }
+  ]
+}

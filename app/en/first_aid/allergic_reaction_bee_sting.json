@@ -1,0 +1,88 @@
+{
+  "name": "Anaphylactic reaction after an insect sting",
+  "description": "How to recognize and deal with a severe allergic reaction after a bee or wasp sting.",
+  "icon": "bug",
+  "label": "PP",
+  "colorFrom": "#064e3b",
+  "colorTo": "#f59e0b",
+  "scenario": {
+    "title": "A trip to the meadow",
+    "setting": "You are sitting in a meadow with a friend. A friend gets stung by a bee in the neck. Within minutes, he begins to swell, has difficulty breathing, and complains of chest pressure. He looks confused and starts to panic.",
+    "objective": "The user must recognize anaphylaxis, call for help and administer first aid, including the use of an auto-injector.",
+    "milestones": [
+      {
+        "name": "Recognizing an anaphylactic reaction",
+        "points": 100
+      },
+      {
+        "name": "Emergency call 155 immediately",
+        "points": 100
+      },
+      {
+        "name": "Administration of adrenaline (autoinjector)",
+        "points": 200
+      },
+      {
+        "name": "Storing in a suitable position and monitoring the status",
+        "points": 100
+      }
+    ],
+    "tutorial": "Anaphylaxis is a life-threatening condition. In case of swelling, shortness of breath or collapse, immediately call 155. If the victim has an adrenaline auto-injector, immediately apply it to the thigh. Place the person in a position that facilitates breathing and monitor their condition until help arrives."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anaphylaxis: When the immune system goes crazy"
+    },
+    {
+      "type": "text",
+      "text": "Anaphylactic shock is an extreme and life-threatening allergic reaction that affects the entire body. It's not just an itch or a rash. Within seconds to minutes, a massive release of histamine occurs, causing a sharp drop in blood pressure and swelling of the mucous membranes. If the swelling spreads to the throat and vocal cords, the victim can suffocate in an incredibly short time. The earlier the symptoms appear after the sting, the more dramatic the course tends to be."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to recognize an impending shock?"
+    },
+    {
+      "type": "text",
+      "text": "Watch for a combination of symptoms in different body systems:\n1. **Skin:** Hives, itching, swelling of the face, lips and tongue.\n2. **Respiration:** Hoarseness, wheezing, 'lumpy in throat' feeling, shortness of breath and cough.\n3. **Circulation:** Rapid and weak pulse, dizziness, feeling faint or sudden weakness.\n4. **Digestive Tract:** Abdominal cramps, vomiting or diarrhea.\nA sudden, inexplicable feeling of anxiety and fear of death (the so-called sense of doom) is also a warning sign."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "EpiPen: Life in your pocket"
+    },
+    {
+      "type": "text",
+      "text": "People with severe allergies carry an auto-injector with adrenaline. Adrenaline constricts blood vessels (increases pressure) and relaxes the muscles in the lungs (improves breathing). \n- **Where to stab:** ALWAYS on the outside of the thigh, even through clothing (except for thick seams or the contents of pockets).\n- **How ​​to do it:** Remove the safety cap, press the pen against your thigh until you hear a click, and hold it there for at least 10 seconds to allow the medicine to absorb. Then briefly massage the injection site.\n- **Caution:** After administration of adrenaline, the condition may temporarily improve, but the effect wears off after 15-20 minutes. Therefore, hospital care is NECESSARY even after successful administration of the drug."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Correct body position"
+    },
+    {
+      "type": "text",
+      "text": "Body position in anaphylaxis depends on the main problem: \n- **For shortness of breath:** Sitting position with back support makes breathing easier.\n- **If you feel faint (pressure drop):** The lying position with the lower limbs raised will help maintain blood flow to the brain.\n- **WARNING:** If the victim collapses and has low blood pressure, never let him stand or sit down sharply - a sudden collapse of blood circulation and cardiac arrest could occur."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stinging in the mouth or throat"
+    },
+    {
+      "type": "text",
+      "text": "If a bee stings a person in the tongue or the inside of the throat, there is a risk of suffocation due to swelling even without a general allergy. In this case, have the affected person suck on ice or drink very cold water in small sips to slow down the onset of swelling, and immediately call 155. Try to remove the sting by scratching it with your fingernail, never squeeze it with tweezers (you would squeeze the rest of the venom from the sac into the wound)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When adrenaline is not available"
+    },
+    {
+      "type": "text",
+      "text": "If the victim does not have the medicine with him, the only chance is to immediately call 155 and constantly monitor consciousness and breathing. If breathing stops, start CPR immediately. With anaphylaxis, breathing through the swollen airways can be very difficult, so focus mainly on quality heart massage."
+    }
+  ]
+}

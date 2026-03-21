@@ -1,0 +1,88 @@
+{
+  "name": "Harvesting water from Martian ice",
+  "description": "Extraction and purification of water from subsurface ice for the colony.",
+  "icon": "droplets",
+  "label": "MARS",
+  "colorFrom": "#0ea5e9",
+  "colorTo": "#1e3a8a",
+  "scenario": {
+    "title": "Expedition to the ice deposit",
+    "setting": "A robotic probe has discovered a deposit of water ice beneath the surface of Mars. You send a team in light vehicles to mine. Systems report unstable temperature and risk of dust contamination.",
+    "objective": "The user must safely extract the water and make it usable for the colony.",
+    "milestones": [
+      {
+        "name": "Finding and revealing the ice deposit",
+        "points": 150
+      },
+      {
+        "name": "Safe ice extraction",
+        "points": 200
+      },
+      {
+        "name": "Water filtration and decontamination",
+        "points": 200
+      },
+      {
+        "name": "Transport to the habitat without loss",
+        "points": 100
+      }
+    ],
+    "tutorial": "Water on Mars is often mixed with dust and chemical impurities. After ice extraction, filtration and conditioning is required before use. It is critical to prevent contamination of the closed water cycle of the colony."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Martian ice: More than just frozen water"
+    },
+    {
+      "type": "text",
+      "text": "On Mars, water occurs mainly in the form of subsurface ice or in the polar caps. However, this ice is trapped in the Martian regolith and is mixed with solid CO2 (dry ice) and toxic salts. Extraction is not just about digging, but about controlled sublimation and chemical separation in an extremely low-pressure environment where unprotected liquid water instantly turns to vapor."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Extraction technique: Rodin probe"
+    },
+    {
+      "type": "text",
+      "text": "The most effective method is the use of heat probes (Family Wells). A narrow well is drilled into the bearing, into which thermal energy (waste heat from a nuclear generator or microwaves) is injected. The ice below the surface melts and creates an underground reservoir of liquid water. This is then pumped to the surface before it has time to refreeze or sublimate into the thin atmosphere."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Perchlorates: The Invisible Killer"
+    },
+    {
+      "type": "text",
+      "text": "Martian dust contains high concentrations of perchlorates – salts that are toxic to humans (they destroy the thyroid gland) and corrosive to machines. Water obtained from ice must undergo multi-stage ion exchange and reverse osmosis. Without this decontamination, the water in the habitat's closed cycle would poison the entire crew and destroy the hydroponic systems within weeks."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Separation of isotopes and deuterium"
+    },
+    {
+      "type": "text",
+      "text": "Water on Mars has a different isotopic composition than that on Earth - it contains much more deuterium (heavy hydrogen). While this is not a problem for humans in small amounts, for scientific experiments and rocket fuel production, the precise separation of light and heavy hydrogen is a key technological process that determines the colony's self-sufficiency."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Transport and atmospheric release"
+    },
+    {
+      "type": "text",
+      "text": "Due to the low pressure (approx. 0.6% of Earth's pressure), water cannot be transported in open tanks. Transport modules must be heated and pressurized. Any leakage leads to the immediate boiling of water at low temperatures and the formation of ice fog, which can lead to the loss of valuable cargo and damage to the vehicle's optics."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Recycling: A closed circle"
+    },
+    {
+      "type": "text",
+      "text": "Every liter of water extracted from the ice must be recycled in the colony at over 98% efficiency. This includes cleaning urine, collecting atmospheric moisture from the crew's breath, and filtering waste water from grow modules. Ice mining is not for waste, but for supplementing the inevitable losses in the system and for the production of oxygen by electrolysis."
+    }
+  ]
+}

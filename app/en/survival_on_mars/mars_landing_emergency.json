@@ -1,0 +1,88 @@
+{
+  "name": "Crash landing on Mars",
+  "description": "The first hours after the landing of the capsule and stabilization of the crew in an unknown environment.",
+  "icon": "rocket",
+  "label": "MARS",
+  "colorFrom": "#7f1d1d",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Landing sequence failure",
+    "setting": "A colony has just landed on Mars. The lander landed hard outside the planned zone. One of the crew members is shaken, the pressure inside the cabin drops and the systems report unstable oxygen. Outside is an inhospitable red landscape and a dust storm in the distance.",
+    "objective": "The user must stabilize the crew, restore the basic life functions of the module and ensure a safe environment.",
+    "milestones": [
+      {
+        "name": "Check cabin integrity and leaks",
+        "points": 150
+      },
+      {
+        "name": "Stabilization of the oxygen system",
+        "points": 200
+      },
+      {
+        "name": "Ensuring the health of the crew",
+        "points": 100
+      },
+      {
+        "name": "Activation of the emergency signal of the base",
+        "points": 150
+      }
+    ],
+    "tutorial": "After a hard landing, it is crucial to first verify that the module is maintaining pressure. If not, immediately close the damaged sections and divert oxygen from the reserves. Then check the health of the crew and activate emergency contact with the base. Without stable pressure and oxygen, it is impossible to continue operations outside."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The first 60 seconds: Struggle with decompression"
+    },
+    {
+      "type": "text",
+      "text": "After a hard impact, the greatest enemy is a breach in structural integrity (cracks in the hull). The atmosphere of Mars has almost zero pressure, so even a small crack sucks out breathable air within minutes. If you hear a hissing sound, immediately activate the emergency seal or use quick-setting epoxy foams. If the leak is in another section, seal the hatches and sacrifice the damaged space to save the rest of the crew in the central module."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Atmospheric stabilization and partial pressure"
+    },
+    {
+      "type": "text",
+      "text": "If the primary tanks are damaged, the oxygen partial pressure may drop. The life support system (ECLSS) must switch to seat or space suit emergency canisters. Monitor nitrogen and oxygen levels - too high an O2 concentration increases the risk of fire in damaged wiring, while too low leads to hypoxia. If the automation fails, you must regulate the ventilation manually using bypass valves."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Triage under low gravity"
+    },
+    {
+      "type": "text",
+      "text": "The gravity on Mars (38% Earth's) changes the way the body responds to trauma. Internal bleeding or concussion manifests itself more aggressively after months in microgravity. The priority is fixation of the cervical spine and control of consciousness. Make sure no one suffers barotrauma to the lungs from the sudden change in pressure. If someone is in shock, keep them warm - the module's thermal insulation can be damaged and the Martian cold penetrates the walls in a flash."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Emergency communication and triangulation"
+    },
+    {
+      "type": "text",
+      "text": "If you landed outside the zone, the main antenna is probably damaged or misaligned. Activate an omnidirectional emergency beacon (ELT) that transmits a signal on the frequency of the orbital satellites. You must manually enter the last known coordinates from inertial navigation so that the rescue team knows in which sector to look for you. A dust storm on the horizon can block the signal, so every second of the broadcast before it arrives is critical."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Energy Management: Time vs. heat"
+    },
+    {
+      "type": "text",
+      "text": "The module's batteries may show a short circuit after impact. Turn off everything except life support and the walkie-talkie. The temperature outside drops to -60°C and without functional heaters the module's systems will soon 'freeze'. Take advantage of passive thermal protection and group in the smallest possible space to use body heat to keep critical electronics functional."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Preparing for 'Eve' (Exit)"
+    },
+    {
+      "type": "text",
+      "text": "Until the module is stable and the pressure equalized, no one is allowed to open the outer plenum. Dust from outside is toxic and abrasive. Ascend only after complete diagnostics of the spacesuits and only if the module is beyond repair or there is a risk of explosion of the fuel cells. Mars does not forgive errors of judgment under pressure."
+    }
+  ]
+}

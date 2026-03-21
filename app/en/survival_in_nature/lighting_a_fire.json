@@ -1,0 +1,88 @@
+{
+  "name": "Fire without matches",
+  "description": "How to start a fire using flint in difficult conditions.",
+  "icon": "fire",
+  "label": "Survival",
+  "colorFrom": "#f59e0b",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Making fire",
+    "setting": "The sun is setting, the temperature is dropping, and you're soaked after falling into a stream. You have to start a fire to prevent hypothermia. All you have is a flintlock and a knife.",
+    "objective": "The user must successfully start and maintain a fire.",
+    "milestones": [
+      {
+        "name": "Preparation of the dry base and insulation from the ground",
+        "points": 50
+      },
+      {
+        "name": "Collecting three stages of fuel (cinders, small twigs, logs)",
+        "points": 100
+      },
+      {
+        "name": "Drawing a spark into tinder",
+        "points": 200
+      },
+      {
+        "name": "Blowing and gradual application",
+        "points": 150
+      }
+    ],
+    "tutorial": "The basis is dry tinder (dry grass, birch bark). Prepare a place protected from the wind and isolate it from the wet ground with a layer of branches. Aim the flint directly at the tinder. As soon as smoke appears, gently blow into the fire. Add the thinnest twigs first and only after creating a stable heat add thicker wood."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Physics of Fire: The Burning Triangle"
+    },
+    {
+      "type": "text",
+      "text": "For a fire to burn, you need three things: fuel, heat (spark), and oxygen. If one is missing, the fire will end before it starts. In a wet forest, the greatest enemy is the moisture of the ground, which takes away the heat from the nascent fire. Therefore, always create a 'bed' of thick branches or bark that insulates your fire pit from the wet ground."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tinder: The heart of your fire"
+    },
+    {
+      "type": "text",
+      "text": "A spark from flint is over 2000 degrees Celsius, but it only lives for a fraction of a second. You need something to catch her. The best natural tinder is birch bark (it contains flammable oils and burns even when wet), dry grass, crushed dry wood or the inside of a dry reed. If you have a knife, scrape some magnesium filings from the flint directly into the tinder, it will make ignition much easier."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three stages of fuel"
+    },
+    {
+      "type": "text",
+      "text": "The most common mistake is to add large wood too soon. Have three stacks ready: \n1. Tinder: A fine material that catches from a spark. \n2. Kindling: Twigs as thin as a match or a pencil. \n3. Fuel: Thicker branches and logs. \nThe principle is simple: only add material as strong as the current flame. If the flame is 5 cm high, do not add a branch thicker than 5 cm."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Creasing technique"
+    },
+    {
+      "type": "text",
+      "text": "Do not scrape the flint slowly. Place the end of the stick directly against the tinder at a 45 degree angle. Slide the slider (or the back of the knife) sharply and forcefully down the stick. Try to make the sparks fall in one place. Once the tinder starts to smolder, gently and steadily blow on it. Oxygen turns the smolder into a flame. As soon as the fire appears, start carefully placing the thinnest twigs in the form of a pyramid (tepee)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Searching for dry wood in the rain"
+    },
+    {
+      "type": "text",
+      "text": "Even when it rains, there is still dry wood in the forest. Look for the lower dead branches of conifers that are protected by a dense canopy. Another option is to split a wet log - the inside of the wood is usually dry. Scrape from this dry inside fine shavings (so-called feather sticks), which catch very easily."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Security and maintenance"
+    },
+    {
+      "type": "text",
+      "text": "Always surround the fire pit with stones or dig a shallow hole to prevent the fire from spreading through the roots in the ground. If you need the fire to last all night without adding to it, use the 'self-feeding' fire technique or place two thick logs close together so that the embers glow between them. Before leaving, extinguish the fireplace thoroughly with water and cover it with clay. Remember: fire is a good servant but a bad master."
+    }
+  ]
+}

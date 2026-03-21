@@ -1,0 +1,88 @@
+{
+  "name": "Power outage in Martian colony",
+  "description": "Addressing a critical power system failure in a closed colony.",
+  "icon": "battery-off",
+  "label": "MARS",
+  "colorFrom": "#0f172a",
+  "colorTo": "#f59e0b",
+  "scenario": {
+    "title": "Night blackout in the habitat",
+    "setting": "A colony on Mars is in a night cycle. Suddenly there is a complete power outage. Heaters, air filtration and communication are switched off. The temperature is dropping fast and battery supplies are limited.",
+    "objective": "The user must restore basic power and prevent life systems from collapsing.",
+    "milestones": [
+      {
+        "name": "Switching to emergency battery sources",
+        "points": 200
+      },
+      {
+        "name": "Identification of power system failure",
+        "points": 150
+      },
+      {
+        "name": "Temperature stabilization in the habitat",
+        "points": 150
+      },
+      {
+        "name": "Restoration of minimal air filtration",
+        "points": 200
+      }
+    ],
+    "tutorial": "In the event of a power failure, the priority is to maintain pressure, temperature and breathable air. Immediately activate backup batteries and shut down non-essential systems. Then locate the fault in the main distribution and isolate the damaged circuit. Maintaining minimal air filtration is critical to crew survival."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Priority zero: Critical bus"
+    },
+    {
+      "type": "text",
+      "text": "As soon as the main power supply fails (e.g. from a solar array or a nuclear reactor), the automation must immediately switch to emergency batteries. However, they have a limited capacity. You have to activate the so-called 'Safe Mode', which disconnects everything except the critical bus: life support (ECLSS), basic sensors and emergency lighting. Forget about cooking, scientific instruments or recharging rovers. Every watt now has to go into CO2 filtration and pressure maintenance."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Thermal inertia: Combating hypothermia"
+    },
+    {
+      "type": "text",
+      "text": "A habitat on Mars is basically a giant thermos. Without active heating, the temperature drops at a rate of approx. 2-5 °C per hour, depending on the insulation. To prevent plumbing and electronics from freezing, the crew must perform 'heat sealing'. Close all internal hatches between modules and retreat to the smallest, best isolated space. The body heat of the crew and the remaining battery power concentrated in a single module can add precious hours to the repair time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Diagnostics: Dust, short circuit or reactor?"
+    },
+    {
+      "type": "text",
+      "text": "An outage can have three main causes:\n1. **Dust Accumulation:** The solar panels are covered with a layer of electrostatic Martian dust, which has reduced the charging below a critical limit.\n2. **Cascade Short:** Wiring damage (eg micrometeorite or vibration) knocked out the main inverters.\n3. **X-ray/reactor failure:** If the source is a nuclear generator, it may be a cooling circuit failure.\nThe first step is to isolate the damaged segment of the power grid to prevent the remaining batteries from discharging into the short circuit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Renewal of air filtration"
+    },
+    {
+      "type": "text",
+      "text": "Without electricity, the fans will stop. In the absence of air inside the module, a 'bubble' of exhaled CO2 begins to build up around your mouth, which can lead to suffocation even in a room full of oxygen. If there is no current for ventilation, the crew must move around to mechanically swirl the air or use hand pumps (if available). Restoring minimal circulation through CO2 absorbers is more important than lighting."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Dust storm and photovoltaics"
+    },
+    {
+      "type": "text",
+      "text": "If the cause of the blackout is a global dust storm, it could last for weeks. In this case, it is necessary to switch to the extreme energy-saving mode 'Hibernation'. The crew will limit movement, reduce the temperature in the habitat to a minimum (about 10°C) and hope that the piezoelectric vibrating cleaners or the wind will clean the panels enough for the batteries to survive the next day."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "System restart: Gradual loading"
+    },
+    {
+      "type": "text",
+      "text": "When restoring power, never turn everything on at once. An inrush current could throw off a freshly started system again. Start by heating up the batteries (so they can receive full current), then run atmospheric regeneration, thermal management, and last but not least, the communication field to report the status to Earth."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "Suspected stroke",
+  "description": "How to recognize a stroke and get help quickly using the FAST method.",
+  "icon": "brain",
+  "label": "PP",
+  "colorFrom": "#1e1b4b",
+  "colorTo": "#ef4444",
+  "scenario": {
+    "title": "Sudden weakness on the street",
+    "setting": "You are standing at a bus stop. An elderly man next to you suddenly drops his bag, his face droops to one side and he speaks unintelligibly. He appears confused and cannot raise his right arm.",
+    "objective": "The user must recognize the symptoms of a stroke and immediately activate the rescue system.",
+    "milestones": [
+      {
+        "name": "Recognizing symptoms (face drooping, weakness, speech)",
+        "points": 150
+      },
+      {
+        "name": "Immediate call 155",
+        "points": 150
+      },
+      {
+        "name": "Ensuring rest position and status monitoring",
+        "points": 100
+      },
+      {
+        "name": "Prohibition of food and drink",
+        "points": 50
+      }
+    ],
+    "tutorial": "When a stroke is suspected, time is of the essence. Use the FAST test (Face, Arms, Speech, Time). Immediately call 155. Place the victim in a semi-sitting or stable position, monitor consciousness and do not give anything to eat or drink."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Time is Brain: Why Every Minute Matters"
+    },
+    {
+      "type": "text",
+      "text": "A cerebrovascular accident (stroke) occurs either when an artery in the brain is blocked by a clot, or when it ruptures and bleeds. In both cases, brain cells begin to die extremely quickly—millions of them die every minute. The earlier the affected person gets to a specialized stroke center, the higher the chance of returning to normal life without permanent paralysis or loss of speech."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The FAST test – the key to rapid diagnosis"
+    },
+    {
+      "type": "text",
+      "text": "If you suspect a stroke, do these three tests right away. If even ONE of them is positive, don't wait for anything and act."
+    },
+    {
+      "type": "text",
+      "text": "1. **FACE:** Ask the person to smile or show their teeth. See if the smile is symmetrical. If one corner of the mouth hangs down or the face is motionless, this is a warning sign."
+    },
+    {
+      "type": "text",
+      "text": "2. **ARMS:** Ask him to put both hands on his forearms, palms down, and close his eyes. If one arm starts to drop, 'slips' to the side or the person does not raise it at all, this is a muscle weakness typical of a stroke."
+    },
+    {
+      "type": "text",
+      "text": "3. **SPEECH:** Ask a simple question (eg 'What's your name?') or ask him to repeat a simple sentence. A warning sign is slurring words, unintelligible 'mumbling', talking 'off track' or a complete inability to speak, even if the person understands."
+    },
+    {
+      "type": "text",
+      "text": "4. **TIME:** If you see any of these symptoms, immediately call 155. Write down the exact time when the symptoms started - this information is absolutely essential for the doctor to choose treatment."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First aid until the ambulance arrives"
+    },
+    {
+      "type": "text",
+      "text": "Keep the victim completely calm. If he is conscious, put him in a comfortable position with his head slightly supported (semi-sitting). If he starts to vomit or becomes unconscious but breathing, turn him to a stable position on his side to avoid choking on the vomit. Talk to him constantly and reassure him, even if he doesn't respond - he can hear you and panic will only make it worse."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Critical prohibitions (What to never do)"
+    },
+    {
+      "type": "text",
+      "text": "1. **Do not drink or eat:** A stroke often affects the swallowing muscles. Water or food could end up in the lungs and cause suffocation or severe pneumonia."
+    },
+    {
+      "type": "text",
+      "text": "2. **Do not give any medicine:** Never give aspirin or blood pressure medicine. As for a hemorrhagic stroke, aspirin would make things dramatically worse because it reduces blood clotting."
+    },
+    {
+      "type": "text",
+      "text": "3. **Don't let him 'sleep in':** People often think it's just tiredness. If the person falls asleep, you lose valuable time and their condition may silently deteriorate to an irreversible stage."
+    },
+    {
+      "type": "text",
+      "text": "4. **Don't drive yourself to the hospital:** The ambulance has the equipment to start care already in the ambulance and knows which hospital (stroke center) to take the patient to. Not every hospital has stroke treatment equipment."
+    }
+  ]
+}

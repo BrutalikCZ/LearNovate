@@ -1,0 +1,70 @@
+{
+  "name": "Locked keys in the car",
+  "description": "How to safely access a locked car without damaging it.",
+  "icon": "car",
+  "label": "Locked car",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Locked keys in the car",
+    "setting": "You stopped at an abandoned gas station and got out to stretch your legs. When you want to go back, you find that the keys have been locked inside the car and your phone is almost dead, so you have to solve the situation quickly.",
+    "objective": "The user must gain access to the car safely without damaging it.",
+    "milestones": [
+      {
+        "name": "Assessing the situation and checking all doors",
+        "points": 100
+      },
+      {
+        "name": "Use of available tools (e.g. wedge, wire)",
+        "points": 150
+      },
+      {
+        "name": "Opening the door without damage",
+        "points": 150
+      },
+      {
+        "name": "Prevention of recurrence of the situation",
+        "points": 100
+      }
+    ],
+    "tutorial": "First, check all doors, the trunk and possibly even the windows to see if any are accessible. If you have the right tools, you can carefully create a small gap between the door and the frame and try to open the lock. Be very careful not to damage the seal or paint. If you are not sure, it is safer to contact the help desk."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How it happens"
+    },
+    {
+      "type": "text",
+      "text": "Locking the keys in the car is a common problem that happens, for example, when exiting quickly or automatically locking the vehicle."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "First steps"
+    },
+    {
+      "type": "text",
+      "text": "Always check all entries into the vehicle first. Some doors or the trunk may remain unlocked."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Emergency opening"
+    },
+    {
+      "type": "text",
+      "text": "Using tools such as a wedge or wire can help open the door, but caution is required. Doing it wrong can damage the vehicle."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prevention"
+    },
+    {
+      "type": "text",
+      "text": "It is recommended to keep a spare key in a safe place or use modern keyless entry systems."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Engine oil change",
+  "description": "How to correctly check the engine oil level and top it up to the correct level.",
+  "icon": "car",
+  "label": "Engine oil",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Engine oil change",
+    "setting": "You are in the garage and you are about to start the car for a long trip. But before turning the key, you realize that you haven't checked the engine oil for a long time, which can fundamentally affect the engine's operation.",
+    "objective": "The user must measure the oil level correctly, add oil and then check the level again.",
+    "milestones": [
+      {
+        "name": "Oil level measurement (dipstick - pull out, wipe, reinsert and read)",
+        "points": 50
+      },
+      {
+        "name": "Topping up engine oil (proper opening of the cap, use of a funnel, gradual topping up)",
+        "points": 150
+      },
+      {
+        "name": "Check the oil level again after topping up",
+        "points": 50
+      }
+    ],
+    "tutorial": "First, park the car on a level surface and turn off the engine. Let it sit for at least 10-15 minutes to allow the oil to drain back into the tub. Open the hood and find the oil dipstick. Pull it out, wipe it dry, put it back in and pull it out again for an accurate measurement. If the level is below the minimum, open the filler cap and use the funnel. Add the oil in small portions and always wait until it runs down between each step. Continuously check the level until it is between the minimum and maximum. Never exceed the maximum. When finished, tightly close the cap and reinsert the dipstick."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Engine oil function"
+    },
+    {
+      "type": "text",
+      "text": "Engine oil lubricates the moving parts of the engine, reduces friction and prevents overheating. At the same time, it helps remove dirt and protects the engine from wear."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Level control"
+    },
+    {
+      "type": "text",
+      "text": "Correct measurement requires a flat surface and a cold or stopped engine. The dipstick must always be removed, wiped and reinserted for an accurate result."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Topping up the oil"
+    },
+    {
+      "type": "text",
+      "text": "The oil is added gradually in small portions to avoid overfilling. The use of a funnel minimizes the risk of spillage in the engine compartment."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Risks of incorrect level"
+    },
+    {
+      "type": "text",
+      "text": "A low oil level can cause serious engine damage, while a level that is too high can lead to excessive pressure and damage to seals or catalytic converters."
+    }
+  ]
+}
