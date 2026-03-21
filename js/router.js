@@ -156,7 +156,7 @@ function navigateToSubject(categoryId, subject) {
       window.showModal('login');
       return;
     }
-    startScenario(subject);
+    startScenario(state.currentSubject);  // state.currentSubject má categoryId spreaden dovnitř
   });
 
   lucide.createIcons({ nodes: main.querySelectorAll('[data-lucide]') });
@@ -471,15 +471,16 @@ function startScenario(subject) {
     }
   }
 
+  function rebuildStepDots() {
+    const bar = document.querySelector('.scenario-steps-bar');
+    if (!bar) return;
+    bar.innerHTML = Array.from({ length: MAX_MILESTONES }, (_, i) =>
+      `<div class="scenario-step-dot" id="stepDot-${i}"></div>`
+    ).join('');
+    stepsCount.textContent = `0 / ${MAX_MILESTONES}`;
+  }
+
   autoStart();
-}
-function rebuildStepDots() {
-  const bar = document.querySelector('.scenario-steps-bar');
-  if (!bar) return;
-  bar.innerHTML = Array.from({ length: MAX_MILESTONES }, (_, i) =>
-    `<div class="scenario-step-dot" id="stepDot-${i}"></div>`
-  ).join('');
-  stepsCount.textContent = `0 / ${MAX_MILESTONES}`;
 }
 
 export { navigateToSubject, navigateHome, toggleViewMode, initRouter };

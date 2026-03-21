@@ -13,7 +13,7 @@ function removeToken() { localStorage.removeItem('token'); }
 function setLoggedIn(user) {
   state.currentUser = user;
   document.getElementById('userBarName').textContent = user.username;
-  document.getElementById('userBarBody').textContent = `${user.body} ★`;
+  document.getElementById('userBarBody').textContent = user.body ? `${user.body} ★` : '';
   document.getElementById('userBar').classList.remove('hidden');
   document.getElementById('loginBtn').classList.add('hidden');
   lucide.createIcons({ nodes: document.getElementById('userBar').querySelectorAll('[data-lucide]') });

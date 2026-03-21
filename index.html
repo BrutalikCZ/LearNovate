@@ -1,170 +1,176 @@
 <!DOCTYPE html>
 <html lang="cs" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LearNovate — Interaktivní vzdělávací platforma</title>
-  <meta name="description" content="LearNovate je moderní vzdělávací platforma pro matematiku, programování a další obory. Učte se interaktivně s AI asistentem.">
+  <meta name="description"
+    content="LearNovate je moderní vzdělávací platforma pro matematiku, programování a další obory. Učte se interaktivně s AI asistentem.">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div class="app">
+  <div class="app">
 
-  <!-- ═══ TOP NAVBAR (STEAM STYLE) ═══ -->
-  <header class="top-navbar">
-    <div class="brand">
-      <img src="logo.svg" alt="LearNovate Logo" class="brand-logo">
-      <span class="brand-name">LEARNOVATION</span>
-    </div>
-  </header>
-
-  <div class="app-body">
-
-  <!-- ═══ SIDEBAR ═══ -->
-  <aside class="sidebar">
-
-
-
-    <!-- Top Controls -->
-    <div class="top-controls">
-
-      <!-- Row 1: Home + Grid/List Toggle -->
-      <div class="row1">
-        <div class="home-box" id="homeBox"><i data-lucide="home"></i><span>Domů</span></div>
-        <div class="grid-box icon-btn" id="gridBtn" title="Přepnout zobrazení mřížka/seznam"><i data-lucide="layout-grid"></i></div>
+    <!-- ═══ TOP NAVBAR (STEAM STYLE) ═══ -->
+    <header class="top-navbar">
+      <div class="brand">
+        <img src="logo.svg" alt="LearNovate Logo" class="brand-logo">
+        <span class="brand-name">LEARNOVATION</span>
       </div>
+    </header>
 
-      <!-- Row 2: Categories dropdown + Theme -->
-      <div class="row2">
-        <div class="dd-box" id="ddTrigger">
-          <span>Předměty a Kategorie</span>
-          <i data-lucide="chevron-down"></i>
-        </div>
-        <div class="grid-box" id="langBtn" title="Přepnout jazyk">
-          <i data-lucide="globe"></i>
-        </div>
-        <div class="grid-box" id="themeBtn" title="Přepnout téma">
-          <i data-lucide="sun"></i>
-        </div>
+    <div class="app-body">
 
-        <!-- Floating panel -->
-        <div class="dd-panel" id="ddPanel">
-          <!-- Populated dynamically by subjects.js -->
-        </div>
-      </div>
+      <!-- ═══ SIDEBAR ═══ -->
+      <aside class="sidebar">
 
-      <!-- Row 3: Search -->
-      <div class="row3">
-        <div class="search-box">
-          <div class="search-left">
-            <i data-lucide="search"></i>
-            <input class="search-input" id="searchInput" type="text" placeholder="Hledat předmět...">
+
+
+        <!-- Top Controls -->
+        <div class="top-controls">
+
+          <!-- Row 1: Home + Grid/List Toggle -->
+          <div class="row1">
+            <div class="home-box" id="homeBox"><i data-lucide="home"></i><span>Domů</span></div>
+            <div class="grid-box icon-btn" id="gridBtn" title="Přepnout zobrazení mřížka/seznam"><i
+                data-lucide="layout-grid"></i></div>
+          </div>
+
+          <!-- Row 2: Categories dropdown + Theme -->
+          <div class="row2">
+            <div class="dd-box" id="ddTrigger">
+              <span>Předměty a Kategorie</span>
+              <i data-lucide="chevron-down"></i>
+            </div>
+            <div class="grid-box" id="langBtn" title="Přepnout jazyk">
+              <i data-lucide="globe"></i>
+            </div>
+            <div class="grid-box" id="themeBtn" title="Přepnout téma">
+              <i data-lucide="sun"></i>
+            </div>
+
+            <!-- Floating panel -->
+            <div class="dd-panel" id="ddPanel">
+              <!-- Populated dynamically by subjects.js -->
+            </div>
+          </div>
+
+          <!-- Row 3: Search -->
+          <div class="row3">
+            <div class="search-box">
+              <div class="search-left">
+                <i data-lucide="search"></i>
+                <input class="search-input" id="searchInput" type="text" placeholder="Hledat předmět...">
+              </div>
+
+            </div>
           </div>
 
         </div>
+
+
+
+        <!-- Category List — dynamically populated from API -->
+        <div class="category-list" id="categoryList">
+          <!-- Will be populated by subjects.js -->
+        </div>
+
+        <!-- Shown when logged in -->
+        <div class="user-bar hidden" id="userBar">
+          <i data-lucide="user-circle" style="width:16px;height:16px;color:var(--text-dim);flex-shrink:0"></i>
+          <span class="user-bar-name" id="userBarName"></span>
+          <span class="user-bar-body" id="userBarBody"></span>
+          <span class="user-bar-logout" id="logoutBtn" title="Odhlásit se">
+            <i data-lucide="log-out"></i>
+          </span>
+        </div>
+
+        <!-- Shown when logged out -->
+        <button class="login-btn" id="loginBtn" onclick="showModal('login')">
+          <span>Přihlásit se / Registrovat</span>
+        </button>
+
+      </aside>
+
+      <!-- ═══ MAIN CONTENT — dynamically populated from API ═══ -->
+      <main class="main-content" id="mainContent">
+        <!-- Will be populated by subjects.js -->
+        <div class="loading-state">
+          <div class="loading-spinner"></div>
+          <span>Načítání předmětů...</span>
+        </div>
+      </main>
+
+    </div><!-- /.app-body -->
+
+  </div><!-- /.app -->
+
+
+  <!-- ═══ LOGIN MODAL ═══ -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box login">
+      <button class="modal-close-btn" onclick="hideModals()" title="Zavřít"><i data-lucide="x"></i></button>
+      <span class="modal-icon"><i data-lucide="user"></i></span>
+      <span class="modal-title">Přihlásit se</span>
+      <div class="modal-form">
+        <div class="modal-input">
+          <input id="loginEmail" type="email" placeholder="E-mailová adresa" autocomplete="email">
+        </div>
+        <div class="modal-input">
+          <input id="loginPassword" type="password" placeholder="Heslo" autocomplete="current-password">
+        </div>
       </div>
-
-    </div>
-
-
-
-    <!-- Category List — dynamically populated from API -->
-    <div class="category-list" id="categoryList">
-      <!-- Will be populated by subjects.js -->
-    </div>
-
-    <!-- Auth zone spacer + login -->
-    <div class="auth-zone"></div>
-
-    <!-- Shown when logged in -->
-    <div class="user-bar hidden" id="userBar">
-      <i data-lucide="user-circle" style="width:16px;height:16px;color:var(--text-dim);flex-shrink:0"></i>
-      <span class="user-bar-name" id="userBarName"></span>
-      <span class="user-bar-body" id="userBarBody"></span>
-      <span class="user-bar-logout" id="logoutBtn" title="Odhlásit se">
-        <i data-lucide="log-out"></i>
-      </span>
-    </div>
-
-    <!-- Shown when logged out -->
-    <button class="login-btn" id="loginBtn" onclick="showModal('login')">
-      <span>Přihlásit se / Registrovat</span>
-    </button>
-
-  </aside>
-
-  <!-- ═══ MAIN CONTENT — dynamically populated from API ═══ -->
-  <main class="main-content" id="mainContent">
-    <!-- Will be populated by subjects.js -->
-    <div class="loading-state">
-      <div class="loading-spinner"></div>
-      <span>Načítání předmětů...</span>
-    </div>
-  </main>
-
-  </div><!-- /.app-body -->
-
-</div><!-- /.app -->
-
-
-<!-- ═══ LOGIN MODAL ═══ -->
-<div class="modal-overlay" id="loginModal">
-  <div class="modal-box login">
-    <span class="modal-icon"><i data-lucide="user"></i></span>
-    <span class="modal-title">Přihlásit se</span>
-    <div class="modal-form">
-      <div class="modal-input">
-        <input id="loginEmail" type="email" placeholder="E-mailová adresa" autocomplete="email">
+      <p class="modal-error" id="loginError"></p>
+      <button class="modal-submit-btn" onclick="handleLogin()"><span>PŘIHLÁSIT SE</span></button>
+      <div class="modal-separator"></div>
+      <div class="modal-alt-box">
+        <span class="modal-alt-text">Ještě nemáte účet?</span>
+        <button class="modal-alt-btn" onclick="switchModal('register')"><span>VYTVOŘIT ÚČET</span></button>
       </div>
-      <div class="modal-input">
-        <input id="loginPassword" type="password" placeholder="Heslo" autocomplete="current-password">
-      </div>
-    </div>
-    <p class="modal-error" id="loginError"></p>
-    <button class="modal-submit-btn" onclick="handleLogin()"><span>PŘIHLÁSIT SE</span></button>
-    <div class="modal-separator"></div>
-    <div class="modal-alt-box">
-      <span class="modal-alt-text">Ještě nemáte účet?</span>
-      <button class="modal-alt-btn" onclick="switchModal('register')"><span>VYTVOŘIT ÚČET</span></button>
     </div>
   </div>
-</div>
 
-<!-- ═══ REGISTER MODAL ═══ -->
-<div class="modal-overlay" id="registerModal">
-  <div class="modal-box register">
-    <span class="modal-icon"><i data-lucide="user-plus"></i></span>
-    <span class="modal-title">Vytvořit nový účet</span>
-    <div class="modal-form">
-      <div class="modal-input">
-        <input id="regEmail" type="email" placeholder="E-mailová adresa" autocomplete="email">
+  <!-- ═══ REGISTER MODAL ═══ -->
+  <div class="modal-overlay" id="registerModal">
+    <div class="modal-box register">
+      <button class="modal-close-btn" onclick="hideModals()" title="Zavřít"><i data-lucide="x"></i></button>
+      <span class="modal-icon"><i data-lucide="user-plus"></i></span>
+      <span class="modal-title">Vytvořit nový účet</span>
+      <div class="modal-form">
+        <div class="modal-input">
+          <input id="regEmail" type="email" placeholder="E-mailová adresa" autocomplete="email">
+        </div>
+        <div class="modal-input">
+          <input id="regUsername" type="text" placeholder="Uživatelské jméno" autocomplete="username">
+        </div>
+        <div class="modal-input">
+          <input id="regPassword" type="password" placeholder="Heslo" autocomplete="new-password">
+        </div>
+        <div class="modal-input">
+          <input id="regConfirm" type="password" placeholder="Potvrzení hesla" autocomplete="new-password">
+        </div>
       </div>
-      <div class="modal-input">
-        <input id="regUsername" type="text" placeholder="Uživatelské jméno" autocomplete="username">
+      <p class="modal-error" id="registerError"></p>
+      <button class="modal-submit-btn" onclick="handleRegister()"><span>ZAREGISTROVAT SE</span></button>
+      <div class="modal-separator"></div>
+      <div class="modal-alt-box">
+        <span class="modal-alt-text">Již máte účet?</span>
+        <button class="modal-alt-btn" onclick="switchModal('login')"><span>PŘIHLÁSIT SE</span></button>
       </div>
-      <div class="modal-input">
-        <input id="regPassword" type="password" placeholder="Heslo" autocomplete="new-password">
-      </div>
-      <div class="modal-input">
-        <input id="regConfirm" type="password" placeholder="Potvrzení hesla" autocomplete="new-password">
-      </div>
-    </div>
-    <p class="modal-error" id="registerError"></p>
-    <button class="modal-submit-btn" onclick="handleRegister()"><span>ZAREGISTROVAT SE</span></button>
-    <div class="modal-separator"></div>
-    <div class="modal-alt-box">
-      <span class="modal-alt-text">Již máte účet?</span>
-      <button class="modal-alt-btn" onclick="switchModal('login')"><span>PŘIHLÁSIT SE</span></button>
     </div>
   </div>
-</div>
 
 
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-<script type="module" src="js/app.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script type="module" src="js/app.js"></script>
 </body>
+
 </html>
