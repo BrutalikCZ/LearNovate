@@ -37,4 +37,4 @@ Thumbs.db
 .vscode/
 .idea/
 
-users.json
+data/
