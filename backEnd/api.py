@@ -5,7 +5,7 @@ print("[API] ====== API.PY LOADED ======")
 
 import sys
 sys.stdout.reconfigure(line_buffering=True)
-
+from AI.configAI import get_client, load_system_prompt, load_chat_prompt
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from AI.configAI import get_client, load_system_prompt
@@ -33,6 +33,7 @@ JWT_SECRET = 'learnovate-dev-secret'
 try:
     _client = get_client()
     _system_prompt = load_system_prompt()
+    _chat_prompt = load_chat_prompt()
     _ai_ready = True
     print("[API] AI client initialized successfully.")
 except Exception as e:
@@ -41,6 +42,7 @@ except Exception as e:
     traceback.print_exc()
     _client = None
     _system_prompt = None
+    _chat_prompt = None
     _ai_ready = False
 
 
@@ -84,6 +86,7 @@ def health():
 
 
 @app.route('/ask', methods=['POST'])
+@app.route('/ask', methods=['POST'])
 def ask():
     if not _ai_ready:
         return jsonify({'error': 'AI client not initialized.'}), 503
@@ -109,27 +112,15 @@ def ask():
             log_message(user_id, conv_id, 'user', question, {'blocked': True, 'reason': input_reason})
         return jsonify({'answer': BLOCKED_INPUT_MSG, 'blocked': True, 'conv_id': conv_id})
 
-    # Start conversation if first message
     if user_id and not conv_id:
         conv_id = start_conversation(user_id, 'ask', {'subject': subject})
 
     if user_id and conv_id:
         log_message(user_id, conv_id, 'user', question)
 
-    # Build conversation input
-    # Load chat assistant prompt (separate from scenario prompt)
-    chat_prompt = {
-        'role': 'system',
-        'content': (
-            "Jsi přátelský AI asistent vzdělávací platformy LearNovate. "
-            "Pomáháš studentům pochopit učivo. Odpovídej stručně, jasně a v češtině. "
-            "Pokud dostaneš kontext předmětu, drž se tématu ale odpověz na cokoliv se student zeptá."
-        )
-    }
+    # Build conversation — use chat personality
+    conversation_input = [_chat_prompt]
 
-    conversation_input = [chat_prompt]
-
-    # Add subject context if available
     if subject_context:
         conversation_input.append({
             'role': 'user',
@@ -140,14 +131,12 @@ def ask():
             'content': 'Rozumím, mám kontext této lekce. Na co se chceš zeptat?'
         })
 
-    # Add conversation history
     for msg in history:
         conversation_input.append({
             'role': msg.get('role', 'user'),
             'content': msg.get('content', '')
         })
 
-    # Add current question
     conversation_input.append({'role': 'user', 'content': question})
 
     try:

@@ -19,6 +19,16 @@ print(f"[configAI] .env exists: {_env_path.exists()}")
 load_dotenv(dotenv_path=_env_path)
 
 
+def load_chat_prompt() -> dict:
+    prompt_path = Path(__file__).resolve().parent / "prompts" / "chatAssistant.json"
+    if not prompt_path.exists():
+        raise FileNotFoundError(
+            f"Chat prompt not found at: {prompt_path}. "
+            f"Platform: {sys.platform}"
+        )
+    with open(prompt_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 def get_client() -> OpenAI:
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
