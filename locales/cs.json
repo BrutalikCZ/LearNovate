@@ -56,5 +56,16 @@
   "lang_toggle_title": "Switch language / Přepnout jazyk",
   "theme_toggle_title": "Přepnout téma",
   "logout_title": "Odhlásit se",
-  "close_title": "Zavřít"
+  "close_title": "Zavřít",
+  "leaderboard": "Žebříček",
+  "profile": "Profil",
+  "level_label": "Úroveň",
+  "xp_label": "XP",
+  "streak_label": "Série",
+  "achievements_label": "Odměny",
+  "no_achievements": "Zatím žádné odměny.",
+  "scenarios_label": "Scénáře",
+  "total_xp": "Celkem XP",
+  "days_streak": "Dní v řadě",
+  "max_level": "MAX ÚROVEŇ"
 }

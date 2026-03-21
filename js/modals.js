@@ -34,7 +34,13 @@ function initModals() {
     });
   });
 
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideModals(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      hideModals();
+      document.getElementById('profileModal')?.classList.remove('open');
+      document.getElementById('leaderboardModal')?.classList.remove('open');
+    }
+  });
 }
 
 // Globally exposed for onclick attributes in HTML

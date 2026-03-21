@@ -4,6 +4,7 @@
 import { state } from './state.js';
 import { hideModals, showError, clearErrors_fn } from './modals.js';
 import { t } from './i18n.js';
+import { getLevelInfo, showAchievementToast, openProfileModal } from './gamification.js';
 
 // ── Token Helpers ────────────────────────────────────────────
 function getToken()    { return localStorage.getItem('token'); }
@@ -11,13 +12,56 @@ function setToken(tok) { localStorage.setItem('token', tok); }
 function removeToken() { localStorage.removeItem('token'); }
 
 // ── UI Helpers ───────────────────────────────────────────────
-function setLoggedIn(user) {
+function setLoggedIn(user, newlyUnlocked = []) {
   state.currentUser = user;
+  const info = getLevelInfo(user.body || 0);
+  const streak = user.currentStreak || 0;
+
   document.getElementById('userBarName').textContent = user.username;
-  document.getElementById('userBarBody').textContent = user.body ? `${user.body} ★` : '';
+  document.getElementById('userBarBody').textContent = `${user.body || 0} ★`;
+
+  // Level badge
+  let levelBadgeEl = document.getElementById('userBarLevel');
+  if (!levelBadgeEl) {
+    levelBadgeEl = document.createElement('span');
+    levelBadgeEl.id = 'userBarLevel';
+    levelBadgeEl.className = 'user-bar-level';
+    const body = document.getElementById('userBarBody');
+    body.parentNode.insertBefore(levelBadgeEl, body.nextSibling);
+  }
+  levelBadgeEl.textContent = `LVL ${info.current.level}`;
+
+  // Streak badge
+  let streakEl = document.getElementById('userBarStreak');
+  if (!streakEl) {
+    streakEl = document.createElement('span');
+    streakEl.id = 'userBarStreak';
+    streakEl.className = 'user-bar-streak';
+    const levelEl = document.getElementById('userBarLevel');
+    levelEl.parentNode.insertBefore(streakEl, levelEl.nextSibling);
+  }
+  if (streak > 0) {
+    streakEl.innerHTML = `<i data-lucide="flame"></i><span>${streak}</span>`;
+    streakEl.classList.remove('hidden');
+    lucide.createIcons({ nodes: streakEl.querySelectorAll('[data-lucide]') });
+  } else {
+    streakEl.classList.add('hidden');
+  }
+
   document.getElementById('userBar').classList.remove('hidden');
   document.getElementById('loginBtn').classList.add('hidden');
   lucide.createIcons({ nodes: document.getElementById('userBar').querySelectorAll('[data-lucide]') });
+
+  // Show achievement toasts for newly unlocked
+  if (newlyUnlocked && newlyUnlocked.length) {
+    newlyUnlocked.forEach((id, i) => {
+      setTimeout(() => showAchievementToast(id), i * 1200);
+    });
+  }
+}
+
+function updateUserBar(user, newlyUnlocked = []) {
+  setLoggedIn(user, newlyUnlocked);
 }
 
 function setLoggedOut() {
@@ -59,7 +103,7 @@ async function handleLogin() {
     if (!res.ok) { showError('loginError', data.error || t('err_login_failed')); return; }
 
     setToken(data.token);
-    setLoggedIn(data.user);
+    setLoggedIn(data.user, data.newlyUnlocked || []);
     hideModals();
     document.getElementById('loginEmail').value    = '';
     document.getElementById('loginPassword').value = '';
@@ -91,7 +135,7 @@ async function handleRegister() {
     if (!res.ok) { showError('registerError', data.error || t('err_register_failed')); return; }
 
     setToken(data.token);
-    setLoggedIn(data.user);
+    setLoggedIn(data.user, data.newlyUnlocked || []);
     hideModals();
     ['regEmail', 'regUsername', 'regPassword', 'regConfirm'].forEach(id => {
       document.getElementById(id).value = '';
@@ -112,6 +156,15 @@ function initAuth() {
     hideModals();
   });
 
+  // Click on username / avatar to open profile
+  const userBar = document.getElementById('userBar');
+  if (userBar) {
+    userBar.addEventListener('click', (e) => {
+      if (e.target.closest('#logoutBtn')) return;
+      if (state.currentUser) openProfileModal(state.currentUser);
+    });
+  }
+
   document.getElementById('loginPassword').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handleLogin();
   });
@@ -124,4 +177,4 @@ function initAuth() {
 window.handleLogin    = handleLogin;
 window.handleRegister = handleRegister;
 
-export { initAuth };
+export { initAuth, updateUserBar };

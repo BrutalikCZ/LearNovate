@@ -56,5 +56,16 @@
   "lang_toggle_title": "Switch language / Přepnout jazyk",
   "theme_toggle_title": "Toggle theme",
   "logout_title": "Log out",
-  "close_title": "Close"
+  "close_title": "Close",
+  "leaderboard": "Leaderboard",
+  "profile": "Profile",
+  "level_label": "Level",
+  "xp_label": "XP",
+  "streak_label": "Streak",
+  "achievements_label": "Achievements",
+  "no_achievements": "No achievements yet.",
+  "scenarios_label": "Scenarios",
+  "total_xp": "Total XP",
+  "days_streak": "Day Streak",
+  "max_level": "MAX LEVEL"
 }

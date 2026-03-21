@@ -32,6 +32,81 @@ function generateId() {
   return Date.now().toString(36) + Math.random().toString(36).slice(2);
 }
 
+// ── Gamification Helpers ──────────────────────────────────────
+const XP_THRESHOLDS = [0, 100, 250, 500, 900, 1400, 2000, 2800, 3800, 5000, 6500, 8500];
+
+function computeLevel(xp) {
+  let level = 1;
+  for (let i = XP_THRESHOLDS.length - 1; i >= 0; i--) {
+    if (xp >= XP_THRESHOLDS[i]) { level = i + 1; break; }
+  }
+  return level;
+}
+
+function updateStreak(user) {
+  const today = new Date().toISOString().split('T')[0];
+  const last = user.lastLoginDate;
+  if (last === today) return; // already updated today
+
+  if (last) {
+    const diffMs = new Date(today) - new Date(last);
+    const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+    if (diffDays === 1) {
+      user.currentStreak = (user.currentStreak || 0) + 1;
+    } else if (diffDays > 1) {
+      user.currentStreak = 1;
+    }
+  } else {
+    user.currentStreak = 1;
+  }
+  user.lastLoginDate = today;
+  if (!user.bestStreak || user.currentStreak > user.bestStreak) {
+    user.bestStreak = user.currentStreak;
+  }
+}
+
+function checkAndAwardAchievements(user) {
+  if (!user.achievements) user.achievements = [];
+  const total = Object.keys(user.scenarios || {}).length;
+  const streak = user.currentStreak || 0;
+  const body = user.body || 0;
+  const level = computeLevel(body);
+
+  const checks = [
+    { id: 'first_scenario', ok: total >= 1  },
+    { id: 'scenarios_5',    ok: total >= 5  },
+    { id: 'scenarios_20',   ok: total >= 20 },
+    { id: 'streak_3',       ok: streak >= 3 },
+    { id: 'streak_7',       ok: streak >= 7 },
+    { id: 'points_100',     ok: body >= 100  },
+    { id: 'points_500',     ok: body >= 500  },
+    { id: 'level_5',        ok: level >= 5   },
+  ];
+
+  const newlyUnlocked = [];
+  checks.forEach(({ id, ok }) => {
+    if (ok && !user.achievements.includes(id)) {
+      user.achievements.push(id);
+      newlyUnlocked.push(id);
+    }
+  });
+  return newlyUnlocked;
+}
+
+function publicUser(user) {
+  const totalScenarios = Object.keys(user.scenarios || {}).length;
+  return {
+    id: user.id,
+    email: user.email,
+    username: user.username,
+    body: user.body || 0,
+    currentStreak: user.currentStreak || 0,
+    bestStreak: user.bestStreak || 0,
+    achievements: user.achievements || [],
+    totalScenarios,
+  };
+}
+
 function authMiddleware(req, res, next) {
   const header = req.headers.authorization;
   if (!header) return res.status(401).json({ error: 'Chybí autorizační token.' });
@@ -77,14 +152,12 @@ app.post('/api/auth/register', async (req, res) => {
     createdAt: new Date().toISOString(),
   };
 
+  updateStreak(user);
   users.push(user);
   writeUsers(users);
 
   const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
-  res.status(201).json({
-    token,
-    user: { id: user.id, email: user.email, username: user.username, body: user.body },
-  });
+  res.status(201).json({ token, user: publicUser(user) });
 });
 
 // POST /api/auth/login
@@ -103,10 +176,15 @@ app.post('/api/auth/login', async (req, res) => {
   if (!valid)
     return res.status(401).json({ error: 'Nesprávný e-mail nebo heslo.' });
 
+  updateStreak(user);
+  const newlyUnlocked = checkAndAwardAchievements(user);
+  writeUsers(users);
+
   const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
   res.json({
     token,
-    user: { id: user.id, email: user.email, username: user.username, body: user.body },
+    user: publicUser(user),
+    newlyUnlocked,
   });
 });
 
@@ -115,7 +193,26 @@ app.get('/api/auth/me', authMiddleware, (req, res) => {
   const users = readUsers();
   const user  = users.find(u => u.id === req.user.id);
   if (!user) return res.status(404).json({ error: 'Uživatel nenalezen.' });
-  res.json({ id: user.id, email: user.email, username: user.username, body: user.body });
+  const newlyUnlocked = checkAndAwardAchievements(user);
+  if (newlyUnlocked.length) writeUsers(users);
+  res.json({ ...publicUser(user), newlyUnlocked });
+});
+
+// GET /api/gamification/leaderboard — top 10 users by XP
+app.get('/api/gamification/leaderboard', (req, res) => {
+  let currentId = null;
+  const authHeader = req.headers.authorization;
+  if (authHeader) {
+    try { currentId = jwt.verify(authHeader.replace('Bearer ', ''), JWT_SECRET).id; } catch {}
+  }
+
+  const users = readUsers();
+  const top = users
+    .map(u => ({ username: u.username, body: u.body || 0, isMe: u.id === currentId }))
+    .sort((a, b) => b.body - a.body)
+    .slice(0, 10);
+
+  res.json(top);
 });
 
 // ═══════════════════════════════════════════════════════════════

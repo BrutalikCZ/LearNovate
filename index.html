@@ -84,7 +84,7 @@
         </div>
 
         <!-- Shown when logged in -->
-        <div class="user-bar hidden" id="userBar">
+        <div class="user-bar hidden" id="userBar" title="Zobrazit profil" style="cursor:pointer">
           <i data-lucide="user-circle" style="width:16px;height:16px;color:var(--text-dim);flex-shrink:0"></i>
           <span class="user-bar-name" id="userBarName"></span>
           <span class="user-bar-body" id="userBarBody"></span>
@@ -96,6 +96,12 @@
         <!-- Shown when logged out -->
         <button class="login-btn" id="loginBtn" onclick="showModal('login')">
           <span data-i18n="login_register">Přihlásit se / Registrovat</span>
+        </button>
+
+        <!-- Leaderboard button -->
+        <button class="leaderboard-btn" onclick="openLeaderboardModal()">
+          <i data-lucide="trophy"></i>
+          <span data-i18n="leaderboard">Žebříček</span>
         </button>
 
       </aside>
@@ -168,6 +174,32 @@
     </div>
   </div>
 
+
+  <!-- ═══ PROFILE MODAL ═══ -->
+  <div class="modal-overlay gami-modal-overlay" id="profileModal" onclick="if(event.target===this)closeProfileModal()">
+    <div class="gami-modal">
+      <div class="gami-modal-header">
+        <span class="gami-modal-title" data-i18n="profile">Profil</span>
+        <button class="modal-close-btn" onclick="closeProfileModal()"><i data-lucide="x"></i></button>
+      </div>
+      <div class="gami-modal-body" id="profileModalContent">
+        <!-- populated by gamification.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ LEADERBOARD MODAL ═══ -->
+  <div class="modal-overlay gami-modal-overlay" id="leaderboardModal" onclick="if(event.target===this)closeLeaderboardModal()">
+    <div class="gami-modal gami-modal-lb">
+      <div class="gami-modal-header">
+        <span class="gami-modal-title"><i data-lucide="trophy" style="width:16px;height:16px;margin-right:6px;vertical-align:middle"></i><span data-i18n="leaderboard">Žebříček</span></span>
+        <button class="modal-close-btn" onclick="closeLeaderboardModal()"><i data-lucide="x"></i></button>
+      </div>
+      <div class="gami-modal-body" id="leaderboardContent">
+        <!-- populated by gamification.js -->
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script type="module" src="js/app.js"></script>

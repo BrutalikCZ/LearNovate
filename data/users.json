@@ -36,5 +36,15 @@
     "passwordHash": "$2a$10$V5ghj0xwpcPuh5uUTW1bD.Wjcw9dJ28ODDzyiS0y7g1ySWbWZmvPe",
     "body": 0,
     "createdAt": "2026-03-21T02:28:32.201Z"
+  },
+  {
+    "id": "mmzrwxk3g9e3al0k2wm",
+    "email": "gfdsfg@ghjkhjvjm.cz",
+    "username": "adgjrztýztgfdcv",
+    "passwordHash": "$2a$10$C5Yod0Jsa2/BzxlG.id97OsFgV4tKKebuMrESnQBGonxvtVn0/4Ya",
+    "body": 0,
+    "createdAt": "2026-03-21T03:33:43.779Z",
+    "currentStreak": 1,
+    "lastLoginDate": "2026-03-21"
   }
 ]

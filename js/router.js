@@ -4,6 +4,8 @@
 import { state } from './state.js';
 import { renderMainContent, renderSidebar } from './subjects.js';
 import { t } from './i18n.js';
+import { getLevelInfo, showXpFloat, launchConfetti, showLevelUpBanner, showAchievementToast } from './gamification.js';
+import { updateUserBar } from './auth.js';
 
 // ── Navigate to subject detail ──────────────────────────────
 function navigateToSubject(categoryId, subject) {
@@ -391,27 +393,65 @@ function startScenario(subject) {
     if (el) el.remove();
   }
 
-  function showMilestoneBanner() {
+  function showMilestoneBanner(pointsAwarded, multiplier) {
+    const pts = pointsAwarded || milestonePoints[milestonesCompleted - 1] || 0;
     const banner = document.createElement('div');
     banner.className = 'scenario-milestone-banner';
     banner.innerHTML = `
       <i data-lucide="check-circle"></i>
       <span>${t('milestone_completed', { n: milestonesCompleted, total: MAX_MILESTONES })}</span>
+      ${pts > 0 ? `<span class="milestone-pts-badge">+${pts} ★</span>` : ''}
     `;
     messagesEl.appendChild(banner);
     messagesEl.scrollTop = messagesEl.scrollHeight;
     lucide.createIcons({ nodes: banner.querySelectorAll('[data-lucide]') });
 
+    // Floating XP number
+    if (pts > 0) showXpFloat(pts, banner);
+
     setTimeout(() => banner.classList.add('fade-out'), 2500);
     setTimeout(() => banner.remove(), 3000);
+
+    // Refresh user bar with updated XP
+    setTimeout(async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+        const res = await fetch('/api/auth/me', { headers: { Authorization: `Bearer ${token}` } });
+        if (!res.ok) return;
+        const data = await res.json();
+        const oldXp = state.currentUser?.body || 0;
+        const newXp = data.body || 0;
+
+        const oldLevel = getLevelInfo(oldXp).current.level;
+        const newLevel = getLevelInfo(newXp).current.level;
+
+        state.currentUser = data;
+        updateUserBar(data, data.newlyUnlocked || []);
+
+        if (newLevel > oldLevel) {
+          showLevelUpBanner(getLevelInfo(newXp), messagesEl);
+        }
+        (data.newlyUnlocked || []).forEach((id, i) => {
+          setTimeout(() => showAchievementToast(id), i * 1200 + 400);
+        });
+      } catch {}
+    }, 800);
   }
 
   function showEndBanner() {
+    const isPerfect = milestonesCompleted >= MAX_MILESTONES;
+    if (isPerfect) launchConfetti();
+
+    const totalPts = milestonePoints.slice(0, milestonesCompleted).reduce((s, v) => s + (v || 0), 0);
+    const perfClass = isPerfect ? ' end-banner-perfect' : '';
+
     const banner = document.createElement('div');
-    banner.className = 'scenario-end-banner';
+    banner.className = `scenario-end-banner${perfClass}`;
     banner.innerHTML = `
-      <i data-lucide="flag"></i>
+      <i data-lucide="${isPerfect ? 'trophy' : 'flag'}"></i>
       <span>${t('scenario_completed', { n: milestonesCompleted, total: MAX_MILESTONES })}</span>
+      ${totalPts > 0 ? `<div class="end-xp-summary"><span class="end-xp-icon">★</span><span class="end-xp-val">+${totalPts} XP</span><span class="end-xp-label">získáno</span></div>` : ''}
       <div class="scenario-end-btns">
         <button class="scenario-retry-btn" id="scenarioRetryBtn">
           <i data-lucide="rotate-ccw"></i>

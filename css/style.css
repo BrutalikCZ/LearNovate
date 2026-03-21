@@ -309,7 +309,7 @@ button {
   flex-direction: column;
   gap: 6px;
   padding: 0 6px 6px;
-  overflow: visible;
+  overflow: hidden;
   transition: background 0.2s, border-color 0.2s;
 }
 
@@ -664,8 +664,9 @@ button {
 
 .cat-items {
   overflow: hidden;
-  max-height: 500px;
-  transition: max-height 0.25s ease;
+  max-height: 2000px;
+  flex-shrink: 0;
+  transition: max-height 0.35s ease;
 }
 
 .cat-items.collapsed {
@@ -2077,4 +2078,630 @@ button {
 
 .scenario-milestone-banner.fade-out {
   opacity: 0;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   GAMIFICATION SYSTEM
+   ════════════════════════════════════════════════════════════════ */
+
+/* ─── User Bar Badges ──────────────────────────────────────── */
+.user-bar-level {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(217 91% 70%) 100%);
+  color: #fff;
+  padding: 2px 7px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.user-bar-streak {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #f97316;
+  flex-shrink: 0;
+}
+
+.user-bar-streak svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ─── Leaderboard Button ───────────────────────────────────── */
+.leaderboard-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  height: 34px;
+  padding: 0 12px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.leaderboard-btn:hover {
+  background: var(--hover);
+  color: var(--text);
+  border-color: hsl(var(--primary) / 0.5);
+}
+
+.leaderboard-btn svg {
+  width: 14px;
+  height: 14px;
+  color: #f59e0b;
+}
+
+/* ─── Milestone Points Badge ───────────────────────────────── */
+.milestone-pts-badge {
+  font-size: 13px;
+  font-weight: 700;
+  color: #facc15;
+  margin-left: auto;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Floating XP Number ───────────────────────────────────── */
+@keyframes xpFloatAnim {
+  0%   { opacity: 1; transform: translate(-50%, 0) scale(1); }
+  60%  { opacity: 1; transform: translate(-50%, -60px) scale(1.15); }
+  100% { opacity: 0; transform: translate(-50%, -90px) scale(0.9); }
+}
+
+.xp-float {
+  position: fixed;
+  z-index: 99999;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: #facc15;
+  pointer-events: none;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+}
+
+.xp-float-active {
+  animation: xpFloatAnim 1.1s ease-out forwards;
+}
+
+/* ─── Confetti ─────────────────────────────────────────────── */
+@keyframes confettiDrop {
+  0%   { top: -20px; opacity: 1; transform: rotate(0deg) translateX(0); }
+  80%  { opacity: 1; }
+  100% { top: 105vh; opacity: 0; transform: rotate(720deg) translateX(40px); }
+}
+
+.confetti-particle {
+  position: fixed;
+  top: -20px;
+  z-index: 99998;
+  pointer-events: none;
+  animation: confettiDrop linear forwards;
+}
+
+/* ─── Level-Up Banner ──────────────────────────────────────── */
+@keyframes levelUpIn {
+  0%   { opacity: 0; transform: translateY(12px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.level-up-banner {
+  margin: 8px 0;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, hsl(217 91% 20%) 0%, hsl(217 91% 12%) 100%);
+  border: 1px solid hsl(var(--primary) / 0.6);
+  border-left: 4px solid var(--primary-color);
+  animation: levelUpIn 0.4s ease;
+  transition: opacity 0.5s ease;
+}
+
+.level-up-banner.level-up-fade {
+  opacity: 0;
+}
+
+.level-up-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.level-up-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--primary-color);
+}
+
+.level-up-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.level-up-title {
+  font-size: 11px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.12em;
+  color: var(--primary-color);
+}
+
+.level-up-sub {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+}
+
+/* ─── Achievement Toast ────────────────────────────────────── */
+@keyframes achToastIn {
+  0%   { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.achievement-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--primary-color);
+  box-shadow: var(--shadow-lg);
+  z-index: 99997;
+  min-width: 240px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.achievement-toast-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.achievement-toast-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.achievement-toast-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.achievement-toast-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.achievement-toast-name {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+}
+
+/* ─── Scenario End Banner — Perfect variant ────────────────── */
+.scenario-end-banner.end-banner-perfect {
+  border-top-color: #f59e0b;
+  background: linear-gradient(to bottom, hsl(38 92% 10%), var(--surface));
+}
+
+.scenario-end-banner.end-banner-perfect svg {
+  color: #f59e0b;
+}
+
+.end-xp-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: hsl(var(--primary) / 0.1);
+  border: 1px solid hsl(var(--primary) / 0.25);
+}
+
+.end-xp-icon {
+  font-size: 18px;
+  color: #facc15;
+}
+
+.end-xp-val {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary-color);
+}
+
+.end-xp-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ─── Gamification Modals ──────────────────────────────────── */
+.gami-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+}
+
+.gami-modal-overlay.open {
+  display: flex;
+}
+
+.gami-modal {
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  width: 440px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fadeIn 0.2s ease;
+  position: relative;
+}
+
+.gami-modal-lb {
+  width: 380px;
+}
+
+.gami-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 1;
+}
+
+.gami-modal-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.gami-modal-body {
+  padding: 20px;
+}
+
+/* ─── Profile Modal Content ────────────────────────────────── */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(217 91% 50%) 100%);
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-username {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+}
+
+.profile-level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.plb-num {
+  font-size: 11px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 2px 8px;
+  letter-spacing: 0.06em;
+}
+
+.plb-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.profile-streak {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: #f97316;
+  margin-left: auto;
+}
+
+.profile-streak svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ─── Profile XP Bar ───────────────────────────────────────── */
+.profile-xp-section {
+  margin-bottom: 20px;
+}
+
+.profile-xp-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.profile-xp-bar {
+  height: 8px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.profile-xp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), hsl(217 91% 75%));
+  transition: width 0.6s ease;
+  min-width: 4px;
+}
+
+/* ─── Profile Stats Grid ───────────────────────────────────── */
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.profile-stat {
+  background: var(--surface-alt);
+  border: 1px solid var(--border-color);
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.profile-stat-val {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+}
+
+.profile-stat-val.stat-streak {
+  color: #f97316;
+}
+
+.profile-stat-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ─── Achievements Section ─────────────────────────────────── */
+.profile-section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ach-count {
+  font-size: 11px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border-color);
+  padding: 1px 7px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+}
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.ach-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 6px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-alt);
+  cursor: default;
+  transition: transform 0.15s;
+}
+
+.ach-badge.unlocked {
+  background: color-mix(in srgb, var(--ach-color) 10%, var(--surface));
+  border-color: color-mix(in srgb, var(--ach-color) 40%, var(--border-color));
+}
+
+.ach-badge.unlocked:hover {
+  transform: translateY(-2px);
+}
+
+.ach-badge svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+}
+
+.ach-badge.unlocked svg {
+  color: var(--ach-color);
+}
+
+.ach-badge span {
+  font-size: 9px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.ach-badge.unlocked span {
+  color: var(--text-secondary);
+}
+
+.ach-badge.locked {
+  opacity: 0.45;
+}
+
+/* ─── Leaderboard ──────────────────────────────────────────── */
+.lb-loading {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.15s;
+}
+
+.lb-row:last-child {
+  border-bottom: none;
+}
+
+.lb-row.lb-me {
+  background: hsl(var(--primary) / 0.08);
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 3px solid var(--primary-color);
+}
+
+.lb-rank {
+  width: 36px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.lb-rank-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.lb-rank-num {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: 'Outfit', sans-serif;
+}
+
+.lb-user {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.lb-username {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lb-you-tag {
+  font-size: 11px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.lb-level {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.lb-xp {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.lb-xp-val {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary-color);
+}
+
+.lb-xp-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
 }
