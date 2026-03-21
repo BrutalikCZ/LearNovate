@@ -3,8 +3,8 @@
   "description": "Konstrukce jednoduchého obydlí typu 'A' pro ochranu před deštěm a větrem.",
   "icon": "tent",
   "label": "Úkryt",
-  "colorFrom": "#3f6212",
-  "colorTo": "#78350f",
+  "colorFrom": "#8B5CF6",
+  "colorTo": "#7C3AED",
   "scenario": {
     "title": "Noc v lese",
     "setting": "Ztratil jsi se v lese a začíná pršet. Musíš si postavit suché místo na spaní dříve, než se úplně setmí.",

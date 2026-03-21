@@ -3,8 +3,8 @@
   "description": "Jak bezpečně vyměnit prasklou pneumatiku za rezervní kolo na silnici nebo odpočívadle.",
   "icon": "car",
   "label": "Pneumatiky",
-  "colorFrom": "#1c1917",
-  "colorTo": "#facc15",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Výměna pneumatiky",
     "setting": "Jedeš po dálnici, když náhle pocítíš silné vibrace a vozidlo začne táhnout na jednu stranu. Zastavíš na odpočívadle a zjistíš, že jedna z pneumatik je prasklá, takže je nutné ji vyměnit. V kufru máš rezervní kolo, hever a klíč na kola.",

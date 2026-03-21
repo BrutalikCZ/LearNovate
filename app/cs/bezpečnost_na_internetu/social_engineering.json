@@ -3,8 +3,8 @@
   "description": "Jak rozpoznat manipulaci a pokus o získání citlivých údajů přes sociální sítě.",
   "icon": "users",
   "label": "Manipulace",
-  "colorFrom": "#3b0764",
-  "colorTo": "#f472b6",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Neznámý kontakt na sociální síti",
     "setting": "Na sociální síti ti píše neznámý účet, který se vydává za podporu platformy. Tvrdí, že tvůj účet byl kompromitován a požaduje ověření přes odkaz. Zprávy jsou naléhavé a obsahují výhrůžky zablokováním účtu.",

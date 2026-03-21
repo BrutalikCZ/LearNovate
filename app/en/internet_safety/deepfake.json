@@ -3,8 +3,8 @@
   "description": "Fraud detection using fake AI-generated voice or video.",
   "icon": "video",
   "label": "Deepfake",
-  "colorFrom": "#2e0249",
-  "colorTo": "#ff005c",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "A phone call from a \"colleague\" with an urgent request",
     "setting": "You receive a video call from a work colleague. He looks and sounds exactly like him, but he is asking you to transfer money to an unknown account immediately due to a supposed crisis situation. Communication is pressured and without time for verification.",

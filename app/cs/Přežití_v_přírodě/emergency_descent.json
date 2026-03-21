@@ -3,8 +3,8 @@
   "description": "Techniky improvizovaného slaňování bez lezeckého sedáku a jistítka.",
   "icon": "arrow-down",
   "label": "Slaňování",
-  "colorFrom": "#3f3f46",
-  "colorTo": "#fde047",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "Cesta dolů",
     "setting": "Uvízl jsi na skalní římse při sestupu z hory, cesta dál je neschůdná a hrozí pád. Jedinou možností je slanit deset metrů dolů na bezpečnou plošinu, ale nemáš sedák ani jistící pomůcky, jen statické lano. Slunce pálí, svaly se třesou vyčerpáním a ty musíš improvizovat, jinak riskuješ pád.",

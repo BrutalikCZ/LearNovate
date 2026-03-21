@@ -3,8 +3,8 @@
   "description": "Jak správně vyměnit žárovku světlometu a zajistit bezpečné osvětlení vozidla.",
   "icon": "lightbulb",
   "label": "Žárovka",
-  "colorFrom": "#0f172a",
-  "colorTo": "#fef08a",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Výměna žárovky světlometu",
     "setting": "Během noční jízdy si všimneš, že jedno z předních světel nesvítí. Zastavíš na bezpečném místě a rozhodneš se žárovku vyměnit, aby byla jízda opět bezpečná.",

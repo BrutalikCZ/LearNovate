@@ -3,8 +3,8 @@
   "description": "What to do if you suspect poisoning with cleaning agents or toxic fumes.",
   "icon": "flask-conical",
   "label": "Poisoning",
-  "colorFrom": "#1c1917",
-  "colorTo": "#facc15",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Cleaning the bathroom",
     "setting": "You clean the bathroom with a strong cleaner. A friend accidentally mixes two chemicals and a strong pungent odor is created. He starts coughing, his eyes water and complains of nausea.",

@@ -3,8 +3,8 @@
   "description": "Vizuální a zvuková signalizace pro záchranné týmy a letadla.",
   "icon": "megaphone",
   "label": "Pomoc",
-  "colorFrom": "#0369a1",
-  "colorTo": "#f97316",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Lokalizace záchranáři",
     "setting": "Slyšíš helikoptéru, ale jsi v hustém porostu. Musíš se zviditelnit dříve, než odletí pryč.",

@@ -3,8 +3,8 @@
   "description": "Extrakce a čištění vody z podpovrchového ledu pro kolonii.",
   "icon": "droplets",
   "label": "Pitná voda",
-  "colorFrom": "#7c2d12",
-  "colorTo": "#06b6d4",
+  "colorFrom": "#8B5CF6",
+  "colorTo": "#7C3AED",
   "scenario": {
     "title": "Expedice k ledovému ložisku",
     "setting": "Robotický průzkum objevil pod povrchem Marsu ložisko vodního ledu. Vysíláš tým v lehkých vozidlech k těžbě. Systémy hlásí nestabilní teplotu a riziko kontaminace prachem.",

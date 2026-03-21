@@ -3,8 +3,8 @@
   "description": "Visual and audible signaling for rescue teams and aircraft.",
   "icon": "megaphone",
   "label": "Help",
-  "colorFrom": "#0369a1",
-  "colorTo": "#f97316",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Location of rescuers",
     "setting": "You hear a helicopter, but you're in the thick of it. You have to make yourself visible before they fly away.",

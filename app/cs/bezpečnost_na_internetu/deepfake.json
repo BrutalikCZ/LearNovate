@@ -3,8 +3,8 @@
   "description": "Rozpoznání podvodu pomocí falešného hlasu nebo videa generovaného AI.",
   "icon": "video",
   "label": "Deepfake",
-  "colorFrom": "#2e0249",
-  "colorTo": "#ff005c",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Telefonát od „kolegy“ s naléhavou žádostí",
     "setting": "Přichází ti videohovor od kolegy z práce. Vypadá a zní přesně jako on, ale žádá tě o okamžitý převod peněz na neznámý účet kvůli údajné krizové situaci. Komunikace je tlaková a bez času na ověření.",

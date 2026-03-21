@@ -3,8 +3,8 @@
   "description": "Jak správně nabít autobaterii a obnovit její funkčnost.",
   "icon": "battery-charging",
   "label": "Autobaterie",
-  "colorFrom": "#831843",
-  "colorTo": "#84cc16",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Nabíjení autobaterie",
     "setting": "Auto dlouho stálo a baterie je vybitá. Máš k dispozici nabíječku.",

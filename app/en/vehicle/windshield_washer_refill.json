@@ -3,8 +3,8 @@
   "description": "How to properly add washer fluid and ensure a clear view from the vehicle.",
   "icon": "bubbles",
   "label": "Washer fluid",
-  "colorFrom": "#0c4a6e",
-  "colorTo": "#38bdf8",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Refilling the washer fluid",
     "setting": "While driving, you ran out of washer fluid and the windshield is heavily soiled, which limits visibility and impairs driving safety.",

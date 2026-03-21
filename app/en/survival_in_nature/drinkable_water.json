@@ -3,8 +3,8 @@
   "description": "Methods of improvised filtration and disinfection of water in the wilderness.",
   "icon": "droplet",
   "label": "Water filtration",
-  "colorFrom": "#14532d",
-  "colorTo": "#3b82f6",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "Rescue from dehydration",
     "setting": "You are without water for the second day. You found a standing pool, but the water looks murky and dangerous. You have to adjust it, otherwise you risk infection.",

@@ -3,8 +3,8 @@
   "description": "Zajištění potravy pomocí improvizované hydroponie a recyklace biomasy v uzavřeném systému.",
   "icon": "sprout",
   "label": "Potrava",
-  "colorFrom": "#713f12",
-  "colorTo": "#84cc16",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Založení první farmy",
     "setting": "Kolonie má omezené zásoby jídla a čeká na další zásobovací misi. Rozhodneš se využít recyklovaný organický materiál a vodní systém habitaty k založení první pěstební zóny. Skleněná kupole je slabě osvětlená a půda musí být vytvořena uměle.",

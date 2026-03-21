@@ -3,8 +3,8 @@
   "description": "Přežití při venkovní aktivitě (EVA) během náhlé marsovské prachové bouře.",
   "icon": "wind",
   "label": "Prachové bouře",
-  "colorFrom": "#451a03",
-  "colorTo": "#d97706",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Zastihnutí bouří při výstupu",
     "setting": "Během venkovní mise (EVA) na povrchu Marsu se náhle zvedne silná prachová bouře. Viditelnost klesá na minimum, komunikace se základnou je nestabilní a orientační systémy selhávají. Skafandr hlásí zvýšenou zátěž filtrů.",

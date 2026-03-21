@@ -3,8 +3,8 @@
   "description": "How to protect yourself when using an unsecured public Wi-Fi network.",
   "icon": "wifi-off",
   "label": "Public Wi-Fi",
-  "colorFrom": "#1e40af",
-  "colorTo": "#60a5fa",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Coffee in the cafe and public network",
     "setting": "You are sitting in a cafe and connect to public Wi-Fi without a password. You open e-mail and internet banking. Shortly after, the connection becomes unstable and the device reports an unknown login.",

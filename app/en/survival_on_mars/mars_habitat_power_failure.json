@@ -3,8 +3,8 @@
   "description": "Addressing a critical power system failure in a closed colony.",
   "icon": "battery-warning",
   "label": "Power outage",
-  "colorFrom": "#000000",
-  "colorTo": "#ef4444",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Night blackout in the habitat",
     "setting": "A colony on Mars is in a night cycle. Suddenly there is a complete power outage. Heaters, air filtration and communication are switched off. The temperature is dropping fast and battery supplies are limited.",

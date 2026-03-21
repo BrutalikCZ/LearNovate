@@ -3,8 +3,8 @@
   "description": "Jak najít sever pomocí stínu nebo hodinek.",
   "icon": "compass",
   "label": "Orientace",
-  "colorFrom": "#0f766e",
-  "colorTo": "#fbbf24",
+  "colorFrom": "#F97316",
+  "colorTo": "#EA580C",
   "scenario": {
     "title": "Ztracen v mlze",
     "setting": "Mobil je vybitý a hustá mlha ti znemožňuje vidět orientační body. Musíš určit, kde je sever, abys pokračoval správným směrem k civilizaci.",

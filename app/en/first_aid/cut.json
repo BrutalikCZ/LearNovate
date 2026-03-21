@@ -3,8 +3,8 @@
   "description": "How to properly stop bleeding, treat and bandage a cut in the field and at home.",
   "icon": "heart-pulse",
   "label": "Cut",
-  "colorFrom": "#334155",
-  "colorTo": "#ef4444",
+  "colorFrom": "#F43F5E",
+  "colorTo": "#E11D48",
   "scenario": {
     "title": "Treatment of a cut wound in the field",
     "setting": "You go hiking with a friend. You stop by the stream to rest. The friend reaches into his backpack, his hand slips on the broken glass from the bottle. A deep cut on the palm immediately begins to bleed profusely. The friend turns pale, holds his hand above his head and says, 'What now?' You have a first aid kit in your backpack.",

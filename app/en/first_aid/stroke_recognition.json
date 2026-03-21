@@ -3,8 +3,8 @@
   "description": "How to recognize a stroke and get help quickly using the FAST method.",
   "icon": "brain",
   "label": "Stroke",
-  "colorFrom": "#1e293b",
-  "colorTo": "#e11d48",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Sudden weakness on the street",
     "setting": "You are standing at a bus stop. An elderly man next to you suddenly drops his bag, his face droops to one side and he speaks unintelligibly. He appears confused and cannot raise his right arm.",

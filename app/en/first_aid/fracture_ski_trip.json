@@ -3,8 +3,8 @@
   "description": "How to proceed when a limb fracture is suspected in mountainous conditions.",
   "icon": "snowflake",
   "label": "Fracture",
-  "colorFrom": "#1e293b",
-  "colorTo": "#0284c7",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Ski training - falling on a slope",
     "setting": "You are on a ski course in the mountains. A friend hits an ice sheet while going downhill, loses his balance and hits his leg hard. You hear a crunch, your leg is twisted unnaturally and your friend screams in pain. The instructor is far down the slope.",

@@ -3,8 +3,8 @@
   "description": "Jak postupovat při podezření na otravu čisticími prostředky nebo toxickými výpary.",
   "icon": "flask-conical",
   "label": "Otrava",
-  "colorFrom": "#1c1917",
-  "colorTo": "#facc15",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Úklid koupelny",
     "setting": "Čistíš koupelnu silným čističem. Kamarád omylem smíchá dvě chemikálie a vznikne silný štiplavý zápach. Začíná kašlat, má slzící oči a stěžuje si na nevolnost.",

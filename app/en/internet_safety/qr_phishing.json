@@ -3,8 +3,8 @@
   "description": "Fraudulent QR codes leading to fake login pages or malicious websites.",
   "icon": "qr-code",
   "label": "QR phishing",
-  "colorFrom": "#000000",
-  "colorTo": "#22c55e",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "Fake QR code in a public place",
     "setting": "At the bus stop you see a QR code with the inscription 'Check your package here'. After scanning, a login page will open that looks like a delivery service. The page requires entering personal data.",

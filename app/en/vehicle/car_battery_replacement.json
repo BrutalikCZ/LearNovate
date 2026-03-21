@@ -3,8 +3,8 @@
   "description": "How to properly replace a car battery and restore vehicle functionality.",
   "icon": "battery",
   "label": "Battery",
-  "colorFrom": "#1e3a8a",
-  "colorTo": "#eab308",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Car battery replacement",
     "setting": "You are driving a car through the desert. Suddenly your lights went out and the engine went silent. The car stopped. You have everything you need in your suitcase.",

@@ -3,8 +3,8 @@
   "description": "Postup první pomoci při tonutí a resuscitaci po vytažení z vody.",
   "icon": "waves",
   "label": "Tonutí",
-  "colorFrom": "#1e3a8a",
-  "colorTo": "#38bdf8",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Letní koupaliště",
     "setting": "Na koupališti si všimneš dítěte, které se nehýbe pod hladinou. Plavčík ho vytahuje z vody, dítě nereaguje a nedýchá normálně. Okolí je chaotické a hlučné.",

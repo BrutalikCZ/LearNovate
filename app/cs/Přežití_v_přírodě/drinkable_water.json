@@ -3,8 +3,8 @@
   "description": "Metody improvizované filtrace a dezinfekce vody v divočině.",
   "icon": "droplet",
   "label": "Pitná voda",
-  "colorFrom": "#14532d",
-  "colorTo": "#3b82f6",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "Záchrana před dehydratací",
     "setting": "Jsi druhý den bez vody. Našel jsi stojatou tůň, ale voda vypadá kalně a nebezpečně. Musíš ji upravit, jinak riskněš infekci.",

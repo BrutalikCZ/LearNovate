@@ -3,8 +3,8 @@
   "description": "Jak rozpoznat a řešit těžkou alergickou reakci po bodnutí včelou nebo vosou.",
   "icon": "bug",
   "label": "První pomoc",
-  "colorFrom": "#064e3b",
-  "colorTo": "#f59e0b",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Výlet na louce",
     "setting": "Sedíš s kamarádem na louce. Kamaráda bodne včela do krku. Během minut začíná otékat, těžko se mu dýchá a stěžuje si na tlak na hrudi. Vypadá zmateně a začíná panikařit.",

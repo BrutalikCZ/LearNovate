@@ -3,8 +3,8 @@
   "description": "How to properly wash a car by hand without damaging the paint.",
   "icon": "car",
   "label": "Washing",
-  "colorFrom": "#1e40af",
-  "colorTo": "#22d3ee",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Hand washing the car",
     "setting": "The car is covered in mud and dirt after several days of rain. You decide to wash it by hand at home to keep the paint in the best possible condition.",

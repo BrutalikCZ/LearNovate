@@ -3,8 +3,8 @@
   "description": "Techniques of improvised abseiling without a climbing seat and belay.",
   "icon": "arrow-down",
   "label": "Abseiling",
-  "colorFrom": "#3f3f46",
-  "colorTo": "#fde047",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "The way down",
     "setting": "You are stuck on a rock ledge while descending the mountain, the way forward is impassable and there is a risk of falling. The only option is to abseil ten meters down to a safe platform, but you have no seat or safety devices, only a static rope. The sun is burning, your muscles are shaking with exhaustion and you have to improvise or you risk falling.",

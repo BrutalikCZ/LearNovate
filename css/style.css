@@ -960,6 +960,7 @@ button {
   position: relative;
   overflow: hidden;
   border: 1px solid var(--border-color);
+  container-type: inline-size;
 }
 
 .subject-card:hover {
@@ -976,9 +977,14 @@ button {
 
 .subject-card-label {
   color: #ffffff;
-  font-size: 24px;
+  font-size: clamp(14px, 14cqi, 20px);
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.2;
+  padding: 0 8px;
+  max-width: 100%;
 }
 
 .subject-card-name {
@@ -1015,6 +1021,7 @@ button {
   font-size: 16px;
   letter-spacing: 1px;
   min-width: 50px;
+  text-align: left;
 }
 
 .subject-grid.list-view .subject-card-name {
@@ -2018,9 +2025,7 @@ button {
     height: 32px;
   }
 
-  .subject-card-label {
-    font-size: 20px;
-  }
+
 
   .subject-detail-chat {
     display: none;

@@ -3,8 +3,8 @@
   "description": "How to properly replace a headlight bulb and ensure safe vehicle lighting.",
   "icon": "lightbulb",
   "label": "Bulb",
-  "colorFrom": "#0f172a",
-  "colorTo": "#fef08a",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Headlight bulb replacement",
     "setting": "While driving at night, you notice that one of the front lights is not on. You stop in a safe place and decide to change the bulb to make driving safe again.",

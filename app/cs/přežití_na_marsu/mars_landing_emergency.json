@@ -3,8 +3,8 @@
   "description": "První hodiny po přistání kapsle a stabilizace posádky v neznámém prostředí.",
   "icon": "rocket",
   "label": "Havárie",
-  "colorFrom": "#020617",
-  "colorTo": "#f97316",
+  "colorFrom": "#06B6D4",
+  "colorTo": "#0891B2",
   "scenario": {
     "title": "Selhání přistávací sekvence",
     "setting": "Kolonie právě přistála na Marsu. Přistávací modul tvrdě dosedl mimo plánovanou zónu. Jeden z členů posádky je otřesený, uvnitř kabiny klesá tlak a systémy hlásí nestabilní kyslík. Venku je nehostinná červená krajina a prachová bouře v dálce.",

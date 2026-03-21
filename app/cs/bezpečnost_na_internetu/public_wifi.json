@@ -3,8 +3,8 @@
   "description": "Jak se chránit při používání nezabezpečené veřejné Wi-Fi sítě.",
   "icon": "wifi-off",
   "label": "Veřejné Wi-Fi",
-  "colorFrom": "#1e40af",
-  "colorTo": "#60a5fa",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Káva v kavárně a veřejná síť",
     "setting": "Sedíš v kavárně a připojíš se na veřejnou Wi-Fi bez hesla. Otevíráš e-mail a internetové bankovnictví. Krátce poté se začne připojení chovat nestabilně a zařízení hlásí neznámé přihlášení.",

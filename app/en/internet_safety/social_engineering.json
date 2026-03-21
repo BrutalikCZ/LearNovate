@@ -3,8 +3,8 @@
   "description": "How to recognize manipulation and attempts to obtain sensitive data via social networks.",
   "icon": "users",
   "label": "Social engineering",
-  "colorFrom": "#3b0764",
-  "colorTo": "#f472b6",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Unknown contact on social network",
     "setting": "An unknown account is writing to you on the social network, which claims to support the platform. It claims your account has been compromised and requires verification via a link. The messages are urgent and contain threats to block the account.",

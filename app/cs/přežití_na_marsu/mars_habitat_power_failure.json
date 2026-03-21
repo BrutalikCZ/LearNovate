@@ -3,8 +3,8 @@
   "description": "Řešení kritického selhání energetického systému v uzavřené kolonii.",
   "icon": "battery-warning",
   "label": "Výpadek energie",
-  "colorFrom": "#000000",
-  "colorTo": "#ef4444",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Noční blackout v habitatě",
     "setting": "Kolonie na Marsu se nachází v nočním cyklu. Náhle dochází k úplnému výpadku energie. Vypínají se ohřívače, filtrace vzduchu i komunikace. Teplota rychle klesá a zásoby baterií jsou omezené.",

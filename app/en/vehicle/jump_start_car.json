@@ -3,8 +3,8 @@
   "description": "How to properly start a car with jump leads.",
   "icon": "battery-low",
   "label": "Jump starting",
-  "colorFrom": "#b91c1c",
-  "colorTo": "#3b82f6",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "Starting the car via cables",
     "setting": "You can't start the car because the battery is dead. Another driver will stop by and offer help with jump leads, so you have a chance to solve the problem quickly.",

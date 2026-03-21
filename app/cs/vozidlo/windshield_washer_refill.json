@@ -3,8 +3,8 @@
   "description": "Jak správně doplnit kapalinu do ostřikovačů a zajistit čistý výhled z vozidla.",
   "icon": "bubbles",
   "label": "Ostřikovače",
-  "colorFrom": "#0c4a6e",
-  "colorTo": "#38bdf8",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Doplnění kapaliny do ostřikovačů",
     "setting": "Při jízdě ti došla kapalina do ostřikovačů a čelní sklo je silně znečištěné, což omezuje viditelnost a zhoršuje bezpečnost jízdy.",

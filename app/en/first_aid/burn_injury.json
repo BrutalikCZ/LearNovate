@@ -3,8 +3,8 @@
   "description": "Basic first aid procedure for thermal burns of various degrees.",
   "icon": "flame",
   "label": "Burn",
-  "colorFrom": "#7f1d1d",
-  "colorTo": "#f97316",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Burn in the kitchen",
     "setting": "Boiling oil spills on your forearm while cooking. The pain is immediate, the skin reddens and blisters begin to form. There is water and a basic first aid kit in the kitchen.",

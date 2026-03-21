@@ -3,8 +3,8 @@
   "description": "Postup první pomoci při zásahu elektrickým proudem v domácím nebo pracovním prostředí.",
   "icon": "zap",
   "label": "Elektřina",
-  "colorFrom": "#0891b2",
-  "colorTo": "#fbbf24",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Porucha spotřebiče v dílně",
     "setting": "Pracuješ v dílně. Kolega opravuje prodlužovačku, najednou vykřikne a zůstane přikovaný k zařízení. Vidíš jiskření a cítíš zápach spáleniny.",

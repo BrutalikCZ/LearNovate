@@ -3,8 +3,8 @@
   "description": "Critical situation when the oxygen production system fails in a closed colony.",
   "icon": "wind",
   "label": "Oxygen",
-  "colorFrom": "#0f172a",
-  "colorTo": "#3b82f6",
+  "colorFrom": "#06B6D4",
+  "colorTo": "#0891B2",
   "scenario": {
     "title": "A decrease in oxygen in the habitat",
     "setting": "During a routine night, the colony registers an alarm: the oxygen level is falling below the safe limit. The main electrolytic generator shows a fault and the secondary system does not have time to compensate for the loss.",

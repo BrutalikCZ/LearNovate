@@ -3,8 +3,8 @@
   "description": "How to respond to a ransomware attack that encrypts data and demands a ransom.",
   "icon": "lock-keyhole",
   "label": "Ransomware",
-  "colorFrom": "#450a0a",
-  "colorTo": "#b91c1c",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Encrypted work computer",
     "setting": "You turn on your work laptop and instead of files you see a message that all documents have been encrypted. The attacker demands payment in cryptocurrency within 24 hours, otherwise the data will be deleted. The system is partially functional, but the files are unavailable.",

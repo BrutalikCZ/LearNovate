@@ -3,8 +3,8 @@
   "description": "Klíčové postupy při stržení lavinou a následná svépomoc.",
   "icon": "snowflake",
   "label": "Lavina",
-  "colorFrom": "#475569",
-  "colorTo": "#cbd5e1",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Bílý teror",
     "setting": "Lyžuješ ve volném terénu v Krkonoších, když se najednou ozve dunivý zvuk a svah nad tebou se dává do pohybu. Obrovská masa sněhu tě strhává a ty ztrácíš kontrolu, obklopen jen bílou tmou a drtivým tlakem. Tvůj život teď závisí na vteřinových rozhodnutích pod metry sněhu.",

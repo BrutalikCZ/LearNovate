@@ -3,8 +3,8 @@
   "description": "How to recognize and deal with a severe allergic reaction after a bee or wasp sting.",
   "icon": "bug",
   "label": "First aid",
-  "colorFrom": "#064e3b",
-  "colorTo": "#f59e0b",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "A trip to the meadow",
     "setting": "You are sitting in a meadow with a friend. A friend gets stung by a bee in the neck. Within minutes, he begins to swell, has difficulty breathing, and complains of chest pressure. He looks confused and starts to panic.",

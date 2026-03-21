@@ -3,8 +3,8 @@
   "description": "Food security using improvised hydroponics and biomass recycling in a closed system.",
   "icon": "sprout",
   "label": "Farming",
-  "colorFrom": "#713f12",
-  "colorTo": "#84cc16",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Establishment of the first farm",
     "setting": "The colony has limited food supplies and is awaiting the next supply mission. You decide to use the recycled organic material and water system of the habitats to establish the first cultivation zone. The glass dome is dimly lit and the ground must be created artificially.",

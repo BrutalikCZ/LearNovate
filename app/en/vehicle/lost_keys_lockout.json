@@ -3,8 +3,8 @@
   "description": "How to safely access a locked car without damaging it.",
   "icon": "key-square",
   "label": "Unlocking",
-  "colorFrom": "#334155",
-  "colorTo": "#60a5fa",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Locked keys in the car",
     "setting": "You stopped at an abandoned gas station and got out to stretch your legs. When you want to go back, you find that the keys have been locked inside the car and your phone is almost dead, so you have to solve the situation quickly.",

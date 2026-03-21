@@ -3,8 +3,8 @@
   "description": "Jak postupovat při podezření na zlomeninu končetiny v horských podmínkách.",
   "icon": "snowflake",
   "label": "Zlomenina",
-  "colorFrom": "#1e293b",
-  "colorTo": "#0284c7",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Lyžařský výcvik – pád na svahu",
     "setting": "Jsi na lyžařském kurzu na horách. Kamarád při sjezdu najede na ledovou plotnu, ztratí rovnováhu a tvrdě dopadne na nohu. Slyšíš křupnutí, noha je nepřirozeně natočená a kamarád křičí bolestí. Instruktor je daleko dole na svahu.",

@@ -3,8 +3,8 @@
   "description": "First aid procedure for drowning and resuscitation after being pulled out of the water.",
   "icon": "waves",
   "label": "Drowning",
-  "colorFrom": "#1e3a8a",
-  "colorTo": "#38bdf8",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Summer swimming pool",
     "setting": "At the swimming pool, you notice a child who does not move under the surface. The lifeguard pulls him out of the water, the child is unresponsive and not breathing normally. The surroundings are chaotic and noisy.",

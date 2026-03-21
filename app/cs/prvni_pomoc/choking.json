@@ -3,8 +3,8 @@
   "description": "Jak rozpoznat a řešit zadušení u dospělého pomocí Heimlichova manévru a základní první pomoci.",
   "icon": "wind",
   "label": "Dušení",
-  "colorFrom": "#4c1d95",
-  "colorTo": "#9f1239",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Dušení v restauraci",
     "setting": "Sedíš s kolegou v restauraci. Během jídla se kamarád náhle začne dusit, nemůže kašlat ani mluvit a chytá se za krk. Obličej rychle rudne a panikaří. V okolí jsou další lidé, ale nikdo nereaguje.",

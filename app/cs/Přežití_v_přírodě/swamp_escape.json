@@ -3,8 +3,8 @@
   "description": "Jak se vyprostit z hlubokého bahna nebo rašeliniště bez cizí pomoci.",
   "icon": "droplet",
   "label": "Bažina",
-  "colorFrom": "#14532d",
-  "colorTo": "#422006",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Smrtící sevření",
     "setting": "Při sběru hub v odlehlé části Šumavy jsi špatně šlápl a propadl se do skrytého rašeliniště. Slizké, studené bahno ti sahá už po pás a každým pohybem se propadáš hlouběji, zatímco tělesná teplota klesá. Jsi sám, mobil nemá signál a les kolem tebe tiše sleduje tvůj boj o život.",

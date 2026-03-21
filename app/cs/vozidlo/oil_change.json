@@ -3,8 +3,8 @@
   "description": "Jak správně zkontrolovat hladinu motorového oleje a doplnit jej do správné úrovně.",
   "icon": "car",
   "label": "Olej",
-  "colorFrom": "#000000",
-  "colorTo": "#d97706",
+  "colorFrom": "#10B981",
+  "colorTo": "#059669",
   "scenario": {
     "title": "Výměna motorového oleje",
     "setting": "Jsi v garáži a chystáš se nastartovat auto na delší cestu. Před otočením klíčku si ale uvědomíš, že jsi už delší dobu nekontroloval stav motorového oleje, což může zásadně ovlivnit chod motoru.",

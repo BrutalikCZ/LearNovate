@@ -3,8 +3,8 @@
   "description": "How to deal with a concussion or more serious head injury after falling off a bike.",
   "icon": "bike",
   "label": "Head injury",
-  "colorFrom": "#374151",
-  "colorTo": "#dc2626",
+  "colorFrom": "#EC4899",
+  "colorTo": "#DB2777",
   "scenario": {
     "title": "Cycling trip",
     "setting": "You are riding a bike with a friend on a forest road. A friend hits a root, falls over the handlebars and hits his head on a rock. He is momentarily disoriented, confused, and bleeding from a head wound.",

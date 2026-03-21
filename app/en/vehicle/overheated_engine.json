@@ -3,8 +3,8 @@
   "description": "How to properly react to engine overheating and prevent engine damage.",
   "icon": "thermometer",
   "label": "Overheat",
-  "colorFrom": "#7f1d1d",
-  "colorTo": "#f87171",
+  "colorFrom": "#F43F5E",
+  "colorTo": "#E11D48",
   "scenario": {
     "title": "Overheated engine",
     "setting": "You're driving up a long hill on a hot summer day and after a few minutes you notice that the engine temperature is rapidly rising into the red zone. Light smoke starts coming out from under the hood and the vehicle loses power, so you have to react immediately to avoid serious damage.",

@@ -3,8 +3,8 @@
   "description": "How to recognize and treat choking in an adult using the Heimlich maneuver and basic first aid.",
   "icon": "wind",
   "label": "Choking",
-  "colorFrom": "#4c1d95",
-  "colorTo": "#9f1239",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Stew in a restaurant",
     "setting": "You are sitting with a colleague in a restaurant. During the meal, the friend suddenly begins to choke, cannot cough or speak, and grabs his neck. His face turns red quickly and he panics. There are other people around, but no one is responding.",

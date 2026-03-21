@@ -3,8 +3,8 @@
   "description": "Jak rozpoznat mrtvici a zajistit rychlou pomoc pomocí metody FAST.",
   "icon": "brain",
   "label": "Mrtvice",
-  "colorFrom": "#1e293b",
-  "colorTo": "#e11d48",
+  "colorFrom": "#3B82F6",
+  "colorTo": "#2563EB",
   "scenario": {
     "title": "Náhlá slabost na ulici",
     "setting": "Stojíš na zastávce. Starší muž vedle tebe náhle upustí tašku, jeho obličej poklesne na jednu stranu a mluví nesrozumitelně. Zdá se zmatený a nedokáže zvednout pravou ruku.",

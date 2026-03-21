@@ -3,8 +3,8 @@
   "description": "How to hack an account on a social network or email.",
   "icon": "user-lock",
   "label": "Hacked account",
-  "colorFrom": "#111827",
-  "colorTo": "#ef4444",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "A social network account has been compromised",
     "setting": "You find that you cannot log into your social network account. You get notifications about changing your password and logging in from unknown devices. Friends report strange messages coming from your account.",

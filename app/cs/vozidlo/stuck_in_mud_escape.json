@@ -3,8 +3,8 @@
   "description": "Jak bezpečně vyprostit vozidlo, které uvízlo v bahně nebo měkkém terénu.",
   "icon": "car",
   "label": "Bahno",
-  "colorFrom": "#292524",
-  "colorTo": "#78350f",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Uvíznutí v bahně",
     "setting": "Vyrazil jsi na výlet mimo silnici a po vydatném dešti jsi sjel na rozbahněnou cestu. Kola se začala protáčet a vozidlo se postupně zabořilo tak, že se nemůžeš pohnout ani vpřed ani vzad, přičemž okolní terén je měkký a kluzký.",

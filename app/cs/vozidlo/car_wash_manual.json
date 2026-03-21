@@ -3,8 +3,8 @@
   "description": "Jak správně umýt auto ručně bez poškození laku.",
   "icon": "car",
   "label": "Mytí",
-  "colorFrom": "#1e40af",
-  "colorTo": "#22d3ee",
+  "colorFrom": "#F59E0B",
+  "colorTo": "#D97706",
   "scenario": {
     "title": "Ruční mytí auta",
     "setting": "Auto je po několika dnech deště pokryté blátem a špínou. Rozhodneš se ho umýt ručně doma, aby sis zachoval lak v co nejlepším stavu.",

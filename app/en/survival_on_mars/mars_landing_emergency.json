@@ -3,8 +3,8 @@
   "description": "The first hours after the landing of the capsule and stabilization of the crew in an unknown environment.",
   "icon": "rocket",
   "label": "Post-crash",
-  "colorFrom": "#020617",
-  "colorTo": "#f97316",
+  "colorFrom": "#06B6D4",
+  "colorTo": "#0891B2",
   "scenario": {
     "title": "Landing sequence failure",
     "setting": "A colony has just landed on Mars. The lander landed hard outside the planned zone. One of the crew members is shaken, the pressure inside the cabin drops and the systems report unstable oxygen. Outside is an inhospitable red landscape and a dust storm in the distance.",

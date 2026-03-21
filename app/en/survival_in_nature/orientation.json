@@ -3,8 +3,8 @@
   "description": "How to find north using a shadow or a watch.",
   "icon": "compass",
   "label": "Orientation",
-  "colorFrom": "#0f766e",
-  "colorTo": "#fbbf24",
+  "colorFrom": "#F97316",
+  "colorTo": "#EA580C",
   "scenario": {
     "title": "Lost in the fog",
     "setting": "Your cell phone is dead and the thick fog makes it impossible to see the landmarks. You have to determine where north is to continue in the right direction towards civilization.",

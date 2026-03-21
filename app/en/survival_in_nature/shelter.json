@@ -3,8 +3,8 @@
   "description": "Simple housing type 'A' construction for protection from rain and wind.",
   "icon": "tent",
   "label": "Shelter",
-  "colorFrom": "#3f6212",
-  "colorTo": "#78350f",
+  "colorFrom": "#8B5CF6",
+  "colorTo": "#7C3AED",
   "scenario": {
     "title": "Night in the forest",
     "setting": "You're lost in the woods and it's starting to rain. You have to build a dry place to sleep before it gets completely dark.",

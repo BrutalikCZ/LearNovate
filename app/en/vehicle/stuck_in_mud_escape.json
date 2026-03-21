@@ -3,8 +3,8 @@
   "description": "How to safely extricate a vehicle stuck in mud or soft terrain.",
   "icon": "car",
   "label": "Mud",
-  "colorFrom": "#292524",
-  "colorTo": "#78350f",
+  "colorFrom": "#14B8A6",
+  "colorTo": "#0D9488",
   "scenario": {
     "title": "Stuck in the mud",
     "setting": "You went on an off-road trip and after a heavy rain, you hit a muddy road. The wheels began to spin and the vehicle gradually sank in such a way that you could neither move forward nor backward, the surrounding terrain being soft and slippery.",

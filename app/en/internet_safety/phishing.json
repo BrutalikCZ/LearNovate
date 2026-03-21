@@ -3,8 +3,8 @@
   "description": "How to recognize and deal with a phishing attack targeting credentials.",
   "icon": "mail-warning",
   "label": "Phishing",
-  "colorFrom": "#0c4a6e",
-  "colorTo": "#06b6d4",
+  "colorFrom": "#6366F1",
+  "colorTo": "#4F46E5",
   "scenario": {
     "title": "Suspicious email from a bank",
     "setting": "You open an email that looks like a message from your bank. They claim that your account will be blocked if you don't log in immediately via the attached link. The page looks almost identical to the original, but the address is slightly different.",
