@@ -8,15 +8,43 @@
     "createdAt": "2026-03-21T00:47:32.013Z",
     "admin": true,
     "scenarios": {
-      "rezna_rana": { "repetitions": 8, "best_milestones": 1 },
-      "car_battery_replacement": { "repetitions": 4, "best_milestones": 1 },
-      "oxigen_generator_failure": { "repetitions": 5, "best_milestones": 0 },
-      "unconscious_cpr": { "repetitions": 4, "best_milestones": 0 },
-      "drowning_pool": { "repetitions": 2, "best_milestones": 0 },
-      "cut": { "repetitions": 1, "best_milestones": 0 },
-      "chemical_poisoning_home": { "repetitions": 1, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 8,
+        "best_milestones": 1
+      },
+      "car_battery_replacement": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 5,
+        "best_milestones": 0
+      },
+      "unconscious_cpr": {
+        "repetitions": 4,
+        "best_milestones": 0
+      },
+      "drowning_pool": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 1,
+        "best_milestones": 0
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 1,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5"
+    ],
+    "currentStreak": 1,
+    "lastLoginDate": "2026-03-21",
+    "bestStreak": 1
   },
   {
     "id": "u1a2b3c4d5e6f7g8h9",
@@ -27,15 +55,43 @@
     "createdAt": "2025-11-14T09:22:41.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 12, "best_milestones": 3 },
-      "car_battery_replacement": { "repetitions": 9, "best_milestones": 2 },
-      "oxigen_generator_failure": { "repetitions": 7, "best_milestones": 1 },
-      "unconscious_cpr": { "repetitions": 5, "best_milestones": 1 },
-      "drowning_pool": { "repetitions": 4, "best_milestones": 1 },
-      "cut": { "repetitions": 6, "best_milestones": 1 },
-      "chemical_poisoning_home": { "repetitions": 3, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 12,
+        "best_milestones": 3
+      },
+      "car_battery_replacement": {
+        "repetitions": 9,
+        "best_milestones": 2
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 7,
+        "best_milestones": 1
+      },
+      "unconscious_cpr": {
+        "repetitions": 5,
+        "best_milestones": 1
+      },
+      "drowning_pool": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "cut": {
+        "repetitions": 6,
+        "best_milestones": 1
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 3,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5",
+      "scenarios_20",
+      "points_500",
+      "streak_3"
+    ]
   },
   {
     "id": "u2b3c4d5e6f7g8h9i0",
@@ -46,15 +102,40 @@
     "createdAt": "2025-12-03T14:05:18.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 5, "best_milestones": 1 },
-      "car_battery_replacement": { "repetitions": 3, "best_milestones": 1 },
-      "oxigen_generator_failure": { "repetitions": 2, "best_milestones": 0 },
-      "unconscious_cpr": { "repetitions": 3, "best_milestones": 1 },
-      "drowning_pool": { "repetitions": 1, "best_milestones": 0 },
-      "cut": { "repetitions": 2, "best_milestones": 0 },
-      "chemical_poisoning_home": { "repetitions": 1, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 5,
+        "best_milestones": 1
+      },
+      "car_battery_replacement": {
+        "repetitions": 3,
+        "best_milestones": 1
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "unconscious_cpr": {
+        "repetitions": 3,
+        "best_milestones": 1
+      },
+      "drowning_pool": {
+        "repetitions": 1,
+        "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 1,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5"
+    ]
   },
   {
     "id": "u3c4d5e6f7g8h9i0j1",
@@ -65,15 +146,45 @@
     "createdAt": "2025-09-27T07:33:55.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 18, "best_milestones": 4 },
-      "car_battery_replacement": { "repetitions": 14, "best_milestones": 3 },
-      "oxigen_generator_failure": { "repetitions": 11, "best_milestones": 2 },
-      "unconscious_cpr": { "repetitions": 9, "best_milestones": 2 },
-      "drowning_pool": { "repetitions": 7, "best_milestones": 1 },
-      "cut": { "repetitions": 8, "best_milestones": 2 },
-      "chemical_poisoning_home": { "repetitions": 5, "best_milestones": 1 }
+      "rezna_rana": {
+        "repetitions": 18,
+        "best_milestones": 4
+      },
+      "car_battery_replacement": {
+        "repetitions": 14,
+        "best_milestones": 3
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 11,
+        "best_milestones": 2
+      },
+      "unconscious_cpr": {
+        "repetitions": 9,
+        "best_milestones": 2
+      },
+      "drowning_pool": {
+        "repetitions": 7,
+        "best_milestones": 1
+      },
+      "cut": {
+        "repetitions": 8,
+        "best_milestones": 2
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 5,
+        "best_milestones": 1
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3", "streak_7", "level_5"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5",
+      "scenarios_20",
+      "points_500",
+      "streak_3",
+      "streak_7",
+      "level_5"
+    ]
   },
   {
     "id": "u4d5e6f7g8h9i0j1k2",
@@ -84,12 +195,27 @@
     "createdAt": "2026-01-08T16:44:02.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 3, "best_milestones": 0 },
-      "car_battery_replacement": { "repetitions": 2, "best_milestones": 0 },
-      "oxigen_generator_failure": { "repetitions": 1, "best_milestones": 0 },
-      "unconscious_cpr": { "repetitions": 1, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 3,
+        "best_milestones": 0
+      },
+      "car_battery_replacement": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 1,
+        "best_milestones": 0
+      },
+      "unconscious_cpr": {
+        "repetitions": 1,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100"]
+    "achievements": [
+      "first_scenario",
+      "points_100"
+    ]
   },
   {
     "id": "u5e6f7g8h9i0j1k2l3",
@@ -100,15 +226,42 @@
     "createdAt": "2025-10-19T11:12:29.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 9, "best_milestones": 2 },
-      "car_battery_replacement": { "repetitions": 6, "best_milestones": 1 },
-      "oxigen_generator_failure": { "repetitions": 5, "best_milestones": 1 },
-      "unconscious_cpr": { "repetitions": 4, "best_milestones": 1 },
-      "drowning_pool": { "repetitions": 3, "best_milestones": 0 },
-      "cut": { "repetitions": 4, "best_milestones": 1 },
-      "chemical_poisoning_home": { "repetitions": 2, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 9,
+        "best_milestones": 2
+      },
+      "car_battery_replacement": {
+        "repetitions": 6,
+        "best_milestones": 1
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 5,
+        "best_milestones": 1
+      },
+      "unconscious_cpr": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "drowning_pool": {
+        "repetitions": 3,
+        "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 2,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5", "points_500", "streak_3"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5",
+      "points_500",
+      "streak_3"
+    ]
   },
   {
     "id": "u6f7g8h9i0j1k2l3m4",
@@ -119,10 +272,18 @@
     "createdAt": "2026-02-14T20:07:11.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 2, "best_milestones": 0 },
-      "car_battery_replacement": { "repetitions": 1, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "car_battery_replacement": {
+        "repetitions": 1,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario"]
+    "achievements": [
+      "first_scenario"
+    ]
   },
   {
     "id": "u7g8h9i0j1k2l3m4n5",
@@ -133,14 +294,37 @@
     "createdAt": "2025-11-30T08:58:44.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 7, "best_milestones": 1 },
-      "car_battery_replacement": { "repetitions": 5, "best_milestones": 1 },
-      "oxigen_generator_failure": { "repetitions": 4, "best_milestones": 1 },
-      "unconscious_cpr": { "repetitions": 3, "best_milestones": 0 },
-      "drowning_pool": { "repetitions": 2, "best_milestones": 0 },
-      "cut": { "repetitions": 3, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 7,
+        "best_milestones": 1
+      },
+      "car_battery_replacement": {
+        "repetitions": 5,
+        "best_milestones": 1
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "unconscious_cpr": {
+        "repetitions": 3,
+        "best_milestones": 0
+      },
+      "drowning_pool": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 3,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5", "streak_3"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5",
+      "streak_3"
+    ]
   },
   {
     "id": "u8h9i0j1k2l3m4n5o6",
@@ -151,15 +335,45 @@
     "createdAt": "2025-08-05T13:27:03.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 22, "best_milestones": 5 },
-      "car_battery_replacement": { "repetitions": 17, "best_milestones": 4 },
-      "oxigen_generator_failure": { "repetitions": 14, "best_milestones": 3 },
-      "unconscious_cpr": { "repetitions": 12, "best_milestones": 2 },
-      "drowning_pool": { "repetitions": 9, "best_milestones": 2 },
-      "cut": { "repetitions": 10, "best_milestones": 3 },
-      "chemical_poisoning_home": { "repetitions": 7, "best_milestones": 1 }
+      "rezna_rana": {
+        "repetitions": 22,
+        "best_milestones": 5
+      },
+      "car_battery_replacement": {
+        "repetitions": 17,
+        "best_milestones": 4
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 14,
+        "best_milestones": 3
+      },
+      "unconscious_cpr": {
+        "repetitions": 12,
+        "best_milestones": 2
+      },
+      "drowning_pool": {
+        "repetitions": 9,
+        "best_milestones": 2
+      },
+      "cut": {
+        "repetitions": 10,
+        "best_milestones": 3
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 7,
+        "best_milestones": 1
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3", "streak_7", "level_5"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5",
+      "scenarios_20",
+      "points_500",
+      "streak_3",
+      "streak_7",
+      "level_5"
+    ]
   },
   {
     "id": "u9i0j1k2l3m4n5o6p7",
@@ -170,13 +384,31 @@
     "createdAt": "2025-12-22T10:41:37.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 4, "best_milestones": 1 },
-      "car_battery_replacement": { "repetitions": 2, "best_milestones": 0 },
-      "oxigen_generator_failure": { "repetitions": 2, "best_milestones": 0 },
-      "unconscious_cpr": { "repetitions": 1, "best_milestones": 0 },
-      "cut": { "repetitions": 2, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "car_battery_replacement": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 2,
+        "best_milestones": 0
+      },
+      "unconscious_cpr": {
+        "repetitions": 1,
+        "best_milestones": 0
+      },
+      "cut": {
+        "repetitions": 2,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100"]
+    "achievements": [
+      "first_scenario",
+      "points_100"
+    ]
   },
   {
     "id": "u0j1k2l3m4n5o6p7q8",
@@ -187,14 +419,60 @@
     "createdAt": "2025-10-07T15:19:22.000Z",
     "admin": false,
     "scenarios": {
-      "rezna_rana": { "repetitions": 10, "best_milestones": 2 },
-      "car_battery_replacement": { "repetitions": 8, "best_milestones": 2 },
-      "oxigen_generator_failure": { "repetitions": 6, "best_milestones": 1 },
-      "unconscious_cpr": { "repetitions": 5, "best_milestones": 1 },
-      "drowning_pool": { "repetitions": 4, "best_milestones": 1 },
-      "cut": { "repetitions": 5, "best_milestones": 1 },
-      "chemical_poisoning_home": { "repetitions": 3, "best_milestones": 0 }
+      "rezna_rana": {
+        "repetitions": 10,
+        "best_milestones": 2
+      },
+      "car_battery_replacement": {
+        "repetitions": 8,
+        "best_milestones": 2
+      },
+      "oxigen_generator_failure": {
+        "repetitions": 6,
+        "best_milestones": 1
+      },
+      "unconscious_cpr": {
+        "repetitions": 5,
+        "best_milestones": 1
+      },
+      "drowning_pool": {
+        "repetitions": 4,
+        "best_milestones": 1
+      },
+      "cut": {
+        "repetitions": 5,
+        "best_milestones": 1
+      },
+      "chemical_poisoning_home": {
+        "repetitions": 3,
+        "best_milestones": 0
+      }
     },
-    "achievements": ["first_scenario", "points_100", "scenarios_5", "scenarios_20", "points_500", "streak_3"]
+    "achievements": [
+      "first_scenario",
+      "points_100",
+      "scenarios_5",
+      "scenarios_20",
+      "points_500",
+      "streak_3"
+    ]
+  },
+  {
+    "id": "mn00giv4ltdehx5weqa",
+    "email": "nekdo.nekdo@nekdo.com",
+    "username": "nekdo",
+    "passwordHash": "$2a$10$iPZqI5sv.BDFzipBMIkmqeFnhgysfcdC0YZlzCumVSYRTsDKdJQd2",
+    "body": 0,
+    "createdAt": "2026-03-21T07:32:54.784Z",
+    "admin": true,
+    "currentStreak": 1,
+    "lastLoginDate": "2026-03-21",
+    "bestStreak": 1,
+    "scenarios": {
+      "lighting_a_fire": {
+        "repetitions": 1,
+        "best_milestones": 0
+      }
+    }
   }
 ]
