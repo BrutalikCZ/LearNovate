@@ -2,7 +2,7 @@
   "name": "Anaphylactic reaction after an insect sting",
   "description": "How to recognize and deal with a severe allergic reaction after a bee or wasp sting.",
   "icon": "bug",
-  "label": "First aid for anaphylaxis",
+  "label": "First aid",
   "colorFrom": "#064e3b",
   "colorTo": "#f59e0b",
   "scenario": {

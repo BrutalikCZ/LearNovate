@@ -2,9 +2,9 @@
   "name": "Dust storm during EVA",
   "description": "Surviving an extraterrestrial activity (EVA) during a sudden Martian dust storm.",
   "icon": "wind",
-  "label": "Surviving a dust storm",
-  "colorFrom": "#b91c1c",
-  "colorTo": "#1e3a8a",
+  "label": "Dust storm",
+  "colorFrom": "#451a03",
+  "colorTo": "#d97706",
   "scenario": {
     "title": "Catching storms on the way out",
     "setting": "During an extraterrestrial mission (EVA) on the surface of Mars, a severe dust storm suddenly rises. Visibility drops to a minimum, communication with the base is unstable, and orientation systems fail. Spacesuit reports increased filter load.",

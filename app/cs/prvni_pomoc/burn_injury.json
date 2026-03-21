@@ -2,8 +2,8 @@
   "name": "Ošetření popáleniny",
   "description": "Základní postup první pomoci při tepelných popáleninách různého stupně.",
   "icon": "flame",
-  "label": "Ošetření popálenin",
-  "colorFrom": "#7c2d12",
+  "label": "Popáleniny",
+  "colorFrom": "#7f1d1d",
   "colorTo": "#f97316",
   "scenario": {
     "title": "Popálenina v kuchyni",

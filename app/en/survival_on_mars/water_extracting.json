@@ -2,9 +2,9 @@
   "name": "Harvesting water from Martian ice",
   "description": "Extraction and purification of water from subsurface ice for the colony.",
   "icon": "droplets",
-  "label": "Obtaining drinking water",
-  "colorFrom": "#0ea5e9",
-  "colorTo": "#1e3a8a",
+  "label": "Water",
+  "colorFrom": "#7c2d12",
+  "colorTo": "#06b6d4",
   "scenario": {
     "title": "Expedition to the ice deposit",
     "setting": "A robotic probe has discovered a deposit of water ice beneath the surface of Mars. You send a team in light vehicles to mine. Systems report unstable temperature and risk of dust contamination.",

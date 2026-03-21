@@ -2,9 +2,9 @@
   "name": "A call for help",
   "description": "Visual and audible signaling for rescue teams and aircraft.",
   "icon": "megaphone",
-  "label": "Calling for help",
-  "colorFrom": "#ec4899",
-  "colorTo": "#9d174d",
+  "label": "Help",
+  "colorFrom": "#0369a1",
+  "colorTo": "#f97316",
   "scenario": {
     "title": "Location of rescuers",
     "setting": "You hear a helicopter, but you're in the thick of it. You have to make yourself visible before they fly away.",

@@ -2,9 +2,9 @@
   "name": "Zamčené klíče v autě",
   "description": "Jak bezpečně získat přístup do zamčeného auta bez jeho poškození.",
   "icon": "key-square",
-  "label": "Odemčení zamčeného auta",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Odemčení",
+  "colorFrom": "#334155",
+  "colorTo": "#60a5fa",
   "scenario": {
     "title": "Zamčené klíče v autě",
     "setting": "Zastavil jsi u opuštěné benzínky a vystoupil sis protáhnout nohy. Když se chceš vrátit, zjistíš, že klíče zůstaly zamčené uvnitř auta a telefon máš skoro vybitý, takže musíš situaci rychle vyřešit.",

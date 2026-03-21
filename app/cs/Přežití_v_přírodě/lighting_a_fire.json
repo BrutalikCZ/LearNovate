@@ -2,9 +2,9 @@
   "name": "Oheň bez zápalek",
   "description": "Jak rozdělat oheň pomocí křesadla v náročných podmínkách.",
   "icon": "flame",
-  "label": "Rozdělání ohně křesadlem",
-  "colorFrom": "#f59e0b",
-  "colorTo": "#ef4444",
+  "label": "Rozdělání ohně",
+  "colorFrom": "#1c1917",
+  "colorTo": "#fdba74",
   "scenario": {
     "title": "Rozdělání ohně",
     "setting": "Slunce zapadá, teplota klesá a ty jsi promočený po pádu do potoka. Musíš rozdělat oheň, abys zabránil podchlazení. Máš jen křesadlo a nůž.",

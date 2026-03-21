@@ -2,9 +2,9 @@
   "name": "Hypothermia in the mountains",
   "description": "How to recognize and deal with hypothermia in winter mountain conditions.",
   "icon": "thermometer-snowflake",
-  "label": "First aid for hypothermia",
+  "label": "Hypothermia",
   "colorFrom": "#0f172a",
-  "colorTo": "#38bdf8",
+  "colorTo": "#67e8f9",
   "scenario": {
     "title": "Lost tour group",
     "setting": "The weather will deteriorate on the mountain hike. Strong wind, snow and darkness. One of the group members is slow, shaking, confused and having trouble speaking. He doesn't have enough clothes and sits in the snow.",

@@ -2,9 +2,9 @@
   "name": "Nouzový sestup",
   "description": "Techniky improvizovaného slaňování bez lezeckého sedáku a jistítka.",
   "icon": "arrow-down",
-  "label": "Improvizované slaňování",
-  "colorFrom": "#f87171",
-  "colorTo": "#991b1b",
+  "label": "Slaňování",
+  "colorFrom": "#3f3f46",
+  "colorTo": "#fde047",
   "scenario": {
     "title": "Cesta dolů",
     "setting": "Uvízl jsi na skalní římse při sestupu z hory, cesta dál je neschůdná a hrozí pád. Jedinou možností je slanit deset metrů dolů na bezpečnou plošinu, ale nemáš sedák ani jistící pomůcky, jen statické lano. Slunce pálí, svaly se třesou vyčerpáním a ty musíš improvizovat, jinak riskuješ pád.",

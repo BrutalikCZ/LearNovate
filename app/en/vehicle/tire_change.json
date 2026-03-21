@@ -2,9 +2,9 @@
   "name": "Changing a tire",
   "description": "How to safely replace a flat tire with a spare wheel on the road or rest stop.",
   "icon": "car",
-  "label": "Changing a flat tire",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Tire",
+  "colorFrom": "#1c1917",
+  "colorTo": "#facc15",
   "scenario": {
     "title": "Changing a tire",
     "setting": "You are driving on the highway when you suddenly feel a strong vibration and the vehicle starts to pull to one side. You stop at a rest stop and discover that one of the tires is flat, so it needs to be replaced. You have a spare wheel, a lever and a wheel wrench in the trunk.",

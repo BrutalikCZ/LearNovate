@@ -2,9 +2,9 @@
   "name": "Avalanche survival",
   "description": "Key avalanche procedures and subsequent self-help.",
   "icon": "snowflake",
-  "label": "Avalanche survival",
-  "colorFrom": "#cbd5e1",
-  "colorTo": "#475569",
+  "label": "Avalanche",
+  "colorFrom": "#475569",
+  "colorTo": "#cbd5e1",
   "scenario": {
     "title": "White terror",
     "setting": "You are skiing in open terrain in the Krkonoše mountains when suddenly there is a booming sound and the slope above you begins to move. A huge mass of snow pulls you down and you lose control, surrounded by nothing but white darkness and crushing pressure. Your life now depends on split-second decisions under meters of snow.",

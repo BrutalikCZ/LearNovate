@@ -2,9 +2,9 @@
   "name": "Podchlazení v horách",
   "description": "Jak rozpoznat a řešit hypothermii v zimních horských podmínkách.",
   "icon": "thermometer-snowflake",
-  "label": "První pomoc při podchlazení",
+  "label": "Podchlazení",
   "colorFrom": "#0f172a",
-  "colorTo": "#38bdf8",
+  "colorTo": "#67e8f9",
   "scenario": {
     "title": "Ztracená turistická skupina",
     "setting": "Na horské túře se zhorší počasí. Silný vítr, sněžení a tma. Jeden z členů skupiny je pomalý, třese se, je zmatený a má problém mluvit. Nemá dostatečné oblečení a sedá si do sněhu.",

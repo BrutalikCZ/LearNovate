@@ -2,9 +2,9 @@
   "name": "Výměna autobaterie",
   "description": "Jak správně vyměnit autobaterii a obnovit funkčnost vozidla.",
   "icon": "battery",
-  "label": "Výměna autobaterie",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Autobaterie",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#eab308",
   "scenario": {
     "title": "Výměna autobaterie",
     "setting": "Jedeš autem pouští. Najednou ti zhasla světla a motor ztichl. Auto se zastavilo. V kufru máš vše co budeš potřebovat.",

@@ -2,9 +2,9 @@
   "name": "Replacement of brake pads",
   "description": "How to replace brake pads.",
   "icon": "wrench",
-  "label": "Replacing brake pads",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Brake pads",
+  "colorFrom": "#1e293b",
+  "colorTo": "#94a3b8",
   "scenario": {
     "title": "Replacement of brake pads",
     "setting": "You hear an unpleasant screeching sound when braking. You will find that the brake pads are worn.",

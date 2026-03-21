@@ -2,9 +2,9 @@
   "name": "Získání pitné vody",
   "description": "Metody improvizované filtrace a dezinfekce vody v divočině.",
   "icon": "droplet",
-  "label": "Získání pitné vody",
-  "colorFrom": "#3b82f6",
-  "colorTo": "#1d4ed8",
+  "label": "Pitná voda",
+  "colorFrom": "#14532d",
+  "colorTo": "#3b82f6",
   "scenario": {
     "title": "Záchrana před dehydratací",
     "setting": "Jsi druhý den bez vody. Našel jsi stojatou tůň, ale voda vypadá kalně a nebezpečně. Musíš ji upravit, jinak riskněš infekci.",

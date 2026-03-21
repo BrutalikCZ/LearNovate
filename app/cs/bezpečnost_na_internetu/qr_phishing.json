@@ -2,9 +2,9 @@
   "name": "QR phishing útok",
   "description": "Podvodné QR kódy vedoucí na falešné přihlašovací stránky nebo škodlivé weby.",
   "icon": "qr-code",
-  "label": "Ochrana před QR phishingem",
-  "colorFrom": "#0f172a",
-  "colorTo": "#f97316",
+  "label": "QR phishing",
+  "colorFrom": "#000000",
+  "colorTo": "#22c55e",
   "scenario": {
     "title": "Falešný QR kód na veřejném místě",
     "setting": "Na zastávce autobusu vidíš QR kód s nápisem 'Zkontroluj svůj balíček zde'. Po naskenování se otevře přihlašovací stránka, která vypadá jako doručovací služba. Stránka vyžaduje zadání osobních údajů.",

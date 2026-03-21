@@ -1,8 +1,8 @@
 {
-  "name": "Přehřátý motor",
+  "name": "Řešení přehřátého motoru",
   "description": "Jak správně reagovat na přehřátí motoru a zabránit jeho poškození.",
   "icon": "thermometer",
-  "label": "Řešení přehřátého motoru",
+  "label": "Přehřátí",
   "colorFrom": "#581c87",
   "colorTo": "#a855f7",
   "scenario": {
@@ -11,19 +11,19 @@
     "objective": "Uživatel musí správně zareagovat na přehřátí motoru a zabránit jeho poškození.",
     "milestones": [
       {
-        "name": "Bezpečné zastavení vozidla",
+        "name": "Bezpečné zastavení vozidla", 
         "points": 100
       },
       {
-        "name": "Vypnutí motoru a zajištění chlazení",
+        "name": "Vypnutí motoru a zajištění chlazení", 
         "points": 150
       },
       {
-        "name": "Kontrola chladicí kapaliny po vychladnutí",
+        "name": "Kontrola chladicí kapaliny po vychladnutí", 
         "points": 150
       },
       {
-        "name": "Vyhodnocení stavu a rozhodnutí o dalším postupu",
+        "name": "Vyhodnocení stavu a rozhodnutí o dalším postupu", 
         "points": 100
       }
     ],

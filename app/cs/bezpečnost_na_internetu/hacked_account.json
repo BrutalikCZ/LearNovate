@@ -2,9 +2,9 @@
   "name": "Ztráta kontroly nad online účtem",
   "description": "Postup při hacknutí účtu na sociální síti nebo e-mailu.",
   "icon": "user-lock",
-  "label": "Řešení hacknutého účtu",
-  "colorFrom": "#0f172a",
-  "colorTo": "#f59e0b",
+  "label": "Hacknutý účet",
+  "colorFrom": "#111827",
+  "colorTo": "#ef4444",
   "scenario": {
     "title": "Účet na sociální síti je kompromitován",
     "setting": "Zjišťuješ, že se nemůžeš přihlásit do svého účtu na sociální síti. Přicházejí ti upozornění na změnu hesla a přihlašování z neznámých zařízení. Přátelé hlásí, že z tvého účtu chodí podivné zprávy.",

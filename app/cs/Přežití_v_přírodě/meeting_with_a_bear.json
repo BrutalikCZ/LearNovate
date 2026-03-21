@@ -2,9 +2,9 @@
   "name": "Setkání s medvědem",
   "description": "Správné chování při blízkém kontaktu s velkou šelmou v horách.",
   "icon": "panda",
-  "label": "Setkání s medvědem",
-  "colorFrom": "#a16207",
-  "colorTo": "#422006",
+  "label": "Medvěd",
+  "colorFrom": "#451a03",
+  "colorTo": "#dc2626",
   "scenario": {
     "title": "Tváří v tvář šelmě",
     "setting": "Vracíš se k večeru úzkou stezkou v hustém podrostu slovenských Tater a najednou, jen dvacet metrů před tebou, se na zadní staví dospělý medvěd hnědý. Zvíře tě zjevně překvapilo, nervózně funí a upřeně tě sleduje, zatímco ty cítíš, jak se ti do žil vylévá čistý adrenalin. Není kam utéct a vteřiny plynou jako hodiny.",

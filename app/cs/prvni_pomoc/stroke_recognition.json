@@ -2,9 +2,9 @@
   "name": "Podezření na cévní mozkovou příhodu",
   "description": "Jak rozpoznat mrtvici a zajistit rychlou pomoc pomocí metody FAST.",
   "icon": "brain",
-  "label": "Rozpoznání mrtvice (FAST)",
-  "colorFrom": "#1e1b4b",
-  "colorTo": "#ef4444",
+  "label": "Mrtvice",
+  "colorFrom": "#1e293b",
+  "colorTo": "#e11d48",
   "scenario": {
     "title": "Náhlá slabost na ulici",
     "setting": "Stojíš na zastávce. Starší muž vedle tebe náhle upustí tašku, jeho obličej poklesne na jednu stranu a mluví nesrozumitelně. Zdá se zmatený a nedokáže zvednout pravou ruku.",

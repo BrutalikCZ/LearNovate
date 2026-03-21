@@ -2,8 +2,8 @@
   "name": "Pěstování brambor v marsovské kolonii",
   "description": "Zajištění potravy pomocí improvizované hydroponie a recyklace biomasy v uzavřeném systému.",
   "icon": "sprout",
-  "label": "Zajištění potravy",
-  "colorFrom": "#14532d",
+  "label": "Potrava",
+  "colorFrom": "#713f12",
   "colorTo": "#84cc16",
   "scenario": {
     "title": "Založení první farmy",

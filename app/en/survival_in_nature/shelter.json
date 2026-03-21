@@ -2,9 +2,9 @@
   "name": "Building a shed",
   "description": "Simple housing type 'A' construction for protection from rain and wind.",
   "icon": "tent",
-  "label": "Building a shelter",
-  "colorFrom": "#16a34a",
-  "colorTo": "#14532d",
+  "label": "Shelter",
+  "colorFrom": "#3f6212",
+  "colorTo": "#78350f",
   "scenario": {
     "title": "Night in the forest",
     "setting": "You're lost in the woods and it's starting to rain. You have to build a dry place to sleep before it gets completely dark.",

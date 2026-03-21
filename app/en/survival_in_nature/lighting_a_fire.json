@@ -2,9 +2,9 @@
   "name": "Fire without matches",
   "description": "How to start a fire using flint in difficult conditions.",
   "icon": "flame",
-  "label": "Starting a fire",
-  "colorFrom": "#f59e0b",
-  "colorTo": "#ef4444",
+  "label": "Fire",
+  "colorFrom": "#1c1917",
+  "colorTo": "#fdba74",
   "scenario": {
     "title": "Making fire",
     "setting": "The sun is setting, the temperature is dropping, and you're soaked after falling into a stream. You have to start a fire to prevent hypothermia. All you have is a flintlock and a knife.",

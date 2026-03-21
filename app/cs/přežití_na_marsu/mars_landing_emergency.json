@@ -2,9 +2,9 @@
   "name": "Nouzové přistání na Marsu",
   "description": "První hodiny po přistání kapsle a stabilizace posádky v neznámém prostředí.",
   "icon": "rocket",
-  "label": "Stabilizace po havárii",
-  "colorFrom": "#7f1d1d",
-  "colorTo": "#ef4444",
+  "label": "Havárie",
+  "colorFrom": "#020617",
+  "colorTo": "#f97316",
   "scenario": {
     "title": "Selhání přistávací sekvence",
     "setting": "Kolonie právě přistála na Marsu. Přistávací modul tvrdě dosedl mimo plánovanou zónu. Jeden z členů posádky je otřesený, uvnitř kabiny klesá tlak a systémy hlásí nestabilní kyslík. Venku je nehostinná červená krajina a prachová bouře v dálce.",

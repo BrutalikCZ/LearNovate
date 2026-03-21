@@ -2,9 +2,9 @@
   "name": "Phishingový e-mail a krádež účtu",
   "description": "Jak rozpoznat a řešit phishingový útok zaměřený na přihlašovací údaje.",
   "icon": "mail-warning",
-  "label": "Obrana proti phishingu",
-  "colorFrom": "#1e1b4b",
-  "colorTo": "#ef4444",
+  "label": "Phishing",
+  "colorFrom": "#0c4a6e",
+  "colorTo": "#06b6d4",
   "scenario": {
     "title": "Podezřelý e-mail z banky",
     "setting": "Otevřeš e-mail, který vypadá jako zpráva z tvé banky. Tvrdí, že tvůj účet bude zablokován, pokud se okamžitě nepřihlásíš přes přiložený odkaz. Stránka vypadá téměř identicky jako originál, ale adresa je mírně odlišná.",

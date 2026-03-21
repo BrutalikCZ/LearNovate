@@ -2,9 +2,9 @@
   "name": "Encounter with the bear",
   "description": "Proper behavior in close contact with a large beast in the mountains.",
   "icon": "panda",
-  "label": "Encountering a bear",
-  "colorFrom": "#a16207",
-  "colorTo": "#422006",
+  "label": "Bear",
+  "colorFrom": "#451a03",
+  "colorTo": "#dc2626",
   "scenario": {
     "title": "Face the beast",
     "setting": "You are returning to the evening along a narrow path in the thick undergrowth of the Slovak Tatras and suddenly, just twenty meters in front of you, an adult brown bear stands on its back. The animal has clearly taken you by surprise, snorting nervously and watching you intently as you feel pure adrenaline rush through your veins. There is nowhere to run and the seconds pass like hours.",

@@ -2,9 +2,9 @@
   "name": "Electric shock in the workplace",
   "description": "First aid procedure for electrocution in the home or work environment.",
   "icon": "zap",
-  "label": "First aid for electric shock",
-  "colorFrom": "#111827",
-  "colorTo": "#facc15",
+  "label": "Electric shock",
+  "colorFrom": "#0891b2",
+  "colorTo": "#fbbf24",
   "scenario": {
     "title": "Appliance malfunction in the workshop",
     "setting": "You work in a workshop. A colleague is fixing an extension cord, suddenly screams and remains chained to the device. You see sparks and smell burning.",

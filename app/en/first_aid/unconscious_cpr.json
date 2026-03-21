@@ -2,9 +2,9 @@
   "name": "Unconsciousness and CPR",
   "description": "How to proceed in case of unconsciousness, respiratory arrest and perform cardiopulmonary resuscitation.",
   "icon": "activity",
-  "label": "CPR and unconsciousness",
-  "colorFrom": "#0f172a",
-  "colorTo": "#ef4444",
+  "label": "CPR",
+  "colorFrom": "#172554",
+  "colorTo": "#f43f5e",
   "scenario": {
     "title": "Collapse in the park",
     "setting": "While jogging in the park, you see a person lying on the ground. Does not respond to being addressed or shaken. He's not breathing normally, he's just grunting. There are other runners nearby.",

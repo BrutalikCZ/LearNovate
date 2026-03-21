@@ -2,9 +2,9 @@
   "name": "Ransomware útok na počítač",
   "description": "Jak reagovat na útok ransomwarem, který zašifruje data a požaduje výkupné.",
   "icon": "lock-keyhole",
-  "label": "Reakce na ransomware",
-  "colorFrom": "#0f172a",
-  "colorTo": "#ef4444",
+  "label": "Ransomware",
+  "colorFrom": "#450a0a",
+  "colorTo": "#b91c1c",
   "scenario": {
     "title": "Zašifrovaný pracovní počítač",
     "setting": "Zapneš pracovní notebook a místo souborů vidíš zprávu, že všechny dokumenty byly zašifrovány. Útočník požaduje platbu v kryptoměně do 24 hodin, jinak data smaže. Systém je částečně funkční, ale soubory jsou nedostupné.",

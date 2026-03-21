@@ -2,9 +2,9 @@
   "name": "Poranění hlavy při jízdě na kole",
   "description": "Jak postupovat při otřesu mozku nebo vážnějším poranění hlavy po pádu z kola.",
   "icon": "bike",
-  "label": "Ošetření poranění hlavy",
-  "colorFrom": "#111827",
-  "colorTo": "#ef4444",
+  "label": "Poranění hlavy",
+  "colorFrom": "#374151",
+  "colorTo": "#dc2626",
   "scenario": {
     "title": "Cyklistický výlet",
     "setting": "Jedeš na kole s kamarádem po lesní cestě. Kamarád narazí do kořene, přepadne přes řídítka a udeří se hlavou o kámen. Na chvíli ztrácí orientaci, je zmatený a z rány na hlavě krvácí.",

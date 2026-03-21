@@ -2,9 +2,9 @@
   "name": "Startování auta přes kabely",
   "description": "Jak správně nastartovat auto pomocí startovacích kabelů.",
   "icon": "battery-low",
-  "label": "Startování přes kabely",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Startování",
+  "colorFrom": "#b91c1c",
+  "colorTo": "#3b82f6",
   "scenario": {
     "title": "Nastartování auta přes kabely",
     "setting": "Auto ti nejde nastartovat kvůli vybité baterii. Zastaví u tebe jiný řidič a nabízí pomoc se startovacími kabely, takže máš šanci problém rychle vyřešit.",

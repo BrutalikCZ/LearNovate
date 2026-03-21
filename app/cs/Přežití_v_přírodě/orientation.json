@@ -2,9 +2,9 @@
   "name": "Určení světových stran",
   "description": "Jak najít sever pomocí stínu nebo hodinek.",
   "icon": "compass",
-  "label": "Určení severu bez kompasu",
-  "colorFrom": "#0ea5e9",
-  "colorTo": "#0369a1",
+  "label": "Orientace",
+  "colorFrom": "#0f766e",
+  "colorTo": "#fbbf24",
   "scenario": {
     "title": "Ztracen v mlze",
     "setting": "Mobil je vybitý a hustá mlha ti znemožňuje vidět orientační body. Musíš určit, kde je sever, abys pokračoval správným směrem k civilizaci.",

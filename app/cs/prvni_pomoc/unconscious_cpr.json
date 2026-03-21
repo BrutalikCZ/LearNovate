@@ -2,9 +2,9 @@
   "name": "Bezvědomí a KPR",
   "description": "Jak postupovat při bezvědomí, zástavě dechu a provádět kardiopulmonální resuscitaci.",
   "icon": "activity",
-  "label": "KPR a řešení bezvědomí",
-  "colorFrom": "#0f172a",
-  "colorTo": "#ef4444",
+  "label": "KPR",
+  "colorFrom": "#172554",
+  "colorTo": "#f43f5e",
   "scenario": {
     "title": "Kolaps v parku",
     "setting": "Při běhu v parku vidíš člověka ležícího na zemi. Nereaguje na oslovení ani zatřesení. Nedýchá normálně, jen lapavě chrčí. V okolí jsou další běžci.",

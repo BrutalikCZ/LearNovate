@@ -2,7 +2,7 @@
   "name": "Anafylaktická reakce po bodnutí hmyzem",
   "description": "Jak rozpoznat a řešit těžkou alergickou reakci po bodnutí včelou nebo vosou.",
   "icon": "bug",
-  "label": "První pomoc při anafylaxi",
+  "label": "První pomoc",
   "colorFrom": "#064e3b",
   "colorTo": "#f59e0b",
   "scenario": {

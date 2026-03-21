@@ -2,9 +2,9 @@
   "name": "Escape from the swamp",
   "description": "How to get out of deep mud or bog without help.",
   "icon": "droplet",
-  "label": "Escaping a swamp",
-  "colorFrom": "#65a30d",
-  "colorTo": "#1a2e05",
+  "label": "Swamp",
+  "colorFrom": "#14532d",
+  "colorTo": "#422006",
   "scenario": {
     "title": "Death grip",
     "setting": "While picking mushrooms in a remote part of the Šumava Mountains, you took a bad step and fell into a hidden bog. The slimy, cold mud is already up to your waist, and with every movement you sink deeper, while your body temperature drops. You are alone, your cell phone has no signal and the forest around you silently watches your fight for life.",

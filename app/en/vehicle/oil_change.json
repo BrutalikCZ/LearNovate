@@ -2,9 +2,9 @@
   "name": "Engine oil change",
   "description": "How to correctly check the engine oil level and top it up to the correct level.",
   "icon": "car",
-  "label": "Changing engine oil",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Oil",
+  "colorFrom": "#000000",
+  "colorTo": "#d97706",
   "scenario": {
     "title": "Engine oil change",
     "setting": "You are in the garage and you are about to start the car for a long trip. But before turning the key, you realize that you haven't checked the engine oil for a long time, which can fundamentally affect the engine's operation.",

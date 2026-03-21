@@ -2,9 +2,9 @@
   "name": "Selhání generátoru kyslíku",
   "description": "Kritická situace při výpadku systému výroby kyslíku v uzavřené kolonii.",
   "icon": "wind",
-  "label": "Porucha generátoru kyslíku",
+  "label": "Porucha",
   "colorFrom": "#0f172a",
-  "colorTo": "#ef4444",
+  "colorTo": "#3b82f6",
   "scenario": {
     "title": "Pokles kyslíku v habitatě",
     "setting": "Během rutinní noci kolonie zaznamená alarm: hladina kyslíku klesá pod bezpečnou hranici. Hlavní elektrolytický generátor vykazuje chybu a sekundární systém nestíhá kompenzovat ztrátu.",

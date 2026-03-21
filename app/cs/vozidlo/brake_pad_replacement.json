@@ -2,9 +2,9 @@
   "name": "Výměna brzdových destiček",
   "description": "Jakým způsobem vyměnit brzdové destičky.",
   "icon": "wrench",
-  "label": "Výměna brzdových destiček",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Brzdy",
+  "colorFrom": "#1e293b",
+  "colorTo": "#94a3b8",
   "scenario": {
     "title": "Výměna brzdových destiček",
     "setting": "Při brzdění slyšíš nepříjemné pískání. Zjistíš, že brzdové destičky jsou opotřebované.",

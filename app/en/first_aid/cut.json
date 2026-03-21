@@ -2,8 +2,8 @@
   "name": "Cut wound treatment",
   "description": "How to properly stop bleeding, treat and bandage a cut in the field and at home.",
   "icon": "heart-pulse",
-  "label": "Treating a cut wound",
-  "colorFrom": "#7f1d1d",
+  "label": "Cut",
+  "colorFrom": "#334155",
   "colorTo": "#ef4444",
   "scenario": {
     "title": "Treatment of a cut wound in the field",

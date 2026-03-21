@@ -2,9 +2,9 @@
   "name": "Charging the car battery",
   "description": "How to properly charge a car battery and restore its functionality.",
   "icon": "battery-charging",
-  "label": "Charging a car battery",
-  "colorFrom": "#581c87",
-  "colorTo": "#a855f7",
+  "label": "Battery",
+  "colorFrom": "#831843",
+  "colorTo": "#84cc16",
   "scenario": {
     "title": "Charging the car battery",
     "setting": "The car has been parked for a long time and the battery is dead. Do you have a charger available?",

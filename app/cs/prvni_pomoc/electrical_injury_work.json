@@ -2,9 +2,9 @@
   "name": "Úraz elektrickým proudem na pracovišti",
   "description": "Postup první pomoci při zásahu elektrickým proudem v domácím nebo pracovním prostředí.",
   "icon": "zap",
-  "label": "Pomoc při úrazu proudem",
-  "colorFrom": "#111827",
-  "colorTo": "#facc15",
+  "label": "Elektřina",
+  "colorFrom": "#0891b2",
+  "colorTo": "#fbbf24",
   "scenario": {
     "title": "Porucha spotřebiče v dílně",
     "setting": "Pracuješ v dílně. Kolega opravuje prodlužovačku, najednou vykřikne a zůstane přikovaný k zařízení. Vidíš jiskření a cítíš zápach spáleniny.",

@@ -2,9 +2,9 @@
   "name": "Oxygen generator failure",
   "description": "Critical situation when the oxygen production system fails in a closed colony.",
   "icon": "wind",
-  "label": "Oxygen generator failure",
+  "label": "Oxygen",
   "colorFrom": "#0f172a",
-  "colorTo": "#ef4444",
+  "colorTo": "#3b82f6",
   "scenario": {
     "title": "A decrease in oxygen in the habitat",
     "setting": "During a routine night, the colony registers an alarm: the oxygen level is falling below the safe limit. The main electrolytic generator shows a fault and the secondary system does not have time to compensate for the loss.",
