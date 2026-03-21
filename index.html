@@ -39,21 +39,21 @@
 
           <!-- Row 1: Home + Grid/List Toggle -->
           <div class="row1">
-            <div class="home-box" id="homeBox"><i data-lucide="home"></i><span>Domů</span></div>
-            <div class="grid-box icon-btn" id="gridBtn" title="Přepnout zobrazení mřížka/seznam"><i
+            <div class="home-box" id="homeBox"><i data-lucide="home"></i><span data-i18n="home">Domů</span></div>
+            <div class="grid-box icon-btn" id="gridBtn" data-i18n="grid_toggle_title" data-i18n-attr="title" title="Přepnout zobrazení mřížka/seznam"><i
                 data-lucide="layout-grid"></i></div>
           </div>
 
           <!-- Row 2: Categories dropdown + Theme -->
           <div class="row2">
             <div class="dd-box" id="ddTrigger">
-              <span>Předměty a Kategorie</span>
+              <span data-i18n="subjects_categories">Předměty a Kategorie</span>
               <i data-lucide="chevron-down"></i>
             </div>
-            <div class="grid-box" id="langBtn" title="Přepnout jazyk">
+            <div class="grid-box" id="langBtn" data-i18n="lang_toggle_title" data-i18n-attr="title" title="Switch language / Přepnout jazyk">
               <i data-lucide="globe"></i>
             </div>
-            <div class="grid-box" id="themeBtn" title="Přepnout téma">
+            <div class="grid-box" id="themeBtn" data-i18n="theme_toggle_title" data-i18n-attr="title" title="Přepnout téma">
               <i data-lucide="sun"></i>
             </div>
 
@@ -68,7 +68,7 @@
             <div class="search-box">
               <div class="search-left">
                 <i data-lucide="search"></i>
-                <input class="search-input" id="searchInput" type="text" placeholder="Hledat předmět...">
+                <input class="search-input" id="searchInput" type="text" data-i18n="search_placeholder" data-i18n-attr="placeholder" placeholder="Hledat předmět...">
               </div>
 
             </div>
@@ -88,14 +88,14 @@
           <i data-lucide="user-circle" style="width:16px;height:16px;color:var(--text-dim);flex-shrink:0"></i>
           <span class="user-bar-name" id="userBarName"></span>
           <span class="user-bar-body" id="userBarBody"></span>
-          <span class="user-bar-logout" id="logoutBtn" title="Odhlásit se">
+          <span class="user-bar-logout" id="logoutBtn" data-i18n="logout_title" data-i18n-attr="title" title="Odhlásit se">
             <i data-lucide="log-out"></i>
           </span>
         </div>
 
         <!-- Shown when logged out -->
         <button class="login-btn" id="loginBtn" onclick="showModal('login')">
-          <span>Přihlásit se / Registrovat</span>
+          <span data-i18n="login_register">Přihlásit se / Registrovat</span>
         </button>
 
       </aside>
@@ -105,7 +105,7 @@
         <!-- Will be populated by subjects.js -->
         <div class="loading-state">
           <div class="loading-spinner"></div>
-          <span>Načítání předmětů...</span>
+          <span data-i18n="loading">Načítání předmětů...</span>
         </div>
       </main>
 
@@ -117,23 +117,23 @@
   <!-- ═══ LOGIN MODAL ═══ -->
   <div class="modal-overlay" id="loginModal">
     <div class="modal-box login">
-      <button class="modal-close-btn" onclick="hideModals()" title="Zavřít"><i data-lucide="x"></i></button>
+      <button class="modal-close-btn" onclick="hideModals()" data-i18n="close_title" data-i18n-attr="title" title="Zavřít"><i data-lucide="x"></i></button>
       <span class="modal-icon"><i data-lucide="user"></i></span>
-      <span class="modal-title">Přihlásit se</span>
+      <span class="modal-title" data-i18n="login_title">Přihlásit se</span>
       <div class="modal-form">
         <div class="modal-input">
-          <input id="loginEmail" type="email" placeholder="E-mailová adresa" autocomplete="email">
+          <input id="loginEmail" type="email" data-i18n="login_email" data-i18n-attr="placeholder" placeholder="E-mailová adresa" autocomplete="email">
         </div>
         <div class="modal-input">
-          <input id="loginPassword" type="password" placeholder="Heslo" autocomplete="current-password">
+          <input id="loginPassword" type="password" data-i18n="login_password" data-i18n-attr="placeholder" placeholder="Heslo" autocomplete="current-password">
         </div>
       </div>
       <p class="modal-error" id="loginError"></p>
-      <button class="modal-submit-btn" onclick="handleLogin()"><span>PŘIHLÁSIT SE</span></button>
+      <button class="modal-submit-btn" onclick="handleLogin()"><span data-i18n="login_submit">PŘIHLÁSIT SE</span></button>
       <div class="modal-separator"></div>
       <div class="modal-alt-box">
-        <span class="modal-alt-text">Ještě nemáte účet?</span>
-        <button class="modal-alt-btn" onclick="switchModal('register')"><span>VYTVOŘIT ÚČET</span></button>
+        <span class="modal-alt-text" data-i18n="no_account">Ještě nemáte účet?</span>
+        <button class="modal-alt-btn" onclick="switchModal('register')"><span data-i18n="create_account">VYTVOŘIT ÚČET</span></button>
       </div>
     </div>
   </div>
@@ -141,29 +141,29 @@
   <!-- ═══ REGISTER MODAL ═══ -->
   <div class="modal-overlay" id="registerModal">
     <div class="modal-box register">
-      <button class="modal-close-btn" onclick="hideModals()" title="Zavřít"><i data-lucide="x"></i></button>
+      <button class="modal-close-btn" onclick="hideModals()" data-i18n="close_title" data-i18n-attr="title" title="Zavřít"><i data-lucide="x"></i></button>
       <span class="modal-icon"><i data-lucide="user-plus"></i></span>
-      <span class="modal-title">Vytvořit nový účet</span>
+      <span class="modal-title" data-i18n="register_title">Vytvořit nový účet</span>
       <div class="modal-form">
         <div class="modal-input">
-          <input id="regEmail" type="email" placeholder="E-mailová adresa" autocomplete="email">
+          <input id="regEmail" type="email" data-i18n="login_email" data-i18n-attr="placeholder" placeholder="E-mailová adresa" autocomplete="email">
         </div>
         <div class="modal-input">
-          <input id="regUsername" type="text" placeholder="Uživatelské jméno" autocomplete="username">
+          <input id="regUsername" type="text" data-i18n="register_username" data-i18n-attr="placeholder" placeholder="Uživatelské jméno" autocomplete="username">
         </div>
         <div class="modal-input">
-          <input id="regPassword" type="password" placeholder="Heslo" autocomplete="new-password">
+          <input id="regPassword" type="password" data-i18n="login_password" data-i18n-attr="placeholder" placeholder="Heslo" autocomplete="new-password">
         </div>
         <div class="modal-input">
-          <input id="regConfirm" type="password" placeholder="Potvrzení hesla" autocomplete="new-password">
+          <input id="regConfirm" type="password" data-i18n="register_confirm" data-i18n-attr="placeholder" placeholder="Potvrzení hesla" autocomplete="new-password">
         </div>
       </div>
       <p class="modal-error" id="registerError"></p>
-      <button class="modal-submit-btn" onclick="handleRegister()"><span>ZAREGISTROVAT SE</span></button>
+      <button class="modal-submit-btn" onclick="handleRegister()"><span data-i18n="register_submit">ZAREGISTROVAT SE</span></button>
       <div class="modal-separator"></div>
       <div class="modal-alt-box">
-        <span class="modal-alt-text">Již máte účet?</span>
-        <button class="modal-alt-btn" onclick="switchModal('login')"><span>PŘIHLÁSIT SE</span></button>
+        <span class="modal-alt-text" data-i18n="have_account">Již máte účet?</span>
+        <button class="modal-alt-btn" onclick="switchModal('login')"><span data-i18n="login_submit">PŘIHLÁSIT SE</span></button>
       </div>
     </div>
   </div>

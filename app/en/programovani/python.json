@@ -1,0 +1,46 @@
+{
+  "name": "Python for Beginners",
+  "description": "Python syntax basics, data types, conditions, loops, functions and file handling.",
+  "icon": "terminal",
+  "label": "PY",
+  "colorFrom": "#b45309",
+  "colorTo": "#f59e0b",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Introduction to Python"
+    },
+    {
+      "type": "text",
+      "text": "Python is an interpreted, high-level programming language with an emphasis on code readability. It uses indentation instead of curly braces to define code blocks, enforcing a clean and consistent structure."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Data Types and Variables"
+    },
+    {
+      "type": "text",
+      "text": "Python is a dynamically typed language — variables do not need a declared type. Core types include int, float, str, bool, list, tuple, dict, and set. Type conversions are performed with built-in functions such as int(), str(), and float()."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Conditions and Loops"
+    },
+    {
+      "type": "text",
+      "text": "if/elif/else conditions allow program branching. A for loop iterates over sequences (lists, strings, range), while a while loop repeats as long as a condition is true. The break and continue statements control loop flow."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Functions"
+    },
+    {
+      "type": "text",
+      "text": "Functions are defined with the def keyword. Python supports default parameter values, *args for a variable number of arguments, and **kwargs for keyword arguments. Lambda expressions allow anonymous single-line functions."
+    }
+  ]
+}

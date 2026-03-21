@@ -3,6 +3,7 @@
 // ═══════════════════════════════════════════════════════════════
 import { state } from './state.js';
 import { closeAllSortPanels } from './subjects.js';
+import { toggleLanguage, getLang } from './i18n.js';
 
 const ddTrigger = document.getElementById('ddTrigger');
 const ddPanel   = document.getElementById('ddPanel');
@@ -31,12 +32,14 @@ function closeCatDropdown() {
 }
 
 function initSidebar() {
-  // Lang button — vícejazyčná podpora zatím není k dispozici
+  // Lang button — toggle CS / EN
   const langBtn = document.getElementById('langBtn');
   if (langBtn) {
-    langBtn.addEventListener('click', (e) => {
+    langBtn.addEventListener('click', async (e) => {
       e.stopPropagation();
-      showToast('Vícejazyčná podpora — připravujeme');
+      await toggleLanguage();
+      const lang = getLang();
+      showToast(lang === 'en' ? 'Language: English' : 'Jazyk: Čeština');
     });
   }
 

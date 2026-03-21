@@ -1,0 +1,46 @@
+{
+  "name": "Algebra and Equations",
+  "description": "Linear and quadratic equations, systems of equations, inequalities, algebraic expressions and factorization.",
+  "icon": "calculator",
+  "label": "ALG",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#3b82f6",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Algebra Fundamentals"
+    },
+    {
+      "type": "text",
+      "text": "Algebra is a branch of mathematics that deals with symbolic computation and solving equations. It works with variables, constants, and operations to express general mathematical relationships."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Linear Equations"
+    },
+    {
+      "type": "text",
+      "text": "A linear equation has the form ax + b = 0, where a and b are constants. It is solved by isolating the variable x. The graph of a linear function is a straight line. Systems of linear equations can be solved by substitution, elimination, or graphical methods."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Quadratic Equations"
+    },
+    {
+      "type": "text",
+      "text": "A quadratic equation has the form ax² + bx + c = 0. It is solved using the discriminant D = b² - 4ac. If D > 0, the equation has two real roots; if D = 0, it has one repeated root; if D < 0, it has no real solution."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Factorization"
+    },
+    {
+      "type": "text",
+      "text": "Factorization is the decomposition of an algebraic expression into a product of simpler expressions. Key techniques include factoring out common factors, decomposing quadratic trinomials, and using sum and difference of powers formulas."
+    }
+  ]
+}

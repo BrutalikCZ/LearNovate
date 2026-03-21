@@ -6,6 +6,7 @@
 //   js/
 //   ├── app.js        ← this file (entry point, orchestration)
 //   ├── state.js      ← global state management
+//   ├── i18n.js       ← dynamic language switching
 //   ├── theme.js      ← dark/light theme toggle
 //   ├── auth.js       ← login, register, session
 //   ├── modals.js     ← modal dialog management
@@ -15,6 +16,7 @@
 //
 // ═══════════════════════════════════════════════════════════════
 
+import { initI18n } from './i18n.js';
 import { initTheme } from './theme.js';
 import { initAuth } from './auth.js';
 import { initModals } from './modals.js';
@@ -24,6 +26,9 @@ import { initRouter } from './router.js';
 
 // Initialize Lucide icons first
 lucide.createIcons();
+
+// i18n must be initialized before anything renders text
+await initI18n();
 
 // Initialize all modules
 initTheme();
