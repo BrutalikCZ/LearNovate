@@ -1,0 +1,38 @@
+{
+  "name": "Treating a Cut Wound",
+  "description": "How to properly stop bleeding, treat and bandage a cut wound in the field or at home.",
+  "icon": "heart-pulse",
+  "label": "FA",
+  "colorFrom": "#7f1d1d",
+  "colorTo": "#ef4444",
+  "scenarioId": "rezna_rana",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cut Wound — Treatment Basics"
+    },
+    {
+      "type": "text",
+      "text": "A cut wound is an injury caused by a sharp object. Proper treatment involves stopping the bleeding, disinfecting, and covering the wound. With heavy bleeding, the priority is applying a pressure bandage and calling emergency services."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Treatment Procedure"
+    },
+    {
+      "type": "text",
+      "text": "1. Protect yourself — put on gloves before touching someone else's blood. 2. Stop the bleeding — apply a clean cloth and press directly on the wound for 5–10 minutes. Do not lift the cloth to check. 3. Clean the wound — rinse with clean water for 5–10 minutes, removing visible debris. 4. Disinfect — apply antiseptic around the wound, not inside it. 5. Cover — with a sterile dressing or bandage. For deeper wounds, seek medical attention."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "When to Call an Ambulance"
+    },
+    {
+      "type": "text",
+      "text": "Call emergency services if: bleeding cannot be stopped within 10 minutes, the wound is deeper than 1 cm or has ragged edges, the injured person is a child or elderly, the wound is on the face, hand, or joint, or it was caused by contact with rusty metal (tetanus risk)."
+    }
+  ]
+}

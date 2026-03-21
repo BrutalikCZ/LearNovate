@@ -1,0 +1,46 @@
+{
+  "name": "Algebra a Rovnice",
+  "description": "Lineární a kvadratické rovnice, soustavy rovnic, nerovnice, algebraické výrazy a faktorizace.",
+  "icon": "calculator",
+  "label": "ALG",
+  "colorFrom": "#1e3a8a",
+  "colorTo": "#3b82f6",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Základy algebry"
+    },
+    {
+      "type": "text",
+      "text": "Algebra je oblast matematiky, která se zabývá symbolickými výpočty a řešením rovnic. Pracuje s proměnnými, konstantami a operacemi pro vyjádření obecných matematických vztahů."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Lineární rovnice"
+    },
+    {
+      "type": "text",
+      "text": "Lineární rovnice má tvar ax + b = 0, kde a a b jsou konstanty. Řeší se izolováním proměnné x. Grafem lineární funkce je přímka. Soustavy lineárních rovnic lze řešit dosazovací, sčítací nebo grafickou metodou."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kvadratické rovnice"
+    },
+    {
+      "type": "text",
+      "text": "Kvadratická rovnice má tvar ax² + bx + c = 0. Řeší se pomocí diskriminantu D = b² - 4ac. Pokud D > 0, rovnice má dva reálné kořeny; pokud D = 0, má jeden dvojnásobný kořen; pokud D < 0, nemá reálné řešení."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Faktorizace"
+    },
+    {
+      "type": "text",
+      "text": "Faktorizace je rozklad algebraického výrazu na součin jednodušších výrazů. Základní techniky zahrnují vytýkání společného faktoru, rozklad kvadratického trojčlenu a využití vzorců pro součet a rozdíl mocnin."
+    }
+  ]
+}

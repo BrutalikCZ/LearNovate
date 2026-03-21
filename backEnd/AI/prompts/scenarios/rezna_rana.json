@@ -1,0 +1,29 @@
+{
+  "scenario": {
+    "title": "Ošetření řezné rány v terénu",
+    "setting": "Jdeš na túru s kamarádem. Zastavíte se u potoka odpočinout. Kamarád sáhne do batohu, ruka mu sklouzne po rozbitém skle od lahve. Hluboký řez na dlani okamžitě začne silně krvácet. Kamarád bledne, drží ruku nad hlavou a říká: 'Co teď?' V batohu máš lékárničku.",
+    "objective": "Uživatel musí správně ošetřit řeznou ránu — chránit sebe, zastavit krvácení, ošetřit ránu a rozhodnout, zda je nutná lékařská pomoc.",
+    "milestones": [
+      {
+        "name": "Ochrana zachránce (nasazení rukavic z lékárničky)",
+        "points": 50
+      },
+      {
+        "name": "Zastavení krvácení (přímý tlak na ránu sterilním krytím)",
+        "points": 150
+      },
+      {
+        "name": "Vyčištění a ošetření rány (vyplach, dezinfekce, kontrola cizích těles)",
+        "points": 50
+      },
+      {
+        "name": "Správné krytí a fixace (sterilní obvaz, pevné ovázání)",
+        "points": 150
+      },
+      {
+        "name": "Rozhodnutí o další péči (zhodnocení závažnosti, zajištění transportu k lékaři)",
+        "points": 100
+      }
+    ]
+  }
+}

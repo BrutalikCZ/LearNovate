@@ -1,0 +1,46 @@
+{
+  "name": "SQL a Databáze",
+  "description": "Základy relačních databází, SQL dotazy (SELECT, JOIN, GROUP BY), indexy a transakce.",
+  "icon": "database",
+  "label": "SQL",
+  "colorFrom": "#9f1239",
+  "colorTo": "#f43f5e",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Úvod do SQL"
+    },
+    {
+      "type": "text",
+      "text": "SQL (Structured Query Language) je standardní jazyk pro správu a manipulaci s relačními databázemi. Používá se pro vytváření, čtení, aktualizaci a mazání dat (CRUD operace)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Základní dotazy"
+    },
+    {
+      "type": "text",
+      "text": "Příkaz SELECT slouží k výběru dat z tabulek. Klauzule WHERE filtruje řádky, ORDER BY řadí výsledky a LIMIT omezuje počet vrácených záznamů. Agregační funkce COUNT, SUM, AVG, MIN a MAX umožňují sumarizaci dat."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "JOIN operace"
+    },
+    {
+      "type": "text",
+      "text": "JOIN spojuje data z více tabulek na základě vztahu mezi sloupci. INNER JOIN vrací pouze odpovídající záznamy, LEFT JOIN zahrnuje všechny záznamy z levé tabulky, RIGHT JOIN z pravé. FULL OUTER JOIN kombinuje obě strany."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Indexy a výkon"
+    },
+    {
+      "type": "text",
+      "text": "Indexy zrychlují vyhledávání v tabulkách vytvořením datové struktury, která umožňuje rychlý přístup k řádkům. Primární klíč automaticky vytváří unikátní index. Příliš mnoho indexů však může zpomalit operace INSERT a UPDATE."
+    }
+  ]
+}

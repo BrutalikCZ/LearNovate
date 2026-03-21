@@ -1,21 +1,35 @@
 // ═══════════════════════════════════════════════════════════════
 // SUBJECTS — Load subjects from API and render dynamically
 // ═══════════════════════════════════════════════════════════════
-import { state, CATEGORY_NAMES } from './state.js';
-import { navigateToSubject } from './router.js';
+import { state } from './state.js';
+import { navigateToSubject, navigateHome } from './router.js';
+import { t, getLang } from './i18n.js';
 
 // ── Load subjects from API ──────────────────────────────────
 async function loadSubjects() {
   try {
-    const res = await fetch('/api/subjects');
+    const lang = getLang();
+    const res = await fetch(`/api/subjects?lang=${lang}`);
     if (!res.ok) throw new Error('Failed to load subjects');
     state.subjectsData = await res.json();
     renderSidebar();
-    renderMainContent();
     renderCategoryDropdown();
+
+    if (state.currentView === 'subject' && state.currentSubject) {
+      const cat = state.subjectsData.find(c => c.id === state.currentSubject.categoryId);
+      if (cat) {
+        const subj = cat.subjects.find(s => s.id === state.currentSubject.id);
+        if (subj) {
+          navigateToSubject(cat.id, subj);
+          return;
+        }
+      }
+      navigateHome();
+    } else {
+      renderMainContent();
+    }
   } catch (err) {
     console.error('Error loading subjects:', err);
-    // On error, keep static content as fallback
   }
 }
 
@@ -27,10 +41,13 @@ function renderSidebar() {
 
   state.subjectsData.forEach(category => {
     const catId = category.id;
-    const catDisplayName = CATEGORY_NAMES[catId] || catId.toUpperCase();
+    const catDisplayName = category.name || catId.toUpperCase();
     const subjects = category.subjects || [];
 
-    // Category header
+    if (state.collapsed[catId] === undefined) {
+      state.collapsed[catId] = false;
+    }
+
     const header = document.createElement('div');
     header.className = 'cat-header';
     header.id = `catHeader-${catId}`;
@@ -40,7 +57,6 @@ function renderSidebar() {
       <span class="cat-count">(${subjects.length})</span>
     `;
 
-    // Category items container
     const items = document.createElement('div');
     items.className = 'cat-items';
     items.id = `catItems-${catId}`;
@@ -59,7 +75,6 @@ function renderSidebar() {
       items.appendChild(item);
     });
 
-    // Collapse/expand
     header.addEventListener('click', () => {
       state.collapsed[catId] = !state.collapsed[catId];
       header.classList.toggle('collapsed', state.collapsed[catId]);
@@ -81,7 +96,7 @@ function renderMainContent() {
 
   state.subjectsData.forEach(category => {
     const catId = category.id;
-    const catDisplayName = CATEGORY_NAMES[catId] || catId.toUpperCase();
+    const catDisplayName = category.name || catId.toUpperCase();
     const subjects = category.subjects || [];
 
     const isHidden = !state.categories[catId];
@@ -97,14 +112,14 @@ function renderMainContent() {
           <div class="category-title-line"></div>
         </div>
         <div class="category-sort-row">
-          <span class="sort-label">SEŘADIT PODLE</span>
+          <span class="sort-label">${t('sort_by')}</span>
           <div class="sort-btn" data-section="${catId}">
-            <span class="sort-current">A–Z</span>
+            <span class="sort-current">${t('sort_az_short')}</span>
             <i data-lucide="chevron-down"></i>
             <div class="sort-panel" id="sortPanel-${catId}">
-              <div class="sort-option active" data-order="az">Abecedně (A–Z)</div>
-              <div class="sort-option" data-order="za">Abecedně (Z–A)</div>
-              <div class="sort-option" data-order="default">Výchozí pořadí</div>
+              <div class="sort-option active" data-order="az">${t('sort_az')}</div>
+              <div class="sort-option" data-order="za">${t('sort_za')}</div>
+              <div class="sort-option" data-order="default">${t('sort_default')}</div>
             </div>
           </div>
         </div>
@@ -122,7 +137,6 @@ function renderMainContent() {
       card.dataset.subjectId = subject.id;
       card.dataset.categoryId = catId;
 
-      // Apply gradient from JSON data
       if (subject.colorFrom && subject.colorTo) {
         card.style.background = `linear-gradient(20deg, ${subject.colorFrom}, ${subject.colorTo})`;
       }
@@ -174,7 +188,7 @@ function initSortButtons() {
 
       panel.querySelectorAll('.sort-option').forEach(o => o.classList.remove('active'));
       option.classList.add('active');
-      const labels = { az: 'A–Z', za: 'Z–A', default: 'Výchozí' };
+      const labels = { az: t('sort_az_short'), za: t('sort_za_short'), default: t('sort_default_short') };
       btn.querySelector('.sort-current').textContent = labels[order];
 
       const cards = Array.from(grid.querySelectorAll('.subject-card'));
@@ -201,8 +215,8 @@ function renderCategoryDropdown() {
 
   state.subjectsData.forEach(category => {
     const catId = category.id;
-    const catDisplayName = CATEGORY_NAMES[catId] || catId.toUpperCase();
-    
+    const catDisplayName = category.name || catId.toUpperCase();
+
     if (state.categories[catId] === undefined) {
       state.categories[catId] = true;
     }
@@ -216,5 +230,10 @@ function renderCategoryDropdown() {
     panel.appendChild(label);
   });
 }
+
+// ── Reload everything on language change ────────────────────
+window.addEventListener('langchange', () => {
+  loadSubjects();
+});
 
 export { loadSubjects, renderMainContent, renderSidebar, closeAllSortPanels, renderCategoryDropdown };

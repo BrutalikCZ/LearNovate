@@ -122,29 +122,46 @@ app.get('/api/auth/me', authMiddleware, (req, res) => {
 // SUBJECTS ROUTE — čte app/ složku dynamicky
 // ═══════════════════════════════════════════════════════════════
 
-// GET /api/subjects
+// GET /api/subjects?lang=cs|en
 app.get('/api/subjects', (req, res) => {
-  if (!fs.existsSync(APP_DIR)) return res.json([]);
+  const lang   = req.query.lang === 'en' ? 'en' : 'cs';
+  const srcDir = path.join(APP_DIR, lang);
+  const baseDir = path.join(APP_DIR, 'cs'); // always use CS as source of truth for structure
+
+  if (!fs.existsSync(baseDir)) return res.json([]);
 
   try {
-    const categories = fs.readdirSync(APP_DIR, { withFileTypes: true })
+    const categories = fs.readdirSync(baseDir, { withFileTypes: true })
       .filter(d => d.isDirectory())
       .map(catDir => {
-        const catPath  = path.join(APP_DIR, catDir.name);
+        const catPath  = path.join(baseDir, catDir.name);
+        
+        let metadata = { name: catDir.name.toUpperCase(), short: catDir.name };
+        const metadataEnPath = path.join(APP_DIR, 'en', catDir.name, 'metadata.json');
+        const metadataCsPath = path.join(APP_DIR, 'cs', catDir.name, 'metadata.json');
+        const metadataFilePath = (lang === 'en' && fs.existsSync(metadataEnPath)) ? metadataEnPath : metadataCsPath;
+        if (fs.existsSync(metadataFilePath)) {
+          metadata = JSON.parse(fs.readFileSync(metadataFilePath, 'utf8'));
+        }
+
         const subjects = fs.readdirSync(catPath)
-          .filter(f => f.endsWith('.json'))
+          .filter(f => f.endsWith('.json') && f !== 'metadata.json')
           .map(f => {
-            const raw  = fs.readFileSync(path.join(catPath, f), 'utf8');
+            // Prefer target-lang file, fall back to Czech
+            const enPath = path.join(APP_DIR, 'en', catDir.name, f);
+            const csPath = path.join(APP_DIR, 'cs', catDir.name, f);
+            const filePath = (lang === 'en' && fs.existsSync(enPath)) ? enPath : csPath;
+            const raw  = fs.readFileSync(filePath, 'utf8');
             const data = JSON.parse(raw);
             return { id: path.basename(f, '.json'), ...data };
           });
-        return { id: catDir.name, subjects };
+        return { id: catDir.name, ...metadata, subjects };
       });
 
     res.json(categories);
   } catch (err) {
     console.error('Error reading subjects:', err);
-    res.status(500).json({ error: 'Chyba při načítání předmětů.' });
+    res.status(500).json({ error: 'Error loading subjects.' });
   }
 });
 
@@ -171,7 +188,10 @@ app.post('/api/ai/scenario/start', authMiddleware, async (req, res) => {
   try {
     const response = await fetch(`${AI_URL}/scenario/start`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': req.headers.authorization,  // forward JWT
+      },
       body: JSON.stringify(req.body),
     });
     const data = await response.json();
@@ -185,7 +205,10 @@ app.post('/api/ai/scenario/step', authMiddleware, async (req, res) => {
   try {
     const response = await fetch(`${AI_URL}/scenario/step`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': req.headers.authorization,  // forward JWT
+      },
       body: JSON.stringify(req.body),
     });
     const data = await response.json();

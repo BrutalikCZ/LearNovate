@@ -1,0 +1,46 @@
+{
+  "name": "Calculus",
+  "description": "Limits of functions, derivatives, integrals, differential equations and their applications.",
+  "icon": "box",
+  "label": "KAL",
+  "colorFrom": "#064e3b",
+  "colorTo": "#10b981",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Calculus?"
+    },
+    {
+      "type": "text",
+      "text": "Calculus (mathematical analysis) is a branch of mathematics dealing with change and motion. Its two main pillars are differential calculus (derivatives) and integral calculus (integrals), linked by the Fundamental Theorem of Calculus."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Limits"
+    },
+    {
+      "type": "text",
+      "text": "A limit describes the behavior of a function as its argument approaches a certain value. It is the foundational concept on which both derivatives and integrals rest. A limit exists if the function approaches the same value from both the left and the right."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Derivatives"
+    },
+    {
+      "type": "text",
+      "text": "A derivative is the instantaneous rate of change of a function — think of a car's speedometer showing your exact speed at a given moment. Geometrically, the derivative is the slope of the tangent line to the graph of the function at a given point."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Integrals"
+    },
+    {
+      "type": "text",
+      "text": "The integral is the inverse operation of the derivative. An indefinite integral finds the antiderivative, while a definite integral computes the area under a curve. Integrals have broad applications in physics, engineering, and economics."
+    }
+  ]
+}

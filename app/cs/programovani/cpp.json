@@ -1,0 +1,70 @@
+{
+  "name": "Výměna brzdových destiček",
+  "description": "Jakým způsobem vyměnit brzdové destičky.",
+  "icon": "car",
+  "label": "Brzdové destičky",
+  "colorFrom": "#581c87",
+  "colorTo": "#a855f7",
+  "scenario": {
+    "title": "Výměna brzdových destiček",
+    "setting": "Při brzdění slyšíš nepříjemné pískání. Zjistíš, že brzdové destičky jsou opotřebované.",
+    "objective": "Uživatel musí správně vyměnit brzdové destičky.",
+    "milestones": [
+      {
+        "name": "Zajištění vozidla a sundání kola", 
+        "points": 100
+      },
+      {
+        "name": "Demontáž třmenu a vyjmutí starých destiček", 
+        "points": 150
+      },
+      {
+        "name": "Instalace nových destiček", 
+        "points": 150
+      },
+      {
+        "name": "Montáž kola a test brzd", 
+        "points": 100
+      }
+    ],
+    "tutorial": "Auto musí být bezpečně zajištěné a zvednuté. Po sundání kola demontuj brzdový třmen. Staré destičky vyjmi a zkontroluj stav kotouče. Nové destičky nasaď správně a zatlač pístek. Po složení několikrát sešlápni brzdu, aby si systém sedl."
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Úvod do C++"
+    },
+    {
+      "type": "text",
+      "text": "C++ je výkonný, kompilovaný programovací jazyk, který kombinuje nízkoúrovňové systémové programování s vysokoúrovňovými abstrakcemi. Je široce používán v herním vývoji, operačních systémech, embedded systémech a vysokovýkonných aplikacích."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Základní syntaxe"
+    },
+    {
+      "type": "text",
+      "text": "Každý C++ program začíná funkcí main(). Proměnné musí být deklarovány s konkrétním typem (int, float, double, char, bool). C++ používá středníky na konci příkazů a složené závorky pro bloky kódu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pointery a Reference"
+    },
+    {
+      "type": "text",
+      "text": "Pointery jsou proměnné, které uchovávají adresu jiné proměnné v paměti. Operátor & vrací adresu proměnné, zatímco operátor * dereferencuje pointer. Reference jsou aliasy pro existující proměnné a nelze je přesměrovat po inicializaci."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Objektově orientované programování"
+    },
+    {
+      "type": "text",
+      "text": "C++ podporuje třídy a objekty, dědičnost, polymorfismus, zapouzdření a abstrakci. Třídy definují vlastnosti (atributy) a chování (metody) objektů. Konstruktory a destruktory řídí životní cyklus objektů."
+    }
+  ]
+}

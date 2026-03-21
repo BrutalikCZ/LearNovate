@@ -40,5 +40,6 @@ function initModals() {
 // Globally exposed for onclick attributes in HTML
 window.showModal   = showModal;
 window.switchModal = switchModal;
+window.hideModals  = hideModals;
 
 export { initModals, showModal, hideModals, switchModal, clearErrors as clearErrors_fn, showError };

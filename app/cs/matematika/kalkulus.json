@@ -1,0 +1,46 @@
+{
+  "name": "Kalkulus",
+  "description": "Limity funkcí, derivace, integrály, diferenciální rovnice a jejich aplikace.",
+  "icon": "box",
+  "label": "KAL",
+  "colorFrom": "#064e3b",
+  "colorTo": "#10b981",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Co je kalkulus?"
+    },
+    {
+      "type": "text",
+      "text": "Kalkulus (matematická analýza) je oblast matematiky zabývající se změnami a pohybem. Dva hlavní pilíře jsou diferenciální počet (derivace) a integrální počet (integrály), které jsou propojeny Základní větou kalkulu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Limity"
+    },
+    {
+      "type": "text",
+      "text": "Limita popisuje chování funkce, když se její argument blíží k určité hodnotě. Je to základní koncept, na kterém stojí derivace i integrály. Limita existuje, pokud se funkce blíží ke stejné hodnotě zleva i zprava."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Derivace"
+    },
+    {
+      "type": "text",
+      "text": "Derivace je okamžitou mírou změny funkce — představte si rychlometr v autě, který ukazuje přesně vaši rychlost v daném okamžiku. Geometricky je derivace směrnicí tečny ke grafu funkce v daném bodě."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Integrály"
+    },
+    {
+      "type": "text",
+      "text": "Integrál je opačnou operací k derivaci. Neurčitý integrál hledá primitivní funkci, zatímco určitý integrál počítá plochu pod křivkou. Integrály mají široké uplatnění ve fyzice, inženýrství a ekonomii."
+    }
+  ]
+}

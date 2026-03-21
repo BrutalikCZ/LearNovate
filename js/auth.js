@@ -3,17 +3,18 @@
 // ═══════════════════════════════════════════════════════════════
 import { state } from './state.js';
 import { hideModals, showError, clearErrors_fn } from './modals.js';
+import { t } from './i18n.js';
 
 // ── Token Helpers ────────────────────────────────────────────
 function getToken()    { return localStorage.getItem('token'); }
-function setToken(t)   { localStorage.setItem('token', t); }
+function setToken(tok) { localStorage.setItem('token', tok); }
 function removeToken() { localStorage.removeItem('token'); }
 
 // ── UI Helpers ───────────────────────────────────────────────
 function setLoggedIn(user) {
   state.currentUser = user;
   document.getElementById('userBarName').textContent = user.username;
-  document.getElementById('userBarBody').textContent = `${user.body} ★`;
+  document.getElementById('userBarBody').textContent = user.body ? `${user.body} ★` : '';
   document.getElementById('userBar').classList.remove('hidden');
   document.getElementById('loginBtn').classList.add('hidden');
   lucide.createIcons({ nodes: document.getElementById('userBar').querySelectorAll('[data-lucide]') });
@@ -45,8 +46,8 @@ async function handleLogin() {
   const email    = document.getElementById('loginEmail').value.trim();
   const password = document.getElementById('loginPassword').value;
 
-  if (!email || !password) { showError('loginError', 'Vyplňte prosím všechna pole.'); return; }
-  if (!isValidEmail(email)) { showError('loginError', 'Zadejte platnou e-mailovou adresu.'); return; }
+  if (!email || !password) { showError('loginError', t('err_fill_all')); return; }
+  if (!isValidEmail(email)) { showError('loginError', t('err_invalid_email')); return; }
 
   try {
     const res  = await fetch('/api/auth/login', {
@@ -55,7 +56,7 @@ async function handleLogin() {
       body: JSON.stringify({ email, password }),
     });
     const data = await res.json();
-    if (!res.ok) { showError('loginError', data.error || 'Přihlášení selhalo.'); return; }
+    if (!res.ok) { showError('loginError', data.error || t('err_login_failed')); return; }
 
     setToken(data.token);
     setLoggedIn(data.user);
@@ -63,7 +64,7 @@ async function handleLogin() {
     document.getElementById('loginEmail').value    = '';
     document.getElementById('loginPassword').value = '';
   } catch {
-    showError('loginError', 'Nepodařilo se spojit se serverem.');
+    showError('loginError', t('err_server'));
   }
 }
 
@@ -74,11 +75,11 @@ async function handleRegister() {
   const password = document.getElementById('regPassword').value;
   const confirm  = document.getElementById('regConfirm').value;
 
-  if (!email || !username || !password || !confirm) { showError('registerError', 'Vyplňte prosím všechna pole.'); return; }
-  if (!isValidEmail(email))  { showError('registerError', 'Zadejte platnou e-mailovou adresu.'); return; }
-  if (username.length < 3)   { showError('registerError', 'Uživatelské jméno musí mít alespoň 3 znaky.'); return; }
-  if (password.length < 6)   { showError('registerError', 'Heslo musí mít alespoň 6 znaků.'); return; }
-  if (password !== confirm)  { showError('registerError', 'Hesla se neshodují.'); return; }
+  if (!email || !username || !password || !confirm) { showError('registerError', t('err_fill_all')); return; }
+  if (!isValidEmail(email))  { showError('registerError', t('err_invalid_email')); return; }
+  if (username.length < 3)   { showError('registerError', t('err_username_min')); return; }
+  if (password.length < 6)   { showError('registerError', t('err_password_min')); return; }
+  if (password !== confirm)  { showError('registerError', t('err_password_match')); return; }
 
   try {
     const res  = await fetch('/api/auth/register', {
@@ -87,7 +88,7 @@ async function handleRegister() {
       body: JSON.stringify({ email, username, password }),
     });
     const data = await res.json();
-    if (!res.ok) { showError('registerError', data.error || 'Registrace selhala.'); return; }
+    if (!res.ok) { showError('registerError', data.error || t('err_register_failed')); return; }
 
     setToken(data.token);
     setLoggedIn(data.user);
@@ -96,7 +97,7 @@ async function handleRegister() {
       document.getElementById(id).value = '';
     });
   } catch {
-    showError('registerError', 'Nepodařilo se spojit se serverem.');
+    showError('registerError', t('err_server'));
   }
 }
 

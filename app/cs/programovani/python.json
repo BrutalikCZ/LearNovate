@@ -1,0 +1,46 @@
+{
+  "name": "Python pro začátečníky",
+  "description": "Základy syntaxe Pythonu, datové typy, podmínky, cykly, funkce a práce se soubory.",
+  "icon": "terminal",
+  "label": "PY",
+  "colorFrom": "#b45309",
+  "colorTo": "#f59e0b",
+  "content": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Úvod do Pythonu"
+    },
+    {
+      "type": "text",
+      "text": "Python je interpretovaný, vysokoúrovňový programovací jazyk s důrazem na čitelnost kódu. Používá odsazení místo složených závorek k definování bloků kódu, což vynucuje čistou a konzistentní strukturu."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Datové typy a proměnné"
+    },
+    {
+      "type": "text",
+      "text": "Python je dynamicky typovaný jazyk — proměnné nemusí mít deklarovaný typ. Základní typy zahrnují int, float, str, bool, list, tuple, dict a set. Převody mezi typy se provádějí pomocí vestavěných funkcí jako int(), str(), float()."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Podmínky a cykly"
+    },
+    {
+      "type": "text",
+      "text": "Podmínky if/elif/else umožňují větvení programu. Cyklus for iteruje přes sekvence (seznamy, řetězce, range), zatímco cyklus while se opakuje, dokud je podmínka pravdivá. Příkazy break a continue řídí průběh cyklů."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Funkce"
+    },
+    {
+      "type": "text",
+      "text": "Funkce se definují klíčovým slovem def. Python podporuje výchozí hodnoty parametrů, *args pro variabilní počet argumentů a **kwargs pro klíčové argumenty. Lambda výrazy umožňují definovat anonymní funkce na jednom řádku."
+    }
+  ]
+}

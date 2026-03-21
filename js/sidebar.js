@@ -3,9 +3,27 @@
 // ═══════════════════════════════════════════════════════════════
 import { state } from './state.js';
 import { closeAllSortPanels } from './subjects.js';
+import { toggleLanguage, getLang } from './i18n.js';
 
 const ddTrigger = document.getElementById('ddTrigger');
 const ddPanel   = document.getElementById('ddPanel');
+
+// ── Toast notification ───────────────────────────────────────
+function showToast(message) {
+  const existing = document.querySelector('.app-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.className = 'app-toast';
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(() => toast.classList.add('visible'));
+  setTimeout(() => toast.classList.remove('visible'), 2500);
+  setTimeout(() => toast.remove(), 3000);
+}
+
+window.showToast = showToast;
 
 function closeCatDropdown() {
   state.catDropOpen = false;
@@ -14,6 +32,17 @@ function closeCatDropdown() {
 }
 
 function initSidebar() {
+  // Lang button — toggle CS / EN
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) {
+    langBtn.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      await toggleLanguage();
+      const lang = getLang();
+      showToast(lang === 'en' ? 'Language: English' : 'Jazyk: Čeština');
+    });
+  }
+
   // Category dropdown toggle
   ddPanel.addEventListener('click', (e) => {
     e.stopPropagation();
